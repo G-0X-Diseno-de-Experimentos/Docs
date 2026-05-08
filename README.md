@@ -1,280 +1,276 @@
-**UNIVERSIDAD PERUANA DE**
-
-**CIENCIAS APLICADAS**
-
-Ingeniería de Software
-
-Periodo 202610
-
-SI0732 | Diseño de Experimentos de Ingeniería de Software
-
-**NRC:** 12289
-
-**Profesor:** Flores Moroco, Juan Antonio
-
-**Informe de Trabajo Final**
-
-**Startup:** Qualyx
-
-**Producto:** TextilFlow
-
-**Integrantes:**
-
-Paredes Santos, Fabrizio Alberto - U202310914
-
-Rodriguez Macedo, Sebastian - U202310199
-
-Bueno Perales, Mathias Eduardo - U202313433
-
-Abril 2026
-
-# Registro de Versiones del Informe
-
-<div class="joplin-table-wrapper"><table><thead><tr><th><p><strong>Versión</strong></p></th><th><p><strong>Fecha</strong></p></th><th><p><strong>Participantes</strong></p></th><th><p><strong>Observaciones</strong></p></th></tr><tr><th><p><strong>TP1</strong></p></th><th><p><strong>10/05/2026</strong></p></th><th><ul><li>Paredes Santos, Fabrizio Alberto</li><li>Rodriguez Macedo, Sebastian</li><li>Bueno Perales, Mathias Eduardo</li></ul><p></p><p></p></th><th><p>Se redactaron las siguientes secciones:</p><ul><li>Student Outcome</li><li>Capítulo I</li><li>Capítulo II</li><li>Capítulo III</li><li>Capítulo IV</li><li>Capítulo V</li><li>Capítulo VI</li><li>Capítulo VII</li><li>Capítulo VIII</li><li>Conclusiones</li><li>Bibliografía</li></ul></th></tr><tr><th><p><strong>TB2</strong></p></th><th><p><strong></strong></p></th><th><ul><li>Paredes Santos, Fabrizio Alberto</li><li>Rodriguez Macedo, Sebastian</li><li>Bueno Perales, Mathias Eduardo</li></ul></th><th><p></p></th></tr><tr><th><p><strong>TF1</strong></p></th><th><p></p></th><th><ul><li>Paredes Santos, Fabrizio Alberto</li><li>Rodriguez Macedo, Sebastian</li><li>Bueno Perales, Mathias Eduardo</li></ul><p></p></th><th><p></p></th></tr></thead></table></div>
-
-# Tabla de Contenidos
-
-[Registro de Versiones 2](#_d69vy2exw8bz)
-
-[Tabla de Contenidos 3](#_cz85tq8kufy3)
-
-[Student Outcome 8](#_1sy0s2y1i1ra)
-
-Capítulo I: Introducción……………………………………………………………………….1
-
-1.1. Startup Profile………………………………………………………………………..1
-
-1.1.1. Descripción de la Startup…………………………………………………...1
-
-1.1.2. Perfiles de integrantes del equipo…………………………………………..1
-
-1.2. Solution Profile………………………………………………………………………1
-
-1.2.1. Antecedentes y problemática……………………………………………….1
-
-1.2.2. Lean UX Process…………………………………………………………...1
-
-1.2.2.1. Lean UX Problem Statements………………………………………...1
-
-1.2.2.2. Lean UX Assumptions………………………………………………..1
-
-1.2.2.3. Lean UX Hypothesis Statements……………………………………..1
-
-1.2.2.4. Lean UX Canvas……………………………………………………...1
-
-1.3. Segmentos objetivo…………………………………………………………………1
-
-Capítulo II: Requirements Elicitation & Analysis…………………………………………….1
-
-2.1. Competidores……………………………………………………………………….1
-
-2.1.1. Análisis competitivo………………………………………………………..1
-
-2.1.2. Estrategias y tácticas frente a competidores………………………………..1
-
-2.2. Entrevistas…………………………………………………………………………..1
-
-2.2.1. Diseño de entrevistas……………………………………………………….1
-
-2.2.2. Registro de entrevistas……………………………………………………...1
-
-2.2.3. Análisis de entrevistas……………………………………………………...1
-
-2.3. Needfinding………………………………………………………………………...1
-
-2.3.1. User Personas………………………………………………………………1
-
-2.3.2. User Task Matrix…………………………………………………………...1
-
-2.3.3. User Journey Mapping……………………………………………………..1
-
-2.3.4. Empathy Mapping………………………………………………………….1
-
-2.3.5. As-is Scenario Mapping……………………………………………………1
-
-2.4. Ubiquitous Language………………………………………………………………1
-
-Capítulo III: Requirements Specification…………………………………………………….1
-
-3.1. To-Be Scenario Mapping…………………………………………………………..1
-
-3.2. User Stories………………………………………………………………………...1
-
-3.3. Product Backlog……………………………………………………………………1
-
-3.4. Impact Mapping……………………………………………………………………1
-
-Capítulo IV: Product Design………………………………………………………………….1
-
-4.1. Style Guidelines……………………………………………………………………1
-
-4.1.1. General Style Guidelines…………………………………………………..1
-
-4.1.2. Web Style Guidelines………………………………………………………1
-
-4.1.3. Mobile Style Guidelines……………………………………………………1
-
-4.1.3.1. iOS Mobile Style Guidelines………………………………………….1
-
-4.1.3.2. Android Mobile Style Guidelines……………………………………..1
-
-4.2. Information Architecture……………………………………………………………1
-
-4.2.1. Organization Systems……………………………………………………….1
-
-4.2.2. Labeling Systems…………………………………………………………...1
-
-4.2.3. SEO Tags and Meta Tags…………………………………………………...1
-
-4.2.4. Searching Systems………………………………………………………….1
-
-4.2.5. Navigation Systems………………………………………………………...1
-
-4.3. Landing Page UI Design…………………………………………………………...1
-
-4.3.1. Landing Page Wireframe…………………………………………………..1
-
-4.3.2. Landing Page Mock-up……………………………………………………1
-
-4.4. Mobile Applications UX/UI Design………………………………………………1
-
-4.4.1. Mobile Applications Wireframes…………………………………………..1
-
-4.4.2. Mobile Applications Wireflow Diagrams………………………………….1
-
-4.4.3. Mobile Applications Mock-ups…………………………………………….1
-
-4.4.4. Mobile Applications User Flow Diagrams…………………………………1
-
-4.5. Mobile Applications Prototyping…………………………………………………..1
-
-4.5.1. Android Mobile Applications Prototyping…………………………………1
-
-4.5.2. iOS Mobile Applications Prototyping……………………………………...1
-
-4.6. Web Applications UX/UI Design………………………………………………….1
-
-4.6.1. Web Applications Wireframes……………………………………………..1
-
-4.6.2. Web Applications Wireflow Diagrams…………………………………….1
-
-4.6.3. Web Applications Mock-ups………………………………………………1
-
-4.6.4. Web Applications User Flow Diagrams…………………………………...1
-
-4.7. Web Applications Prototyping……………………………………………………1
-
-4.8. Domain-Driven Software Architecture…………………………………………...1
-
-4.8.1. Software Architecture Context Diagram…………………………………..1
-
-4.8.2. Software Architecture Container Diagrams……………………………….1
-
-4.8.3. Software Architecture Components Diagrams…………………………….1
-
-4.9. Software Object-Oriented Design…………………………………………………1
-
-4.9.1. Class Diagrams…………………………………………………………….1
-
-4.9.2. Class Dictionary……………………………………………………………1
-
-4.10. Database Design…………………………………………………………………..1
-
-4.10.1. Relational/Non-Relational Database Diagram……………………………1
-
-Capítulo V: Product Implementation…………………………………………………………1
-
-5.1. Software Configuration Management……………………………………………..1
-
-5.1.1. Software Development Environment Configuration………………………1
-
-5.1.2. Source Code Management…………………………………………………1
-
-5.1.3. Source Code Style Guide & Conventions………………………………….1
-
-5.1.4. Software Deployment Configuration………………………………………1
-
-5.2. Product Implementation & Deployment……………………………………………1
-
-5.2.1. Sprint Backlogs…………………………………………………………….1
-
-5.2.2. Implemented Landing Page Evidence……………………………………...1
-
-5.2.3. Implemented Frontend-Web Application Evidence………………………..1
-
-5.2.4. Acuerdo de Servicio - SaaS………………………………………………...1
-
-5.2.5. Implemented Native-Mobile Application Evidence………………………..1
-
-5.2.6. Implemented RESTful API and/or Serverless Backend Evidence…………1
-
-5.2.7. RESTful API documentation……………………………………………….1
-
-5.2.8. Team Collaboration Insights………………………………………………..1
-
-5.3. Video About-the-Product……………………………………………………………1
-
-Capítulo VI: Product Verification & Validation……………………………………………….1
-
-6.1. Testing Suites & Validation………………………………………………………….1
-
-6.1.1. Core Entities Unit Tests…………………………………………………….1
-
-6.1.2. Core Integration Tests………………………………………………………1
-
-6.1.3. Core Behavior-Driven Development……………………………………….1
-
-6.1.4. Core System Tests………………………………………………………….1
-
-Capítulo VII: DevOps Practices………………………………………………………………1
-
-7.1. Continuous Integration……………………………………………………………..1
-
-7.1.1. Tools and Practices…………………………………………………………1
-
-7.1.2. Build & Test Suite Pipeline Components…………………………………..1
-
-7.2. Continuous Delivery………………………………………………………………..1
-
-7.2.1. Tools and Practices…………………………………………………………1
-
-7.2.2. Stages Deployment Pipeline Components………………………………….1
-
-7.3. Continuous deployment…………………………………………………………….1
-
-7.3.1. Tools and Practices…………………………………………………………1
-
-7.3.2. Production Deployment Pipeline Components…………………………….1
-
-[Glosario 365](#_nsqems58blm)
-
-[Bibliografía 365](#_59pxh078ly8h)
-
-[Anexos 365](#_qwn3uz8sxj80)
-
-[Videos de Entrevistas 365](#_fw8attopp4ma)
-
-# 
-
-# Student Outcome
-
-ABET – EAC - Student Outcome 4
-
-La capacidad de reconocer responsabilidades éticas y
-
-profesionales en situaciones de ingeniería y hacer juicios informados, que deben
-
-considerar el impacto de las soluciones de ingeniería en contextos globales, económicos,
-
-ambientales y sociales.
-
-<div class="joplin-table-wrapper"><table><thead><tr><th><p>Criterio específico</p></th><th><p>Acciones realizadas</p></th><th><p>Conclusiones</p></th></tr><tr><th><p>La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.</p></th><th><ul><li>Paredes Santos, Fabrizio Alberto</li></ul><p></p><p></p><ul><li>Rodriguez Macedo, Sebastián TB1</li></ul><p></p><ul><li>Bueno Perales. Mathias Eduardo</li></ul><p></p><p></p><p></p><p></p><p></p></th><th><p></p><p></p></th></tr></thead></table></div>
-
-# Capítulo I: Introducción
-
-## 1.1. Startup Profile
-
-### 1.1.1. Descripción de la Startup
+<p align="center">
+  <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
+</p>
+
+<p align="center">
+  <img src="./assets/upc-logo.png" alt="UPC Logo" width="200"/>
+</p>
+
+<p align="center">
+  Ingeniería de Software <br>
+  Periodo 202610 <br>
+  SI0732 | Diseño de Experimentos de Ingeniería de Software <br>
+  NRC: 12289 <br>  
+  Profesor: Flores Moroco, Juan Antonio<br>
+  Informe de TP1<br>
+  Startup: Qualyx <br>
+  Producto: TextilFlow
+</p>
+
+<br>
+
+<p align="center"><strong>Relación de integrantes:</strong></p>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Código</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mathias Eduardo Bueno Perales</td>
+      <td>U202313433</td>
+    </tr>
+    <tr>
+      <td>Fabrizio Alberto Paredes Santos</td>
+      <td>U202310914</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+<p align="center">
+  <strong>Abril, 2026</strong> <br>
+  <strong>URL del proyecto:</strong>
+  <a href="https://github.com/G-0X-Diseno-de-Experimentos">
+    https://github.com/G-0X-Diseno-de-Experimentos
+  </a>
+</p>
+
+## Registro de Versiones del Informe
+
+| Versión | Fecha      | Autor                         | Descripción                                                                  |
+|---------|------------|-------------------------------|------------------------------------------------------------------------------|
+| TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
+| TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
+|     |  |   |             |
+|     |  |   
+  |    |
+
+
+## Project Report Collaboration Insights
+
+| URL del repositorio del reporte |
+| :-----------------------------------: |
+| [https://github.com/G-0X-Diseno-de-Experimentos/Docs](https://github.com/G-0X-Diseno-de-Experimentos/Docs) |
+
+**TP1:**
+
+Para la elaboración de la entrega TP1 de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
+
+| Integrante | Usuario Github | Detalle de avance |
+|------------|----------------|-------------------|
+| Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del Capítulo I, II, III. |
+| Mathias Eduardo Bueno Perales | `MathiasBueno` | |
+| | `Shiftinnnnn` |  |
+|  | `GiorgioAwad` |  |
+| | `Khafna09` |  |
+
+**Report Repository Insights:** 
+
+En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV1. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
+
+- Report Contributors:
+![Report Contributors] **FALTA IMAGEN**
+
+- Report Network:
+![Report Network] **FALTA IMAGEN**
+
+
+## Contenido
+
+### Tabla de contenidos
+
+- [Contenido](#contenido)
+- [Tabla de contenidos](#tabla-de-contenidos)
+- [Student Outcome](#student-outcome)
+- [Part I: As-Is Software Project](#part-i-as-is-software-project)
+
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+  - [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process.](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements.](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions.](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements.](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas.](#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo.](#13-segmentos-objetivo)
+
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1. Competidores.](#21-competidores)
+    - [2.1.1. Análisis competitivo.](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores.](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas.](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas.](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas.](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas.](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding.](#23-needfinding)
+    - [2.3.1. User Personas.](#231-user-personas)
+    - [2.3.2. User Task Matrix.](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping.](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping.](#234-empathy-mapping)
+    - [2.3.5. As-is Scenario Mapping.](#235-as-is-scenario-mapping)
+  - [2.4. Ubiquitous Language.](#24-ubiquitous-language)
+
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1. To-Be Scenario Mapping.](#31-to-be-scenario-mapping)
+  - [3.2. User Stories.](#32-user-stories)
+  - [3.3. Product Backlog.](#33-product-backlog)
+  - [3.4. Impact Mapping.](#34-impact-mapping)
+
+- [Capítulo IV: Product Design](#capítulo-iv-product-design)
+  - [4.1. Style Guidelines.](#41-style-guidelines)
+    - [4.1.1. General Style Guidelines.](#411-general-style-guidelines)
+    - [4.1.2. Web Style Guidelines.](#412-web-style-guidelines)
+    - [4.1.3. Mobile Style Guidelines.](#413-mobile-style-guidelines)
+      - [4.1.3.1. iOS Mobile Style Guidelines.](#4131-ios-mobile-style-guidelines)
+      - [4.1.3.2. Android Mobile Style Guidelines.](#4132-android-mobile-style-guidelines)
+
+  - [4.2. Information Architecture.](#42-information-architecture)
+    - [4.2.1. Organization Systems.](#421-organization-systems)
+    - [4.2.2. Labeling Systems.](#422-labeling-systems)
+    - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+    - [4.2.4. Searching Systems.](#424-searching-systems)
+    - [4.2.5. Navigation Systems.](#425-navigation-systems)
+
+  - [4.3. Landing Page UI Design.](#43-landing-page-ui-design)
+    - [4.3.1. Landing Page Wireframe.](#431-landing-page-wireframe)
+    - [4.3.2. Landing Page Mock-up.](#432-landing-page-mock-up)
+
+  - [4.4. Mobile Applications UX/UI Design.](#44-mobile-applications-uxui-design)
+    - [4.4.1. Mobile Applications Wireframes.](#441-mobile-applications-wireframes)
+    - [4.4.2. Mobile Applications Wireflow Diagrams.](#442-mobile-applications-wireflow-diagrams)
+    - [4.4.3. Mobile Applications Mock-ups.](#443-mobile-applications-mock-ups)
+    - [4.4.4. Mobile Applications User Flow Diagrams.](#444-mobile-applications-user-flow-diagrams)
+
+  - [4.5. Mobile Applications Prototyping.](#45-mobile-applications-prototyping)
+    - [4.5.1. Android Mobile Applications Prototyping.](#451-android-mobile-applications-prototyping)
+    - [4.5.2. iOS Mobile Applications Prototyping.](#452-ios-mobile-applications-prototyping)
+
+  - [4.6. Web Applications UX/UI Design.](#46-web-applications-uxui-design)
+    - [4.6.1. Web Applications Wireframes.](#461-web-applications-wireframes)
+    - [4.6.2. Web Applications Wireflow Diagrams.](#462-web-applications-wireflow-diagrams)
+    - [4.6.3. Web Applications Mock-ups.](#463-web-applications-mock-ups)
+    - [4.6.4. Web Applications User Flow Diagrams.](#464-web-applications-user-flow-diagrams)
+
+  - [4.7. Web Applications Prototyping.](#47-web-applications-prototyping)
+
+  - [4.8. Domain-Driven Software Architecture.](#48-domain-driven-software-architecture)
+    - [4.8.1. Software Architecture Context Diagram.](#481-software-architecture-context-diagram)
+    - [4.8.2. Software Architecture Container Diagrams.](#482-software-architecture-container-diagrams)
+    - [4.8.3. Software Architecture Components Diagrams.](#483-software-architecture-components-diagrams)
+
+  - [4.9. Software Object-Oriented Design.](#49-software-object-oriented-design)
+    - [4.9.1. Class Diagrams.](#491-class-diagrams)
+    - [4.9.2. Class Dictionary.](#492-class-dictionary)
+
+  - [4.10. Database Design.](#410-database-design)
+    - [4.10.1. Relational/Non-Relational Database Diagram.](#4101-relationalnon-relational-database-diagram)
+
+- [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
+  - [5.1. Software Configuration Management.](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration.](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management.](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide & Conventions.](#513-source-code-style-guide--conventions)
+    - [5.1.4. Software Deployment Configuration.](#514-software-deployment-configuration)
+
+  - [5.2. Product Implementation & Deployment.](#52-product-implementation--deployment)
+    - [5.2.1. Sprint Backlogs.](#521-sprint-backlogs)
+    - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
+    - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
+    - [5.2.4. Acuerdo de Servicio - SaaS](#524-acuerdo-de-servicio---saas)
+    - [5.2.5. Implemented Native-Mobile Application Evidence](#525-implemented-native-mobile-application-evidence)
+    - [5.2.6. Implemented RESTful API and/or Serverless Backend Evidence](#526-implemented-restful-api-andor-serverless-backend-evidence)
+    - [5.2.7. RESTful API documentation](#527-restful-api-documentation)
+    - [5.2.8. Team Collaboration Insights](#528-team-collaboration-insights)
+
+  - [5.3. Video About-the-Product.](#53-video-about-the-product)
+
+- [Part II: Verification, Validation & Pipeline](#part-ii-verification-validation--pipeline)
+
+- [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+  - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+    - [6.1.1. Core Entities Unit Tests.](#611-core-entities-unit-tests)
+    - [6.1.2. Core Integration Tests.](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests.](#614-core-system-tests)
+
+  - [6.2. Static testing & Verification](#62-static-testing--verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding standard & Code conventions.](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality & Code Security.](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
+
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+
+  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+    - [6.4.1. Auditoría realizada.](#641-auditoría-realizada)
+      - [6.4.1.1. Información del grupo auditado.](#6411-información-del-grupo-auditado)
+      - [6.4.1.2. Cronograma de auditoría realizada.](#6412-cronograma-de-auditoría-realizada)
+      - [6.4.1.3. Contenido de auditoría realizada.](#6413-contenido-de-auditoría-realizada)
+
+    - [6.4.2. Auditoría recibida.](#642-auditoría-recibida)
+      - [6.4.2.1. Información del grupo auditor.](#6421-información-del-grupo-auditor)
+      - [6.4.2.2. Cronograma de auditoría recibida.](#6422-cronograma-de-auditoría-recibida)
+      - [6.4.2.3. Contenido de auditoría recibida.](#6423-contenido-de-auditoría-recibida)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos.](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
+
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+  - [7.1. Continuous Integration](#71-continuous-integration)
+    - [7.1.1. Tools and Practices.](#711-tools-and-practices)
+    - [7.1.2. Build & Test Suite Pipeline Components.](#712-build--test-suite-pipeline-components)
+
+  - [7.2. Continuous Delivery](#72-continuous-delivery)
+    - [7.2.1. Tools and Practices.](#721-tools-and-practices)
+    - [7.2.2. Stages Deployment Pipeline Components.](#722-stages-deployment-pipeline-components)
+
+  - [7.3. Continuous deployment](#73-continuous-deployment)
+    - [7.3.1. Tools and Practices.](#731-tools-and-practices)
+    - [7.3.2. Production Deployment Pipeline Components.](#732-production-deployment-pipeline-components)
+
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components.](#744-notification-pipeline-components)
+
+
+## Student Outcome
+
+### ABET – EAC - Student Outcome 4
+
+**Criterio:** La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
+
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|----------------------|---------------------|--------------|
+| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:  <br><br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
+
+
+## Capítulo I: Introducción
+
+### 1.1. Startup Profile
+
+#### 1.1.1. Descripción de la Startup
 
 Qualyx es una startup tecnológica orientada al desarrollo de soluciones digitales que optimizan la gestión operativa de las empresas del sector textil. Esta iniciativa surge como respuesta a la necesidad de digitalizar y transparentar los procesos relacionados con la recepción, evaluación y trazabilidad de los insumos textiles, aspectos fundamentales para asegurar la calidad en la producción de prendas y productos confeccionados.
 
@@ -288,29 +284,25 @@ Misión
 
 Proporcionar a distribuidores, talleres y empresas textiles una herramienta digital integral y colaborativa que permita verificar, documentar y respaldar la calidad de los insumos textiles, fortaleciendo la confianza en la cadena de suministro y reduciendo errores en los procesos de producción.
 
-### 1.1.2. Perfiles de integrantes del equipo
+#### 1.1.2. Perfiles de integrantes del equipo
 
-- Paredes Santos, Fabrizio Alberto - U202310914 (Ingeniería de Software)
+| Foto | Miembros del equipo | Código de Estudiante | Descripción |
+| :---: | :--- | :--- | :--- |
+|![alt text](assets/fotos/foto-mathias.png) | Mathias Bueno Perales  | u202313433 |Soy una persona optimista y responsable al cumplir mis labores para-con el grupo. Tengo experiencia respecto a proyectos previamente hechos en la rama de Ingenieria de Software y conocimientos en programacion como en HTML y CSS. Siempre procuro lo mejor para el equipo y ayudar en todo lo que este en mi alcance. |
+| ![alt text](assets/fotos/fabriziofoto.jpg)| Paredes Santos, Fabrizio Alberto | U202310914 | Profesional en formación con experiencia en desarrollo de aplicaciones web y móviles utilizando stacks modernos como Vue.js y .NET, Angular y Spring Boot, además de desarrollo móvil con Flutter y Kotlin. También he trabajado en la creación de páginas web con React, Next.js y Tailwind CSS, enfocadas en rendimiento y experiencia de usuario. Me caracterizo por ser proactivo, responsable y orientado a resultados, con capacidad para adaptarme a entornos dinámicos y contribuir eficazmente en equipos de desarrollo. |
+|![alt text] *FOTO* | Rodriguez Macedo, Sebastian | U202310199 | Soy una persona capaz de resolver problemas con el equipo desde un punto de vista diferente, además ofrezco siempre compromiso hacia mis compañeros cumpliendo con las asignaciones de manera responsable. |
 
-Profesional en formación con experiencia en desarrollo de aplicaciones web y móviles utilizando stacks modernos como Vue.js y .NET, Angular y Spring Boot, además de desarrollo móvil con Flutter y Kotlin. También he trabajado en la creación de páginas web con React, Next.js y Tailwind CSS, enfocadas en rendimiento y experiencia de usuario. Me caracterizo por ser proactivo, responsable y orientado a resultados, con capacidad para adaptarme a entornos dinámicos y contribuir eficazmente en equipos de desarrollo.
+### 1.2. Solution Profile
 
-- Rodriguez Macedo, Sebastian - U202310199 (Ingeniería de Software)
-
-Soy una persona capaz de resolver problemas con el equipo desde un punto de vista diferente, además ofrezco siempre compromiso hacia mis compañeros cumpliendo con las asignaciones de manera responsable.
-
-- Bueno Perales, Mathias Eduardo - U202313433 (Ingeniería de Software)
-
-Soy una persona que busca siempre trabajar en equipo y busco tener nuestros proyectos listos de forma puntual. Cuento con habilidades de trabajo en equipo, mucho compromiso, responsabilidad y empatía.
-
-## 1.2. Solution Profile
-
-### 1.2.1. Nombre del producto
-
-### 1.2.2. Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
 
 **What:** En el sector textil peruano, especialmente en las pequeñas y medianas empresas, los procesos de recepción de tela y control de calidad aún se realizan de forma manual, lo cual genera una alta tasa de errores e incidencias en la producción. La falta de herramientas digitales para registrar y validar las características técnicas de los insumos impide una trazabilidad efectiva del material, dificultando los reclamos a los proveedores ante posibles defectos (Astete & Domínguez, 2023).
 
-_Figura 1: Identificación de problemas en la empresa textil mediante diagrama Ishikawa_
+*Figura 1: Identificación de problemas en la empresa textil mediante diagrama Ishikawa*
+
+<p align="center">
+  <img src="assets/tp1/grafico1.png" alt="PB" width="1000">
+</p>
 
 **When:** Este problema ocurre cada vez que una empresa recibe un lote de tela. Si durante este momento crítico no se realiza una evaluación detallada o esta se ejecuta de manera informal, existe el riesgo de utilizar insumos defectuosos en la producción. Como consecuencia, se generan reprocesos, pérdidas económicas y retrasos en la entrega de productos terminados. Además, la falta de estandarización en los procesos ocasiona inconsistencias que afectan directamente la calidad final del producto (Serna, 2024).
 
@@ -324,13 +316,17 @@ _Figura 1: Identificación de problemas en la empresa textil mediante diagrama I
 
 **How Much:** Los costos asociados a no resolver esta problemática son elevados. Los defectos no detectados oportunamente generan reprocesos que pueden representar pérdidas equivalentes al 52.6% del total de la producción (Serna, 2024). Asimismo, la falta de evidencia técnica ocasiona conflictos constantes con proveedores y limita la capacidad de las Mypes para integrarse a procesos de transformación digital adaptados a sus necesidades reales (Astete & Domínguez, 2023, p. 6).
 
-_Figura 2: Índice y variaciones interanuales_
+*Figura 2: Índice y variaciones interanuales*
+<p align="center">
+  <img src="assets/tp1/grafico2.png" alt="PB" width="1000">
+</p>
 
-### 1.2.3. Lean UX Process
+
+#### 1.2.2. Lean UX Process
 
 El Lean UX Process es un enfoque ágil centrado en el usuario que permite validar de manera iterativa las decisiones de diseño mediante la formulación de hipótesis y la experimentación continua. Este enfoque se basa en el ciclo construir–medir–aprender, permitiendo al equipo reducir la incertidumbre y asegurar que la solución propuesta responda a necesidades reales del usuario.
 
-#### 1.2.3.1. Lean UX Problem Statements
+##### 1.2.2.1. Lean UX Problem Statements
 
 **Domain**
 
@@ -374,11 +370,11 @@ Pequeñas y medianas empresas textiles de Lima Metropolitana que requieren mejor
 
 **¿Cómo podríamos mejorar el proceso de control de calidad y trazabilidad de telas en las empresas textiles mediante una plataforma digital colaborativa que permita registrar evidencias, reducir errores de producción y fortalecer la transparencia entre proveedores y clientes?**
 
-#### 1.2.3.2. Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
 
 Las siguientes suposiciones han sido definidas en base al entendimiento preliminar del dominio del problema y serán validadas mediante un proceso iterativo centrado en el usuario.
 
-## **Business Assumptions**
+**Business Assumptions**
 
 - Se asume que las empresas textiles necesitan mejorar sus procesos de control de calidad para reducir pérdidas económicas y reprocesos.
 - Se asume que existe una creciente necesidad de digitalización en el sector textil peruano.
@@ -389,22 +385,22 @@ Las siguientes suposiciones han sido definidas en base al entendimiento prelimin
 - Se asume que un modelo freemium y de suscripción mensual puede ser sostenible para la plataforma.
 - Se asume que el mercado textil presenta oportunidades para soluciones especializadas y enfocadas en procesos específicos del rubro.
 
-## **User Assumptions**
+**User Assumptions**
 
-### **Empresas textiles**
+*Empresas textiles*
 
 - Se asume que los responsables de almacén y control de calidad necesitan herramientas rápidas y simples para registrar información de los lotes textiles.
 - Se asume que los usuarios valoran la posibilidad de registrar fotografías, comentarios y observaciones técnicas desde dispositivos móviles.
 - Se asume que las empresas desean reducir el uso de registros manuales y procesos informales.
 - Se asume que los usuarios utilizarán la plataforma durante el proceso de recepción de telas.
 
-### **Distribuidores de tela**
+*Distribuidores de tela*
 
 - Se asume que los distribuidores necesitan respaldar el estado de la tela antes del envío para evitar conflictos posteriores.
 - Se asume que los distribuidores consideran importante mantener un historial de entregas y evidencia visual de los lotes.
 - Se asume que una herramienta colaborativa puede mejorar la confianza comercial con sus clientes.
 
-#### 1.2.3.3. Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 **Creemos que** permitir a las empresas textiles registrar fotografías y observaciones técnicas sobre los lotes de tela antes de utilizarlos reducirá los errores en producción y facilitará la realización de reclamos con evidencia. **Sabremos que esto es cierto** cuando al menos el 70% de los usuarios registren activamente los lotes en la plataforma y reporten una disminución de incidencias relacionadas con telas defectuosas.
 
@@ -414,102 +410,89 @@ Las siguientes suposiciones han sido definidas en base al entendimiento prelimin
 
 **Creemos que** centralizar la información histórica de los lotes permitirá a las empresas textiles y distribuidores mejorar la trazabilidad y optimizar la toma de decisiones relacionadas con proveedores e insumos. **Sabremos que esto es cierto** cuando los usuarios consulten frecuentemente el historial de lotes y reporten mejoras en el seguimiento de incidencias y auditorías internas.
 
-#### 1.2.3.4. Lean UX Canvas
+#### 1.2.2.4. Lean UX Canvas
 
-_Figura 2: Lean Ux Canvas de TextilFlow_
+*Figura 2: Lean Ux Canvas de TextilFlow*
 
-## 
+<p align="center">
+  <img src="assets/tp1/leancanvas.png" alt="PB" width="1000">
+</p>
 
-## 1.3. Segmentos objetivo**Segmento Objetivo 1: Empresas textiles (Talleres y fábricas de confección)**
+
+## 1.3. Segmentos objetivo
+
+**Segmento Objetivo 1: Empresas textiles (Talleres y fábricas de confección)**
 
 Este segmento está conformado por pequeñas y medianas empresas textiles dedicadas a la confección de prendas, las cuales requieren gestionar adecuadamente la recepción y control de calidad de los insumos textiles antes de iniciar la producción. Los principales usuarios dentro de este segmento son responsables de producción, encargados de almacén y personal de control de calidad. En muchos casos, estas funciones son realizadas por las propias dueñas del taller o personal multitarea.
 
-### **Características demográficas**
+ **Características demográficas**
 
 - **Ubicación:** Lima Metropolitana, especialmente en zonas de alta actividad textil como Gamarra (La Victoria), San Juan de Lurigancho, El Agustino y Los Olivos.
 - **Edad:** Entre 25 y 45 años, con una media aproximada de 35 años.
 - **Nivel socioeconómico:** Clase media y media-baja.
 - **Tipo de empresa:** Micro y pequeñas empresas textiles dedicadas a confección y producción de prendas.
 
-### **Información estadística de sustento**
+**Información estadística de sustento**
 
 El sector textil y de confecciones en el Perú está conformado principalmente por micro y pequeñas empresas, las cuales representan una parte importante de la actividad manufacturera nacional. Muchas de estas organizaciones aún presentan bajos niveles de digitalización y continúan utilizando procesos manuales para la gestión operativa y control de calidad de sus insumos textiles (Instituto Nacional de Estadística e Informática \[INEI\], 2018).
 
-### **Problemática del segmento**
+**Problemática del segmento**
 
 - No cuentan con sistemas formales para registrar el estado de las telas recibidas.
 - Presentan errores frecuentes en producción debido al uso de materiales defectuosos.
 - Tienen dificultades para generar evidencia técnica que respalde reclamos hacia proveedores.
 - Utilizan registros manuales, hojas físicas o mensajes de WhatsApp, generando desorganización y pérdida de información.
 
-## **Segmento Objetivo 2: Distribuidores de telas (Mayoristas, tiendas o proveedores directos)**
+**Segmento Objetivo 2: Distribuidores de telas (Mayoristas, tiendas o proveedores directos)**
 
 Este segmento está compuesto por empresas y comerciantes dedicados a la venta y distribución de telas hacia talleres, fábricas textiles y diseñadores independientes. Muchos operan desde tiendas físicas o almacenes y realizan despachos directos a sus clientes.
 
-### **Características demográficas**
+**Características demográficas**
 
 - **Ubicación:** Zonas comerciales textiles como Gamarra (La Victoria), Lima Cercado, Callao, Ate y San Luis.
 - **Edad:** Entre 30 y 55 años, con una media aproximada de 42 años.
 - **Nivel socioeconómico:** Clase media.
 - **Tipo de negocio:** Distribuidoras, mayoristas y proveedores textiles.
 
-### **Información estadística de sustento**
+**Información estadística de sustento**
 
 El comercio textil en Lima Metropolitana concentra una gran parte de la cadena de suministro del sector confecciones, especialmente en zonas comerciales como Gamarra, considerado uno de los principales emporios textiles de América Latina. Este ecosistema agrupa miles de negocios dedicados a la distribución y comercialización de telas y prendas, evidenciando la necesidad de herramientas digitales que permitan mejorar la trazabilidad y gestión de los lotes textiles (TV Perú, 2024).
 
-### **Problemática del segmento**
+**Problemática del segmento**
 
 - No poseen mecanismos formales para registrar el estado de los lotes antes del despacho.
 - Enfrentan reclamos relacionados con defectos no documentados.
 - Carecen de respaldo visual e histórico para demostrar la calidad del material entregado.
 - Tienen dificultades para gestionar incidencias y fortalecer la confianza comercial con sus clientes.
 
-# 
 
-# Capítulo II: Requirements & Analysis
+## Capítulo II: Requirements & Analysis
 
-## 2.1. Competidores
+### 2.1. Competidores
 
 Este análisis competitivo evalúa a Textiflow frente a otros actores del mercado, con el fin de identificar estrategias que permitan a Qualix consolidarse en el sector peruano y latinoamericano.
 
-| **Competitive Analysis Landscape** |     |     |     |     |
-| --- |     |     |     |     | --- | --- | --- | --- |
-| ¿Por qué llevar a cabo este análisis? | El propósito de este análisis competitivo es evaluar las ventajas y desventajas de Qualix y su producto Textiflow en comparación con los competidores, con el fin de crear estrategias y diseños que nos permitan competir de manera efectiva en el mercado. |     |     |     |
-| --- | --- |     |     |     | --- | --- | --- |
-|     | Textiflow | Inspectorio | Famileo | TextileGenesis |
-| --- | --- | --- | --- | --- |
-| Perfil |     |     |     |     |
-| --- | --- |     |     |     | --- | --- | --- |
-| Overview | Plataforma web para trazabilidad y control de calidad en la recepción y distribución de telas | Plataforma SaaS global para control de calidad, auditorías y cumplimiento en la cadena de suministro | Plataforma de gestión de calidad, cumplimiento y especificaciones para textiles y productos blandos. | Plataforma de trazabilidad para el sector textil/moda, que utiliza la tecnología Fibercoin |
-| --- | --- | --- | --- | --- |
-| Ventajas competitiva ¿Qué valor ofrece a los clientes | Textiflow se enfoca en utilizar evidencia visual y documentada del estado de los lotes de tela para prevenir errores y fortalecer la confianza entre distribuidores y talleres | Inspectorio su gran enfoque es en automatizar inspecciones, mejora cumplimiento y visibilidad, reduce errores humanos | Texbase se enfoca en unificar la cadena de suministro en términos de cumplimiento, pruebas de laboratorio y gestión de producto | TextileGenesis se concentra más en acelerar la implantación de la trazabilidad desde la fibra al retail para todo el sector |
-| --- | --- | --- | --- | --- |
-| Perfil de Marketing |     |     |     |     |
-| --- |     |     |     |     | --- | --- | --- | --- |
-| Mercado objetivo | TextiFlow tiene como mercado objetivo empresas textiles, talleres de confección y distribuidores de telas en Perú dándole una mayor visualización a las pequeñas empresas y negocios que recién comienzan en este rubro | Inspectorio está dirigido principalmente a grandes marcas de moda, retailers y fabricantes globales | Textbase está más dirigido hacia grandes retailers, marcas y además a laboratorios textiles | TextileGenesis está más enfocado a lo que es una red global de fabricantes de fibras sostenibles, marcas líderes y organizaciones industriales |
-| --- | --- | --- | --- | --- |
-| Estrategias de marketing | Las estrategias de marketing que utiliza el producto TextiFlow se centran en promover su solución dentro de los estándares modernos como: Marketing de Contenidos Marketing en Redes Sociales Publicidad Online Publicidad directa en zona de distribución textil | Inspectorio opta por un estilo de marketing como: B2B, alianzas con marcas como Target, Crocs, Levi’s | Textbase se enfoca más por el lado de asociaciarce con proveedores certificados, énfasis en estándares | TextileGenesis busca más por optar una comunicación directa con los retails además de darse a conocer por anuncios en línea |
-| --- | --- | --- | --- | --- |
-| Perfil de producto |     |     |     |     |
-| --- |     |     |     |     | --- | --- | --- | --- |
-| Productos & Servicios | TextilFlow ofrece en principal registrar lotes de tela, generar reportes, subir fotos, evidencias y compartir datos con clientes/proveedores; dándole un completo énfasis en la verificación de las telas | Inspectorio ofrece en general las inspecciones digitales, compliance, trazabilidad, auditorías, desbordas analíticos | Textbase se enfoca más en ofrecer una gestión de pruebas, fichas técnicas, cumplimiento regulatorio, calidad | TextileGenesis ofrece más que todo acelerar la implantación de la trazabilidad desde la fibra al retail con marcas internacionales de renombre |
-| --- | --- | --- | --- | --- |
-| Precio & Costos | Ofrecemos una versión de pago accesible para los clientes | Ofrece más que todo modelo Enterprise personalizado, alto ticket | Enfocado a medianas y grandes empresas, con precios personalizados | Posiblemente basado en membresía o suscripción con opción a free service |
-| --- | --- | --- | --- | --- |
-| Canales de distribución | Directo vía web, ferias textiles | Equipo comercial, partners globales, eventos corporativos | Ventas corporativas, red de partners tecnológicos | Alianzas estratégicas y presencia digital |
-| --- | --- | --- | --- | --- |
-| Análisis SWOT |     |     |     |     |
-| --- |     |     |     |     | --- | --- | --- | --- |
-| Fortalezas | Enfoque regional, facilidad de uso, precio accesible, visión open source. Adaptabilidad a procesos locales y facilidad de implementación | Cliente base fuerte, herramienta robusta, presencia global | Larga trayectoria en la industria, alta personalización | Foco en sostenibilidad y trazabilidad desde la fibra al retail |
-| --- | --- | --- | --- | --- |
-| Debilidades | Startup en etapa temprana, sin clientes consolidados aún. Baja adopción tecnológica de usuarios tradicionales del rubro textil | Costo elevado, poco enfoque en pymes | No enfocado en control visual de lotes o contacto directo con talleres | No especificado, pero podría carecer de enfoque en pymes |
-| --- | --- | --- | --- | --- |
-| Oportunidades | Digitalización acelerada del sector textil, necesidad de transparencia en Perú. Nuevas exigencias de trazabilidad y respaldo para exportaciones y auditorías | Expansión hacia LATAM | Integrarse con plataformas emergentes más ágiles | Reposicionar modelo en regiones donde el impacto de ESG es creciente |
-| --- | --- | --- | --- | --- |
-| Amenazas | Competidores consolidados en mercados internacionales que pueden expandirse localmente. Cultura de informalidad o resistencia al cambio en pymes textiles | Competencia más flexible o económica para mercados emergentes | Soluciones más económicas y específicas para LATAM | Demanda baja en mercados donde la trazabilidad aún no es prioridad |
-| --- | --- | --- | --- | --- |
+|                           |  |  |  |  |
+|---------------------------|------------|--------------|--------------|--------------|
+| **Competitive Analysis Landscape**       |     ¿Por qué llevar a cabo este análisis? | El propósito de este análisis competitivo es evaluar las ventajas y desventajas de Qualix y su producto Textiflow en comparación con los competidores, con el fin de crear estrategias y diseños que nos permitan competir de manera efectiva en el mercado.                  |
+| **Perfil**                |    Textiflow       |     Inspectorio        |   Famileo           |       TextileGenesis       |
+| Overview                  |  Plataforma web para trazabilidad y control de calidad en la recepción y distribución de telas | Plataforma SaaS global para control de calidad, auditorías y cumplimiento en la cadena de suministro | Plataforma de gestión de calidad, cumplimiento y especificaciones para textiles y productos blandos. |  Plataforma de trazabilidad para el sector textil/moda, que utiliza la tecnología Fibercoin |
+| Ventaja competitiva <br> ¿Qué valor ofrece a los clientes? | Textiflow se enfoca en utilizar evidencia visual y documentada del estado de los lotes de tela para prevenir errores y fortalecer la confianza entre distribuidores y talleres | Inspectorio su gran enfoque es en automatizar inspecciones, mejora cumplimiento y visibilidad, reduce errores humanos | Texbase se enfoca en unificar la cadena de suministro en términos de cumplimiento, pruebas de laboratorio y gestión de producto  | TextileGenesis se concentra más en acelerar la implantación de la trazabilidad desde la fibra al retail para todo el sector  |
+| **Perfil de Marketing**   |            |              |              |              |
+| Mercado objetivo          |TextiFlow tiene como mercado objetivo empresas textiles, talleres de confección y distribuidores de telas en Perú dándole una mayor visualización a las pequeñas empresas y negocios que recién comienzan en este rubro    |  Inspectorio está dirigido principalmente a grandes marcas de moda, retailers y fabricantes globales  |  Textbase está más dirigido hacia grandes retailers, marcas y además a laboratorios textiles  | TextileGenesis está más enfocado a lo que es una red global de fabricantes de fibras sostenibles, marcas líderes y organizaciones industriales |
+| Estrategias de marketing  |  Las estrategias de marketing que utiliza el producto TextiFlow se centran en promover su solución dentro de los estándares modernos como: Marketing de Contenidos Marketing en Redes Sociales Publicidad Online Publicidad directa en zona de distribución textil     |   Inspectorio opta por un estilo de marketing como: B2B, alianzas con marcas como Target, Crocs, Levi’s      |   Textbase se enfoca más por el lado de asociaciarce con proveedores certificados, énfasis en estándares    |   TextileGenesis busca más por optar una comunicación directa con los retails además de darse a conocer por anuncios en línea        |
+| **Perfil de Producto**    |            |              |              |              |
+| Productos & Servicios     | TextilFlow ofrece en principal registrar lotes de tela, generar reportes, subir fotos, evidencias y compartir datos con clientes/proveedores; dándole un completo énfasis en la verificación de las telas |  Inspectorio ofrece en general las inspecciones digitales, compliance, trazabilidad, auditorías, desbordas analíticos   |  Textbase se enfoca más en ofrecer una gestión de pruebas, fichas técnicas, cumplimiento regulatorio, calidad   |  TextileGenesis ofrece más que todo acelerar la implantación de la trazabilidad desde la fibra al retail con marcas internacionales de renombre   |
+| Precios & Costos          |  Ofrecemos una versión de pago accesible para los clientes     |  Ofrece más que todo modelo Enterprise personalizado, alto ticket      | Enfocado a medianas y grandes empresas, con precios personalizados   |   Posiblemente basado en membresía o suscripción con opción a free service     |
+| Canales de distribución <br> (Web y/o Móvil) | Directo vía web, App móvil (Android) y ferias textiles | Equipo comercial, partners globales, eventos corporativos | Ventas corporativas, red de partners tecnológicos | Alianzas estratégicas y presencia digital |
+| **Análisis SWOT**         |            |              |              |              |
+| Fortalezas                | Enfoque regional, facilidad de uso, precio accesible, visión open source. Adaptabilidad a procesos locales y facilidad de implementación   | - Cliente base fuerte, herramienta robusta, presencia global   | Larga trayectoria en la industria, alta personalización    | Foco en sostenibilidad y trazabilidad desde la fibra al retail      |
+| Debilidades               | Startup en etapa temprana, sin clientes consolidados aún. Baja adopción tecnológica de usuarios tradicionales del rubro textil     |  Costo elevado, poco enfoque en pymes    | No enfocado en control visual de lotes o contacto directo con talleres   | No especificado, pero podría carecer de enfoque en pymes   |
+| Oportunidades             |  Digitalización acelerada del sector textil, necesidad de transparencia en Perú. Nuevas exigencias de trazabilidad y respaldo para exportaciones y auditorías   |  Expansión hacia LATAM   |  Integrarse con plataformas emergentes más ágiles   | Reposicionar modelo en regiones donde el impacto de ESG es creciente     |
+| Amenazas                  |   Competidores consolidados en mercados internacionales que pueden expandirse localmente. Cultura de informalidad o resistencia al cambio en pymes textiles  |   Competencia más flexible o económica para mercados emergentes    | Soluciones más económicas y específicas para LATAM    |  Demanda baja en mercados donde la trazabilidad aún no es prioridad    |
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+
+#### 2.1.2. Estrategias y tácticas frente a competidores
 
 A partir del análisis competitivo realizado, se identificaron las principales fortalezas, debilidades, oportunidades y amenazas presentes en el mercado de soluciones digitales orientadas al sector textil. Esta información permite definir estrategias y tácticas preliminares que ayudarán a TextilFlow a diferenciarse, aprovechar oportunidades del entorno y afrontar las condiciones competitivas del mercado.
 
@@ -605,1139 +588,400 @@ Para afrontar estas amenazas, TextilFlow buscará demostrar valor práctico y ta
 
 \-Enfatizar el ahorro de tiempo y la reducción de reprocesos como beneficios principales del sistema.
 
-## 2.2. Entrevistas
+### 2.2. Entrevistas
 
 La sección abarca el proceso de investigación de nuestros segmentos objetivos mediante la recolección de información en base a entrevistas.
 
-### 2.2.1. Diseño de entrevistas
+#### 2.2.1. Diseño de entrevistas
 
-# **Segmento Objetivo 1: Empresas textiles (Talleres y fábricas de confección)**
+**Segmento Objetivo 1: Empresas textiles (Talleres y fábricas de confección)**
 
 Las siguientes preguntas están dirigidas a responsables de producción, personal de control de calidad y encargados de recepción de insumos en talleres y fábricas textiles. El objetivo es comprender cómo gestionan actualmente la revisión y trazabilidad de los lotes de tela dentro de sus procesos operativos.
 
-## **Características demográficas**
+**Características demográficas**
 
-- ¿Cuál es tu edad?
-- ¿En qué distrito o ciudad se encuentra tu empresa?
-- ¿Qué tipo de empresa textil representas? (taller, fábrica de confección, marca de ropa, etc.)
-- ¿Cuántos años de experiencia tienes trabajando en el sector textil?
-- ¿Cuál es tu rol dentro de la empresa?
+1. ¿Cuál es tu edad?
+2. ¿En qué ciudad y tipo de empresa textil trabajas (taller, fábrica, marca de ropa, etc.)?
+3. ¿Cuántos años de experiencia tienes trabajando en el rubro textil?
 
-## **Preguntas principales**
+**Preguntas principales**
 
-- ¿Cómo es actualmente el proceso de recepción de un nuevo lote de tela en tu empresa?
-- ¿Cuentan con algún procedimiento definido para revisar la calidad de la tela? ¿Quién realiza esta tarea?
-- ¿Qué aspectos suelen revisar al momento de inspeccionar la tela? (color, textura, elasticidad, manchas, defectos, etc.)
-- ¿Registran de alguna manera los resultados de esa revisión? ¿Qué herramientas utilizan? (papel, Excel, WhatsApp, etc.)
-- ¿Toman fotografías o videos como evidencia del estado de la tela? ¿Dónde almacenan esa información?
-- ¿Qué ocurre cuando detectan un problema o defecto en el lote recibido?
-- ¿Cómo realizan actualmente los reclamos hacia el proveedor?
-- ¿Han tenido problemas en producción por utilizar telas defectuosas que no fueron detectadas a tiempo?
-- ¿Qué dificultades encuentran en el proceso actual de control de calidad?
+1. ¿Cómo es el proceso actual cuando llega un nuevo lote de tela a tu empresa?
+2. ¿Tienen un protocolo definido para revisar la calidad de la tela? ¿Quién lo realiza?
+3. ¿Qué aspectos revisan normalmente en la tela (color, textura, elasticidad, manchas, etc.)?
+4. ¿Llevan algún registro de esa revisión? ¿Cómo lo hacen? (Papel, Excel, WhatsApp, etc.)
+5. ¿Toman fotos o videos como respaldo? ¿Dónde los guardan?
+6. ¿Qué pasa si detectan un problema en el lote recibido? ¿Tienen forma de reclamar al proveedor? ¿Cómo lo hacen?
+7. ¿Han tenido problemas por haber usado tela en mal estado sin darse cuenta al inicio?
 
-## **Preguntas sobre el proyecto(TextilFlow)**
+**Preguntas sobre el proyecto(TextilFlow)**
 
-- ¿Qué te parecería contar con una plataforma donde puedas registrar cada lote de tela recibido y almacenar evidencia visual y escrita sobre su estado?
-- ¿Qué información consideras importante registrar dentro de la plataforma? (tipo de tela, proveedor, fecha, defectos detectados, fotografías, observaciones, etc.)
-- ¿Te resultaría útil contar con reportes automáticos e historial de lotes revisados?
-- ¿Consideras importante poder acceder a esta información desde dispositivos móviles?
-- ¿Qué funcionalidades agregarías para mejorar el proceso de control de calidad en tu empresa?
+1. ¿Qué te parecería tener una plataforma donde puedas registrar cada lote de tela que recibes y dejar evidencia visual y escrita de su estado?
+2. ¿Qué datos crees que serían importantes registrar en la plataforma? (Ej. tipo de tela, proveedor, fecha, problemas detectados, fotos, etc.)
+3. ¿Te ayudaría tener reportes automáticos o un historial con todos los lotes revisados?
 
-# **Segmento Objetivo 2: Distribuidores de telas (Mayoristas, tiendas o proveedores directos)**
+**Segmento Objetivo 2: Distribuidores de telas (Mayoristas, tiendas o proveedores directos)**
 
 Las siguientes preguntas están dirigidas a distribuidores y proveedores textiles con el objetivo de comprender cómo gestionan actualmente la verificación, documentación y entrega de lotes de tela hacia sus clientes.
 
-## **Características demográficas**
+**Características demográficas**
 
-- ¿Cuál es tu edad?
-- ¿En qué distrito o ciudad operas tu negocio?
-- ¿Tu negocio cuenta con tienda física, ventas online o ambos?
-- ¿Qué tipo de telas comercializas con mayor frecuencia?
-- ¿Cuántos años de experiencia tienes en el rubro textil?
+1. ¿Cuál es tu edad?
+2. ¿En qué distrito o ciudad operas tu negocio?
+3. ¿Tu negocio cuenta con tienda física, ventas online o ambos?
+4. ¿Qué tipo de telas comercializas con mayor frecuencia?
 
-## **Preguntas principales**
+**Preguntas principales**
 
-- ¿Cómo verificas actualmente la calidad de las telas antes de enviarlas a tus clientes?
-- ¿Tienes algún método para respaldar que los lotes fueron entregados en buen estado?
-- ¿Te han realizado reclamos relacionados con defectos en las telas entregadas? ¿Cómo manejaste esa situación?
-- ¿Llevas algún registro de los lotes enviados? ¿Qué información registras normalmente?
-- ¿Utilizas fotografías, videos o algún otro tipo de evidencia antes del despacho?
-- ¿Qué dificultades encuentras actualmente al gestionar reclamos o incidencias con clientes?
-- ¿Qué herramientas utilizas para controlar la trazabilidad de tus entregas?
+1. ¿Cómo verificas la calidad de tus telas antes de enviarlas a los clientes?
+2. ¿Tienes alguna forma de respaldar que las telas estaban en buen estado al momento de la entrega?
+3. ¿Te han reclamado alguna vez por defectos que no detectaste? ¿Qué pasó?
+4. ¿Llevas algún registro sobre los lotes que envías (número, tipo de tela, cliente)?
+5. ¿Tomas fotos o haces alguna inspección antes de despachar?
 
-## **Preguntas sobre el proyecto(TextilFlow)**
+**Preguntas sobre el proyecto(TextilFlow)**
 
-- ¿Qué te parecería utilizar una plataforma donde puedas registrar evidencia visual del estado de las telas antes del envío?
-- ¿Te ayudaría contar con un historial digital de envíos y controles realizados por cliente?
-- ¿Consideras útil que tanto el proveedor como el cliente puedan visualizar la misma información dentro de la plataforma?
-- ¿Qué funcionalidades considerarías importantes para mejorar la gestión de despachos y reclamos?
-- ¿Estarías dispuesto a utilizar una herramienta digital que facilite la trazabilidad y respaldo de los lotes textiles?
+1. ¿Qué te parecería tener una plataforma donde puedas dejar evidencia visual del estado de las telas antes del envío?
+2. ¿Te ayudaría contar con un historial de envíos y controles realizados por cliente?
+3. ¿Preferirías que los controles de calidad sean visibles para ambos (tú y tu cliente) dentro de la misma plataforma?
 
-### 2.2.2. Registro de entrevistas
+#### 2.2.2. Registro de entrevistas
 
 **Segmento #1:**
 
 **Entrevista 1**
 
-**Resumen de entrevista:**
-
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
+|Entrevistado 1 |  |
+| :------------- | :------------------------------------------------------------ |
+| Edad |  |
+| Distrito/Ciudad |  |
+| Imagen | <p align="center"><img src="./assets/entrevistas/Entrevista1.png" width="200"/></p> |
+| Resumen |  |
+| Duración |  |
 
 **Entrevista 2**
-
-**Resumen de entrevista:**
-
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
+**FALTA**
 
 **Entrevista 3**
 
-**Resumen de entrevista:**
-
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
+**FALTA**
 
 **Segmento #2**
 
 **Entrevista 4**
 
-**Resumen de entrevista:**
-
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
+**FALTA**
 
 **Entrevista 5**
 
-**Resumen de entrevista:**
-
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
+**FALTA**
 
 **Entrevista 6**
 
-**Resumen de entrevista:**
+**FALTA**
 
-| **Detalle** | **Información** |
-| --- | --- |
-| Entrevistador |     |
-| --- | --- |
-| Entrevistado |     |
-| --- | --- |
-| Edad |     |
-| --- | --- |
-| Duración |     |
-| --- | --- |
-| Enlace |     |
-| --- | --- |
 
-### 2.2.3. Análisis de entrevistas
-
-## 2.3. Needfinding
-
-### 2.3.1. User Personas
+#### 2.2.3. Análisis de entrevistas
+**FALTA**
+### 2.3. Needfinding
+**FALTA**
+#### 2.3.1. User Personas
 
 Las User Personas representan arquetipos de usuarios basados en datos reales o supuestos fundamentados, permitiendo comprender sus necesidades, comportamientos y motivaciones para orientar el diseño del sistema (Cooper, 1999).
-
-**Figura  
-**_User Persona del Segmento Objetivo #1_ 
-
+ 
+*User Persona del Segmento Objetivo #1* 
+<p align="center"><img src="./assets/tp1/UserPersona1.png" width="300"/></p>
 Nota. Elaboración propia. Elaborada en UXpressia.
 
-**Figura  
-**_User Persona del Segmento Objetivo #2_
+----
 
+ 
+*User Persona del Segmento Objetivo #2*
+<p align="center"><img src="./assets/tp1/UserPersona2.png" width="300"/></p>
 Nota. Elaboración propia. Elaborado en UXpressia.
 
-### 2.3.2. User Task Matrix
+#### 2.3.2. User Task Matrix
 
 La User Task Matrix permite analizar y priorizar las tareas que realizan los usuarios, identificando aquellas de mayor valor para la solución (Garrett, 2011).
 
-Área
-
-Tarea
-
-Cecilia Huamán
-
-Miguel Sánchez
-
-Frecuencia
-
-Importancia
-
-Frecuencia
-
-Importancia
-
-Control de Calidad
-
-Inspeccionar la calidad de las telas recibidas
-
-Diario
-
-Crítica
-
-Diario
-
-Crítica
-
-Documentación
-
-Registrar defectos o incidencias detectadas
-
-Diaria
-
-Alta
-
-Diaria
-
-Crítica
-
-Comunicación
-
-Comunicarse con proveedores o clientes sobre incidencias
-
-Semanal
-
-Alta
-
-Semanal
-
-Alta
-
-Verificación
-
-Revisar características físicas de la tela (color, textura, elasticidad)
-
-Diaria
-
-Crítica
-
-Diario
-
-Alta
-
-Evidencia
-
-Tomar fotografías o evidencia visual de los lotes
-
-Ocasional
-
-Media
-
-Ocasional
-
-Alta
-
-Toma de decisiones
-
-Decidir si un lote puede ser utilizado o rechazado
-
-Diaria
-
-Crítica
-
-Diaria
-
-Alta
-
-Inventario
-
-Registrar ingresos o salidas de lotes textiles
-
-Semanal
-
-Media
-
-Semanal
-
-Alta
-
-Gestión de reclamos
-
-Gestionar devoluciones o reclamos por defectos
-
-Quincenal
-
-Alta
-
-Semanal
-
-Alta
-
-Costos y pérdidas
-
-Calcular pérdidas ocasionadas por defectos o devoluciones
-
-Mensual
-
-Alta
-
-Mensual
-
-Alta
-
-Resolución de conflictos
-
-Resolver problemas relacionados con calidad del material
-
-Semanal
-
-Alta
-
-Quincenal
-
-Alta
-
-Relación comercial
-
-Mantener relación y seguimiento con clientes frecuentes
-
-Semanal
-
-Media
-
-Semanal
-
-Crítica
-
-Nota. Elaboración propia
-
-### 2.3.3. User Journey Mapping
-
-**Figura  
-**User Journey Map
+| Área | Tarea | Cecilia Huamán - Frecuencia | Cecilia Huamán - Importancia | Miguel Sánchez - Frecuencia | Miguel Sánchez - Importancia |
+|------|------|-------------------------------|-------------------------------|------------------------------|-------------------------------|
+| Control de Calidad | Inspeccionar la calidad de las telas recibidas | Diario | Crítica | Diario | Crítica |
+| Documentación | Registrar defectos o incidencias detectadas | Diaria | Alta | Diaria | Crítica |
+| Comunicación | Comunicarse con proveedores o clientes sobre incidencias | Semanal | Alta | Semanal | Alta |
+| Verificación | Revisar características físicas de la tela (color, textura, elasticidad) | Diaria | Crítica | Diario | Alta |
+| Evidencia | Tomar fotografías o evidencia visual de los lotes | Ocasional | Media | Ocasional | Alta |
+| Toma de decisiones | Decidir si un lote puede ser utilizado o rechazado | Diaria | Crítica | Diaria | Alta |
+| Inventario | Registrar ingresos o salidas de lotes textiles | Semanal | Media | Semanal | Alta |
+| Gestión de reclamos | Gestionar devoluciones o reclamos por defectos | Quincenal | Alta | Semanal | Alta |
+| Costos y pérdidas | Calcular pérdidas ocasionadas por defectos o devoluciones | Mensual | Alta | Mensual | Alta |
+| Resolución de conflictos | Resolver problemas relacionados con calidad del material | Semanal | Alta | Quincenal | Alta |
+| Relación comercial | Mantener relación y seguimiento con clientes frecuentes | Semanal | Media | Semanal | Crítica |
+
+#### 2.3.3. User Journey Mapping
+
+
+*User Journey Map*
+
+<p align="center"><img src="./assets/tp1/UserJourneyMapping.png" width="300"/></p>
 
 Nota. Elaboración propia. Elaborado en UXpressia.
 
-### 2.3.3. Empathy Mapping
+#### 2.3.3. Empathy Mapping
 
 El Empathy Map permite comprender a los usuarios a partir de lo que piensan, sienten, dicen y hacen, favoreciendo un diseño centrado en sus necesidades (Gray, 2010).
 
 **Empathy Map del Segmento #1**
 
-Figura
 
-_Empathy map del segmento #1_
+<p align="center"><img src="./assets/tp1/Empathy1.png" width="300"/></p>
 
-_Nota._ Elaboración propia. Hecho en UXpressia.
+Nota. Elaboración propia. Hecho en UXpressia.
 
 **Empathy Map del Segmento #2**
+<p align="center"><img src="./assets/tp1/Empathy2.png" width="300"/></p>
 
-Figura
+Nota. Elaboración propia. Hecho en UXpressia.
 
-_Empathy map del segmento #2_
-
-_Nota._ Elaboración propia. Hecho en UXpressia.
-
-### 2.3.4. As-Is Scenario Mapping
+#### 2.3.4. As-Is Scenario Mapping
 
 El As-Is Scenario Map permite representar el estado actual del sistema y la forma en que los usuarios interactúan con él, facilitando la identificación de problemas, ineficiencias y oportunidades de mejora en los procesos existentes (Kuniavsky, 2003).
 
 **As-Is Scenario Map del Segmento #1**
-
+<p align="center"><img src="./assets/tp1/As-is User 1.png" width="300"/></p>
 Nota. Elaboración propia. Elaborado en Miro.
 
 **As-Is Scenario Map del Segmento #2**
-
+<p align="center"><img src="./assets/tp1/As-is User 2.png" width="300"/></p>
 Nota. Elaboración propia. Elaborado en Miro.
 
-### 2.3.5. Ubiquitous Language
+#### 2.3.5. Ubiquitous Language
 
 El Ubiquitous Language define los términos principales utilizados dentro del dominio del problema y durante el desarrollo del proyecto. Estos conceptos permiten mantener una comunicación clara y consistente entre los integrantes del equipo y los stakeholders involucrados.
 
-### **Lote de tela**
+**Lote de tela**
 
 Unidad de material textil recibida o enviada entre proveedores y empresas textiles. Representa el principal elemento de seguimiento y control dentro de la plataforma.
 
-### **Proveedor**
+**Proveedor**
 
 Distribuidor o empresa encargada de despachar los lotes de tela hacia talleres o fábricas textiles.
 
-### **Receptor**
+**Receptor**
 
 Taller, fábrica o empresa textil encargada de recibir y verificar los lotes de tela antes de utilizarlos en producción.
 
-### **Ficha técnica**
+**Ficha técnica**
 
 Registro que contiene las características y especificaciones del lote de tela, como color, tipo de tela, metraje, composición y otras propiedades relevantes.
 
-### **Control de calidad**
+**Control de calidad**
 
 Proceso de evaluación visual y física realizado sobre los lotes textiles para verificar su estado y asegurar que cumplan con los estándares requeridos antes de su utilización.
 
-### **Tela defectuosa**
+**Tela defectuosa**
 
 Material textil que presenta fallas o problemas de calidad, como manchas, daños, diferencias de color, baja elasticidad u otras irregularidades que afectan su uso en producción.
 
-# Capítulo III: Requirements Specification
+## Capítulo III: Requirements Specification
 
-## 3.1. To-Be Scenario Mapping
+### 3.1. To-Be Scenario Mapping
 
 El To-Be Scenario Map describe el estado futuro deseado del sistema, mostrando cómo los usuarios interactuarán con la solución propuesta y cómo se resuelven los problemas identificados en el escenario actual (Garrett, 2011).
 
 **To-Be Scenario Map del Segmento #1**
+<p align="center"><img src="./assets/tp1/To - be User 1.png" width="300"/></p>
+Nota. Elaboración propia. Elaborado en Miro.
 
 **To-Be Scenario Map del Segmento #2**
+<p align="center"><img src="./assets/tp1/To - be User 2.png" width="300"/></p>
+Nota. Elaboración propia. Elaborado en Miro.
 
-## 3.2. User Stories
+### 3.2. User Stories
 
-| Epic | ID  |
-| --- | --- |
+| Epic | ID |
+| ----- | ----- |
 | Inicio de sesión | EP01 |
-| --- | --- |
-| Gestión de lotes | EP02 |
-| --- | --- |
+| Gestión de lotes  | EP02 |
 | Gestión de observaciones | EP03 |
-| --- | --- |
 | Gestión de suscripción | EP04 |
-| --- | --- |
 | Configuración de cuenta | EP05 |
-| --- | --- |
 | Landing Page | EP06 |
-| --- | --- |
 | Solicitudes y Distribuidores | EP07 |
-| --- | --- |
 
-| **Epic / User Story ID** | **Título** | **Descripción** |     |     | **Total User Stories** |
-| --- | --- | --- |     |     | --- |
-| **EP-001** | **Gestión del bienestar del residente** | **Como cuidador y familiar, quiero gestionar y visualizar el estado clínico y bienestar general del residente para asegurar una atención preventiva y oportuna.** |     |     | **5** |
-| --- | --- | --- |     |     | --- |
-| **EP-002** | **Gestión de interacción y comunicación del cuidado** | **Como familiar de un adulto mayor, quiero interactuar con el sistema para comunicarme con el personal de cuidado y acceder a información relevante del paciente, de modo que pueda mantenerme informado y tomar decisiones oportunas sobre su bienestar** |     |     | **6** |
-| --- | --- | --- |     |     | --- |
-| **EP-003** | **Gestión de Medicamentos** | **Como personal de cuidado y familiar, quiero gestionar, registrar y monitorear el inventario y la administración diaria de medicamentos del residente, para garantizar el cumplimiento exacto de su tratamiento, prevenir errores de suministro y brindar total transparencia sobre su cuidado."** |     |     | **5** |
-| --- | --- | --- |     |     | --- |
-| **EP-004** | **Gestión de Personal Médico** | **Como cuidador, quiero gestionar el registro y visualizar los turnos de mis compañeros y médicos tratantes para asegurar una atención continua y saber a quién reportar.** |     |     | **5** |
-| --- | --- | --- |     |     | --- |
-| **EP-005** | **Landing Page** | **Como familiar, quiero acceder a información clara sobre las funcionalidades y planes de MediBridge antes de registrarme, para evaluar si confío en la plataforma.** |     |     | **4** |
-| --- | --- | --- |     |     | --- |
-| **EP-006** | **Gestión integral del cuidado y bienestar del residente** | **Como familiar, cuidador y personal médico, queremos centralizar la gestión del bienestar, comunicación, medicamentos, personal asistencial e información de la plataforma, para brindar una atención coordinada, preventiva y transparente al residente.** |     |     | **5** |
-| --- | --- | --- |     |     | --- |
+| Story ID | Título  | Descripción  | Criterios de Aceptación  | Relacionado con (Epic ID) |
+| :---- | :---- | :---- | :---- | :---- |
+| US01 | Visualizar listado de lotes recibidos | Como empresario, Quiero visualizar una lista de todos los lotes que he recibido, Para saber su estado actual y tomar decisiones sobre su aceptación o rechazo. | **Escenario : Visualización de la lista de lotes recibidos Given** que el empresario ha iniciado sesión correctamente, **When** accede a la sección de lotes recibidos, **Then** el sistema muestra una lista que incluye código, cliente, tipo de tela, fecha, estado y precio del lote.    | EP02 |
+| US02 | Visualizar listado de lotes enviados | Como distribuidor, Quiero ver todos los lotes que he enviado a las empresas, Para hacer seguimiento de su estado. | **Escenario 1: Visualización de la lista de lotes enviados Given** que el distribuidor ha iniciado sesión correctamente, **When** accede a la sección “Mis Lotes”, **Then** el sistema muestra una lista de lotes enviados con su estado correspondiente (Por enviar, Enviado, Confirmado, Rechazado).             **Escenario 2: Acceso restringido para otros tipos de usuario Given** que el usuario autenticado no tiene rol de distribuidor, **When** intenta acceder a la sección “Mis Lotes”,**Then** el sistema impide el acceso y redirige al panel correspondiente según su rol.   | EP02 |
+| US03 | Filtrar y buscar lotes por distintos criterios | Como usuario (empresario o distribuidor), Quiero buscar y filtrar los lotes por código, cliente, tipo de tela, estado o fecha, Para encontrar fácilmente la información que necesito. | **Escenario 1: Filtrado de lotes por atributos Given** que el usuario se encuentra autenticado y visualiza la sección de lotes, **When** aplica uno o más filtros (por estado, fecha, cliente o tipo de tela), **Then** el sistema actualiza automáticamente la lista para mostrar solo los lotes que cumplen con los filtros seleccionados. **Escenario 2: Búsqueda por código o nombre Given** que el usuario se encuentra en la sección de lotes, **When** escribe un texto en el campo de búsqueda y presiona “Enter” o el botón correspondiente, **Then** el sistema muestra únicamente los lotes cuyo código o cliente coincidan total o parcialmente con el texto ingresado.   | EP02 |
+| US04 | Ver detalles de un lote específico | Como usuario, Quiero poder ver los detalles completos de un lote, Para tomar decisiones informadas. | **Escenario : Acceso al detalle del lote Given** que el usuario se encuentra autenticado y visualiza la lista de lotes, **When** selecciona la opción “Ver Detalles” sobre un lote específico, **Then** el sistema muestra en pantalla la información completa del lote, incluyendo: código, cliente, tipo de tela, color, fecha de recepción, cantidad, precio y observaciones registradas.   | EP02 |
+| US05 | Enviar observaciones sobre un lote recibido | Como empresario, Quiero poder enviar una observación sobre un lote que recibí, Para alertar al distribuidor de problemas en el producto. | **Escenario 1: Acceso al formulario de observación Given** que el empresario está visualizando el detalle de un lote recibido, **When** selecciona la opción “Enviar Observación”, **Then** el sistema muestra un formulario con campos para ingresar el motivo de la observación y adjuntar evidencia en formato imagen o documento. **Escenario 2: Registro exitoso de observación Given** que el empresario completa todos los campos requeridos y adjunta la evidencia, **When** presiona el botón “Enviar”, **Then** el sistema guarda la observación, la asocia al lote correspondiente y notifica al distribuidor.   | EP02 |
+| US06 | Registrar y enviar lote | **Como** distribuidor, **Quiero** registrar un nuevo lote con todos los datos necesarios, **Para** enviarlo a un empresario y dar seguimiento a su evaluación. | **Escenario 1: Registro de un nuevo lote Given** que el distribuidor se encuentra en la sección “Registrar Lote”, **When** ingresa todos los datos requeridos y confirma el registro, **Then** el sistema debe guardar el lote con los datos proporcionados y asignarle el estado inicial “Por enviar”. **Escenario 2: Notificación al empresario Given** que el lote ha sido registrado correctamente, **When** el distribuidor completa el envío del lote, **Then** el sistema debe notificar automáticamente al empresario correspondiente indicando que ha recibido un nuevo lote.    | EP02 |
+| US07 | Descargar reporte de lotes | **Como** usuario (empresario o distribuidor), **Quiero** poder descargar un reporte con la información de mis lotes, **Para** llevar un respaldo o análisis fuera de la plataforma. | **Escenario 1: Acceso a la opción de descarga Given** que el usuario se encuentra autenticado y visualiza la sección de lotes (enviados o recibidos), **When** selecciona el icono de descarga, **Then** el sistema debe generar un archivo PDF descargable que contenga los datos visibles en la pantalla. **Escenario 2: Descarga filtrada por estado o fecha Given** que el usuario ha aplicado filtros por fecha, estado o cliente, **When** ejecuta la opción de descarga, **Then** el sistema debe generar un archivo PDF solo con los lotes que cumplen con los filtros seleccionados. **Escenario 3: Validación del contenido del archivo Given** que el usuario abre el archivo descargado, **When** revisa su contenido, **Then** el reporte debe incluir como mínimo: código del lote, tipo de tela, fecha, estado, cantidad, precio y observaciones (si las hubiera).  | EP02 |
+| US08 | Visualizar observaciones enviadas | **Como** distribuidor, **Quiero** ver todas las observaciones que he enviado, **Para** llevar un control de lo que fue observado y su estado actual. | **Escenario 1: Acceso al historial de observaciones Given** que el distribuidor se encuentra autenticado correctamente, **When** accede a la sección “Mis observaciones”, **Then** el sistema muestra una lista con los siguientes campos: lote asociado, fecha de envío, motivo registrado, evidencia adjunta (si existe), y el estado actual de la observación (pendiente, visto, rechazado o confirmado).   | EP03 |
+| US09 | Editar observación enviada (si no ha sido revisada aún) | Como distribuidor, Quiero poder editar una observación que aún no ha sido revisada por el empresario, Para corregir información o añadir detalles antes de su revisión. | **Escenario 1: Edición de observación no vista Given** que la observación enviada tiene el estado “pendiente”, **When** el distribuidor hace clic en el botón “Editar”, **Then** el sistema permite modificar el texto del motivo y actualizar o reemplazar la evidencia adjunta. **Escenario 2: Restricción si ya fue revisada Given** que la observación tiene estado “visto”, “rechazado” o “confirmado”, **When** el distribuidor intenta editarla, **Then** el sistema muestra un mensaje indicando: “No se puede editar una observación ya revisada” y bloquea la acción.  | EP03 |
+| US10 | Eliminar observación enviada (si no ha sido revisada aún) | Como distribuidor, Quiero eliminar una observación que aún no ha sido vista, Para retirarla del sistema si fue registrada por error. | **Escenario 1: Eliminación de observación pendiente Given** que la observación se encuentra en estado “pendiente”, **When** el distribuidor hace clic en la opción “Eliminar”, **Then** el sistema solicita una confirmación y, al confirmarse, elimina la observación de forma definitiva. **Escenario 2: Bloqueo de eliminación si ya fue revisada Given** que la observación ya ha sido vista, rechazada o confirmada, **When** el distribuidor intenta eliminarla, **Then** el sistema muestra un mensaje indicando: “Solo se pueden eliminar observaciones pendientes” y bloquea la acción.  | EP03 |
+| US11 | Marcar observaciones como vistas | Como empresario, Quiero marcar una observación como vista cuando la revise, Para llevar el control de qué observaciones ya fueron leídas. | **Escenario: Marcado como visto Given** que el empresario se encuentra autenticado y visualiza la sección de “Observaciones Recibidas”, **When** hace clic en la opción “Marcar como Visto” en una observación, **Then** el sistema cambia el estado de la observación a “Visto” y registra automáticamente la fecha y hora de lectura.  | EP03 |
+| US12 | Visualizar planes de suscripción disponibles | Como usuario, Quiero ver los planes de suscripción disponibles, Para comparar sus beneficios y elegir el que se ajuste a mis necesidades. | **Escenario 1: Acceso a la vista de planes Given** que el usuario está autenticado correctamente, **When** accede a la sección “Planes de suscripción”, **Then** el sistema muestra los planes disponibles (Básico y Corporativo) junto con sus beneficios y precios correspondientes. **Escenario 2: Detalles de cada plan Given** que el usuario está visualizando la sección de planes, **When** hace clic en la opción “Ver más” de uno de los planes, **Then** el sistema despliega la información detallada del plan seleccionado, incluyendo: número de lotes permitidos, acceso a estadísticas, cantidad de usuarios permitidos, y otros beneficios. | EP04 |
+| US13 | Cambiar de plan de suscripción | Como usuario, Quiero poder cambiar mi plan de suscripción, Para ajustar mi cuenta según el crecimiento de mi negocio. | **Escenario 1: Selección de nuevo plan Given** que el usuario está visualizando los planes de suscripción, **When** selecciona un plan diferente al actual y confirma el cambio, **Then** el sistema actualiza el plan activo del usuario y aplica los nuevos beneficios. **Escenario 2: Confirmación del cambio Given** que el usuario ya seleccionó un nuevo plan, **When** el sistema completa el proceso de actualización, **Then** muestra un mensaje de confirmación indicando que el cambio fue exitoso y especifica la fecha de vigencia del nuevo plan.  | EP04 |
+| US14 | Personalizar la vista de la plataforma | Como usuario, Quiero poder personalizar la vista de la plataforma (modo claro/oscuro, orden de elementos, tipo de visualización), Para sentirme más cómodo/a usando el sistema según mis preferencias. | **Escenario 1: Activar modo oscuro o claro Given** que el usuario accede a la sección de configuración de cuenta, **When** selecciona “Modo Oscuro” o “Modo Claro”, **Then** el sistema aplica de forma inmediata el modo de visualización elegido en toda la interfaz. **Escenario 2: Cambiar orden de visualización Given** que el usuario se encuentra en la sección de personalización, **When** selecciona un orden de visualización (por fecha, cliente o tipo de tela), **Then** el sistema reorganiza la información presentada en pantalla según la preferencia seleccionada.    | EP05 |
+| US15 | Editar datos del perfil | Como usuario, Quiero editar mi nombre, correo electrónico y foto de perfil o logo, Para mantener mi cuenta actualizada y personal. | **Escenario 1: Acceso al formulario de edición Given** que el usuario accede a la sección “Mi perfil” **When** hace clic en la opción “Editar”, **Then** el sistema muestra un formulario con los campos editables: nombre, correo electrónico y logo/foto. **Escenario 2: Guardado exitoso Given** que el usuario ha actualizado los datos del formulario, **When** hace clic en “Guardar cambios”, **Then** el sistema actualiza los datos correctamente y muestra el mensaje: “Perfil actualizado con éxito”.**Escenario 3: Validación de campos requeridos Given** que el usuario intenta guardar el formulario sin completar los campos obligatorios, **When** presiona “Guardar cambios”, **Then** el sistema muestra mensajes de error indicando qué campos faltan completar.  | EP05 |
+| US16 | Cerrar sesión de forma segura | Como usuario, Quiero cerrar sesión desde mi cuenta, Para asegurar mi privacidad cuando ya no esté usando la plataforma. | **Escenario: Cierre de sesión exitoso Given** que el usuario se encuentra autenticado, **When** hace clic en el botón “Cerrar sesión”, **Then** el sistema elimina la sesión activa del usuario y lo redirige a la pantalla de inicio de sesión.  | EP05 |
+| US17 | Cambiar modo de visualización (claro / oscuro) | Como usuario, Quiero cambiar entre modo claro y oscuro, Para personalizar la interfaz según mis preferencias visuales. | **Escenario: Activación de modo oscuro o claro Given** que el usuario se encuentra en la sección “Configuración de cuenta”, **When** selecciona una opción de visualización (modo claro u oscuro), **Then** el sistema aplica el modo seleccionado de forma inmediata en toda la  | EP05 |
+| US18 | Registrar lote por código automático o manual | Como distribuidor, Quiero registrar un nuevo lote utilizando un código generado automáticamente o ingresarlo manualmente, Para mantener orden en mis registros y adaptarme a mis necesidades de control. | **Escenario 1: Generación automática de código de lote Given** que el distribuidor se encuentra en el menú “Configuraciones”, **When** selecciona la opción “Generar código automáticamente”, **Then** el sistema genera un código único con el formato estándar (ej. LOT-20250421-001) y lo asigna automáticamente al nuevo lote. **Escenario 2: Ingreso manual de código de lote Given** que el distribuidor está en la misma sección, **When** selecciona la opción “Ingresar código manualmente”, **Then** el sistema habilita un campo editable para que el distribuidor escriba su propio código. **Escenario 3: Validación de unicidad del código Given** que el distribuidor ingresa manualmente un código de lote, **When** intenta guardar un código que ya está registrado en la base de datos, **Then** el sistema muestra un mensaje de error: “Este código ya ha sido registrado” y bloquea el registro.   | EP05 |
+| US19 | Editar datos del perfil | Como usuario, Quiero editar mi nombre, correo electrónico y foto/logo, Para mantener actualizada mi información de perfil. | **Escenario 1: Acceso al formulario de edición Given** que el usuario accede a la sección “Mi perfil”, **When** hace clic en la opción “Editar”, **Then** el sistema muestra un formulario con los campos editables: nombre, correo electrónico y logo/foto. **Escenario 2: Guardado exitoso Given** que el usuario ha actualizado los datos del formulario, **When** hace clic en “Guardar cambios”, **Then** el sistema actualiza los datos correctamente y muestra el mensaje: “Perfil actualizado con éxito”. **Escenario 3: Validación de campos requeridos Given** que el usuario intenta guardar el formulario sin completar los campos obligatorios, **When** presiona “Guardar cambios”, **Then** el sistema muestra mensajes de error indicando qué campos faltan completar.  | EP05 |
+| US20 | Cerrar sesión | Como usuario, Quiero cerrar sesión de forma segura, Para proteger mi información cuando dejo de usar la plataforma. | **Escenario: Cierre de sesión exitoso Given** que el usuario se encuentra autenticado, **When** hace clic en el botón “Cerrar sesión”, **Then** el sistema finaliza la sesión activa y redirige al usuario a la pantalla de inicio de sesión. . | EP05 |
+| US21 | Registro de usuario | Como nuevo usuario, quiero registrarme con mis datos personales para crear una cuenta en TextilFlow y poder ingresar a la plataforma. | **Escenario: Usuario se registra correctamente Given** el usuario se encuentra en la pantalla de registro **When** ingresa nombre, email y contraseña válidos y hace clic en "Iniciar sesión" **Then** el sistema registra la cuenta y redirige a la pantalla de selección de rol | EP01 |
+| US22 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña para ingresar a mi cuenta. | **Escenario1: Inicio de sesión exitoso Given** el usuario está en la pantalla de login **When** ingresa credenciales válidas y presiona “Entrar ahora” **Then** el sistema valida los datos y muestra la pantalla de selección de rol **Escenario2: Error en inicio de sesión Given** el usuario ingresa credenciales incorrectas **When** presiona “Entrar ahora” **Then** el sistema muestra un mensaje de error indicando que los datos no son válidos | EP01 |
+| US23 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvidarla, para poder acceder nuevamente a la plataforma. | **Escenario: Solicitud de recuperación de contraseña Given** el usuario hace clic en "¿Olvidaste tu contraseña?" **When** ingresa su email registrado **Then** el sistema envía un enlace de recuperación al correo proporcionado | EP01 |
+| US24 | Selección de tipo de usuario | Como usuario, quiero seleccionar si soy empresa o distribuidor al iniciar sesión, para que el sistema me muestre las funciones correspondientes a mi perfil. | **Escenario: Usuario selecciona su tipo Given** el usuario ha iniciado sesión correctamente **When** se muestra la pantalla “Selecciona tu tipo de usuario” **Then** el usuario hace clic en “Empresa” o “Distribuidor” **And** el sistema lo redirige al panel correspondiente según su elección | EP01 |
+| US25 | Cierre de sesión | Como usuario, quiero poder cerrar sesión, para proteger mi cuenta y salir de la plataforma cuando termine de usarla. | **Escenario: Cierre exitoso de sesión Given** el usuario está dentro de su panel **When** hace clic en “Cerrar sesión” desde el menú **Then** el sistema termina la sesión y lo redirige al login | EP01 |
+| US26 | Visualizar información principal sobre la plataforma | Como visitante, Quiero acceder a una descripción clara de la funcionalidad y propósito de TextilFlow, Para comprender de inmediato cómo puede ayudarme. | **Escenario: Acceso al mensaje principal en el hero Given** que el visitante accede a la landing page, **When** la página carga, **Then** el sistema muestra un encabezado con el mensaje: “Digitaliza el control de calidad textil con TextilFlow”, acompañado de un botón con el texto “Conoce más”.  | EP06 |
+| US27 | Conocer los beneficios de usar TextilFlow | Como visitante, Quiero ver de forma rápida los beneficios de usar la plataforma, Para entender su propuesta de valor. | **Escenario: Sección de “¿Por qué elegir TextilFlow?” Given** que el visitante se desplaza por la landing page, **When** llega a la sección de beneficios, **Then** el sistema muestra tres bloques con íconos y texto que presentan las ventajas: evitar errores de producción, documentación visual con evidencia y conexión colaborativa entre actores del proceso textil.  | EP06 |
+| US28 | Consultar información sobre la empresa | Como visitante, Quiero conocer quiénes están detrás de TextilFlow, Para confiar en la plataforma y su visión. | **Escenario: Acceso a “Quiénes somos” Given** que el visitante se encuentra navegando por la landing page, **When** se desplaza hasta la sección “Quiénes somos”, **Then** el sistema muestra una breve descripción de la startup, su misión y visión empresarial. | EP06 |
+| US29 | Comparar planes de suscripción disponibles | Como visitante, Quiero visualizar los planes ofrecidos con sus precios y beneficios, Para elegir el más adecuado según mis necesidades. | **Escenario: Visualización de los planes Given** que el visitante accede a la sección “Planes” en la landing page, **When** compara el Plan Básico y el Plan Corporativo, **Then** el sistema muestra de forma clara el precio, las características y las restricciones asociadas a cada plan.  | EP06 |
+| US30 | Resolver dudas frecuentes sobre el uso de la plataforma | Como visitante, Quiero leer respuestas a preguntas frecuentes, Para entender mejor cómo funciona y si es adecuada para mí. | **Escenario: Sección de preguntas frecuentes (FAQs) Given** que el visitante se encuentra en la landing page, **When** hace clic en una pregunta dentro de la sección de FAQs, **Then** el sistema despliega la respuesta correspondiente utilizando un formato de acordeón (plegable).  | EP06 |
+| US31 | Contactar al equipo de TextilFlow | Como visitante, Quiero enviar un mensaje de contacto a través de un formulario, Para obtener más información, resolver dudas o solicitar una demo. | **Escenario: Envío de formulario de contacto Given** que el visitante ha completado los campos del formulario (nombre, correo electrónico y mensaje), **When** hace clic en el botón “Enviar”, **Then** el sistema valida los campos obligatorios y muestra un mensaje de confirmación si la información es correcta. **Escenario adicional: Validación de campos vacíos o incorrectos Given** que el visitante deja campos vacíos o ingresa un correo inválido, **When** intenta enviar el formulario, **Then** el sistema muestra mensajes de error indicando los campos que deben corregirse. | EP06 |
+| US32 | Acceder a la opción de iniciar sesión | **Como visitante**, Quiero ver un botón de "Iniciar sesión" en el encabezado, **Para ingresar fácilmente a mi cuenta si ya estoy registrado**. | **Escenario: Acceso desde el encabezado Given** que el visitante se encuentra en la landing page, **When** visualiza el encabezado, **Then** el sistema debe mostrar un botón “Iniciar sesión” visible y funcional que redirige al usuario a la plataforma web (pantalla de login).   | EP06 |
+| US33 | Conocer las secciones del sitio desde el menú | **Como visitante**, Quiero ver un menú de navegación en el encabezado con accesos a Producto,Nosotros, Planes y Registro, **Para explorar fácilmente el contenido de la web**. | **Escenario: Navegación principal Given** que el visitante se encuentra en la parte superior de la landing page, **When** visualiza el menú de navegación, **Then** el sistema debe mostrar claramente cada sección del sitio (ej. Inicio, Beneficios, Planes, Quiénes somos, Contacto) y redirigir al visitante correctamente al hacer clic en cada una. | EP06 |
+| US34 | Visualizar información legal y de autor | **Como visitante**, Quiero ver información legal o de derechos de autor al final de la página, **Para conocer la propiedad y responsabilidad de la plataforma**. | **Escenario: Visualización del footer Given** que el visitante llega al final de la landing page, **When** visualiza el pie de página, **Then** el sistema debe mostrar el texto “© 2024 TextilFlow. Todos los derechos reservados” u otra información de copyright de forma clara y visible.  | EP06 |
+| US35 | Acceder a redes sociales o enlaces adicionales | **Como visitante**, Quiero acceder a los íconos o enlaces del footer, **Para seguir a TextilFlow en redes o explorar más contenido**. | **Escenario: Enlaces sociales desde el footer Given** que el visitante se encuentra en el pie de página, **When** visualiza los íconos de redes sociales (ej. Instagram, LinkedIn, Facebook), **Then** puede hacer clic en cualquiera de ellos y se abre en una nueva pestaña la red o página correspondiente asociada.  | EP06 |
+| US36 | Visualizar distribuidores actuales | **Como empresario,** Quiero ver un listado de los distribuidores con los que ya tengo relación, Para poder hacer solicitudes de lote o calificarlos. | **Escenario: Visualización de distribuidores actuales Given** que el empresario ha iniciado sesión y navega a “Distribuidores”, **When** selecciona la opción “Distribuidores actuales”, **Then** el sistema muestra una lista con nombre del distribuidor, correo, calificación, foto de perfil, y un botón “Pedir lote”. | EP07 |
+| US37 | Solicitar lote a un distribuidor actual | **Como empresario,** Quiero solicitar un lote desde el listado de distribuidores actuales, Para enviar detalles como tipo de tela, cantidad, color, dirección y comentario. | **Escenario: Envío de solicitud Given** que el empresario está en la sección de “Distribuidores actuales”, **When** hace clic en “Pedir Lote” y completa el formulario, **Then** el sistema guarda la solicitud y la envía al distribuidor correspondiente. | EP07 |
+| US38 | Calificar a un distribuidor | **Como empresario,** Quiero asignar una calificación con estrellas y dejar un comentario, Para registrar mi experiencia con un distribuidor. | **Escenario: Registro de calificación Given** que el empresario visualiza un distribuidor actual, **When** hace clic en las estrellas y escribe un comentario, **Then** el sistema guarda la calificación y la asocia al distribuidor. | EP07 |
+| US39 | Añadir nuevo distribuidor | **Como empresario,** Quiero acceder a un listado ordenado por calificación de distribuidores disponibles, Para poder enviarles una solicitud de conexión. | **Escenario: Visualización de nuevos distribuidores** Given que el empresario selecciona “Añadir Distribuidor”, **When** se carga la vista, **Then** el sistema muestra los distribuidores disponibles ordenados por calificación promedio. | EP07 |
+| US40 | Enviar solicitud a nuevo distribuidor | **Como empresario,** Quiero enviar una solicitud con tipo de tela, color, cantidad, dirección y comentario, Para iniciar una relación con un nuevo distribuidor. | **Escenario: Envío de solicitud a nuevo distribuidor** Given que el empresario visualiza un nuevo distribuidor, **When** hace clic en “Mandar solicitud” y completa el formulario, **Then** el sistema guarda y envía la solicitud al distribuidor.  | EP07 |
+| US41 | Visualizar solicitudes de empresas actuales | **Como distribuidor,** Quiero ver la lista de empresas con las que ya tengo una relación y que me han enviado una solicitud, Para revisar sus detalles y decidir si acepto o no el pedido. | **Escenario: Visualización de empresas actuales** Given que el distribuidor ha iniciado sesión y accede a “Solicitudes”, **When** hace clic en la pestaña “Empresas Actuales”, **Then** el sistema muestra una lista con nombre, correo de empresa y un botón “Aceptar Solicitud”.  | EP07 |
+| US42 | Ver detalles de solicitud de lote | **Como distribuidor,** Quiero poder ver los detalles completos de una solicitud expandiendo el panel, Para conocer lo que solicita la empresa antes de aceptarlo. | **Escenario: Expansión de detalles** Given que el distribuidor visualiza la lista de solicitudes, **When** hace clic en el icono desplegable, **Then** el sistema muestra tipo de tela, color, cantidad, dirección y comentario de la empresa.  | EP07 |
+| US43 | Aceptar solicitud de lote | **Como distribuidor,** Quiero aceptar una solicitud enviada por una empresa, Para comenzar con el registro y envío del lote solicitado. | **Escenario: Aceptación de solicitud** Given que el distribuidor está viendo los detalles de la solicitud, **When** hace clic en “Aceptar Solicitud”, **Then** el sistema marca la solicitud como aceptada y la asocia al flujo de “Registrar Lote”. | EP07 |
+| US44 | Ver nuevas empresas interesadas | **Como distribuidor,** Quiero ver solicitudes provenientes de empresas con las que aún no tengo relación, Para decidir si deseo comenzar a trabajar con ellas. | **Escenario: Visualización de empresas nuevas** Given que el distribuidor accede a la pestaña “Empresas nuevas”, **When** se cargan los datos, **Then** el sistema muestra empresas desconocidas que han enviado una solicitud con botón “Aceptar Solicitud” y posibilidad de ver detalles. | EP07 |
 
-## 
+**Technical Stories**
+----
 
-| **Epic / User Story ID** | **Título** | **Descripción** | **Criterios de Aceptación** | **Relacionado con (Epic ID)** |
-| --- | --- | --- | --- | --- |
-| **US-01** | **Ver estado de salud del residente** | **Como** familiar, **quiero** visualizar la información de salud actualizada de mi ser querido **para** mantenerme al tanto de su bienestar actual. | **AC01 – Autenticación de usuario**<br><br>Given el familiar ha ingresado correctamente a su cuenta  <br>When se encuentra dentro de la plataforma  <br>Then el sistema permite el acceso a las funciones de monitoreo<br><br>**AC02 – Visualización del perfil de salud**<br><br>Given el usuario accede a la sección del residente  <br>When selecciona el perfil específico de su familiar  <br>Then el sistema despliega los signos vitales y los registros médicos más recientes | **EP-001** |
-| --- | --- | --- | --- | --- |
-| **US-02** | **Recibir alertas críticas** | **Como** familiar, **quiero** ser notificado inmediatamente ante cualquier riesgo en la salud del residente **para** poder intervenir o tomar decisiones de urgencia. | **AC01 – Detección de anomalías**<br><br>Given el sistema monitorea los signos del paciente  <br>When se identifica un valor fuera de los rangos normales o críticos  <br>Then el sistema activa el protocolo de notificación<br><br>**AC02 – Envío de notificación de emergencia**<br><br>Given el familiar tiene habilitadas las alertas en su dispositivo  <br>When ocurre el evento crítico  <br>Then el sistema envía una alerta push o mensaje instantáneo al usuario | **EP-001** |
-| --- | --- | --- | --- | --- |
-| **US-03** | **Ver actividades diarias** | **Como** familiar, **quiero** revisar las tareas y dinámicas realizadas por mi ser querido **para** confirmar su nivel de participación y actividad en el centro. | **AC01 – Ingreso al registro de actividades**<br><br>Given el familiar se encuentra en el perfil del residente  <br>When navega hacia la pestaña de cronograma o actividades  <br>Then el sistema muestra la lista de acciones registradas por el personal<br><br>**AC02 – Resumen de participación**<br><br>Given el usuario consulta un día específico  <br>Then el sistema presenta un detalle descriptivo de la rutina completada por el adulto mayor | **EP-001** |
-| --- | --- | --- | --- | --- |
-| **US-04** | **Registrar actividad del residente** | **Como** cuidador, **quiero** anotar las actividades cotidianas del residente **para** mantener un historial detallado de su comportamiento y rutinas. | **AC01 – Acceso al formulario de registro**<br><br>Given el cuidador ha iniciado sesión con sus credenciales autorizadas  <br>When accede al módulo de actualización diaria del paciente  <br>Then el sistema habilita los campos para ingresar nuevas actividades<br><br>**AC02 – Persistencia de la información**<br><br>Given el cuidador completa el reporte de actividad  <br>When presiona el botón de guardar  <br>Then el sistema almacena la información vinculándola automáticamente al expediente del residente | **EP-001** |
-| --- | --- | --- | --- | --- |
-| **US-05** | **Evaluar estado emocional del residente** | **Como** cuidador, **quiero** registrar observaciones sobre el ánimo diario del residente **para** facilitar el seguimiento de su salud mental y bienestar psicológico. | **AC01 – Entrada al módulo emocional**<br><br>Given el personal de salud está autenticado en la aplicación  <br>When selecciona la opción de evaluación anímica dentro del perfil del paciente  <br>Then el sistema muestra la interfaz de carga de datos emocionales<br><br>**AC02 – Registro de observaciones psicológicas**<br><br>Given el cuidador ingresa el estado de ánimo percibido y comentarios adicionales  <br>When finaliza el registro  <br>Then el sistema guarda la evaluación para futuras consultas clínicas o familiares | **EP-001** |
-| --- | --- | --- | --- | --- |
-| **US-06** | **Enviar consultas al personal de cuidado** | **Como** familiar, **quiero** enviar consultas al personal de cuidado, **para** obtener información específica sobre el estado del paciente cuando lo necesite. | **AC01 – Acceso al módulo de mensajería**  <br>Given el familiar ha iniciado sesión  <br>When accede al apartado de mensajería del paciente  <br>Then el sistema muestra la interfaz de mensajería<br><br>**AC02 – Redacción y envío de mensaje**  <br>Given el familiar redacta un mensaje  <br>When presiona enviar  <br>Then el sistema registra el mensaje<br><br>**AC03 – Entrega al personal**  <br>Given el mensaje ha sido enviado  <br>Then el sistema lo envía al personal de cuidado correspondiente | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-07** | **Consultar respuestas del personal** | **Como** familiar, **quiero** consultar las respuestas del personal de cuidado, **para** mantenerme informado sobre el estado del paciente. | **AC01 – Acceso a la bandeja de mensajes**  <br>Given el familiar ha iniciado sesión  <br>When accede al módulo de mensajería  <br>Then puede visualizar las conversaciones disponibles<br><br>**AC02 – Visualización de respuestas**  <br>Given el personal ha respondido un mensaje  <br>When el familiar abre la conversación  <br>Then puede visualizar la respuesta asociada al paciente | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-08** | **Programar visitas al paciente** | **Como** familiar, **quiero** programar visitas al paciente, **para** coordinar horarios con el centro de cuidado de manera organizada. | **AC01 – Acceso al calendario**  <br>Given el familiar ha iniciado sesión  <br>When accede al calendario del paciente  <br>Then el sistema muestra los horarios disponibles<br><br>**AC02 – Registro de visita**  <br>Given el familiar selecciona fecha y hora  <br>When confirma la programación  <br>Then el sistema registra la solicitud de visita<br><br>**AC03 – Notificación al centro**  <br>Given la visita ha sido programada  <br>Then el sistema notifica al personal del centro de cuidado | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-09** | **Evaluar calidad del servicio** | **Como** familiar, **quiero** registrar una evaluación del servicio de cuidado, **para** contribuir a la mejora continua del servicio brindado. | **AC01 – Acceso a la evaluación**  <br>Given el familiar ha iniciado sesión  <br>When accede a la sección de evaluación  <br>Then el sistema muestra el formulario correspondiente<br><br>**AC02 – Registro de evaluación**  <br>Given el familiar completa el formulario  <br>When envía la evaluación  <br>Then el sistema registra la información de forma segura | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-10** | **Recibir alertas del estado del paciente** | **Como** familiar, **quiero** recibir notificaciones sobre cambios en el estado del paciente, **para** reaccionar de manera oportuna ante cualquier situación. | **AC01 – Detección de evento relevante  <br>**Given se registra un cambio relevante en el estado del paciente  <br>When el sistema detecta el evento  <br>Then se clasifica como alerta<br><br>**AC02 – Generación de notificación  <br>**Given el evento ha sido identificado  <br>When se procesa la información  <br>Then el sistema genera una notificación automática<br><br>**AC03 – Envío de notificación al familiar  <br>**Given la notificación ha sido generada  <br>Then se envía al familiar mediante el canal configurado | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-11** | **Compartir contenido con el paciente** | **Como** familiar, **quiero** compartir mensajes o contenido con el paciente, **para** mantener la conexión emocional durante su cuidado. | **AC01 – Acceso al módulo de mensajería  <br>**Given el familiar ha iniciado sesión  <br>When accede al módulo de mensajería  <br>Then puede iniciar la creación de contenido<br><br>**AC02 – Envío de contenido  <br>**Given el familiar redacta un mensaje o adjunta contenido  <br>When envía el contenido  <br>Then el sistema lo almacena correctamente<br><br>**AC03 – Asociación al perfil del paciente  <br>**Given el contenido ha sido enviado  <br>Then el sistema lo vincula al perfil del paciente | **EP-002** |
-| --- | --- | --- | --- | --- |
-| **US-12** | Ver reporte semanal de estado del residente | Como familiar, quiero ver un reporte semanal de salud para entender la evolución general. | **AC01 – Visualización de reporte semanal**<br><br>Given el familiar se encuentra autenticado y tiene acceso al perfil del residente.<br><br>When ingresa al módulo Reportes y selecciona el reporte semanal.<br><br>Then el sistema muestra gráficos, indicadores y un resumen del estado físico, emocional y eventos relevantes registrados en los últimos 7 días. | EP-006 |
-| --- | --- | --- | --- | --- |
-| **US-13** | Descargar reporte en PDF | Como familiar, quiero descargar el reporte semanal en formato PDF para archivarlo o compartirlo. | **AC01 – Descarga de reporte semanal en PDF**<br><br>Given el reporte semanal del residente está disponible en pantalla.<br><br>When el familiar selecciona la opción Descargar PDF.<br><br>Then el sistema genera el archivo en formato PDF con la información del reporte y permite su descarga inmediata. | EP-006 |
-| --- | --- | --- | --- | --- |
-| **US-14** | Visualizar estado nutricional | Como cuidador, quiero visualizar indicadores relacionados con la nutrición del residente para ajustar su plan alimenticio y detectar posibles riesgos. | **AC01 – Consulta de métricas nutricionales**<br><br>Given el cuidador accede a la vista de métricas.<br><br>When selecciona la categoría nutrición.<br><br>Then el sistema muestra gráficos de peso y registros alimenticios. | EP-006 |
-| --- | --- | --- | --- | --- |
-| **US-15** | Visualizar estado de movilidad | Como cuidador, quiero visualizar indicadores relacionados con la movilidad del residente para adaptar rutinas físicas y prevenir deterioro funcional. | **AC01 – Consulta de métricas movilidad**<br><br>Given el cuidador accede a la vista de métricas.<br><br>When selecciona la categoría movilidad.<br><br>Then el sistema muestra gráficos de desplazamiento y actividad físico. | EP-006 |
-| --- | --- | --- | --- | --- |
-| **US-16** | Visualizar estado emocional | Como cuidador, quiero visualizar indicadores relacionados con el estado de ánimo del residente para identificar cambios emocionales y mejorar su bienestar integral. | **AC01 – Consulta de métricas emocionales**<br><br>Given el cuidador accede a la vista de métricas.<br><br>When selecciona la categoría estado de ánimo.<br><br>Then el sistema muestra gráficos de indicadores emocionales y registros conductuales. | EP-006 |
-| --- | --- | --- | --- | --- |
-| **US-17** | Registro de Inventario Farmacológico | Como cuidador, quiero catalogar nuevos medicamentos en el inventario del residente, con el fin de mantener un control centralizado de los insumos disponibles para su tratamiento. | Given: El cuidador se encuentra autenticado en el módulo de inventario.<br><br>When: Ingresa el nombre, dosis, fecha de vencimiento y lote en el formulario de registro.<br><br>Then: El sistema valida que la fecha no sea anterior a la actual y persiste los datos vinculándolos al perfil del residente. | EP-003 |
-| --- | --- | --- | --- | --- |
-| **US-18** | Depuración de Stock Caducado | Como cuidador, quiero que el sistema me permita identificar y retirar medicamentos vencidos, para garantizar la seguridad sanitaria y evitar errores críticos en la administración. | Given: Existen medicamentos registrados cuya fecha de vencimiento ha expirado.<br><br>When: El cuidador selecciona el ítem caducado y confirma su retiro del stock activo.<br><br>Then: El sistema actualiza el estado del medicamento a "Retirado por caducidad" y genera un registro en el log de auditoría. | EP-003 |
-| --- | --- | --- | --- | --- |
-| **US-19** | Notificaciones de Administración Programada | Como cuidador, quiero recibir alertas push automáticas en mi dispositivo móvil, para cumplir estrictamente con el esquema posológico definido por el médico. | Given: Existe un cronograma de medicación activo para un residente.<br><br>When: Se alcanza la hora programada para la dosis (con un margen de 5 minutos previos).<br><br>Then: El sistema envía una notificación al cuidador responsable con los detalles del medicamento y la dosis. | EP-003 |
-| --- | --- | --- | --- | --- |
-| **US-20** | Bitácora de Administración Clínica | Como cuidador, quiero registrar la ejecución de cada toma, para generar un historial clínico auditable y transparente para los familiares y médicos. | Given: El sistema ha emitido una alerta de administración.<br><br>When: El cuidador marca la tarea como "Completada" tras suministrar el medicamento.<br><br>Then: El sistema registra automáticamente la fecha, hora exacta, identificación del cuidador y actualiza el stock del residente. | EP-003 |
-| --- | --- | --- | --- | --- |
-| **US-21** | Monitoreo de Niveles Críticos de Stock | Como administrador, quiero recibir alertas de reabastecimiento, para prevenir la interrupción de tratamientos por falta de suministro. | Given: Se ha definido un umbral mínimo de seguridad para un medicamento crítico.<br><br>When: Tras un registro de administración, el stock cae por debajo de dicho umbral.<br><br>Then: El sistema envía una alerta prioritaria al panel del administrador y genera una sugerencia de compra. | EP-003 |
-| --- | --- | --- | --- | --- |
-| **US-22** | Registrar médico tratante | Como cuidador, quiero registrar los datos de los médicos especialistas de cada residente para poder contactarlos rápidamente desde la app en caso de emergencia. | **AC01 – Registro de contacto**<br><br>Given el cuidador accede al perfil clínico del residente<br><br>When selecciona "Añadir médico"<br><br>Then el sistema permite guardar el nombre, especialidad y teléfono del doctor.<br><br>**AC02 – Asociación al paciente**<br><br>Given los datos del médico están completos<br><br>When se guardan los cambios<br><br>Then el sistema vincula a ese médico directamente al historial del adulto mayor. | EP-004 |
-| --- | --- | --- | --- | --- |
-| **US-23** | Editar datos médicos | Como cuidador, quiero actualizar la información de los médicos especialistas para asegurar que los números de contacto y horarios estén siempre vigentes. | **AC01 – Actualización de información**<br><br>Given el cuidador está en el directorio médico de la app<br><br>When edita el teléfono o correo de un especialista y guarda<br><br>Then el sistema actualiza la base de datos y refleja el nuevo contacto para todo el personal. | EP-004 |
-| --- | --- | --- | --- | --- |
-| **US-24** | Registrar compañeros de turno | Como cuidador, quiero registrar a otros compañeros operativos en el sistema para mantener un registro claro de quién atendió a cada residente durante el día. | **AC01 – Creación de perfil interno**<br><br>Given el cuidador con permisos de gestión ingresa a la sección de personal<br><br>When completa los datos básicos de un nuevo compañero<br><br>Then el sistema le genera un acceso operativo para registrar actividades. | EP-004 |
-| --- | --- | --- | --- | --- |
-| **US-25** | Visualizar cronograma de turnos | Como cuidador, quiero visualizar el cronograma de turnos del personal en la plataforma para saber con qué compañeros contaré durante mi jornada. | **AC01 – Acceso al calendario de personal**<br><br>Given el cuidador ingresa a la vista de "Turnos"<br><br>When consulta el día actual o la semana<br><br>Then el sistema despliega quiénes están a cargo en los turnos de mañana, tarde y noche. | EP-004 |
-| --- | --- | --- | --- | --- |
-| **US-26** | Registrar relevo de turno | Como cuidador, quiero registrar mi salida y dejar notas de relevo en la plataforma para mantener la continuidad de la información con el compañero que entra. | **AC01 – Registro de notas de turno**<br><br>Given el cuidador termina su jornada<br><br>When ingresa las observaciones generales y marca "Fin de turno"<br><br>Then el sistema guarda el registro y lo resalta para el cuidador entrante. | EP-004 |
-| --- | --- | --- | --- | --- |
-| **US-27** | Conocer funciones principales | Como familiar, quiero ver un resumen claro de las funcionalidades de MediBridge en la pantalla de inicio antes de registrarme, para confirmar si la app soluciona mi necesidad de monitoreo. | **AC01 – Exploración de la plataforma**<br><br>Given el familiar navega en la página principal (Landing Page)<br><br>When hace scroll en la sección de servicios<br><br>Then visualiza iconos y descripciones de funciones como "Signos vitales" y "Alertas médicas". | EP-005 |
-| --- | --- | --- | --- | --- |
-| **US-28** | Leer políticas de seguridad y visión | Como familiar, quiero leer información sobre la seguridad de los datos y el propósito de VitalSync, para tener la confianza necesaria antes de ingresar el historial de mi ser querido. | **AC01 – Transparencia y confianza**<br><br>Given el familiar busca información institucional<br><br>When ingresa a la sección "Nosotros"<br><br>Then el sistema muestra claramente cómo se protegen los datos médicos y la misión de la plataforma. | EP-005 |
-| --- | --- | --- | --- | --- |
-| **US-29** | Validar testimonios | Como familiar, quiero leer experiencias y reseñas de otras familias dentro del portal informativo, para validar que la aplicación realmente funciona y es fácil de usar. | **AC01 – Visualización de pruebas sociales**<br><br>Given el familiar está indeciso sobre usar la aplicación<br><br>When navega hasta la sección de "Testimonios"<br><br>Then puede leer opiniones reales de otros familiares sobre cómo mejoró su comunicación con el centro. | EP-005 |
-| --- | --- | --- | --- | --- |
-| **US-30** | Evaluar planes de suscripción | Como familiar, quiero visualizar los planes de pago detallados en la página de inicio, para evaluar si los costos se ajustan a mi presupuesto antes de descargar la app. | **AC01 – Transparencia de precios**<br><br>Given el familiar quiere conocer los costos<br><br>When accede a la pestaña de "Planes"<br><br>Then el sistema despliega una tabla comparativa clara con el plan gratuito y el plan premium (reportes avanzados). | EP-005 |
-| --- | --- | --- | --- | --- |
+| ID | Título Técnico | Descripción | Relacionado con |
+| :---- | :---- | :---- | :---- |
+| TS01 | Endpoint GET | Como developer, quiero implementar un endpoint para obtener los lotes registrados del empresario. | US01 |
+| TS02 | Endpoint GET | Como developer, quiero implementar un endpoint para obtener los lotes enviados por un distribuidor. | US02 |
+| TS03 | Middleware de validación de rol distribuidor | Como developer, quiero asegurarme de que solo los distribuidores puedan acceder a sus propios lotes. | US02 |
+| TS04 | Implementar endpoint con filtros  | Como developer, quiero implementar un endpoint que permita filtrar los lotes por estado, fecha o cliente. | US03 |
+| TS05 | Implementar endpoint de búsqueda  | Como developer, quiero permitir búsquedas por código o cliente desde el backend mediante query param. | US03 |
+| TS06 | Endpoint GET | Como developer, quiero crear un endpoint que devuelva los datos completos de un lote específico por su ID. | US04 |
+| TS07 | Endpoint POST | Como developer, quiero implementar un endpoint que registre una nueva observación asociada a un lote. | US05 |
+| TS08 | Endpoint POST | Como developer, quiero implementar un endpoint para registrar un nuevo lote con estado inicial “Por enviar”. | US06 |
+| TS9 | Validar campos obligatorios en el registro de lote | Como developer, quiero asegurar que todos los campos requeridos estén completos antes de guardar el lote. | US06 |
+| TS10 | Generar PDF con datos visibles de lotes | Como developer, quiero generar un archivo PDF con los datos mostrados en pantalla para permitir su descarga. | US07 |
+| TS11 | Aplicar filtros a los datos descargados | Como developer, quiero que el archivo descargado respete los filtros aplicados en la vista de lotes. | US07 |
+| TS12 | Endpoint GET | Como developer, quiero crear un endpoint que devuelva las observaciones enviadas por el distribuidor autenticado. | US08 |
+| TS13 | Endpoint PUT | Como developer, quiero permitir la edición de una observación si su estado es “pendiente”. | US09 |
+| TS14 | Endpoint DELETE | Como developer, quiero permitir la eliminación de observaciones con estado “pendiente”. | US10 |
+| TS15 | Endpoint PUT | Como developer, quiero crear un endpoint para actualizar el estado de una observación a “Visto”. | US11 |
+| TS16 | Endpoint GET | Como developer, quiero crear un endpoint que devuelva la lista de planes de suscripción disponibles. | US12 |
+| TS17 |  Endpoint GET  | Como developer, quiero permitir obtener el detalle completo de un plan seleccionado. | US12 |
+| TS18 | Endpoint PUT | Como developer, quiero permitir que el usuario actualice su plan de suscripción desde su cuenta. | US13 |
+| TS19 | Generar código automático único con formato estándar | Como developer, quiero implementar la lógica para generar un código único con el formato LOT-YYYYMMDD-XXX. | US18 |
+| TS20 | Habilitar campo para ingreso manual de código | Como developer, quiero permitir al usuario ingresar un código manual desde la configuración. | US18 |
+| TS21 |  Endpoint PUT /api/usuarios/{id} para actualizar perfil  | Como developer, quiero crear un endpoint que permita actualizar nombre, email y logo del usuario. | US19 |
+| TS22 |  Implementar funcionalidad de cierre de sesión en frontend  | Como developer, quiero implementar el cierre de sesión desde la interfaz y redirigir al login. | US20 |
+| TS23 |  Invalidar sesión en backend  | Como developer, quiero asegurarme de que el token o sesión activa se invalide correctamente en backend. | US20 |
+| TS24 | Implementar menú de navegación fijo en la landing page | Como developer, quiero crear un menú en el encabezado que muestre todas las secciones principales del sitio. | US33 |
+| TS25 | Configurar apertura de enlaces en nueva pestaña | Como developer, quiero asegurar que cada enlace social se abra en una nueva pestaña del navegador. | US35 |
+| TS26 | Endpoint GET distribuidores actuales | **Como** developer, **Quiero** implementar un endpoint que devuelva los distribuidores asociados al empresario autenticado, **Para** mostrarlos en la vista de “Distribuidores actuales”. | US36 |
+| TS27 | Endpoint POST solicitud de lote | **Como developer,** Quiero implementar un endpoint que permita registrar una solicitud de lote desde un empresario a un distribuidor, Para guardar tipo de tela, color, cantidad, dirección y comentario. | US37, US40 |
+| TS28 | Endpoint POST calificación de distribuidor | **Como developer,** Quiero permitir que el empresario califique a un distribuidor y deje un comentario, Para registrar esa interacción y calcular promedio de calificaciones. | US38 |
+| TS29 | Endpoint GET distribuidores disponibles | **Como developer,** Quiero obtener la lista de distribuidores no asociados al empresario, ordenados por calificación, Para mostrarla en la vista de “Añadir Distribuidor”. | US39 |
+| TS30 | Endpoint GET solicitudes por distribuidor | **Como** developer**, Quiero** crear un endpoint que devuelva las solicitudes de lote agrupadas por empresas actuales y nuevas, **Para** mostrar esta información al distribuidor. | US41, US44 |
+| TS31 | Endpoint GET detalles de solicitud | **Como developer, Quiero** implementar un endpoint que devuelva los detalles completos de la solicitud (tipo de tela, color, cantidad, etc.), **Para que** se puedan visualizar al expandir la tarjeta. | US42 |
+| TS32 |  Endpoint PUT aceptar solicitud | **Como developer, Quiero** crear una funcionalidad que permita al distribuidor aceptar una solicitud, **Para** cambiar su estado y asociarla al proceso de generación de lote. | US43 |
 
-## 
 
-## 3.3. Impact Map
+### 3.3. Product Backlog
+
+El criterio establecido para los Story Points es la escala Fibonacci
+
+
+| \# Orden  | User Story Id | Título  | Descripción  | Story Points (1 / 2 / 3 / 5 / 8\)  |
+| :---- | :---- | :---- | :---- | :---- |
+| 1 | US01 | Visualizar listado de lotes recibidos | Como empresario, Quiero visualizar una lista de todos los lotes que he recibido, Para saber su estado actual y tomar decisiones sobre su aceptación o rechazo. | 5 |
+| 2 | US02 | Visualizar listado de lotes enviados | Como distribuidor, Quiero ver todos los lotes que he enviado a las empresas, Para hacer seguimiento de su estado. | 5 |
+| 3 | US03 | Filtrar y buscar lotes por distintos criterios | Como usuario (empresario o distribuidor), Quiero buscar y filtrar los lotes por código, cliente, tipo de tela, estado o fecha, Para encontrar fácilmente la información que necesito. | 5 |
+| 4 | US04 | Ver detalles de un lote específico | Como usuario, Quiero poder ver los detalles completos de un lote, Para tomar decisiones informadas. | 5 |
+| 5 | US05 | Enviar observaciones sobre un lote recibido | Como empresario, Quiero poder enviar una observación sobre un lote que recibí, Para alertar al distribuidor de problemas en el producto. | 3 |
+| 6 | US06 | Registrar y enviar lote | Como distribuidor, Quiero registrar un nuevo lote con todos los datos necesarios, Para enviarlo a un empresario y dar seguimiento a su evaluación. | 3 |
+| 7 | US07 | Descargar reporte de lotes | Como usuario (empresario o distribuidor), Quiero poder descargar un reporte con la información de mis lotes, Para llevar un respaldo o análisis fuera de la plataforma. | 3 |
+| 8 | US08 | Visualizar observaciones enviadas | Como distribuidor, Quiero ver todas las observaciones que he enviado, Para llevar un control de lo que fue observado y su estado actual. | 3 |
+| 9 | US09 | Editar observación enviada (si no ha sido revisada aún) | Como distribuidor, Quiero poder editar una observación que aún no ha sido revisada por el empresario, Para corregir información o añadir detalles antes de su revisión. | 3 |
+| 10 | US10 | Eliminar observación enviada (si no ha sido revisada aún) | Como distribuidor, Quiero eliminar una observación que aún no ha sido vista, Para retirarla del sistema si fue registrada por error. | 2 |
+| 11 | US11 | Marcar observaciones como vistas | Como empresario, Quiero marcar una observación como vista cuando la revise, Para llevar el control de qué observaciones ya fueron leídas. | 2 |
+| 12 | US12 | Visualizar planes de suscripción disponibles | Como usuario, Quiero ver los planes de suscripción disponibles, Para comparar sus beneficios y elegir el que se ajuste a mis necesidades. | 2 |
+| 13 | US13 | Cambiar de plan de suscripción | Como usuario, Quiero poder cambiar mi plan de suscripción, Para ajustar mi cuenta según el crecimiento de mi negocio. | 2 |
+| 14 | US14 | Personalizar la vista de la plataforma | Como usuario, Quiero poder personalizar la vista de la plataforma (modo claro/oscuro, orden de elementos, tipo de visualización), Para sentirme más cómodo/a usando el sistema según mis preferencias. | 3 |
+| 15 | US15 | Editar datos del perfil | Como usuario, Quiero editar mi nombre, correo electrónico y foto de perfil o logo, Para mantener mi cuenta actualizada y personal. | 2 |
+| 16 | US16 | Cerrar sesión de forma segura | Como usuario, Quiero cerrar sesión desde mi cuenta, Para asegurar mi privacidad cuando ya no esté usando la plataforma. | 1 |
+| 17 | US17 | Cambiar modo de visualización (claro / oscuro) | Como usuario, Quiero cambiar entre modo claro y oscuro, Para personalizar la interfaz según mis preferencias visuales. | 1 |
+| 18 | US18 | Registrar lote por código automático o manual | Como distribuidor, Quiero registrar un nuevo lote utilizando un código generado automáticamente o ingresarlo manualmente, Para mantener orden en mis registros y adaptarme a mis necesidades de control. | 3 |
+| 19 | US19 | Editar datos del perfil | Como usuario, Quiero editar mi nombre, correo electrónico y foto/logo, Para mantener actualizada mi información de perfil. | 2 |
+| 20 | US20 | Cerrar sesión | Como usuario, Quiero cerrar sesión de forma segura, Para proteger mi información cuando dejo de usar la plataforma. | 1 |
+| 21 | US21 | Registro de usuario | Como nuevo usuario, quiero registrarme con mis datos personales para crear una cuenta en TextilFlow y poder ingresar a la plataforma. | 2 |
+| 22 | US22 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con mi correo y contraseña para ingresar a mi cuenta. | 2 |
+| 23 | US23 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvidarla, para poder acceder nuevamente a la plataforma. | 2 |
+| 24 | US24 | Selección de tipo de usuario | Como usuario, quiero seleccionar si soy empresa o distribuidor al iniciar sesión, para que el sistema me muestre las funciones correspondientes a mi perfil. | 1 |
+| 25 | US25 | Cierre de sesión | Como usuario, quiero poder cerrar sesión, para proteger mi cuenta y salir de la plataforma cuando termine de usarla. | 1 |
+| 26 | US26 | Visualizar información principal sobre la plataforma | Como visitante, Quiero acceder a una descripción clara de la funcionalidad y propósito de TextilFlow, Para comprender de inmediato cómo puede ayudarme. | 1 |
+| 27 | US27 | Conocer los beneficios de usar TextilFlow | Como visitante, Quiero ver de forma rápida los beneficios de usar la plataforma, Para entender su propuesta de valor.  | 1 |
+| 28 | US28 | Consultar información sobre la empresa | Como visitante, Quiero conocer quiénes están detrás de TextilFlow, Para confiar en la plataforma y su visión. | 1 |
+| 29 | US29 | Comparar planes de suscripción disponibles | Como visitante, Quiero visualizar los planes ofrecidos con sus precios y beneficios, Para elegir el más adecuado según mis necesidades.  | 2 |
+| 30 | US30 | Resolver dudas frecuentes sobre el uso de la plataforma | Como visitante, Quiero leer respuestas a preguntas frecuentes, Para entender mejor cómo funciona y si es adecuada para mí.  | 2 |
+| 31 | US31 | Contactar al equipo de TextilFlow | Como visitante, Quiero enviar un mensaje de contacto a través de un formulario, Para obtener más información, resolver dudas o solicitar una demo.  | 3 |
+| 32 | US32 | Acceder a la opción de iniciar sesión | **Como visitante**, Quiero ver un botón de "Iniciar sesión" en el encabezado, **Para ingresar fácilmente a mi cuenta si ya estoy registrado**. | 3 |
+| 33 | US33 | Conocer las secciones del sitio desde el menú | **Como visitante**, Quiero ver un menú de navegación en el encabezado con accesos a Producto,Nosotros, Planes y Registro, **Para explorar fácilmente el contenido de la web**. | 3 |
+| 34 | US34 | Visualizar información legal y de autor | **Como visitante**, Quiero ver información legal o de derechos de autor al final de la página, **Para conocer la propiedad y responsabilidad de la plataforma**. | 1 |
+| 35 | US35 | Acceder a redes sociales o enlaces adicionales | **Como visitante**, Quiero acceder a los íconos o enlaces del footer, **Para seguir a TextilFlow en redes o explorar más contenido**. | 1 |
+| 36 | US36 | Visualizar distribuidores actuales | **Como empresario,** Quiero ver un listado de los distribuidores con los que ya tengo relación, Para poder hacer solicitudes de lote o calificarlos. | 3 |
+| 37 | US37 | Solicitar lote a un distribuidor actual | **Como empresario,** Quiero solicitar un lote desde el listado de distribuidores actuales, Para enviar detalles como tipo de tela, cantidad, color, dirección y comentario. | 5 |
+| 38 | US38 | Calificar a un distribuidor | **Como empresario,** Quiero asignar una calificación con estrellas y dejar un comentario, Para registrar mi experiencia con un distribuidor. | 3 |
+| 39 | US39 | Añadir nuevo distribuidor | **Como empresario,** Quiero acceder a un listado ordenado por calificación de distribuidores disponibles, Para poder enviarles una solicitud de conexión. | 3 |
+| 40 | US40 | Enviar solicitud a nuevo distribuidor | **Como empresario,** Quiero enviar una solicitud con tipo de tela, color, cantidad, dirección y comentario, Para iniciar una relación con un nuevo distribuidor. | 5 |
+| 41 | US41 | Visualizar solicitudes de empresas actuales | **Como distribuidor,** Quiero ver la lista de empresas con las que ya tengo una relación y que me han enviado una solicitud, Para revisar sus detalles y decidir si acepto o no el pedido. | 3 |
+| 42 | US42 | Ver detalles de solicitud de lote | **Como distribuidor,** Quiero poder ver los detalles completos de una solicitud expandiendo el panel, Para conocer lo que solicita la empresa antes de aceptarlo. | 2 |
+| 43 | US43 | Aceptar solicitud de lote | **Como distribuidor,** Quiero aceptar una solicitud enviada por una empresa, Para comenzar con el registro y envío del lote solicitado. | 3 |
+| 44 | US44 | Ver nuevas empresas interesadas | **Como distribuidor,** Quiero ver solicitudes provenientes de empresas con las que aún no tengo relación, Para decidir si deseo comenzar a trabajar con ellas. | 3 |
+
+**Link de trello:**
+[FALTA LINK](FALTA LINK)
+
+
+### 3.4. Impact Map
 
 El Impact Mapping alinea los objetivos del negocio con las acciones de los usuarios y las funcionalidades del sistema, asegurando la generación de valor (Adzic, 2012).
 
 **Impact Map del Segmento #1**
-
+<p align="center"><img src="./assets/tp1/Impact map 1.png" width="300"/></p>
 Nota. Elaboración en UXPRESSIA.
 
 **Impact Map del Segmento #2**
-
+<p align="center"><img src="./assets/tp1/Impact map 2.png" width="300"/></p>
 Nota. Elaboración en UXPRESSIA.
 
-## 3.4. Product Backlog
 
-### El criterio establecido para los Story Points es la escala Fibonacci
 
-| **\# Orden** | **User Story Id** | **Título** | **Descripción** | **Story Points (1 / 2 / 3 / 5 / 8)** |
-| --- | --- | --- | --- | --- |
-| 1   | US-01 | Ver estado de salud del residente | Como familiar, quiero visualizar la información de salud actualizada de mi ser querido para mantenerme al tanto de su bienestar actual. | 5   |
-| --- | --- | --- | --- | --- |
-| 2   | US-02 | Recibir alertas críticas | Como familiar, quiero ser notificado inmediatamente ante cualquier riesgo en la salud del residente para poder intervenir o tomar decisiones de urgencia. | 8   |
-| --- | --- | --- | --- | --- |
-| 3   | US-06 | Enviar consultas al personal de cuidado | Como familiar, quiero enviar consultas al personal de cuidado para obtener información específica sobre el estado del paciente cuando lo necesite. | 5   |
-| --- | --- | --- | --- | --- |
-| 4   | US-07 | Consultar respuestas del personal | Como familiar, quiero consultar las respuestas del personal de cuidado para mantenerme informado sobre el estado del paciente. | 3   |
-| --- | --- | --- | --- | --- |
-| 5   | US-04 | Registrar actividad del residente | Como cuidador, quiero anotar las actividades cotidianas del residente para mantener un historial detallado de su comportamiento y rutinas. | 5   |
-| --- | --- | --- | --- | --- |
-| 6   | US-05 | Evaluar estado emocional del residente | Como cuidador, quiero registrar observaciones sobre el ánimo diario del residente para facilitar el seguimiento de su salud mental y bienestar psicológico. | 3   |
-| --- | --- | --- | --- | --- |
-| 7   | US-10 | Recibir alertas del estado del paciente | Como familiar, quiero recibir notificaciones sobre cambios en el estado del paciente para reaccionar de manera oportuna ante cualquier situación. | 5   |
-| --- | --- | --- | --- | --- |
-| 8   | US-12 | Ver reporte semanal de estado del residente | Como familiar, quiero ver un reporte semanal de salud para entender la evolución general. | 5   |
-| --- | --- | --- | --- | --- |
-| 9   | US-13 | Descargar reporte en PDF | Como familiar, quiero descargar el reporte semanal en formato PDF para archivarlo o compartirlo. | 3   |
-| --- | --- | --- | --- | --- |
-| 10  | US-17 | Registro de Inventario Farmacológico | Como cuidador, quiero catalogar nuevos medicamentos en el inventario del residente para mantener un control centralizado de los insumos disponibles para su tratamiento. | 5   |
-| --- | --- | --- | --- | --- |
-| 11  | US-19 | Notificaciones de Administración Programada | Como cuidador, quiero recibir alertas push automáticas en mi dispositivo móvil para cumplir estrictamente con el esquema posológico definido por el médico. | 8   |
-| --- | --- | --- | --- | --- |
-| 12  | US-20 | Bitácora de Administración Clínica | Como cuidador, quiero registrar la ejecución de cada toma para generar un historial clínico auditable y transparente para familiares y médicos. | 5   |
-| --- | --- | --- | --- | --- |
-| 13  | US-25 | Visualizar cronograma de turnos | Como cuidador, quiero visualizar el cronograma de turnos del personal en la plataforma para saber con qué compañeros contaré durante mi jornada. | 3   |
-| --- | --- | --- | --- | --- |
-| 14  | US-26 | Registrar relevo de turno | Como cuidador, quiero registrar mi salida y dejar notas de relevo en la plataforma para mantener la continuidad de la información con el compañero que entra. | 5   |
-| --- | --- | --- | --- | --- |
-| 15  | US-27 | Evaluar planes de suscripción | Como familiar, quiero visualizar los planes de pago detallados en la página de inicio para evaluar si los costos se ajustan a mi presupuesto antes de descargar la app. | 2   |
-| --- | --- | --- | --- | --- |
 
-Trello: https://trello.com/invite/b/69e4598cdf415647227bebc0/ATTI9727f57d62798d1f246ba76cc21b3082FFB1A07B/product-backlog-vitalsync
+## Conclusiones 
 
-# Capítulo IV: Product Architecture Design
+#FALTA
 
-En este capítulo el equipo aplica el método ADD v3 del Instituto de Ingeniería de Software (SEI).
-
-## 4.1 Design Concepts, ViewPoints & ER Diagrams
-
-### 4.1.1 Principles Statements
-
-1\. Separación de responsabilidades por dominio: Cada componente del sistema debe encargarse de una funcionalidad específica del dominio, como monitoreo del paciente, comunicación o gestión de información, evitando dependencias innecesarias entre ellos.
-
-2\. Comunicación asíncrona sobre comunicación síncrona: Se priorizará el uso de comunicación asíncrona para el intercambio de información entre componentes, especialmente en eventos como alertas o cambios en el estado del paciente, permitiendo un mejor manejo de la carga y reduciendo el acoplamiento.
-
-3\. API First Design: Todas las funcionalidades del sistema deben exponerse mediante APIs bien definidas, facilitando la integración entre componentes y el desarrollo de aplicaciones cliente.
-
-4\. Seguridad mediante autenticación basada en tokens: El sistema debe implementar mecanismos de autenticación seguros, como el uso de tokens (por ejemplo, JWT), para proteger el acceso a la información del paciente.
-
-5\. Uso de librerías y frameworks con soporte comercial: Se priorizará el uso de tecnologías ampliamente adoptadas y con soporte activo, como frameworks consolidados, para reducir riesgos y facilitar el mantenimiento del sistema.
-
-6\. Evolución progresiva desde arquitectura existente: La transición desde una arquitectura monolítica hacia una arquitectura basada en servicios se realizará de manera incremental y utilizando patrones de descomposición, permitiendo validar decisiones y reducir riesgos durante el desarrollo.
-
-### 4.1.2 Approaches Statements Architectural Styles & Patterns
-
-**Approaches Statements:**
-
-\-Domain-Driven Design (DDD): Se adopta Domain-Driven Design (DDD) como enfoque para modelar el sistema en función del dominio del problema, identificando contextos delimitados alineados a las funcionalidades principales como monitoreo del paciente, comunicación entre actores y gestión de información. Este enfoque permite mantener coherencia entre el modelo de negocio y la implementación, facilitando la evolución del sistema y la comprensión entre stakeholders técnicos y no técnicos.
-
-\-Attribute-Driven Design (ADD): Se utiliza el método ADD v3 como guía para el diseño arquitectónico, permitiendo tomar decisiones basadas en los drivers del sistema, como funcionalidades principales, restricciones y necesidades de calidad. Este enfoque permite estructurar la arquitectura de manera iterativa, refinando progresivamente los componentes del sistema en función de los requerimientos identificados.
-
-**Architectural Styles:**
-
-\-Cliente-Servidor: Se adopta una arquitectura cliente-servidor que establece una separación entre las aplicaciones cliente (por ejemplo, interfaces web) y los servicios backend. Este estilo permite que múltiples clientes consuman los servicios del sistema de manera independiente, facilitando la escalabilidad y mantenibilidad.
-
-\-Microservicios: El sistema se implementará bajo un estilo arquitectónico de microservicios, donde cada funcionalidad principal del dominio se desarrolla como un servicio independiente. Este enfoque permite desplegar, escalar y evolucionar cada componente de forma autónoma, alineándose con la necesidad de crecimiento del sistema y su transición desde una arquitectura monolítica.
-
-**Design Patterns:**
-
-\-API Gateway: Se utilizará el patrón API Gateway como punto de entrada único para las solicitudes de los clientes, centralizando el acceso a los distintos servicios del sistema. Este patrón permite gestionar aspectos como autenticación, enrutamiento de solicitudes y agregación de respuestas, simplificando la interacción entre clientes y microservicios.
-
-\-Database per Service: Se adopta el patrón Database per Service, donde cada microservicio gestiona su propia base de datos de forma independiente. Este enfoque permite asegurar bajo acoplamiento entre servicios, mayor autonomía en la evolución del sistema y una mejor alineación con los bounded contexts definidos mediante DDD.
-
-\-Model-View-Controller (MVC): Se aplicará el patrón MVC en los servicios backend para separar la lógica de presentación, la lógica de negocio y el acceso a datos. Esto facilita el mantenimiento del código, mejora la organización interna de los servicios y permite realizar pruebas de manera más eficiente.
-
-### 4.1.3 Context Diagram
-
-El diagrama de contexto de MediBridge muestra cómo la plataforma de monitoreo y gestión del cuidado de adultos mayores interactúa con sus usuarios principales y sistemas externos. La plataforma actúa como el sistema central que conecta a tres tipos de usuarios con diferentes necesidades: la Red de Apoyo Familiar, que requiere monitorear el estado del paciente, recibir notificaciones y mantenerse informada; el Personal de Cuidado, responsable de registrar y actualizar la información del paciente; y el Administrador del Sistema, encargado de gestionar la configuración, usuarios y parámetros del sistema.
-
-El sistema también se integra con servicios externos clave, como un sistema de notificaciones para el envío de alertas ante cambios relevantes en el estado del paciente, y una pasarela de pagos para la gestión de suscripciones. Esta arquitectura permite que MediBridge centralice la información del paciente y facilite la comunicación entre los actores involucrados, manteniendo al mismo tiempo la integración con servicios necesarios para el funcionamiento del modelo de negocio.
-
-**Figura**
-
-C4 Context Diagram
-
-Nota. Elaboración en Structurizr.
-
-Nota. El diagrama de contexto representa cómo la plataforma MediBridge se integra con sus usuarios principales y sistemas externos, mostrando las interacciones clave que permiten el monitoreo y la gestión del cuidado de adultos mayores. Elaboración propia, basada en el modelo C4. Disponible en: https://codeshare.io/alEvDD
-
-### 4.1.4 Approach driven ViewPoints Diagrams
-
-- Diagrama de Contenedores:
-
-MediBridge - Diagrama de Contenedores (Microservicios)
-
-Nota. Elaboración en VisaulParadigm.  
-
-- Diagrama de Componentes:
-
-IAM Service Context - Diagrama de Componentes (DDD) 
-
-Nota. Elaboración en Visual Paradigm.
-
-Residents Service Context - Diagrama de Componentes (DDD)
-
-Nota. Elaboración en Visual Paradigm.
-
-Medication Service Context - Diagrama de Componentes (DDD)
-
-Nota. Elaboración en Visual Paradigm.
-
-Messaging Service Context - Diagrama de Componentes (DDD)
-
-Nota. Elaboración en Visual Paradigm.
-
-Nota. Elaboración en Visual Paradigm.
-
-Nota. Elaboración en Visual Paradigm.
-
-Diagrama de Clases
-
-Nota. Elaboración en PlantUML. El diagrama de clases representa las entidades principales del sistema MediBridge y sus relaciones, alineadas con los bounded contexts definidos en la arquitectura. Disponible en: https://codeshare.io/G7bKME
-
-### 
-
-### 4.1.5 Relational/Non Relational Database Diagram
-
-Para el sistema MediBridge se ha diseñado un modelo de base de datos de tipo relacional, implementado en PostgreSQL, el cual permite garantizar la consistencia, integridad y trazabilidad de la información, aspectos críticos en el dominio del cuidado de adultos mayores. Siguiendo el enfoque de Domain-Driven Design (DDD) y el patrón Database per Service, el modelo ha sido organizado en múltiples bounded contexts, donde cada microservicio gestiona su propio conjunto de tablas de forma independiente. Esta separación permite reducir el acoplamiento entre componentes y facilita la evolución autónoma de cada módulo del sistema.
-
-**IAM Service (Gestión de autenticación)**
-
-Este módulo gestiona la autenticación y autorización de usuarios mediante las tablas:
-
-roles: define los roles del sistema (administrador, cuidador, familiar).
-
-users_auth: almacena credenciales de acceso (email, contraseña) y se relaciona con roles mediante una clave foránea.
-
-Relación:
-
-users_auth.role_id → roles.id → 1:N
-
-**Notifications Service (Notificaciones)**
-
-Gestión de notificaciones.
-
-Relaciones:
-
-notifications.type_id → notification_types.id → 1:N
-
-notifications.status_id → notification_status_types.id → 1:N
-
-**Residents Service (Dominio principal)**
-
-Este es el núcleo del sistema y gestiona la información del adulto mayor:
-
-residents: entidad principal que representa al paciente.
-
-resident_status: define el estado del residente.
-
-resident_family: relaciona usuarios con residentes.
-
-health_status: registra signos vitales (frecuencia cardíaca, temperatura, saturación).
-
-activities: registra actividades diarias.
-
-emotional_status: registra estado emocional.
-
-Relaciones:
-
-residents.status_id → resident_status.id → 1:N
-
-health_status.resident_id → residents.id → 1:N
-
-activities.resident_id → residents.id → 1:N
-
-emotional_status.resident_id → residents.id → 1:N
-
-resident_family.resident_id → residents.id → N:M
-
-**Medication Service (Gestión de medicación)**
-
-Este módulo permite controlar la administración de medicamentos:
-
-medications: catálogo de medicamentos.
-
-medication_schedule: programación de medicamentos por residente.
-
-medication_log: registro de administración.
-
-medication_log_status_types: estados de administración.
-
-Relaciones:
-
-medication_schedule.medication_id → medications.id → 1:N
-
-medication_log.medication_id → medications.id → 1:N
-
-medication_log.status_id → medication_log_status_types.id → 1:N
-
-**Payments Service (Pagos)**
-
-Gestión de suscripciones.
-
-Relaciones:
-
-subscriptions.plan_id → plans.id → 1:N
-
-payments.subscription_id → subscriptions.id → 1:N
-
-payments.payment_method_id → payment_methods.id → 1:N
-
-**Communication Service (Mensajería en tiempo real)**
-
-Gestiona la comunicación entre usuarios mediante mensajería en tiempo real con soporte de persistencia:
-
-message_threads: define las conversaciones o hilos de chat.
-
-thread_participants: registra los usuarios que participan en cada conversación.
-
-messages: almacena los mensajes enviados dentro de cada hilo, incluyendo contenido, tipo y estado.
-
-message_events: registra eventos asociados a los mensajes (creación, entrega, lectura), utilizados para notificaciones y lógica interna.
-
-Relaciones:
-
-thread_participants.thread_id → message_threads.id → 1:N
-
-messages.thread_id → message_threads.id → 1:N
-
-message_events.message_id → messages.id → 1:N
-
-### 4.1.6 Design Patterns
-
-Para el desarrollo de MediBridge, se consideran diversos patrones de diseño que permiten estructurar el sistema de manera flexible, mantenible y alineada con los requerimientos del dominio del cuidado de adultos mayores, siguiendo los principios establecidos por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides (Gamma et al., 1994), quienes definieron los patrones de diseño como soluciones reutilizables a problemas recurrentes en el diseño de software orientado a objetos.
-
-El Observer Pattern se utiliza para implementar el sistema de notificaciones y alertas médicas. Cuando ocurre un cambio en el estado del residente, como una alteración en los signos vitales o una alerta de medicación, el sistema genera un evento que notifica automáticamente a los usuarios suscritos, como familiares y cuidadores. Este patrón permite desacoplar la generación de eventos de su consumo, facilitando la comunicación asíncrona entre servicios.
-
-El Facade Pattern se emplea para simplificar la interacción con sistemas externos, como el sistema de notificaciones y la pasarela de pagos. A través de una interfaz unificada, los microservicios internos pueden consumir estas funcionalidades sin depender directamente de su complejidad interna, mejorando la mantenibilidad y reduciendo el acoplamiento.
-
-El Strategy Pattern se utiliza para manejar diferentes formas de generación de reportes del estado del residente, como reportes semanales, reportes clínicos o reportes descargables en PDF. Este patrón permite cambiar dinámicamente la lógica de generación sin modificar la estructura principal del sistema.
-
-El Factory Pattern se aplica para la creación de diferentes tipos de usuarios dentro del sistema, como familiares, personal de cuidado y administradores. De esta manera, se centraliza la lógica de instanciación y se facilita la extensión del sistema ante nuevos tipos de usuarios o roles.
-
-El Singleton Pattern se emplea para gestionar configuraciones globales del sistema, como parámetros de autenticación, configuración de notificaciones o conexión con servicios externos. Esto garantiza que exista una única instancia compartida, evitando inconsistencias en la configuración.
-
-El Adapter Pattern se utiliza para integrar sistemas externos de manera desacoplada, como servicios de notificaciones o pasarelas de pago. Este patrón permite adaptar interfaces externas a la estructura interna del sistema, facilitando cambios futuros sin afectar la lógica de negocio.
-
-El Command Pattern se emplea en la gestión de acciones críticas, como el registro de administración de medicamentos o la ejecución de acciones del personal de cuidado. Este patrón permite encapsular cada operación como un objeto, facilitando el registro de auditoría y la trazabilidad de acciones dentro del sistema.
-
-En conjunto, estos patrones permiten que MediBridge mantenga una arquitectura flexible, desacoplada y preparada para evolucionar, asegurando la mantenibilidad del sistema, la reutilización de componentes y la escalabilidad frente al crecimiento del producto.
-
-### 4.1.7 Tactics
-
-**Tácticas de Disponibilidad**
-
-Validación de datos de entrada: Se valida la información ingresada al sistema para evitar errores que puedan generar fallos en ejecución.
-
-Aislamiento de servicios: Se separan los microservicios para evitar que la falla de uno afecte a todo el sistema.
-
-Degradación controlada: En caso de fallo de un servicio no crítico, el sistema continúa operando con funcionalidades limitadas.
-
-\-Aislamiento de fallos: Se desacoplan los servicios críticos (notificaciones, monitoreo, autenticación) para evitar que la caída de un servicio afecte a todo el sistema.
-
-Manejo de excepciones: Se controlan errores dentro de los servicios para evitar fallos totales del sistema.
-
-**Tácticas de Seguridad**
-
-Detección de accesos no autorizados: Se implementa control de intentos fallidos de autenticación, registrando eventos en bitácora y activando mecanismos de bloqueo temporal.
-
-Resistencia mediante autenticación robusta: Se utiliza autenticación basada en tokens (JWT) para proteger el acceso a los servicios del sistema.
-
-**Tácticas de Modificabilidad**
-
-Bajo acoplamiento entre servicios: Se separan las responsabilidades en microservicios independientes, permitiendo modificar un servicio sin afectar a los demás.
-
-Alta cohesión funcional: Cada servicio (monitoreo, notificaciones, autenticación) tiene una responsabilidad claramente definida, facilitando su evolución.
-
-Encapsulamiento de cambios: Se abstraen los modelos de datos y lógica de negocio, permitiendo agregar nuevos parámetros biométricos sin impactar múltiples componentes.
-
-Uso de contratos bien definidos: Las APIs entre servicios están claramente definidas, reduciendo el impacto de cambios en la comunicación.
-
-**Tácticas de Usabilidad**
-
-Cancelación de acciones: Se permite al usuario cancelar operaciones en curso, como el registro de una medicación, antes de su confirmación final, evitando errores en la información registrada.
-
-Reversión de acciones: Se implementan mecanismos que permiten revertir acciones recientes, como la corrección de un registro incorrecto, reduciendo el impacto de errores humanos.
-
-Reducción de pasos en tareas críticas: Se diseñan flujos simplificados para acciones frecuentes, como el registro de medicamentos, asegurando que puedan completarse en un número mínimo de interacciones.
-
-Agregación de acciones: Se agrupan tareas relacionadas en una sola interacción, como registrar múltiples datos del paciente en una sola vista, mejorando la eficiencia del usuario.
-
-**Tácticas de Desempeño**
-
-Asignación eficiente de recursos: Se distribuyen las cargas entre microservicios independientes para optimizar el uso de CPU y memoria..
-
-Optimización de acceso a datos: Se utilizan consultas eficientes y estructuras adecuadas para reducir tiempos de acceso a la información.
-
-## 4.2 Architectural Drivers
-
-Los drivers arquitectónicos de **VitalSync** surgen de la necesidad de garantizar que la plataforma de monitoreo geriátrico sea segura, altamente disponible, confiable y fácil de usar para familiares y cuidadores en entornos de alta demanda. Estos drivers guían las decisiones técnicas, asegurando que la solución responda a la sensibilidad de los datos de salud y a la urgencia de las alertas médicas. Los principales drivers son:
-
-- **Monitoreo de salud en tiempo real:** Garantizar la visibilidad inmediata de signos vitales, estado nutricional y alertas críticas de los residentes.
-- **Seguridad de datos sensibles:** Proteger la información médica, expedientes clínicos y datos biométricos bajo estándares de privacidad rigurosos.
-- **Disponibilidad crítica:** Asegurar que el sistema funcione de forma ininterrumpida, ya que cualquier caída impide la detección oportuna de emergencias médicas.
-- **Usabilidad para cuidadores:** Ofrecer interfaces simplificadas que permitan el registro rápido de actividades y medicación sin interrumpir el flujo de cuidado.
-- **Escalabilidad de servicios:** Soportar el crecimiento en el número de pacientes y dispositivos IoT conectados (como los prototipos Arduino) sin degradar el rendimiento.
-- **Interoperabilidad técnica:** Facilitar la integración con dispositivos externos, pasarelas de pago y servicios de notificación push de terceros.
-- **Mantenibilidad y Evolución:** Facilitar actualizaciones y la adición de nuevas métricas médicas mediante una arquitectura de microservicios desacoplada.
-
-### 4.1.8 Design Purpose
-
-El propósito del diseño de la arquitectura para MediBridge es establecer una hoja de ruta técnica que garantice una implementación coherente con las necesidades del dominio de salud geriátrica. Este diseño busca transformar los requerimientos identificados (tanto el monitoreo de signos vitales como la gestión de la medicina) creando un diseño orientado a microservicios para que sea escalable y más segura.
-
-A través de este diseño, se persiguen ciertos objetivos en específico para asegurar la integridad del sistema:
-
-- **Traducir necesidades de salud en soluciones técnicas:** Transformar el monitoreo nutricional y la gestión de medicación en componentes técnicos concretos basados en microservicios.
-- **Garantizar la coherencia con el dominio:** Aplicar el enfoque de **Domain-Driven Design (DDD)** para que el software represente fielmente los procesos reales del cuidado de adultos mayores.
-- **Satisfacer atributos de calidad:** Utilizar el método **ADD (Attribute Driven Design)** para asegurar que cada decisión técnica respalde directamente la disponibilidad, seguridad y rendimiento del sistema.
-- **Definir la estructura y comunicación:** Identificar los módulos principales y establecer interfaces de comunicación claras entre familiares, cuidadores y administradores.
-- **Crear guías para el desarrollo:** Representar la solución mediante diagramas **C4** y **UML** que sirvan como documentación técnica precisa para el equipo de programación.
-- **Asegurar una evolución sostenible:** Establecer un cimiento técnico que permita que la plataforma crezca de forma ordenada, minimizando la deuda técnica a largo plazo.
-
-### 4.1.9 Primary Functionality (Primary User Stories)
-
-Basado en los objetivos de MediBridge y el enfoque que queremos seguir, estas son las User Stories en las que mas nos debemos enfocar, estas son las que definen nuestra propuesta de valor y nos obligan a tomar decisiones en la estructura.
-
-| **Epic / User Story ID** | **Título** | **Descripción** |
-| --- | --- | --- |
-| **EP-001** | **Gestión del bienestar del residente** | **Como cuidador y familiar, quiero gestionar y visualizar el estado clínico y bienestar general del residente para asegurar una atención preventiva y oportuna.** |
-| --- | --- | --- |
-| **EP-002** | **Gestión de interacción y comunicación del cuidado** | **Como familiar de un adulto mayor, quiero interactuar con el sistema para comunicarme con el personal de cuidado y acceder a información relevante del paciente, de modo que pueda mantenerme informado y tomar decisiones oportunas sobre su bienestar** |
-| --- | --- | --- |
-| **US-10** | **Recibir alertas del estado del paciente** | **Como** familiar, **quiero** recibir notificaciones sobre cambios en el estado del paciente, **para** reaccionar de manera oportuna ante cualquier situación. |
-| --- | --- | --- |
-| **US-12** | Ver reporte semanal de estado del residente | Como familiar, quiero ver un reporte semanal de salud para entender la evolución general. |
-| --- | --- | --- |
-| **US-14** | Visualizar estado nutricional | Como cuidador, quiero visualizar indicadores relacionados con la nutrición del residente para ajustar su plan alimenticio y detectar posibles riesgos. |
-| --- | --- | --- |
-| **US-19** | Notificaciones de Administración Programada | Como cuidador, quiero recibir alertas push automáticas en mi dispositivo móvil, para cumplir estrictamente con el esquema posológico definido por el médico. |
-| --- | --- | --- |
-| **US-20** | Bitácora de Administración Clínica | Como cuidador, quiero registrar la ejecución de cada toma, para generar un historial clínico auditable y transparente para los familiares y médicos. |
-| --- | --- | --- |
-| **US-30** | Evaluar planes de suscripción | Como familiar, quiero visualizar los planes de pago detallados en la página de inicio, para evaluar si los costos se ajustan a mi presupuesto antes de descargar la app. |
-| --- | --- | --- |
-
-### 4.1.10 Quality Attribute Scenarios
-
-Considerando que VitalSync maneja datos de salud críticos y un monitoreo constante, los atributos de calidad más importantes son:
-
-| **Atributo** | **Fuente** | **Estímulo** | **Artefacto** | **Entorno** | **Respuesta** | **Medida** |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Desempeño** | Familiar | Consulta de estado de salud (US-01) | Sistema (Dashboard) | Operación Normal | Visualización de signos vitales | T <= 2s |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Disponibilidad** | Interna | Fallo en el microservicio de alertas | Módulo de Notificaciones | Operación Normal | Activación de instancia de respaldo | T de recuperación <= 1 min |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Seguridad** | Usuario | Intentos erróneos de acceso | Módulo de Login | Operación | Registro en bitácora y bloqueo temporal | \# intentos = 3 |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Modificabilidad** | Desarrollador | Agregar nuevo parámetro biométrico (ej. Glucosa) | Servicio de Monitoreo | Fase de Desarrollo | Integración del nuevo campo | \# servicios afectados = 1 |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Usabilidad** | Cuidador | Registrar toma de medicamento (US-20) | Interfaz Móvil | Operación (Turno activo) | Confirmación de registro guardado | \# clics <= 3 |
-| --- | --- | --- | --- | --- | --- | --- |
-
-### 4.1.11 Constraints
-
-Las restricciones representan los límites y condiciones bajo los cuales el sistema MediBridge debe ser diseñado, desarrollado y operado. Estas limitaciones provienen del dominio de salud, decisiones tecnológicas adoptadas, características de los usuarios y dependencias externas. Identificarlas permite asegurar que la arquitectura sea viable, segura y alineada al contexto real del sistema.
-
-| ID  | Constraint |
-| --- | --- |
-| C-1 | Manejo de datos clínicos sensibles que requieren cumplimiento de principios de confidencialidad, integridad y disponibilidad. |
-| --- | --- |
-| C-2 | Uso obligatorio de arquitectura basada en microservicios como decisión estructural del sistema. |
-| --- | --- |
-| C-3 | Implementación de un API Gateway como punto de entrada único para clientes web y móviles. |
-| --- | --- |
-| C-4 | Dependencia de servicios externos de notificaciones para envío de alertas en tiempo real. |
-| --- | --- |
-| C-5 | Integración con pasarelas de pago para la gestión de suscripciones del sistema. |
-| --- | --- |
-| C-6 | Necesidad de autenticación segura mediante tokens (JWT) para acceso a la plataforma. |
-| --- | --- |
-| C-7 | Usuarios con distintos niveles de alfabetización digital (familiares y cuidadores). |
-| --- | --- |
-| C-8 | Uso predominante de dispositivos móviles como medio principal de acceso al sistema. |
-| --- | --- |
-| C-9 | Comunicación asincrónica requerida para eventos críticos como alertas de salud. |
-| --- | --- |
-| C-10 | Limitación del sistema a un MVP enfocado en monitoreo, alertas, comunicación y reportes. |
-| --- | --- |
-| C-11 | Necesidad de adaptación a procesos reales del cuidado geriátrico (medicación, registros, turnos). |
-| --- | --- |
-
-### 4.1.12 Architectural Concerns
-
-Las preocupaciones arquitectónicas representan riesgos, desafíos y aspectos críticos que pueden impactar la estabilidad, seguridad, rendimiento y adopción del sistema MediBridge. Estas preocupaciones deben ser consideradas desde el diseño para mitigar riesgos y asegurar una solución robusta y escalable.
-
-| ID  | Architectural Concern |
-| --- | --- |
-| AC-1 | Riesgo de acceso no autorizado a datos clínicos sensibles. |
-| --- | --- |
-| AC-2 | Posible retraso en la entrega de alertas críticas en tiempo real. |
-| --- | --- |
-| AC-3 | Complejidad en la gestión y monitoreo de múltiples microservicios. |
-| --- | --- |
-| AC-4 | Posibles inconsistencias de datos debido a la comunicación asincrónica entre servicios. |
-| --- | --- |
-| AC-5 | Dificultad en la adopción del sistema por usuarios con baja alfabetización digital. |
-| --- | --- |
-| AC-6 | Escalabilidad insuficiente ante crecimiento de usuarios y centros geriátricos. |
-| --- | --- |
-| AC-7 | Dependencia de servicios externos que pueden afectar la disponibilidad del sistema. |
-| --- | --- |
-| AC-8 | Posibles cuellos de botella en el procesamiento de datos clínicos y reportes. |
-| --- | --- |
-| AC-9 | Riesgo de pérdida de información en cambios de turno del personal de cuidado. |
-| --- | --- |
-| AC-10 | Mantenimiento complejo debido a la arquitectura distribuida. |
-| --- | --- |
-| AC-11 | Necesidad de garantizar alta disponibilidad del sistema en situaciones críticas. |
-| --- | --- |
-| AC-12 | Riesgos asociados a fallos en backup o recuperación ante desastres. |
-| --- | --- |
-
-## 
-
-## 4.3 ADD Iterations
-
-### 4.3.1 Iteration 1: Functional Scope and Domain Alignment
-
-#### 4.3.1.1 Architectural Design Backlog 1
-
-Durante la primera iteración, el objetivo principal fue alinear el alcance funcional de MediBridge con los principales módulos arquitectónicos que posteriormente guiarán la implementación backend. Este Sprint estuvo orientado a la definición de User Stories, Product Backlog y delimitación preliminar de responsabilidades del sistema. En el Product Backlog se priorizaron funcionalidades como visualización del estado de salud del residente, recepción de alertas críticas, envío de consultas al personal de cuidado, registro de actividades del residente y evaluación del estado emocional.
-
-| Driver / Necesidad | User Stories relacionadas | Tareas arquitectónicas | Criterios de aceptación arquitectónicos |
-| --- | --- | --- | --- |
-| Monitoreo del estado de salud del residente | US-01, US-04, US-05, US-12 | Identificar el bounded context de Residentes y definir entidades iniciales como Resident, HealthStatus, ActivityRecord y EmotionalAssessment. | El diseño permite asociar información clínica, actividades y observaciones emocionales a un residente específico. |
-| --- | --- | --- | --- |
-| Alertas críticas y notificaciones | US-02, US-10, US-19 | Identificar el bounded context de Notificaciones y definir eventos relevantes como CriticalHealthAlertGenerated y MedicationReminderTriggered. | El diseño permite que un evento clínico genere una solicitud de notificación hacia un sistema externo. |
-| --- | --- | --- | --- |
-| Comunicación entre familiares y personal de cuidado | US-06, US-07 | Definir responsabilidades para consultas y respuestas entre Red de Apoyo Familiar y Personal de Cuidado. | Las consultas y respuestas quedan asociadas a un residente, usuario emisor, usuario receptor y fecha de registro. |
-| --- | --- | --- | --- |
-| Gestión farmacológica | US-17, US-19, US-20 | Identificar responsabilidades del módulo de medicación: inventario, alertas de administración y bitácora clínica. | El diseño permite registrar medicamentos, programar alertas y auditar la administración de cada dosis. |
-| --- | --- | --- | --- |
-| Suscripciones y pagos | US-27 / US-30 | Identificar la necesidad de integración con un sistema externo de pagos. | El diseño permite separar la lógica de suscripción del procesamiento externo de pagos. |
-| --- | --- | --- | --- |
-
-Las User Stories del backlog incluyen funcionalidades clínicas y operativas vinculadas al residente, reportes, inventario farmacológico, alertas de medicación, bitácora clínica, turnos y planes de suscripción.
-
-#### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
-
-El objetivo de esta iteración fue convertir el Product Backlog en una primera estructura arquitectónica basada en dominios funcionales, evitando diseñar el sistema como un único bloque monolítico. Para ello, se seleccionaron los siguientes drivers:
-
-| Tipo de driver | Driver seleccionado | Justificación |
-| --- | --- | --- |
-| Funcional | Ver estado de salud del residente | Es una funcionalidad central para la Red de Apoyo Familiar. |
-| --- | --- | --- |
-| Funcional | Recibir alertas críticas | Requiere decisiones tempranas sobre notificaciones, disponibilidad y comunicación oportuna. |
-| --- | --- | --- |
-| Funcional | Registrar actividad y estado emocional | Requiere persistencia estructurada y trazabilidad de registros realizados por cuidadores. |
-| --- | --- | --- |
-| Funcional | Gestionar inventario y bitácora farmacológica | Requiere control de datos clínicos sensibles y trazabilidad de administración. |
-| --- | --- | --- |
-| Calidad | Seguridad de datos sensibles | La plataforma maneja información médica, usuarios y datos asociados al cuidado del adulto mayor. |
-| --- | --- | --- |
-| Calidad | Disponibilidad crítica | Las alertas médicas y notificaciones deben estar disponibles para evitar pérdida de oportunidad de respuesta. |
-| --- | --- | --- |
-| Calidad | Usabilidad para cuidadores | El registro debe ser rápido para no interrumpir el flujo de atención. |
-| --- | --- | --- |
-
-Los drivers arquitectónicos documentados para VitalSync incluyen monitoreo en tiempo real, seguridad de datos sensibles, disponibilidad crítica, usabilidad para cuidadores, escalabilidad, interoperabilidad y mantenibilidad.
-
-#### 4.3.1.3 Choose One or More Elements of the System to Refine
-
-En esta iteración se refinaron los elementos iniciales del sistema desde una perspectiva de dominio:
-
-| Elemento | Tipo | Refinamiento realizado |
-| --- | --- | --- |
-| MediBridge | Sistema principal | Se definió como plataforma central para monitoreo y gestión del cuidado de adultos mayores. |
-| --- | --- | --- |
-| IAM | Bounded Context | Se identificó como módulo transversal para autenticación, usuarios y roles. |
-| --- | --- | --- |
-| Usuarios | Bounded Context | Se consideró necesario separar familiares, cuidadores y administradores según permisos. |
-| --- | --- | --- |
-| Residentes | Bounded Context | Se definió como núcleo del sistema para salud, actividades, estado emocional e historial clínico. |
-| --- | --- | --- |
-| Notificaciones | Bounded Context | Se delimitó como responsable de alertas críticas, alertas de medicación y mensajes automáticos. |
-| --- | --- | --- |
-| Pagos | Bounded Context | Se identificó como soporte para suscripciones y planes premium. |
-| --- | --- | --- |
-
-#### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
-
-Para satisfacer los drivers seleccionados, se eligieron los siguientes conceptos de diseño:
-
-| Concepto de diseño | Aplicación en MediBridge |
-| --- | --- |
-| Domain-Driven Design | Permite organizar el sistema en bounded contexts alineados a IAM, usuarios, residentes, notificaciones y pagos. |
-| --- | --- |
-| Microservicios | Permite que cada funcionalidad principal evolucione de manera independiente. |
-| --- | --- |
-| API Gateway | Centraliza el acceso desde Angular y Flutter hacia los servicios backend. |
-| --- | --- |
-| API First Design | Permite definir endpoints claros antes de la implementación completa. |
-| --- | --- |
-| Comunicación asíncrona | Se prioriza para eventos como alertas críticas, recordatorios de medicación y cambios en el estado del residente. |
-| --- | --- |
-| Autenticación basada en tokens | Protege el acceso a información sensible de residentes y usuarios. |
-| --- | --- |
-| MVC en servicios backend | Organiza controladores, lógica de negocio y persistencia dentro de cada servicio Spring Boot. |
-| --- | --- |
-| Database per Service | Define que cada microservicio gestiona su propia base de datos de forma independiente |
-| --- | --- |
-
-El informe de VitalSync ya plantea separación de responsabilidades, comunicación asíncrona, API First Design, autenticación basada en tokens y evolución progresiva hacia servicios. Además, se adopta DDD, ADD, cliente-servidor, microservicios, API Gateway, Database per Service y MVC como enfoques y patrones arquitectónicos.
-
-#### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-
-| Elemento arquitectónico | Responsabilidad | Interfaces principales |
-| --- | --- | --- |
-| Angular Web App | Interfaz web para administración, personal de cuidado y gestión operativa. | Consume REST API vía API Gateway. |
-| --- | --- | --- |
-| Flutter Mobile App | Interfaz móvil para familiares y cuidadores. | Consume REST API vía API Gateway y recibe notificaciones push. |
-| --- | --- | --- |
-| API Gateway | Punto único de entrada para clientes web y móvil. | Expone rutas hacia IAM, Users, Residents, Notifications y Payments. |
-| --- | --- | --- |
-| IAM Service | Gestiona autenticación, autorización, usuarios y roles. | /api/v1/auth, /api/v1/users, /api/v1/roles |
-| --- | --- | --- |
-| Users Service | Gestiona perfiles de familiares, cuidadores y administradores. | /api/v1/profiles, /api/v1/caregivers, /api/v1/family-members |
-| --- | --- | --- |
-| Residents Service | Gestiona residentes, estado de salud, actividades, estado emocional e historial. | /api/v1/residents, /api/v1/residents/{id}/health-status, /api/v1/residents/{id}/activities |
-| --- | --- | --- |
-| Notifications Service | Gestiona alertas críticas, recordatorios y eventos de notificación. | /api/v1/notifications, /api/v1/alerts |
-| --- | --- | --- |
-| Payments Service | Gestiona planes, suscripciones y validación de pagos. | /api/v1/subscriptions, /api/v1/payments |
-| --- | --- | --- |
-| PostgreSQL | Persistencia relacional de información del sistema. | Conexión mediante repositorios Spring Data JPA. |
-| --- | --- | --- |
-| Azure Web Service | Entorno cloud para despliegue del backend. | Publicación de servicios backend sobre Azure. |
-| --- | --- | --- |
-
-#### 4.3.1.6 Sketch Views (C4 & UML) and Record Design Decisions
-
-##### Design Decisions – Iteration 1
-
-| ID  | Decisión de diseño | Driver relacionado | Justificación | Trade-off |
-| --- | --- | --- | --- | --- |
-| DD-01 | Separar el sistema en bounded contexts iniciales: IAM, Usuarios, Residentes, Notificaciones y Pagos. | Mantenibilidad, escalabilidad | Permite evolucionar módulos sin afectar todo el sistema. | Aumenta la complejidad de integración. |
-| --- | --- | --- | --- | --- |
-| DD-02 | Usar API Gateway como entrada única. | Seguridad, mantenibilidad | Centraliza acceso, autenticación y enrutamiento. | Puede convertirse en punto crítico si no se gestiona disponibilidad. |
-| --- | --- | --- | --- | --- |
-| DD-03 | Usar JWT para autenticación. | Seguridad de datos sensibles | Permite proteger endpoints y controlar acceso por roles. | Requiere manejo correcto de expiración y renovación de tokens. |
-| --- | --- | --- | --- | --- |
-| DD-04 | Diseñar alertas como eventos desacoplados. | Disponibilidad, interoperabilidad | Permite que Residents Service emita eventos sin depender directamente del proveedor externo. | Requiere coordinación posterior con mensajería/event bus. |
-| --- | --- | --- | --- | --- |
-| DD-05 | Usar PostgreSQL como base de datos inicial. | Consistencia, mantenibilidad | Es adecuado para datos estructurados, relaciones y transacciones clínicas. | Puede requerir partición o separación por servicio al escalar. |
-| --- | --- | --- | --- | --- |
-
-4.3.1.7 Analysis of Current Design and Review Iteration Goal (Kanban Board)
-
-En el Kanban Board del Sprint 1 se observa que las tarjetas se organizaron principalmente en la columna Product Backlog, incluyendo historias como US-01 Ver estado de salud, US-02 Recibir alertas críticas, US-04 Registrar actividad del residente, US-05 Evaluar estado emocional, US-06 Enviar consultas al personal, US-07 Consultar respuestas, US-10 Recibir alertas del estado, US-12 Ver reporte semanal, US-13 Descargar reporte PDF, US-17 Inventario farmacológico, US-19 Alertas de medicación, US-20 Bitácora clínica, US-25 Cronograma de turnos, US-26 Relevo de turno y US-27 Evaluar planes de suscripción.
-
-El análisis de esta iteración permite concluir que el Sprint 1 cumplió una función de alineamiento funcional y priorización del alcance, más que de implementación técnica. Las columnas To Do, In Progress y Done aún no evidencian avance de desarrollo, por lo que el resultado principal fue la definición del backlog y la identificación de módulos candidatos para la arquitectura. Esto es coherente con el avance hasta el Capítulo III, donde el foco estaba en User Stories, Impact Map y Product Backlog.
-
-Resultado de la Iteration 1:  
-La meta se considera cumplida parcialmente, porque el equipo logró definir el alcance funcional y reconocer bounded contexts iniciales; sin embargo, aún quedaba pendiente refinar la arquitectura técnica, los diagramas C4/UML y las decisiones arquitectónicas detalladas.
-
-# Conclusiones y recomendaciones
-
-**AVC1**
-
-En la presente entrega se validó que el problema identificado por VitalSync es relevante y real: existe deficiencia en la comunicación, baja visibilidad del estado del adulto mayor y procesos manuales que afectan tanto a familiares como al personal de cuidado. Las entrevistas realizadas confirman los Problem Statements, evidenciando incertidumbre en las familias y sobrecarga operativa en los centros geriátricos.
-
-Asimismo, los resultados obtenidos respaldan las principales Assumptions planteadas. Se comprobó que ambos segmentos valoran el acceso a información en tiempo real, reportes centralizados, alertas oportunas y canales digitales de comunicación, siempre que la solución sea intuitiva y fácil de usar. También se identificó disposición inicial hacia la adopción tecnológica y potencial interés en modelos de suscripción con valor agregado.
-
-Respecto a las Hypothesis Statements y criterios de éxito, esta fase permitió obtener evidencia cualitativa favorable sobre la utilidad percibida de MediBridge, aunque su validación cuantitativa deberá medirse en siguientes iteraciones mediante prototipos funcionales, pruebas de uso y métricas de adopción, retención e interacción.
-
-Como siguientes pasos del roadmap, priorizaremos el diseño del MVP enfocado en monitoreo del residente, alertas críticas, reportes automáticos y mensajería entre familiares y cuidadores. Posteriormente, validar experiencia de usuario con prototipos, definir arquitectura base escalable e incorporar funcionalidades avanzadas según feedback del mercado.
-
-**AVC2**
-
-En la segunda entrega se consolidó el diseño arquitectónico inicial de MediBridge mediante la definición de principios, enfoques, estilos arquitectónicos, patrones, tácticas, drivers, restricciones y preocupaciones arquitectónicas. Esto permitió pasar de una visión funcional del producto a una estructura técnica más clara, escalable y alineada con el dominio del cuidado geriátrico.
-
-Asimismo, la aplicación del método ADD permitió relacionar las necesidades principales del sistema con decisiones arquitectónicas concretas, como el uso de microservicios, bounded contexts, API Gateway, JWT, PostgreSQL, comunicación asíncrona y Database per Service. Estas decisiones fortalecen la seguridad, mantenibilidad, disponibilidad y evolución futura de MediBridge.
-
-Finalmente, las vistas C4, UML y los diagramas de base de datos permitieron representar la arquitectura del sistema y mantener trazabilidad entre los requerimientos, los módulos definidos y las decisiones de diseño. Como siguiente paso, se recomienda profundizar la validación técnica de los microservicios críticos y avanzar en la implementación del MVP.
-
-# Referencias Bibliográficas
+## Bibliográfia
 
 TV Perú. (2024, abril 4). _Gamarra: Conoce la historia del emporio comercial más grande del Perú_. https://www.tvperu.gob.pe/novedades/sucedio-en-el-peru/gamarra-conoce-la-historia-del-emporio-comercial-mas-grande-del-peru
 
 Instituto Nacional de Estadística e Informática. (2018). _Características de las empresas del Emporio Comercial de Gamarra, 2017_. INEI. https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1555/libro.pdf
 
-###
+Astete Pascual, L. D., & Dominguez Quiroz, K. T. (2023). Relación entre la innovación en digitalización y el desempeño exportador de las empresas del sector confecciones de punto del clúster de gamarra durante el periodo 2019-2020.https://repositorioacademico.upc.edu.pe/handle/10757/668415 
+
+Barbaachán, M. A. (1999). Desempeño de la pequeña y mediana empresa exportadora del sector textil y confecciones en el Perú. Departamento de Empleo y Formación, Oficina Internacional del Trabajo.https://n9.cl/ji3pt 
+
+Burga Spray, R., & Gutiérrez Medina, V. P. (2024). Implementación de modelo para disminuir el nivel de productos defectuosos [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. https://repositorioacademico.upc.edu.pe/handle/10757/68297  
+
+Serna, L., & Isabel, A. (2024). Propuesta de Gestión de Procesos de Producción para mejorar la calidad del producto de una empresa textil peruana.https://titula.universidadeuropea.com/handle/20.500.12880/10986 
+
+## Anexos
