@@ -37,6 +37,14 @@
       <td>Fabrizio Alberto Paredes Santos</td>
       <td>U202310914</td>
     </tr>
+    <tr>
+      <td>Giorgio Marzouk Awad Vargas</td>
+      <td>U202324041</td>
+    </tr>
+        <tr>
+      <td>Sebastian Rodriguez Macedo</td>
+      <td>U202310199</td>
+    </tr>
   </tbody>
 </table>
 
@@ -962,6 +970,1041 @@ Nota. Elaboración en UXPRESSIA.
 **Impact Map del Segmento #2**
 <p align="center"><img src="./assets/tp1/Impact map 2.png" width="300"/></p>
 Nota. Elaboración en UXPRESSIA.
+
+## **Capítulo IV: Product Design**
+
+### **4.1. Style Guidelines**
+
+#### **4.1.1. General Style Guidelines**
+
+En esta seccion como grupo hemos decidido establecer ciertas directrices de estilo para garantizar la coherencia visual y de comunicacion en la aplicacion. Establecimos aspectos clave, relacionados con: Branding, Typography, Spacing System and Colors. 
+
+### *Branding:* 
+Nuestro logotipo esta compuesto por una bola de estambre rodeada por el nombre de nuestra start up (TextilFlow). La bola de estambre representando al hilo que es un compuesto del que estan hechos muchos tipos de telas.
+
+<p align="center">
+  <img src="images/LogoTextilFLow.png" width="200">
+</p>
+
+
+### *Typography:*
+Para TextilFlow, decidimos usar dos fuentes: 
+
+* Manrope: Para los titulos y subtitulos en pesos *bold* y *semibold* respectivamente para cada una.
+
+<p align="center">
+  <img src="images/Manrope.png" width="500" height="300">
+</p>
+
+* Lato: Para el texto de los parrafos, en peso *regular*, permitiendo al usuario una lectura comoda.
+
+<p align="center">
+  <img src="images/Lato.jpg" width="500" height="300">
+</p>
+
+### *Spacing:* 
+Para nuestro espaciado, nos basamos en lo recomendado para el diseño de interfaces. 
+
+
+
+### *Colors:*
+Hemos decidido por colores que dan el ambiente de trabajo en una empresa textil, tonalidades marrones como #2A1905 y #866C52 combinadas con un fonde en su mayoria blanca #FFFFFF y con tonalides grises #E8E2E2 respectivamente. Para el texto decidimos por dejarlo en negro #000000.
+
+<p align="center">
+  <img src="images/PaletaColoresLP.png" width="500" height="200">
+</p>
+
+#### **4.1.2. Web Style Guidelines**
+
+**Diseño minimalista industrial y profesional:**
+TextilFlow adopta un enfoque visual limpio y funcional, combinando elementos minimalistas con una estética sobria que refleja profesionalismo, precisión y tecnología enfocada al sector textil. Se prioriza la claridad del contenido y la facilidad de navegación, evitando saturar al usuario con información innecesaria.
+
+**Imagenes ilustrativas:** 
+Se opta por imágenes reales de maquinaria, telares y procesos textiles para generar confianza, mostrar profesionalismo y reflejar el contexto de uso.
+
+**Navegacion y Estructura UX:**
+Menú fijo superior con botones clave: Producto, Nosotros, Planes, Registro, Iniciar Sesión.
+
+Flujo claro: Inicio ➝ Valor ➝ Planes ➝ FAQ ➝ Contacto.
+
+Llamados a la acción visibles: “Conoce más”, “Ver cómo funciona”, “Enviar”.
+
+**Contraste y accesibilidad:**
+Se respetan los principios de alto contraste visual para mejorar la legibilidad (texto oscuro sobre fondos claros y viceversa).
+
+### **4.2. Information Architecture**
+
+#### **4.2.1. Organization Systems**
+
+En lo que respecta a la organizacion de nuestro contenido, nos decidimos por un modelo jerarquico, donde los textos mas grandes indicaran la informacion de importancia encontrada en cada seccion (Producto, Quienes somos, Contacto, Registro, Planes). 
+
+#### **4.2.2. Labeling Systems**
+
+Para el contenido de **TextilFlow**, se prioriza una redacción clara y concisa, con textos reducidos que permitan una lectura rápida y comprensión efectiva por parte de los usuarios.
+
+En cuanto al diseño de botones, se utiliza un estilo minimalista, con bordes redondeados y colores definidos por el sistema de diseño de la marca.
+
+Los íconos también respetan la línea gráfica de **TextilFlow**, facilitando la navegación y comprensión visual de las acciones dentro de la plataforma.
+
+#### **4.2.3. SEO Tags and Meta Tags**
+
+Las metas etiquetas nos ayudan a indicar información codificada y especificar los metadatos. Estas no son visualizadas en los sitios web, pero son leídas por los navegadores o rastreadores web. Las metas etiquetas facilitan el análisis de archivos HTML y permiten un mejor mantenimiento del contenido del archivo. Además, estas etiquetas son fundamentales para el posicionamiento de nuestra página web en los buscadores.
+
+**Las metas etiquetas que usaremos son:**
+
+**Título:**  
+Esta etiqueta es una de las más importantes y por lo general se coloca antes que cualquier otra metaetiqueta. Es utilizada o leída por todos los motores de búsqueda como encabezado en las páginas de resultados de búsqueda (SERP).
+
+```html
+<title>Optimiza la calidad textil con TextilFlow</title>
+```
+**Codificación de caracteres:**
+
+Esta etiqueta permite que los navegadores muestren correctamente los caracteres especiales en la página.
+
+```html
+<meta charset="UTF-8">
+```
+**Descripción:**
+
+Esta metaetiqueta proporciona un resumen del contenido de la página web. Aquí debemos dar una breve información sobre lo que se puede visualizar en la página.
+
+```html
+<meta name="description" content="TextilFlow es una plataforma web creada para ayudarte a llevar un control detallado y visual de los lotes de la tela que entregas o recibes en tu empresa textil.Con esta herramienta, puedes registrar observaciones,subir fotos de evidencia y generar reportes de calidad con pocos clicks">
+```
+**Palabras clave:**
+
+En esta etiqueta se colocan las palabras clave relacionadas con el contenido de la página web.
+
+```html
+<meta name="keywords" content="control de calidad textil, gestión de lotes, trazabilidad textil, inspección de tela, calidad de producción, textil peruano">
+```
+**Autor y Derechos de Autor:**
+
+Se utiliza para registrar la información del autor de la página web y la propiedad y derechos de autor.
+
+```html
+
+<meta name="author" content="Equipo TextilFlow">
+<meta name="copyright" content="© TextilFlow 2025">
+```
+
+#### **4.2.4. Searching Systems**
+
+El sistema de búsqueda de TextilFlow permitirá a los usuarios localizar información clave de forma rápida y eficiente. Se integrarán filtros avanzados para facilitar la gestión y localización de lotes de tela, tanto en el histórico como en la vista de control de calidad.
+
+Los usuarios podrán buscar por número de lote, tipo de tela, cliente y fecha de registro, permitiendo una gestión clara y estructurada de la información.
+
+#### **4.2.5. Navigation Systems**
+
+En la landing page, el sistema de navegación se ubica en la parte superior de la interfaz (header) y permite al usuario desplazarse hacia las secciones principales de manera intuitiva.
+
+En la aplicación web, se utiliza un sidebar que facilita la navegación por las funciones principales, manteniendo siempre visibles las etiquetas textuales para identificar cada sección. Esto asegura que el usuario pueda recorrer los módulos de control, trazabilidad y reportes de calidad de manera eficiente.
+
+Los encabezados y labels presentes en las pantallas informan claramente sobre el contenido que visualizará el usuario al acceder a cada sección, garantizando una experiencia fluida y coherente.
+
+### **4.5. Mobile Applications Prototyping**
+
+### **4.6. Web Applications UX/UI Design**
+
+#### **4.6.1. Web Applications Wireframes.**
+
+**Inicio de Sesión**
+<p align="center">
+  <img src="images/ww1.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww2.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww3.png"  width="850">
+</p>
+
+#### Empresario 
+
+**Inicio**
+<p align="center">
+  <img src="images/ww4.png"  width="850">
+</p>
+
+**Lotes recibidos**
+<p align="center">
+  <img src="images/ww5.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww6.png" width="850">
+</p>
+<p align="center">
+  <img src="images/ww7.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww8.png"  width="850">
+</p>
+
+**Observaciones Enviadas**
+<p align="center">
+  <img src="images/ww9.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww10.png"  width="850">
+</p>
+
+**Planes**
+<p align="center">
+  <img src="images/ww11.png"  width="850">
+</p>
+
+**Configuración**
+<p align="center">
+  <img src="images/ww12.png"  width="850">
+</p>
+
+**Perfil**
+<p align="center">
+  <img src="images/ww13.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww14.png"  width="850">
+</p>
+
+#### Distribuidor 
+
+**Inicio**
+<p align="center">
+  <img src="images/ww15.png"  width="850">
+</p>
+
+**Mis Lotes**
+<p align="center">
+  <img src="images/ww16.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww17.png" width="850">
+</p>
+<p align="center">
+  <img src="images/ww18.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww19.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww20.png"  width="850">
+</p>
+
+**Registrar Lotes**
+<p align="center">
+  <img src="images/ww21.png"  width="850">
+</p>
+
+
+**Observaciones**
+<p align="center">
+  <img src="images/ww22.png"  width="850">
+</p>
+
+**Configuración**
+<p align="center">
+  <img src="images/ww23.png"  width="850">
+</p>
+
+**Planes**
+<p align="center">
+  <img src="images/ww24.png"  width="850">
+</p>
+
+**perfil**
+<p align="center">
+  <img src="images/ww25.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/ww26.png"  width="850">
+</p>
+
+[ Enlace en Figma de Web Applications Wireframes Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=119-2478&t=JXQyMkXCVQTK4SMK-1)
+<br>
+[ Enlace en Figma de Web Applications Wireframes Distribuidor](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=119-2479&t=JXQyMkXCVQTK4SMK-1)
+
+
+#### **4.6.2. Web Applications Wireflow Diagrams**
+
+[Wireflows de TextilFlow en Overflow](https://overflow.io/s/DU68QJ8F)
+
+## **User Goal 1: Inicio de sesión y acceso al sistema**
+
+**User Persona:** Empresarios y Distribuidores
+
+**Explicación del flujo:** El usuario accede a la página de bienvenida de TextilFlow donde se le presentan las opciones para registrarse o iniciar sesión. Al seleccionar iniciar sesión, el usuario debe ingresar sus credenciales (correo y contraseña). Tras validar sus datos, el sistema muestra la pantalla de selección de rol donde el usuario puede elegir entre "Empresa" o "Distribuidor". Dependiendo de su selección, el sistema lo redirige al dashboard correspondiente que muestra información relevante según el rol seleccionado, mostrando información de los lotes por enviar, enviados o confirmados, junto con notificaciones recientes.
+
+<p align="center">
+  <img src="images/Wireflow1.png" alt="PB" width="1000">
+</p>
+
+
+## **User Goal 2: Gestión de lotes y visualización de detalle**
+
+**User Persona:** Empresarios y Distribuidores
+
+**Explicación del flujo:** Desde el dashboard principal, el usuario puede visualizar los diferentes estados de los lotes (por enviar, enviados, confirmados o rechazados) con contadores que indican la cantidad en cada categoría. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes a ese estado. Esta tabla incluye información como código, cliente, tipo de tela, fecha, estado y opciones para filtrar o buscar. El usuario puede seleccionar un lote específico para ver información más detallada o realizar acciones adicionales según su rol en el sistema.
+
+<p align="center">
+  <img src="images/Wireflow2.png" alt="PB" width="1000">
+</p>
+
+## **User Goal 3: Visualización y filtrado de observaciones**
+
+**User Persona:** Empresarios y Distribuidores
+
+**Explicación del flujo:** El usuario accede a la sección de "Observaciones Enviadas" desde el menú lateral. El sistema muestra una tabla con todas las observaciones registradas, incluyendo información como el lote relacionado, fecha, motivo, evidencia adjunta y estado actual (pendiente, visto, rechazado, confirmado). El usuario puede utilizar las opciones de filtrado ubicadas en la parte superior para refinar la lista según diferentes criterios. Al seleccionar una observación específica, puede ver más detalles o realizar acciones como editar o eliminar, dependiendo del estado actual de la observación.
+
+<p align="center">
+  <img src="images/Wireflow3.png" alt="PB" width="1000">
+</p>
+
+## **User Goal 4: Gestión de suscripción y planes**
+
+**User Persona:** Empresarios y Distribuidores
+
+**Explicación del flujo:** El usuario accede a la sección "Planes y suscripción" desde el menú lateral. El sistema muestra los planes disponibles: Plan Básico ($9.99) y Plan Corporativo ($49.99), detallando los beneficios de cada uno. Cada plan incluye información sobre número de lotes permitidos, acceso a estadísticas y funcionalidades adicionales. El usuario puede comparar los planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. El sistema confirma la selección y actualiza la cuenta con los beneficios correspondientes.
+
+<p align="center">
+  <img src="images/Wireflow4.png" alt="PB" width="1000">
+</p>
+
+## **User Goal 5: Configuración de la aplicación y perfil**
+
+**User Persona:**  Empresarios y Distribuidores
+
+**Explicación del flujo:** El usuario accede a las opciones de configuración a través del menú lateral. Desde aquí, puede personalizar su experiencia en la plataforma ajustando preferencias como el modo de visualización (claro/oscuro) y la información de su perfil. Al seleccionar "Mi perfil", el sistema muestra un formulario con los datos actuales del usuario, permitiéndole editar su nombre, correo electrónico y foto/logo de la empresa. Tras realizar los cambios deseados, el usuario guarda la información actualizada mediante el botón correspondiente. Adicionalmente, en esta sección el usuario puede configurar preferencias específicas como la generación automática o manual de códigos para lotes y otros ajustes que personalicen su experiencia en TextilFlow según sus necesidades operativas.
+
+<p align="center">
+  <img src="images/Wireflow5.png" alt="PB" width="1000">
+</p>
+
+#### **4.6.3. Web Applications Mock-ups**
+
+**Inicio de Sesión**
+<p align="center">
+  <img src="images/wm1.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm2.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm3.png"  width="850">
+</p>
+
+#### Empresario 
+
+**Inicio**
+<p align="center">
+  <img src="images/wm4.png"  width="850">
+</p>
+
+**Lotes recibidos**
+<p align="center">
+  <img src="images/wm5.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm6.png" width="850">
+</p>
+<p align="center">
+  <img src="images/wm7.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm8.png"  width="850">
+</p>
+
+**Observaciones Enviadas**
+<p align="center">
+  <img src="images/wm9.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm10.png"  width="850">
+</p>
+
+**Planes**
+<p align="center">
+  <img src="images/wm11.png"  width="850">
+</p>
+
+**Configuración**
+<p align="center">
+  <img src="images/wm12.png"  width="850">
+</p>
+
+**Perfil**
+<p align="center">
+  <img src="images/wm13.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm14.png"  width="850">
+</p>
+
+#### Distribuidor 
+
+**Inicio**
+<p align="center">
+  <img src="images/wm15.png"  width="850">
+</p>
+
+**Mis Lotes**
+<p align="center">
+  <img src="images/wm16.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm17.png" width="850">
+</p>
+<p align="center">
+  <img src="images/wm18.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm19.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm20.png"  width="850">
+</p>
+
+**Registrar Lotes**
+<p align="center">
+  <img src="images/wm21.png"  width="850">
+</p>
+
+
+**Observaciones**
+<p align="center">
+  <img src="images/wm22.png"  width="850">
+</p>
+
+**Configuración**
+<p align="center">
+  <img src="images/wm23.png"  width="850">
+</p>
+
+**Planes**
+<p align="center">
+  <img src="images/wm24.png"  width="850">
+</p>
+
+**perfil**
+<p align="center">
+  <img src="images/wm25.png"  width="850">
+</p>
+<p align="center">
+  <img src="images/wm26.png"  width="850">
+</p>
+
+[ Enlace en Figma de Web Applications Mock-ups Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=80-1885&t=JXQyMkXCVQTK4SMK-1)
+<br>
+
+[ Enlace en Figma de Web Applications Mock-ups Distribuidor](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=137-8411&t=JXQyMkXCVQTK4SMK-1)
+
+
+
+
+#### **4.6.4. Web Applications User Flow Diagrams**
+
+[User Flow Diagrams de TextilFlow en Overflow](https://overflow.io/s/ABWJ05M8)
+
+## **1\. User Goal: Acceso e inicio de sesión en la plataforma**
+
+**User Persona:** Distribuidores y Empresarios
+
+**Explicación del flujo:** El usuario ingresa a la plataforma TextilFlow a través de la pantalla de bienvenida. En esta primera pantalla, puede elegir entre registrarse como nuevo usuario o iniciar sesión con credenciales existentes. Al seleccionar iniciar sesión, debe ingresar su correo electrónico y contraseña. Una vez validados los datos, el sistema lo dirige a la pantalla de selección de rol, donde debe indicar si actuará como "Empresa" o "Distribuidor". Dependiendo de la selección, el sistema redirige al usuario al dashboard correspondiente, mostrando información relevante según su rol, incluyendo contadores de lotes en diferentes estados (por enviar, enviados, confirmados) y las notificaciones recientes que requieren su atención.
+
+<p align="center">
+  <img src="images/Userflow1.png" alt="PB" width="1000">
+</p>
+
+## **2\. User Goal: Gestión de suscripción y planes**
+
+**User Persona:** Distribuidores y Empresarios
+
+**Explicación del flujo:** El usuario, desde su dashboard principal, accede a la sección de "Planes y suscripción" a través del menú lateral. El sistema muestra una comparativa entre los dos planes disponibles: Plan Básico ($9.99/mes) y Plan Corporativo ($49.99/mes). Cada plan presenta sus beneficios específicos, como límites de lotes, acceso a estadísticas, y funcionalidades adicionales. El usuario puede analizar las diferencias entre ambos planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. Al confirmar su elección, el sistema actualiza la suscripción y aplica inmediatamente los beneficios correspondientes al plan seleccionado.
+
+<p align="center">
+  <img src="images/Userflow2.png" alt="PB" width="1000">
+</p>
+
+## **3\. User Goal: Visualización y gestión de lotes**
+
+**User Persona:** Distribuidores y Empresarios
+
+**Explicación del flujo:** Desde el dashboard, el usuario puede ver un resumen de sus lotes clasificados por estado. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes. Esta tabla incluye columnas para código, cliente, tipo de tela, fecha, estado y opciones adicionales. El usuario puede filtrar y ordenar la información según diferentes criterios para encontrar rápidamente lo que busca. Al seleccionar un lote específico, puede ver información más detallada o realizar acciones adicionales como editar, descargar reportes o registrar observaciones. La interfaz permite navegar entre diferentes vistas de lotes según sus estados (enviados, recibidos, confirmados, rechazados) manteniendo una experiencia coherente.
+
+<p align="center">
+  <img src="images/Userflow3.png" alt="PB" width="1000">
+</p>
+
+## **4\. User Goal: Registro y envío de nuevos lotes**
+
+**User Persona:** Distribuidores
+
+**Explicación del flujo:** El distribuidor, desde su dashboard, selecciona la opción "Registrar Lotes" del menú lateral. El sistema muestra un formulario completo para ingresar la información del nuevo lote, incluyendo campos para código del lote (que puede ser automático o manual), cliente, tipo de tela, fecha de registro, y observaciones adicionales. El usuario completa todos los campos requeridos y tiene la opción de añadir información complementaria como calidad de tela o fotos. Una vez completado el formulario, el distribuidor hace clic en "Enviar" para registrar el lote en el sistema. La plataforma confirma el registro exitoso y notifica automáticamente al empresario destinatario sobre el nuevo lote recibido, actualizando los contadores en ambos dashboards.
+
+<p align="center">
+  <img src="images/Userflow4.png" alt="PB" width="1000">
+</p>
+
+## **5\. User Goal: Gestión de observaciones de lotes**
+
+**User Persona:** Distribuidores y Empresarios
+
+**Explicación del flujo:** El usuario accede a la sección "Observaciones" desde su dashboard. Dependiendo de su rol, visualiza las observaciones enviadas (distribuidor) o recibidas (empresario). El sistema muestra una tabla con todas las observaciones, incluyendo información como código de lote relacionado, fecha, motivo, estado y evidencia adjunta. El usuario puede filtrar la lista por diferentes criterios para localizar observaciones específicas. Al seleccionar una observación, puede ver detalles completos, incluyendo imágenes adjuntas como evidencia. Si la observación aún está en estado "pendiente", el empresario puede editarla o eliminarla; si ya fue revisada, estas opciones no están disponibles. El distribuidor puede marcar observaciones como "vistas" y responder a ellas según sea necesario.
+
+<p align="center">
+  <img src="images/Userflow5.png" alt="PB" width="1000">
+</p>
+
+## **6\. User Goal: Configuración de la aplicación y perfil**
+
+**User Persona:** Empresarios y Distribuidores
+
+**Explicación del flujo:** El usuario accede a la sección de configuración a través del menú lateral. Aquí puede personalizar aspectos de su experiencia en la plataforma, incluyendo la información de su perfil y preferencias visuales. Al seleccionar la opción de perfil, puede modificar datos personales como nombre, foto/logo de la empresa y datos de contacto. El sistema permite al usuario elegir entre modo claro u oscuro para la interfaz, así como configurar preferencias específicas como la generación automática o manual de códigos para lotes. Tras realizar los cambios deseados, el usuario confirma las modificaciones y el sistema las aplica inmediatamente. Esta sección también proporciona opciones de seguridad como cambio de contraseña y cierre de sesión, permitiendo al usuario gestionar completamente su experiencia en la plataforma.
+
+<p align="center">
+  <img src="images/Userflow6.png" alt="PB" width="1000">
+</p>
+
+### **4.7. Web Applications Prototyping**
+
+<p align="center">
+  <img src="images/prototype.png" alt="PB" width="1000">
+</p>
+
+[Web Applications Prototyping TextilFlow](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311361_upc_edu_pe/EdB5RunylOtGm678FwW-g64BH_ntQg-ugW-fUD7lLYVNQw?e=OmtcdT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+[Prototyping TextilFlow empresario](https://www.figma.com/proto/zoAlRMYgINLrqksRRdVMiO/TextilFlow?page-id=80%3A54&node-id=80-1379&p=f&viewport=312%2C221%2C0.03&t=009fFmOjceMCUFtJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=80%3A1379)
+
+[Prototyping TextilFlow distribuidor](https://www.figma.com/proto/zoAlRMYgINLrqksRRdVMiO/TextilFlow?page-id=107%3A11073&node-id=110-3700&p=f&viewport=323%2C313%2C0.13&t=aeMfSDSTb2ar8lAe-1&scaling=min-zoom&content-scaling=fixed)
+
+### **4.8. Domain-Driven Software Architecture**
+
+#### **4.8.1. Software Architecture Context Diagrams**
+
+<p align="center">
+  <img src="images/contexto.png" alt="PB" width="1000">
+</p>
+
+#### **4.8.2. Software Architecture Container Diagrams**
+
+<p align="center">
+  <img src="images/Containers.png" alt="PB" width="1000">
+</p>
+
+#### **4.8.3. Software Architecture Components Diagrams**
+
+**Diagrama de Componentes FrontEnd**
+
+<p align="center">
+  <img src="images/SAComponentsDiagram.png" alt="PB" width="1000">
+</p>
+
+* AuthService
+
+<p align="center">
+  <img src="images/AuthBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* BatchService
+
+<p align="center">
+  <img src="images/BatchBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* Businessman
+
+<p align="center">
+  <img src="images/BusinessmanBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* Configuration
+
+<p align="center">
+  <img src="images/ConfigurationBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* Observation
+
+<p align="center">
+  <img src="images/ObservationBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+* Request
+<p align="center">
+  <img src="images/RequestBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* Shared
+
+<p align="center">
+  <img src="images/SharedBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+* Supplier
+
+<p align="center">
+  <img src="images/SupplierBoundedContextDetail.png" alt="PB" width="1000">
+</p>
+
+**Diagrama de Componente BackEnd**
+
+<p align="center">
+  <img src="images/api.png" alt="PB" width="1000">
+</p>
+
+* Batch
+
+<p align="center">
+  <img src="images/structurizr3.png" alt="PB" width="1000">
+</p>
+
+* User
+
+<p align="center">
+  <img src="images/structurizr4.png" alt="PB" width="1000">
+</p>
+
+* Observation
+
+<p align="center">
+  <img src="images/structurizr5.png" alt="PB" width="1000">
+</p>
+
+
+* Supplier
+
+<p align="center">
+  <img src="images/structurizr6.png" alt="PB" width="1000">
+</p>
+
+* Review
+
+<p align="center">
+  <img src="images/structurizr7.png" alt="PB" width="1000">
+</p>
+
+* Shared
+
+<p align="center">
+  <img src="images/structurizr8.png" alt="PB" width="1000">
+</p>
+
+* Request
+
+<p align="center">
+  <img src="images/request.png" alt="PB" width="1000">
+</p>
+
+
+* Payment
+
+<p align="center">
+  <img src="images/payment.png" alt="PB" width="1000">
+</p>
+
+* Configurations
+
+<p align="center">
+  <img src="images/configurations.png" alt="PB" width="1000">
+</p>
+
+### **4.9. Software Object-Oriented Design**
+
+#### **4.9.1. Class Diagrams**
+**Diagrama de Clases FrontEnd**
+
+* Auth
+
+<p align="center">
+  <img src="images/auth.f.png" alt="PB" width="1000">
+</p>
+
+* Businessman
+
+<p align="center">
+  <img src="images/businessman.f.png" alt="PB" width="1000">
+</p>
+
+* Supplier
+
+<p align="center">
+  <img src="images/supplier.f.png" alt="PB" width="1000">
+</p>
+
+
+* Request
+
+<p align="center">
+  <img src="images/request.f.png" alt="PB" width="1000">
+</p>
+
+
+* Configuration
+
+<p align="center">
+  <img src="images/configuration.f.png" alt="PB" width="1000">
+</p>
+
+* Shared
+
+<p align="center">
+  <img src="images/shared.f.png" alt="PB" width="1000">
+</p>
+
+* Observation
+
+<p align="center">
+  <img src="images/observation.f.png" alt="PB" width="1000">
+</p>
+
+
+* Batches
+
+<p align="center">
+  <img src="images/batches.b.png" alt="PB" width="1000">
+</p>
+
+
+**Diagrama de Clases BackEnd**
+
+* IAM
+
+<p align="center">
+  <img src="images/IAM.b.png" alt="PB" width="1000">
+</p>
+
+* Request
+
+<p align="center">
+  <img src="images/request.b.png" alt="PB" width="1000">
+</p>
+
+* Payment
+
+<p align="center">
+  <img src="images/payment.b.png" alt="PB" width="1000">
+</p>
+
+* Configuration
+
+<p align="center">
+  <img src="images/configuration.b.png" alt="PB" width="1000">
+</p>
+
+* Shared
+
+<p align="center">
+  <img src="images/shared.b.png" alt="PB" width="1000">
+</p>
+
+* Observation
+
+<p align="center">
+  <img src="images/observation.b.png" alt="PB" width="1000">
+</p>
+
+* Reviews
+
+<p align="center">
+  <img src="images/reviews.b.png" alt="PB" width="1000">
+</p>
+
+* Profiles
+
+<p align="center">
+  <img src="images/profiles.b.png" alt="PB" width="1000">
+</p>
+
+* Batches
+
+<p align="center">
+  <img src="images/batches.b.png" alt="PB" width="1000">
+</p>
+
+#### **4.9.2. Class Dictionary**
+
+### Auth 
+
+#### Class User
+
+|  Atribute  | Type | Description| 
+| :---- | :---- | :---- | 
+| id | string | Unique code for a user | 
+| username | string | Username used to log into the platform | 
+| password | string | Encrypted password for user authentication | 
+| role | Enum(businessman,supplier,admin) | Role assigned to the user, determining their access level | 
+| createAt | Date | Date and time when the user account was created | 
+| updateAt | Date | Date and time when the user account was last updated | 
+
+
+---
+
+#### class AuthService <<Singleton>>
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| instance | AuthService | Static instance of the singleton class, ensuring a single point of access to authentication logic |
+
+---
+
+### Businessman
+
+#### Class Businessman
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier for the businessman |
+| userId | string | Foreign key linking to the associated user account |
+| companyName | string | Official name of the business entity |
+| contactName | string | Full name of the main contact person for the business |
+| phone | string | Contact phone number for the business |
+| address | string | Physical or mailing address of the business |
+| logoUrl | string | URL linking to the company’s logo image |
+| website | string | Official website of the business, if any |
+| createdAt | Date | Timestamp indicating when the businessman record was created |
+| updatedAt | Date | Timestamp of the last update made to the businessman record |
+
+
+---
+
+#### Class BusinessmanHomeComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| stats | Statistics | Contains various performance metrics and business-related data |
+| activeRequests | Request[] | List of requests that are currently active or in progress |
+
+---
+
+#### Class BusinessmanPlansComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| availablePlans | Plan[] | List of all plans that the businessman can subscribe to |
+| subscribedPlans | Subscription[] | List of plans the businessman is currently subscribed to |
+
+---
+
+#### Class BusinessmanRequestComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| pendingRequests | Request[] | List of requests that are currently pending or in progress |
+| completedRequests | Request[] | List of requests that have been completed or closed |
+| completedRequests | Request | Represents a new request being created by the user |
+
+---
+
+### Supplier 
+#### Class Supplier 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier for the supplier |
+| userId | string | Reference to the associated user account |
+| companyName | string | Reference to the associated user account |
+| serviceTypes | string[] | List of service types offered by the supplier |
+| contactName | string | Name of the primary contact person |
+| phone | string | Contact phone number |
+| address | string | Physical business address |
+| logoUrl | string | URL to the company's logo image |
+| website | string | Website URL of the supplier |
+| createdAt | Date | Timestamp of when the supplier was created |
+| updatedAt | Date | Timestamp of the last update made to the supplier data |
+
+
+---
+
+#### Class SupplierHomeComponent 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| stats | Statistics | Statistical data related to the supplier's activity (e.g., completed services, ratings) |
+| pendingRequests | Request[] | List of current pending service requests assigned to the supplier |
+
+---
+
+#### Class SupplierPlansComponent 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| registeredPlans | Plan[] | List of plans that the supplier has registered or subscribed to |
+
+---
+
+#### Class SupplierRequestComponent 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| assignedRequests | Request[] | List of requests currently assigned to the supplier |
+| completedRequests | Request[] | List of requests the supplier has completed |
+
+---
+
+### Batch 
+
+#### Class BatchEntity
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the batch entity |
+| batchId | string | Identifier of the batch to which this entity belongs |
+| entityType | string | Type/category of the entity |
+| entityData | object | Data content of the entity |
+| processingStatus | string | Current processing status of the entity (e.g., pending, processed) |
+| createdAt | Date | Timestamp when the entity was created |
+| updatedAt | Date | Timestamp when the entity was last updated |
+
+---
+
+#### Class Batch
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the batch |
+| requestId | string | Identifier of the request that triggered this batch |
+| status | string | Current status of the batch (e.g., processing, completed, cancelled) |
+| resultData | object | Result data or output generated from batch processing |
+| errorMessage | string | Error message if processing failed |
+| createdAt | Date | Timestamp when the batch was created |
+| updatedAt | Date | Timestamp when the batch was last updated |
+
+---
+#### Class BusinessmanBatchComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| batches | Batch[] | List of batches related to the businessman. |
+
+---
+
+#### Class SupplierBatchComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| batches | Batch[] | List of batches related to the businessman. |
+
+---
+
+#### Class SupplierBatchComponent
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| newBatch | Batch | The batch being created or registered. |
+| entities | BatchEntity[] | List of entities included in the new batch |
+
+---
+
+#### Class SupplierRegisterBatchComponent 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| newBatch | Batch | The batch being created or registered |
+| entities | BatchEntity[] | List of entities included in the new batch |
+---
+
+### Shared
+
+#### Class Request
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the request |
+| businessmanId | string | ID of the businessman who created the request |
+| supplierId | string | ID of the supplier assigned to the request |
+| title | string | Title or short summary of the request |
+| description | string | ID of the supplier assigned to the request |
+| requirements | string | Specific requirements needed to fulfill the request |
+| status | string | Current status of the request (e.g., pending, accepted) |
+| deadline | string | Deadline by which the request should be completed |
+| createdAt | Date | Deadline by which the request should be completed |
+| updatedAt | Date | Timestamp when the request was last updated |
+
+---
+
+#### Class Plan
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the plan |
+| name | string | Name of the plan |
+| description | string | Description of the plan’s features and benefits |
+| price | decimal | Price of the plan |
+| features | string[] | List of features included in the plan |
+| isActive | boolean | Indicates if the plan is currently active |
+| createdAt | Date | Timestamp when the plan was created |
+| updatedAt | Date | Timestamp when the plan was last updated |
+
+---
+
+#### Class Subscription
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the subscription |
+| businessmanId | string | ID of the businessman holding the subscription |
+| planId | string | ID of the subscribed plan |
+| startDate | Date | Subscription start date |
+| endDate | Date | Subscription end date |
+| status | string | Current status of the subscription (active, cancelled, expired) |
+| paymentInfo | object | Payment details related to the subscription |
+| createdAt | Date | Timestamp when the subscription was created |
+| updatedAt | Date | Timestamp when the subscription was last updated |
+
+---
+
+#### Class Comment
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the comment |
+| requestId | string | ID of the request to which the comment belongs |
+| userId | string | ID of the user who made the comment |
+| content | string | Text content of the comment |
+| attachmentUrl | string | URL of any attachment included with the comment |
+| createdAt | Date | Timestamp when the comment was created |
+| updatedAt | Date | Timestamp when the comment was last updated |
+
+---
+
+#### Class NotificationManager 
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| instance | NotificationManager | Static instance of the singleton class |
+| observers | Observer[] | List of subscribed observers for notifications |
+
+---
+
+#### Class Notification
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| id | string | Unique identifier of the notification |
+| userId | string	 | ID of the user who receives the notification |
+| type | string | Type of notification (e.g., info, warning, request_update) |
+| message | string | The message content of the notification |
+| isRead | boolean | Indicates whether the user has read the notification |
+| relatedId | string | ID of the related entity (e.g., request, plan, batch) the notification refers to |
+| createdAt | Date | Timestamp when the notification was created |
+
+---
+
+#### Class Statistics
+
+| Attribute | Type | Description |
+| :---- | :---- | :---- |
+| totalRequests | number | Total number of requests made or received |
+| completedRequests | number | Number of requests marked as completed |
+| pendingRequests | number | Number of requests that are still pending |
+| rejectedRequests | number | Number of requests that were rejected |
+| inProgressRequests | number | Number of requests that are currently in progress |
+
+
+### **4.10. Database Design**
+#### **4.10.1. Database Diagram**
+
+<p align="center">
+  <img src="images/DatabaseDiagramTF.jpg" alt="PB" width="1000">
+</p>
 
 
 
