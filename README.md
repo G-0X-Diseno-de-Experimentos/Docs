@@ -1236,7 +1236,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la página de bienvenida de TextilFlow donde se le presentan las opciones para registrarse o iniciar sesión. Al seleccionar iniciar sesión, el usuario debe ingresar sus credenciales (correo y contraseña). Tras validar sus datos, el sistema muestra la pantalla de selección de rol donde el usuario puede elegir entre "Empresa" o "Distribuidor". Dependiendo de su selección, el sistema lo redirige al dashboard correspondiente que muestra información relevante según el rol seleccionado, mostrando información de los lotes por enviar, enviados o confirmados, junto con notificaciones recientes.
 
 <p align="center">
-  <img src="images/Wireflow1.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow1.png" alt="PB" width="1000">
 </p>
 
 
@@ -1247,7 +1247,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** Desde el dashboard principal, el usuario puede visualizar los diferentes estados de los lotes (por enviar, enviados, confirmados o rechazados) con contadores que indican la cantidad en cada categoría. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes a ese estado. Esta tabla incluye información como código, cliente, tipo de tela, fecha, estado y opciones para filtrar o buscar. El usuario puede seleccionar un lote específico para ver información más detallada o realizar acciones adicionales según su rol en el sistema.
 
 <p align="center">
-  <img src="images/Wireflow2.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow2.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 3: Visualización y filtrado de observaciones**
@@ -1257,7 +1257,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección de "Observaciones Enviadas" desde el menú lateral. El sistema muestra una tabla con todas las observaciones registradas, incluyendo información como el lote relacionado, fecha, motivo, evidencia adjunta y estado actual (pendiente, visto, rechazado, confirmado). El usuario puede utilizar las opciones de filtrado ubicadas en la parte superior para refinar la lista según diferentes criterios. Al seleccionar una observación específica, puede ver más detalles o realizar acciones como editar o eliminar, dependiendo del estado actual de la observación.
 
 <p align="center">
-  <img src="images/Wireflow3.png" alt="PB" width="1000">
+  <img src="assets/tp1//Wireflow3.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 4: Gestión de suscripción y planes**
@@ -1267,7 +1267,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección "Planes y suscripción" desde el menú lateral. El sistema muestra los planes disponibles: Plan Básico ($9.99) y Plan Corporativo ($49.99), detallando los beneficios de cada uno. Cada plan incluye información sobre número de lotes permitidos, acceso a estadísticas y funcionalidades adicionales. El usuario puede comparar los planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. El sistema confirma la selección y actualiza la cuenta con los beneficios correspondientes.
 
 <p align="center">
-  <img src="images/Wireflow4.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow4.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 5: Configuración de la aplicación y perfil**
@@ -1277,120 +1277,120 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a las opciones de configuración a través del menú lateral. Desde aquí, puede personalizar su experiencia en la plataforma ajustando preferencias como el modo de visualización (claro/oscuro) y la información de su perfil. Al seleccionar "Mi perfil", el sistema muestra un formulario con los datos actuales del usuario, permitiéndole editar su nombre, correo electrónico y foto/logo de la empresa. Tras realizar los cambios deseados, el usuario guarda la información actualizada mediante el botón correspondiente. Adicionalmente, en esta sección el usuario puede configurar preferencias específicas como la generación automática o manual de códigos para lotes y otros ajustes que personalicen su experiencia en TextilFlow según sus necesidades operativas.
 
 <p align="center">
-  <img src="images/Wireflow5.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow5.png" alt="PB" width="1000">
 </p>
 
 #### **4.6.3. Web Applications Mock-ups**
 
 **Inicio de Sesión**
 <p align="center">
-  <img src="images/wm1.png"  width="850">
+  <img src="assets/tp1/wm1.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm2.png"  width="850">
+  <img src="assets/tp1/wm2.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm3.png"  width="850">
+  <img src="assets/tp1/wm3.png"  width="850">
 </p>
 
 #### Empresario 
 
 **Inicio**
 <p align="center">
-  <img src="images/wm4.png"  width="850">
+  <img src="assets/tp1/wm4.png"  width="850">
 </p>
 
 **Lotes recibidos**
 <p align="center">
-  <img src="images/wm5.png"  width="850">
+  <img src="assets/tp1/wm5.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm6.png" width="850">
+  <img src="assets/tp1/wm6.png" width="850">
 </p>
 <p align="center">
-  <img src="images/wm7.png"  width="850">
+  <img src="assets/tp1/wm7.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm8.png"  width="850">
+  <img src="assets/tp1/wm8.png"  width="850">
 </p>
 
 **Observaciones Enviadas**
 <p align="center">
-  <img src="images/wm9.png"  width="850">
+  <img src="assets/tp1/wm9.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm10.png"  width="850">
+  <img src="assets/tp1/wm10.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/wm11.png"  width="850">
+  <img src="assets/tp1/wm11.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/wm12.png"  width="850">
+  <img src="assets/tp1/wm12.png"  width="850">
 </p>
 
 **Perfil**
 <p align="center">
-  <img src="images/wm13.png"  width="850">
+  <img src="assets/tp1/wm13.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm14.png"  width="850">
+  <img src="assets/tp1/wm14.png"  width="850">
 </p>
 
 #### Distribuidor 
 
 **Inicio**
 <p align="center">
-  <img src="images/wm15.png"  width="850">
+  <img src="assets/tp1/wm15.png"  width="850">
 </p>
 
 **Mis Lotes**
 <p align="center">
-  <img src="images/wm16.png"  width="850">
+  <img src="assets/tp1/wm16.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm17.png" width="850">
+  <img src="assets/tp1/wm17.png" width="850">
 </p>
 <p align="center">
-  <img src="images/wm18.png"  width="850">
+  <img src="assets/tp1/wm18.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm19.png"  width="850">
+  <img src="assets/tp1/wm19.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm20.png"  width="850">
+  <img src="assets/tp1/wm20.png"  width="850">
 </p>
 
 **Registrar Lotes**
 <p align="center">
-  <img src="images/wm21.png"  width="850">
+  <img src="assets/tp1/wm21.png"  width="850">
 </p>
 
 
 **Observaciones**
 <p align="center">
-  <img src="images/wm22.png"  width="850">
+  <img src="assets/tp1/wm22.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/wm23.png"  width="850">
+  <img src="assets/tp1/wm23.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/wm24.png"  width="850">
+  <img src="assets/tp1/wm24.png"  width="850">
 </p>
 
 **perfil**
 <p align="center">
-  <img src="images/wm25.png"  width="850">
+  <img src="assets/tp1/wm25.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm26.png"  width="850">
+  <img src="assets/tp1/wm26.png"  width="850">
 </p>
 
 [ Enlace en Figma de Web Applications Mock-ups Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=80-1885&t=JXQyMkXCVQTK4SMK-1)
@@ -1412,7 +1412,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario ingresa a la plataforma TextilFlow a través de la pantalla de bienvenida. En esta primera pantalla, puede elegir entre registrarse como nuevo usuario o iniciar sesión con credenciales existentes. Al seleccionar iniciar sesión, debe ingresar su correo electrónico y contraseña. Una vez validados los datos, el sistema lo dirige a la pantalla de selección de rol, donde debe indicar si actuará como "Empresa" o "Distribuidor". Dependiendo de la selección, el sistema redirige al usuario al dashboard correspondiente, mostrando información relevante según su rol, incluyendo contadores de lotes en diferentes estados (por enviar, enviados, confirmados) y las notificaciones recientes que requieren su atención.
 
 <p align="center">
-  <img src="images/Userflow1.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow1.png" alt="PB" width="1000">
 </p>
 
 ## **2\. User Goal: Gestión de suscripción y planes**
@@ -1422,7 +1422,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario, desde su dashboard principal, accede a la sección de "Planes y suscripción" a través del menú lateral. El sistema muestra una comparativa entre los dos planes disponibles: Plan Básico ($9.99/mes) y Plan Corporativo ($49.99/mes). Cada plan presenta sus beneficios específicos, como límites de lotes, acceso a estadísticas, y funcionalidades adicionales. El usuario puede analizar las diferencias entre ambos planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. Al confirmar su elección, el sistema actualiza la suscripción y aplica inmediatamente los beneficios correspondientes al plan seleccionado.
 
 <p align="center">
-  <img src="images/Userflow2.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow2.png" alt="PB" width="1000">
 </p>
 
 ## **3\. User Goal: Visualización y gestión de lotes**
@@ -1432,7 +1432,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** Desde el dashboard, el usuario puede ver un resumen de sus lotes clasificados por estado. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes. Esta tabla incluye columnas para código, cliente, tipo de tela, fecha, estado y opciones adicionales. El usuario puede filtrar y ordenar la información según diferentes criterios para encontrar rápidamente lo que busca. Al seleccionar un lote específico, puede ver información más detallada o realizar acciones adicionales como editar, descargar reportes o registrar observaciones. La interfaz permite navegar entre diferentes vistas de lotes según sus estados (enviados, recibidos, confirmados, rechazados) manteniendo una experiencia coherente.
 
 <p align="center">
-  <img src="images/Userflow3.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow3.png" alt="PB" width="1000">
 </p>
 
 ## **4\. User Goal: Registro y envío de nuevos lotes**
@@ -1442,7 +1442,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El distribuidor, desde su dashboard, selecciona la opción "Registrar Lotes" del menú lateral. El sistema muestra un formulario completo para ingresar la información del nuevo lote, incluyendo campos para código del lote (que puede ser automático o manual), cliente, tipo de tela, fecha de registro, y observaciones adicionales. El usuario completa todos los campos requeridos y tiene la opción de añadir información complementaria como calidad de tela o fotos. Una vez completado el formulario, el distribuidor hace clic en "Enviar" para registrar el lote en el sistema. La plataforma confirma el registro exitoso y notifica automáticamente al empresario destinatario sobre el nuevo lote recibido, actualizando los contadores en ambos dashboards.
 
 <p align="center">
-  <img src="images/Userflow4.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow4.png" alt="PB" width="1000">
 </p>
 
 ## **5\. User Goal: Gestión de observaciones de lotes**
@@ -1452,7 +1452,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección "Observaciones" desde su dashboard. Dependiendo de su rol, visualiza las observaciones enviadas (distribuidor) o recibidas (empresario). El sistema muestra una tabla con todas las observaciones, incluyendo información como código de lote relacionado, fecha, motivo, estado y evidencia adjunta. El usuario puede filtrar la lista por diferentes criterios para localizar observaciones específicas. Al seleccionar una observación, puede ver detalles completos, incluyendo imágenes adjuntas como evidencia. Si la observación aún está en estado "pendiente", el empresario puede editarla o eliminarla; si ya fue revisada, estas opciones no están disponibles. El distribuidor puede marcar observaciones como "vistas" y responder a ellas según sea necesario.
 
 <p align="center">
-  <img src="images/Userflow5.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow5.png" alt="PB" width="1000">
 </p>
 
 ## **6\. User Goal: Configuración de la aplicación y perfil**
@@ -1462,13 +1462,13 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección de configuración a través del menú lateral. Aquí puede personalizar aspectos de su experiencia en la plataforma, incluyendo la información de su perfil y preferencias visuales. Al seleccionar la opción de perfil, puede modificar datos personales como nombre, foto/logo de la empresa y datos de contacto. El sistema permite al usuario elegir entre modo claro u oscuro para la interfaz, así como configurar preferencias específicas como la generación automática o manual de códigos para lotes. Tras realizar los cambios deseados, el usuario confirma las modificaciones y el sistema las aplica inmediatamente. Esta sección también proporciona opciones de seguridad como cambio de contraseña y cierre de sesión, permitiendo al usuario gestionar completamente su experiencia en la plataforma.
 
 <p align="center">
-  <img src="images/Userflow6.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow6.png" alt="PB" width="1000">
 </p>
 
 ### **4.7. Web Applications Prototyping**
 
 <p align="center">
-  <img src="images/prototype.png" alt="PB" width="1000">
+  <img src="assets/tp1/prototype.png" alt="PB" width="1000">
 </p>
 
 [Web Applications Prototyping TextilFlow](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311361_upc_edu_pe/EdB5RunylOtGm678FwW-g64BH_ntQg-ugW-fUD7lLYVNQw?e=OmtcdT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
@@ -1481,13 +1481,13 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 #### **4.8.1. Software Architecture Context Diagrams**
 
 <p align="center">
-  <img src="images/contexto.png" alt="PB" width="1000">
+  <img src="assets/tp1/contexto.png" alt="PB" width="1000">
 </p>
 
 #### **4.8.2. Software Architecture Container Diagrams**
 
 <p align="center">
-  <img src="images/Containers.png" alt="PB" width="1000">
+  <img src="assets/tp1/Containers.png" alt="PB" width="1000">
 </p>
 
 #### **4.8.3. Software Architecture Components Diagrams**
@@ -1495,115 +1495,115 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Diagrama de Componentes FrontEnd**
 
 <p align="center">
-  <img src="images/SAComponentsDiagram.png" alt="PB" width="1000">
+  <img src="assets/tp1/SAComponentsDiagram.png" alt="PB" width="1000">
 </p>
 
 * AuthService
 
 <p align="center">
-  <img src="images/AuthBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/AuthBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * BatchService
 
 <p align="center">
-  <img src="images/BatchBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/BatchBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Businessman
 
 <p align="center">
-  <img src="images/BusinessmanBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/BusinessmanBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Configuration
 
 <p align="center">
-  <img src="images/ConfigurationBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/ConfigurationBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/ObservationBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/ObservationBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 * Request
 <p align="center">
-  <img src="images/RequestBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/RequestBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/SharedBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/SharedBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Supplier
 
 <p align="center">
-  <img src="images/SupplierBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/SupplierBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 **Diagrama de Componente BackEnd**
 
 <p align="center">
-  <img src="images/api.png" alt="PB" width="1000">
+  <img src="assets/tp1/api.png" alt="PB" width="1000">
 </p>
 
 * Batch
 
 <p align="center">
-  <img src="images/structurizr3.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr3.png" alt="PB" width="1000">
 </p>
 
 * User
 
 <p align="center">
-  <img src="images/structurizr4.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr4.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/structurizr5.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr5.png" alt="PB" width="1000">
 </p>
 
 
 * Supplier
 
 <p align="center">
-  <img src="images/structurizr6.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr6.png" alt="PB" width="1000">
 </p>
 
 * Review
 
 <p align="center">
-  <img src="images/structurizr7.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr7.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/structurizr8.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr8.png" alt="PB" width="1000">
 </p>
 
 * Request
 
 <p align="center">
-  <img src="images/request.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.png" alt="PB" width="1000">
 </p>
 
 
 * Payment
 
 <p align="center">
-  <img src="images/payment.png" alt="PB" width="1000">
+  <img src="assets/tp1/payment.png" alt="PB" width="1000">
 </p>
 
 * Configurations
 
 <p align="center">
-  <img src="images/configurations.png" alt="PB" width="1000">
+  <img src="assets/tp1/configurations.png" alt="PB" width="1000">
 </p>
 
 ### **4.9. Software Object-Oriented Design**
@@ -1614,52 +1614,52 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 * Auth
 
 <p align="center">
-  <img src="images/auth.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/auth.f.png" alt="PB" width="1000">
 </p>
 
 * Businessman
 
 <p align="center">
-  <img src="images/businessman.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/businessman.f.png" alt="PB" width="1000">
 </p>
 
 * Supplier
 
 <p align="center">
-  <img src="images/supplier.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/supplier.f.png" alt="PB" width="1000">
 </p>
 
 
 * Request
 
 <p align="center">
-  <img src="images/request.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.f.png" alt="PB" width="1000">
 </p>
 
 
 * Configuration
 
 <p align="center">
-  <img src="images/configuration.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/configuration.f.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/shared.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/shared.f.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/observation.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/observation.f.png" alt="PB" width="1000">
 </p>
 
 
 * Batches
 
 <p align="center">
-  <img src="images/batches.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/batches.b.png" alt="PB" width="1000">
 </p>
 
 
@@ -1668,55 +1668,55 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 * IAM
 
 <p align="center">
-  <img src="images/IAM.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/IAM.b.png" alt="PB" width="1000">
 </p>
 
 * Request
 
 <p align="center">
-  <img src="images/request.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.b.png" alt="PB" width="1000">
 </p>
 
 * Payment
 
 <p align="center">
-  <img src="images/payment.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/payment.b.png" alt="PB" width="1000">
 </p>
 
 * Configuration
 
 <p align="center">
-  <img src="images/configuration.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/configuration.b.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/shared.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/shared.b.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/observation.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/observation.b.png" alt="PB" width="1000">
 </p>
 
 * Reviews
 
 <p align="center">
-  <img src="images/reviews.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/reviews.b.png" alt="PB" width="1000">
 </p>
 
 * Profiles
 
 <p align="center">
-  <img src="images/profiles.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/profiles.b.png" alt="PB" width="1000">
 </p>
 
 * Batches
 
 <p align="center">
-  <img src="images/batches.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/batches.b.png" alt="PB" width="1000">
 </p>
 
 #### **4.9.2. Class Dictionary**
@@ -2003,7 +2003,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 #### **4.10.1. Database Diagram**
 
 <p align="center">
-  <img src="images/DatabaseDiagramTF.jpg" alt="PB" width="1000">
+  <img src="assets/tp1/DatabaseDiagramTF.jpg" alt="PB" width="1000">
 </p>
 
 
