@@ -82,7 +82,7 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 | Integrante | Usuario Github | Detalle de avance |
 |------------|----------------|-------------------|
 | Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del Capítulo I, II, III. |
-| Mathias Eduardo Bueno Perales | `MathiasBueno` | |
+| Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo del Capitulo II, VI|
 | | `Shiftinnnnn` |  |
 |  | `GiorgioAwad` |  |
 | | `Khafna09` |  |
@@ -267,7 +267,7 @@ Proporcionar a distribuidores, talleres y empresas textiles una herramienta digi
 
 | Foto | Miembros del equipo | Código de Estudiante | Descripción |
 | :---: | :--- | :--- | :--- |
-|![alt text](assets/fotos/foto-mathias.png) | Mathias Bueno Perales  | u202313433 |Soy una persona optimista y responsable al cumplir mis labores para-con el grupo. Tengo experiencia respecto a proyectos previamente hechos en la rama de Ingenieria de Software y conocimientos en programacion como en HTML y CSS. Siempre procuro lo mejor para el equipo y ayudar en todo lo que este en mi alcance. |
+|![alt text](assets/fotos/foto-mathias-bueno.png) | Mathias Bueno Perales  | u202313433 |Soy un estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, cursando actualmente el 7to ciclo. Soy una persona que busca siempre trabajar en equipo y busco tener nuestros proyectos listos de forma puntual. Cuento con habilidades de trabajo en equipo, mucho compromiso, responsabilidad y empatia. A nivel tecnico tengo manejo de Vue.js, .NET, Angular, Kotlin, Spring Boot y en bases de datos tanto SQL como NoSQL. |
 | ![alt text](assets/fotos/fabriziofoto.jpg)| Paredes Santos, Fabrizio Alberto | U202310914 | Profesional en formación con experiencia en desarrollo de aplicaciones web y móviles utilizando stacks modernos como Vue.js y .NET, Angular y Spring Boot, además de desarrollo móvil con Flutter y Kotlin. También he trabajado en la creación de páginas web con React, Next.js y Tailwind CSS, enfocadas en rendimiento y experiencia de usuario. Me caracterizo por ser proactivo, responsable y orientado a resultados, con capacidad para adaptarme a entornos dinámicos y contribuir eficazmente en equipos de desarrollo. |
 |![alt text] *FOTO* | Rodriguez Macedo, Sebastian | U202310199 | Soy una persona capaz de resolver problemas con el equipo desde un punto de vista diferente, además ofrezco siempre compromiso hacia mis compañeros cumpliendo con las asignaciones de manera responsable. |
 
@@ -643,7 +643,11 @@ Las siguientes preguntas están dirigidas a distribuidores y proveedores textile
 
 **Entrevista 3**
 
-**FALTA**
+| Entrevistado 3 |  Eduardo Andy Bueno Muro |
+| :---- | :---- |
+| Edad | 46 años |
+|  <img src="assets/tp1/entrevista5_segmento2.png" alt="PB" width="800"> | Eduardo no tiene tienda física ni online; vende a través de su cartera de clientes. Distribuye jersey, franela, french terry y gamuza pima. Verifica la calidad en laboratorios midiendo gramaje y encogimiento. Hace inspecciones finales para detectar fallas. Guarda registros digitales por fecha y cliente. Toma muestras por color como respaldo. Le parece buena la idea de una plataforma para compartir evidencia visual, aunque expresa cierta reserva sobre exponer todo el proceso por miedo a que sus clientes copien su ruta de producción. |
+| Timing:12:30 – 18:12 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/personal/u202311220_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311220%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20TextilFlow%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5cb30a6c%2D0c5e%2D4acf%2D8fb2%2Dea5b477f75b8) |
 
 **Segmento #2**
 
