@@ -983,7 +983,7 @@ En esta seccion como grupo hemos decidido establecer ciertas directrices de esti
 Nuestro logotipo esta compuesto por una bola de estambre rodeada por el nombre de nuestra start up (TextilFlow). La bola de estambre representando al hilo que es un compuesto del que estan hechos muchos tipos de telas.
 
 <p align="center">
-  <img src="images/LogoTextilFLow.png" width="200">
+  <img src="./assets/tp1/LogoTextilFLow.png" width="200">
 </p>
 
 
@@ -993,13 +993,13 @@ Para TextilFlow, decidimos usar dos fuentes:
 * Manrope: Para los titulos y subtitulos en pesos *bold* y *semibold* respectivamente para cada una.
 
 <p align="center">
-  <img src="images/Manrope.png" width="500" height="300">
+  <img src="./assets/tp1/Manrope.png" width="500" height="300">
 </p>
 
 * Lato: Para el texto de los parrafos, en peso *regular*, permitiendo al usuario una lectura comoda.
 
 <p align="center">
-  <img src="images/Lato.jpg" width="500" height="300">
+  <img src="./assets/tp1/Lato.jpg" width="500" height="300">
 </p>
 
 ### *Spacing:* 
@@ -1011,7 +1011,7 @@ Para nuestro espaciado, nos basamos en lo recomendado para el diseño de interfa
 Hemos decidido por colores que dan el ambiente de trabajo en una empresa textil, tonalidades marrones como #2A1905 y #866C52 combinadas con un fonde en su mayoria blanca #FFFFFF y con tonalides grises #E8E2E2 respectivamente. Para el texto decidimos por dejarlo en negro #000000.
 
 <p align="center">
-  <img src="images/PaletaColoresLP.png" width="500" height="200">
+  <img src="./assets/tp1/PaletaColoresLP.png" width="500" height="200">
 </p>
 
 #### **4.1.2. Web Style Guidelines**
@@ -1111,113 +1111,113 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 
 **Inicio de Sesión**
 <p align="center">
-  <img src="images/ww1.png"  width="850">
+  <img src="./assets/tp1/ww1.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww2.png"  width="850">
+  <img src="./assets/tp1/ww2.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww3.png"  width="850">
+  <img src="./assets/tp1/ww3.png"  width="850">
 </p>
 
 #### Empresario 
 
 **Inicio**
 <p align="center">
-  <img src="images/ww4.png"  width="850">
+  <img src="./assets/tp1/ww4.png"  width="850">
 </p>
 
 **Lotes recibidos**
 <p align="center">
-  <img src="images/ww5.png"  width="850">
+  <img src="./assets/tp1/ww5.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww6.png" width="850">
+  <img src="./assets/tp1/ww6.png" width="850">
 </p>
 <p align="center">
-  <img src="images/ww7.png"  width="850">
+  <img src="./assets/tp1/ww7.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww8.png"  width="850">
+  <img src="./assets/tp1/ww8.png"  width="850">
 </p>
 
 **Observaciones Enviadas**
 <p align="center">
-  <img src="images/ww9.png"  width="850">
+  <img src="./assets/tp1/ww9.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww10.png"  width="850">
+  <img src="./assets/tp1/ww10.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/ww11.png"  width="850">
+  <img src="./assets/tp1/ww11.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/ww12.png"  width="850">
+  <img src="./assets/tp1/ww12.png"  width="850">
 </p>
 
 **Perfil**
 <p align="center">
-  <img src="images/ww13.png"  width="850">
+  <img src="./assets/tp1/ww13.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww14.png"  width="850">
+  <img src="./assets/tp1/ww14.png"  width="850">
 </p>
 
 #### Distribuidor 
 
 **Inicio**
 <p align="center">
-  <img src="images/ww15.png"  width="850">
+  <img src="./assets/tp1/ww15.png"  width="850">
 </p>
 
 **Mis Lotes**
 <p align="center">
-  <img src="images/ww16.png"  width="850">
+  <img src="./assets/tp1/ww16.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww17.png" width="850">
+  <img src="./assets/tp1/ww17.png" width="850">
 </p>
 <p align="center">
-  <img src="images/ww18.png"  width="850">
+  <img src="./assets/tp1/ww18.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww19.png"  width="850">
+  <img src="./assets/tp1/ww19.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww20.png"  width="850">
+  <img src="./assets/tp1/ww20.png"  width="850">
 </p>
 
 **Registrar Lotes**
 <p align="center">
-  <img src="images/ww21.png"  width="850">
+  <img src="./assets/tp1/ww21.png"  width="850">
 </p>
 
 
 **Observaciones**
 <p align="center">
-  <img src="images/ww22.png"  width="850">
+  <img src="./assets/tp1/ww22.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/ww23.png"  width="850">
+  <img src="./assets/tp1/ww23.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/ww24.png"  width="850">
+  <img src="./assets/tp1/ww24.png"  width="850">
 </p>
 
 **perfil**
 <p align="center">
-  <img src="images/ww25.png"  width="850">
+  <img src="./assets/tp1/ww25.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww26.png"  width="850">
+  <img src="./assets/tp1/ww26.png"  width="850">
 </p>
 
 [ Enlace en Figma de Web Applications Wireframes Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=119-2478&t=JXQyMkXCVQTK4SMK-1)
