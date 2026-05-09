@@ -219,29 +219,6 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests.](#614-core-system-tests)
 
-  - [6.2. Static testing & Verification](#62-static-testing--verification)
-    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
-      - [6.2.1.1. Coding standard & Code conventions.](#6211-coding-standard--code-conventions)
-      - [6.2.1.2. Code Quality & Code Security.](#6212-code-quality--code-security)
-    - [6.2.2. Reviews](#622-reviews)
-
-  - [6.3. Validation Interviews.](#63-validation-interviews)
-    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
-    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
-    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
-
-  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
-    - [6.4.1. Auditoría realizada.](#641-auditoría-realizada)
-      - [6.4.1.1. Información del grupo auditado.](#6411-información-del-grupo-auditado)
-      - [6.4.1.2. Cronograma de auditoría realizada.](#6412-cronograma-de-auditoría-realizada)
-      - [6.4.1.3. Contenido de auditoría realizada.](#6413-contenido-de-auditoría-realizada)
-
-    - [6.4.2. Auditoría recibida.](#642-auditoría-recibida)
-      - [6.4.2.1. Información del grupo auditor.](#6421-información-del-grupo-auditor)
-      - [6.4.2.2. Cronograma de auditoría recibida.](#6422-cronograma-de-auditoría-recibida)
-      - [6.4.2.3. Contenido de auditoría recibida.](#6423-contenido-de-auditoría-recibida)
-      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos.](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
-
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices.](#711-tools-and-practices)
@@ -254,12 +231,6 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
   - [7.3. Continuous deployment](#73-continuous-deployment)
     - [7.3.1. Tools and Practices.](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components.](#732-production-deployment-pipeline-components)
-
-  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
-    - [7.4.1. Tools and Practices](#741-tools-and-practices)
-    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
-    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
-    - [7.4.4. Notification Pipeline Components.](#744-notification-pipeline-components)
 
 
 ## Student Outcome
