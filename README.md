@@ -2125,7 +2125,7 @@ Los atributos de las etiquetas deben estar en lowercase (o minúscula).
 **Figura**
 *Explicación del paso 5*
 <p align="center">
-  <img src="images/SDC1.png" alt="PB" width="850">
+  <img src="./assets/tp1/SDC1.jpg" alt="PB" width="850">
 </p>
 
 Nota. Elaboración propia.
@@ -2143,7 +2143,49 @@ Accedemos a esta URL desde el navegador para confirmar que el sitio está activo
 
 #### 5.2.2. Implemented Landing Page Evidence
 
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence4.jpg" alt="PB" width="850">
+</p>
+
+
 #### 5.2.3. Implemented Frontend-Web Application Evidence
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence4jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence5.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence6.jpg" alt="PB" width="850">
+</p>
 
 #### 5.2.4. Acuerdo de Servicio - SaaS
 
@@ -2151,7 +2193,91 @@ Accedemos a esta URL desde el navegador para confirmar que el sitio está activo
 
 #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
+<p align="center">
+  <img src="./assets/tp1/backend_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence4.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence5.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence6.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence7.jpg" alt="PB" width="850">
+</p>
+
 #### 5.2.7. RESTful API documentation
+
+| Método HTTP                              | Endpoint                                                      | Descripción                          | Ejemplo de uso                     |
+| ---------------------------------------- | ------------------------------------------------------------- | ------------------------------------ | ---------------------------------- |
+| **Authentication Management**            |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/authentication/sign-up`                              | Registro de nuevo usuario            | Crear cuenta en la plataforma      |
+| POST                                     | `/api/v1/authentication/sign-in`                              | Inicio de sesión                     | Autenticación de usuario           |
+| POST                                     | `/api/v1/authentication/forgot-password`                      | Solicitar recuperación de contraseña | Recuperar acceso a la cuenta       |
+| POST                                     | `/api/v1/authentication/reset-password`                       | Resetear contraseña                  | Establecer nueva contraseña        |
+| **Batch Management**                     |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/batches`                                             | Obtiene todos los lotes              | Visualizar lotes de producción     |
+| GET                                      | `/api/v1/batches/{batchId}`                                   | Obtiene un lote específico           | Detalles del lote de productos     |
+| POST                                     | `/api/v1/batches`                                             | Crea un nuevo lote                   | Registrar nuevo lote de producción |
+| PUT                                      | `/api/v1/batches/{batchId}`                                   | Actualiza un lote existente          | Modificar estado del lote          |
+| DELETE                                   | `/api/v1/batches/{batchId}`                                   | Elimina un lote                      | Dar de baja lote completado        |
+| GET                                      | `/api/v1/batches/test/profiles/{userId}`                      | Test perfiles ACL                    | Verificar permisos de usuario      |
+| **Business Supplier Request Management** |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/business-supplier-requests`                          | Obtiene todas las solicitudes        | Lista de solicitudes               |
+| GET                                      | `/api/v1/business-supplier-requests/{requestId}`              | Obtiene solicitud por ID             | Perfil específico de solicitud     |
+| POST                                     | `/api/v1/business-supplier-requests`                          | Crea solicitud                       | Registrar nueva solicitud          |
+| PUT                                      | `/api/v1/business-supplier-requests/{requestId}`              | Actualiza solicitud                  | Modificar datos de solicitud       |
+| DELETE                                   | `/api/v1/business-supplier-request`                           | Elimina solicitud                    | Borrar solicitud                   |
+| **Businessmen Management**               |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/businessmen`                                         | Obtiene todos los empresarios        | Lista de empresarios textiles      |
+| GET                                      | `/api/v1/businessmen/{userId}`                                | Obtiene empresario por ID            | Perfil específico de empresario    |
+| POST                                     | `/api/v1/businessmen/{userId}`                                | Crea perfil de empresario            | Registrar nuevo empresario         |
+| PUT                                      | `/api/v1/businessmen/{userId}`                                | Actualiza perfil de empresario       | Modificar datos empresariales      |
+| **Observation Management**               |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/observations/{observationId}`                        | Obtiene observación específica       | Detalles de observación de calidad |
+| GET                                      | `/api/v1/observations/supplier/{supplierId}`                  | Observaciones por proveedor          | Historial de observaciones         |
+| GET                                      | `/api/v1/observations/businessman/{businessmanId}`            | Observaciones por empresario         | Control de calidad empresarial     |
+| GET                                      | `/api/v1/observations/batch/{batchId}`                        | Observaciones por lote               | Control de calidad del lote        |
+| POST                                     | `/api/v1/observations`                                        | Crea nueva observación               | Reportar observación de calidad    |
+| PUT                                      | `/api/v1/observations/{observationId}`                        | Actualiza observación                | Modificar estado de observación    |
+| DELETE                                   | `/api/v1/observations/{observationId}`                        | Elimina observación                  | Remover observación resuelta       |
+| **Observation Images Management**        |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/observations/{observationId}/images`                 | Crea nueva imagen de observación     | Adjuntar evidencia visual          |
+| DELETE                                   | `/api/v1/observations/{observationId}/images`                 | Elimina imagen de observación        | Remover evidencia visual           |
+| **Profile Images Management**            |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/profiles/{userId}/images/logo`                       | Sube logo de perfil                  | Actualizar imagen corporativa      |
+| DELETE                                   | `/api/v1/profiles/{userId}/images/logo`                       | Elimina logo de perfil               | Remover imagen de perfil           |
+| **Complete Profiles Management**         |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/profiles/{userId}`                                   | Obtiene perfil completo              | Información completa del usuario   |
+| **Supplier Reviews Management**          |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/supplier-reviews/supplier/{supplierId}`              | Obtiene reviews por proveedor        | Calificaciones del proveedor       |
+| GET                                      | `/api/v1/supplier-reviews/check/{supplierId}/{businessmanId}` | Verifica review existente            | Comprobar si ya evaluó             |
+| POST                                     | `/api/v1/supplier-reviews`                                    | Crea nueva review                    | Evaluar proveedor                  |
+| PUT                                      | `/api/v1/supplier-reviews/{reviewId}`                         | Actualiza review existente           | Modificar evaluación               |
+| **Suppliers Management**                 |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/suppliers`                                           | Obtiene todos los proveedores        | Catálogo de proveedores            |
+| GET                                      | `/api/v1/suppliers/{userId}`                                  | Obtiene proveedor por ID             | Perfil específico de proveedor     |
+| POST                                     | `/api/v1/suppliers/{userId}`                                  | Crea perfil de proveedor             | Registrar nuevo proveedor          |
+| PUT                                      | `/api/v1/suppliers/{userId}`                                  | Actualiza perfil de proveedor        | Modificar datos del proveedor      |
+| **Users Management**                     |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/users/{userId}`                                      | Obtiene usuario por ID               | Información básica del usuario     |
+| PUT                                      | `/api/v1/users/{userId}/role`                                 | Actualiza rol del usuario            | Cambiar permisos de usuario        |
+
 
 #### 5.2.8. Team Collaboration Insights
 
