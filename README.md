@@ -2287,12 +2287,23 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 #### 5.2.8. Team Collaboration Insights
 
+| Alumno | Actividad |
+|--------|-----------|
+| Fabrizio Alberto Paredes Santos | Implementación de la sección main de la landing page |
+| Sebastian Rodriguez Macedo | Implementación de la sección company de la landing page |
+| Mathias Eduardo Bueno Perales | Implementación de la sección prices de la landing page |
+| Giorgio Marzouk Awad Vargas | Implementación de la sección FAQ de la landing page |
+| Hector Javier Rios Pacheco | Implementación de la sección de terminos y condiciones de la landing page |
+
+### Informe:
+
+
+
 ### 5.3. Video About-the-Product
 
 ## Conclusiones 
 
-#FALTA
-
+- En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de TextilFlow, incluyendo el análisis del problema, diseño UX/UI, arquitectura del sistema, modelado de datos y definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
 ## Bibliográfia
 
 TV Perú. (2024, abril 4). _Gamarra: Conoce la historia del emporio comercial más grande del Perú_. https://www.tvperu.gob.pe/novedades/sucedio-en-el-peru/gamarra-conoce-la-historia-del-emporio-comercial-mas-grande-del-peru
