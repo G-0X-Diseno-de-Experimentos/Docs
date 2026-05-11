@@ -2189,6 +2189,12 @@ Accedemos a esta URL desde el navegador para confirmar que el sitio está activo
 
 #### 5.2.4. Acuerdo de Servicio - SaaS
 
+TextilFlow es una plataforma digital diseñada para facilitar la trazabilidad, gestión documental y control de calidad dentro de operaciones textiles.
+
+Estos Términos y Condiciones establecen los derechos, obligaciones y responsabilidades aplicables a todos los usuarios que accedan o utilicen los servicios de la plataforma.
+
+[Acuerdo de Servicio](./assets/tp1/TERMS%20AND%20CONDITIONS%20-%20Qualix.pdf)
+
 #### 5.2.5. Implemented Native-Mobile Application Evidence
 
 #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
