@@ -64,7 +64,7 @@
 |---------|------------|-------------------------------|------------------------------------------------------------------------------|
 | TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
 | TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
-|     |  |   |             |
+|  TP1   | 28/04/2026 | Bueno Perales, Mathias Eduardo  |   Desarrollo del Capitulo VI, Core Entities Unit Tests, Core Integration Tests, Core Behavior-Driven Development          |
 |     |  |   
   |    |
 
@@ -83,9 +83,9 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 |------------|----------------|-------------------|
 | Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del Capítulo I, II, III. |
 | Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo del Capitulo II, VI|
-| | `Shiftinnnnn` |  |
-|  | `GiorgioAwad` |  |
-| | `Khafna09` |  |
+| Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
+| Giorgio Marzouk Awad Vargas | `GiorgioAwad` |  |
+| Hector Javier Rios Pacheco | `Khafna09` |  |
 
 **Report Repository Insights:** 
 
@@ -2301,7 +2301,9 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 ### Informe:
 
-
+<p align="center">
+  <img src="./assets/tp1/team-collab-insights-informe-tp.png" alt="PB" width="850">
+</p>
 
 ### 5.3. Video About-the-Product
 
