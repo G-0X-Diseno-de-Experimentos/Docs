@@ -245,6 +245,9 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 | La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:  <br><br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
 
 
+# Part I: As-Is Software Project
+
+
 ## Capítulo I: Introducción
 
 ### 1.1. Startup Profile
@@ -1983,7 +1986,8 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 
 
 
-## Capítulo V:  Product Implementation
+## **Capítulo V: Product Implementation**
+
 
 ### 5.1. Software Configuration Management
 
@@ -2300,6 +2304,478 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 
 ### 5.3. Video About-the-Product
+
+
+# Part II: Verification, Validation & Pipeline
+
+## **Capítulo VI: Product Verification & Validation**
+
+### 6.1. Testing Suites & Validation
+
+#### 6.1.1. Core Entities Unit Tests
+
+Las pruebas unitarias de entidades principales validan el comportamiento de los agregados y value objects del dominio en aislamiento, sin dependencias de infraestructura ni base de datos. Se siguió el patrón **AAA (Arrange, Act, Assert)** en todos los casos.
+
+---
+
+### 1. Batch — `BatchDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `batch_Constructor_ShouldSetDefaults` | Verifica que el constructor vacío inicializa todos los campos con valores por defecto (strings vacíos, 0 numéricos, status PENDIENTE) | ✅ Pass |
+| 2 | `batch_ConstructorFromCommand_ShouldMapValues` | Verifica que el constructor desde `CreateBatchCommand` mapea correctamente todos los campos al agregado | ✅ Pass |
+| 3 | `createBatchCommand_Validations` | Verifica que `CreateBatchCommand` lanza `IllegalArgumentException` ante campos nulos, IDs en cero, strings vacíos, precio/cantidad en cero, fecha futura y status null | ✅ Pass |
+| 4 | `updateBatchCommand_Validations` | Verifica que `UpdateBatchCommand` lanza `IllegalArgumentException` ante ID inválido, campos vacíos, cantidad/precio negativos, fecha null y status null | ✅ Pass |
+| 5 | `deleteCommands_Validations` | Verifica que `DeleteBatchCommand` y `DeleteBatchImageCommand` rechazan batchId igual a 0 | ✅ Pass |
+| 6 | `updateBatchImageCommand_Validations` | Verifica que `UpdateBatchImageCommand` rechaza batchId en 0, URL null o vacía | ✅ Pass |
+| 7 | `queries_Validations` | Verifica que `GetBatchByIdQuery`, `GetBatchesByBusinessmanIdQuery` y `GetBatchesBySupplierIdQuery` rechazan IDs en 0 | ✅ Pass |
+| 8 | `batchStatus_DisplayName` | Verifica que el enum `BatchStatus` retorna el nombre de visualización correcto para PENDIENTE y ACEPTADO | ✅ Pass |
+| 9 | `events_ContractCoverage` | Verifica que los records `BatchCreatedEvent` y `BatchUpdatedEvent` se instancian correctamente y exponen el campo `batchId` | ✅ Pass |
+| 10 | `updateInformation_ShouldUpdateAllFieldsAndReturnSameInstance` | Verifica que `updateInformation` modifica todos los campos del agregado y retorna la misma instancia (identidad de objeto) | ✅ Pass |
+| 11 | `updateInformation_ShouldAllowNullImageUrl` | Verifica que `updateInformation` acepta `imageUrl` null sin lanzar excepción | ✅ Pass |
+| 12 | `updateInformation_ShouldAllowEmptyStrings` | Verifica que `updateInformation` acepta strings vacíos en todos los campos de texto | ✅ Pass |
+| 13 | `constructorFromCommand_ShouldHandleNullStatus` | Verifica que el constructor lanza `IllegalArgumentException` con mensaje que contiene "Status" cuando el status es null | ✅ Pass |
+| 14 | `updateInformation_ShouldReplaceDateReference` | Verifica que llamadas sucesivas a `updateInformation` reemplazan correctamente la referencia de fecha | ✅ Pass |
+
+---
+
+### 2. Observation — `ObservationDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna correctamente batchId, batchCode, businessmanId, supplierId, reason, imageUrl y status | ✅ Pass |
+| 3 | `updateInformation_ShouldModifyFields` | Verifica que `updateInformation` modifica razón, estado e imagen a partir de un `UpdateObservationCommand` | ✅ Pass |
+| 4 | `imageLifecycle_Management` | Verifica el ciclo de vida de la imagen: `updateImage` asigna la URL y `deleteImage` la elimina (null) | ✅ Pass |
+| 5 | `observationStatus_EnumCheck` | Verifica que el enum `ObservationStatus` contiene los valores de negocio: PENDIENTE, EN_REVISION, RESUELTA, RECHAZADA | ✅ Pass |
+| 6 | `updateImage_ShouldHandleNull` | Verifica que `updateImage(null)` no lanza excepción y deja el valor en null | ✅ Pass |
+| 7 | `imageUrl_IsEmptyEdgeCases` | Verifica que `ImageUrl.isEmpty()` detecta correctamente null, string vacío y espacios en blanco | ✅ Pass |
+| 8 | `updateInformation_ShouldIgnoreNullImage` | Verifica que si el comando trae imageUrl null, la imagen existente no se sobreescribe | ✅ Pass |
+| 9 | `updateInformation_ShouldFailInvalidStatus` | Verifica que `updateInformation` lanza `IllegalArgumentException` si el status del comando es inválido | ✅ Pass |
+| 10 | `constructor_ShouldAllowNullImageUrl` | Verifica que el constructor acepta imageUrl null manteniendo consistencia en los demás campos | ✅ Pass |
+
+---
+
+### 3. BusinessSupplierRequest — `BusinessSupplierRequestTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `constructor_ShouldInitializeCorrectly` | Verifica que el constructor inicializa el agregado en estado PENDING y que `isPending()` retorna true | ✅ Pass |
+| 2 | `updateStatus_ShouldModifyFields` | Verifica que `updateStatus` cambia el estado y el mensaje, y que los flags de estado responden correctamente | ✅ Pass |
+| 3 | `updateRequestDetails_ShouldModifyDetails` | Verifica que `updateRequestDetails` actualiza mensaje, batchType, color, quantity y address usando la misma referencia de objeto | ✅ Pass |
+| 4 | `flags_ShouldRespondToStatus` | Verifica que `isRejected()` e `isCancelled()` responden correctamente al estado asignado mediante `updateStatus` | ✅ Pass |
+| 5 | `shouldHandleNullValuesInUpdateRequestDetails` | Verifica que `updateRequestDetails` acepta valores null en los value objects sin romper invariantes | ✅ Pass |
+| 6 | `shouldAlwaysStartAsPending` | Verifica la invariante de dominio: todo nuevo request debe iniciar en PENDING, con todos los demás flags en false | ✅ Pass |
+
+---
+
+### 4. SupplierReview — `SupplierReviewTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `constructorFromCommand_ShouldInitializeAndRegisterEvent` | Verifica que el constructor desde `CreateSupplierReviewCommand` inicializa supplierId, businessmanId, rating y reviewContent correctamente | ✅ Pass |
+| 2 | `updateFromCommand_ShouldModifyFieldsAndRegisterEvent` | Verifica que `update(UpdateSupplierReviewCommand)` modifica rating y contenido | ✅ Pass |
+| 3 | `updateDirect_ShouldModifyFieldsAndRegisterEvent` | Verifica que `update(int, String)` modifica rating y contenido directamente | ✅ Pass |
+| 4 | `ownershipMethods_ShouldVerifyCorrectly` | Verifica que `belongsToBusinessman` e `isForSupplier` retornan true/false según el ID comparado | ✅ Pass |
+| 5 | `shouldThrow_WhenInvalidRating` | Verifica que el constructor lanza excepción si el rating es -1 | ✅ Pass |
+| 6 | `rating_ShouldThrow_WhenOutOfRange` | Verifica que `Rating` lanza `IllegalArgumentException` para valores 0 y 6 (fuera del rango 1–5) | ✅ Pass |
+| 7 | `rating_StringConstructor_ShouldConvert` | Verifica que el constructor String de `Rating` convierte correctamente "4" → 4 | ✅ Pass |
+| 8 | `reviewContent_ShouldThrow_WhenInvalid` | Verifica que `ReviewContent` rechaza null, string vacío y string con solo espacios | ✅ Pass |
+| 9 | `reviewContent_ShouldAccept_WhenExactlyLimit` | Verifica que `ReviewContent` acepta exactamente 1000 caracteres (límite máximo) | ✅ Pass |
+| 10 | `rating_ShouldAccept_MinBoundary` | Verifica el valor límite mínimo válido del rating: 1 | ✅ Pass |
+| 11 | `rating_ShouldAccept_MaxBoundary` | Verifica el valor límite máximo válido del rating: 5 | ✅ Pass |
+| 12 | `belongsToBusinessman_ShouldHandleNull` | Verifica que `belongsToBusinessman` retorna false sin lanzar excepción cuando se pasa null | ✅ Pass |
+| 13 | `isForSupplier_ShouldHandleNull` | Verifica que `isForSupplier` retorna false sin lanzar excepción cuando se pasa null | ✅ Pass |
+| 14 | `update_ShouldThrow_WhenInvalidRating` | Verifica que `update` lanza `IllegalArgumentException` con rating 0 | ✅ Pass |
+| 15 | `update_ShouldThrow_WhenNullRating` | Verifica que `update` lanza `IllegalArgumentException` con rating null | ✅ Pass |
+| 16 | `supplierReview_ShouldThrow_WhenRatingNull` | Verifica que el constructor lanza `IllegalArgumentException` si el rating del comando es null | ✅ Pass |
+| 17 | `supplierReview_ShouldThrow_WhenContentNull` | Verifica que el constructor lanza `IllegalArgumentException` si el reviewContent del comando es null | ✅ Pass |
+| 18 | `rating_ShouldThrow_WhenNull` | Verifica que `Rating` lanza `IllegalArgumentException` si se pasa null | ✅ Pass |
+
+---
+
+### 5. Businessman — `BusinessmanDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `constructorWithUserId_ShouldInitializeLogo` | Verifica que el constructor con userId asigna el ID y deja el logo vacío | ✅ Pass |
+| 3 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna companyName, ruc, businessType, description y website | ✅ Pass |
+| 4 | `updateInformation_ShouldUpdateFields` | Verifica que `updateInformation` actualiza todos los campos usando value objects | ✅ Pass |
+| 5 | `updateLogo_ShouldChangeLogo` | Verifica que `updateLogo` cambia la URL del logo correctamente | ✅ Pass |
+
+---
+
+### 6. Supplier — `SupplierDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `constructorWithUserId_ShouldInitializeLogo` | Verifica que el constructor con userId asigna el ID y deja el logo null | ✅ Pass |
+| 3 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna companyName, ruc, specialization, description y certifications | ✅ Pass |
+| 4 | `updateInformation_ShouldUpdateFields` | Verifica que `updateInformation` actualiza todos los campos usando value objects | ✅ Pass |
+| 5 | `updateLogo_ShouldChangeLogo` | Verifica que `updateLogo` actualiza la URL del logo correctamente | ✅ Pass |
+
+---
+
+### 7. User — `UserDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitializePendingRole` | Verifica que el constructor vacío inicializa todos los campos como null y el rol como PENDING | ✅ Pass |
+| 2 | `basicConstructor_ShouldAssignValues` | Verifica que el constructor básico asigna name, email, password, country, city, address, phone y rol PENDING | ✅ Pass |
+| 3 | `constructorWithRole_ShouldAssignRole` | Verifica que el constructor con rol asigna el rol especificado (SUPPLIER) | ✅ Pass |
+| 4 | `updateRole_ShouldChangeRole` | Verifica que `updateRole` cambia el rol de PENDING a BUSINESSMAN y que `getRoleName()` retorna "BUSINESSMAN" | ✅ Pass |
+| 5 | `getRoleName_ShouldReturnEnumName` | Verifica que `getRoleName()` retorna el nombre del enum como string ("SUPPLIER") | ✅ Pass |
+| 6 | `constructor_ShouldHandleNullValues` | Verifica que el constructor acepta null en todos los campos y mantiene el rol PENDING | ✅ Pass |
+| 7 | `updateRole_ShouldHandleNull` | Verifica que `updateRole(null)` asigna null al rol sin lanzar excepción | ✅ Pass |
+| 8 | `email_ShouldAllowNullOrEmpty` | Verifica que el agregado acepta email y password vacíos sin validación fuerte | ✅ Pass |
+| 9 | `getRoleName_ShouldHandleNullRole` | Verifica que `getRoleName()` lanza `NullPointerException` cuando el rol es null | ✅ Pass |
+
+---
+
+### 8. Configuration — `ConfigurationDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna userId, language, viewMode, subscriptionPlan, y que el status inicial es PENDING | ✅ Pass |
+| 3 | `updateSettings_ShouldModifyFields` | Verifica que `updateSettings` modifica language y viewMode correctamente | ✅ Pass |
+| 4 | `updateSubscriptionPlan_ShouldUpdatePlanAndDate` | Verifica que `updateSubscriptionPlan` cambia el plan y actualiza la fecha de inicio (igual o posterior a la anterior) | ✅ Pass |
+| 5 | `activateSubscription_ShouldActivate` | Verifica que `activateSubscription` cambia el plan y establece el status en ACTIVE | ✅ Pass |
+| 6 | `updateSubscriptionStatus_ShouldChangeStatus` | Verifica que `updateSubscriptionStatus` cambia el estado de suscripción correctamente | ✅ Pass |
+| 7 | `requiresPayment_ShouldReturnTrue_WhenPending` | Verifica que `requiresPayment()` retorna true cuando el status es PENDING | ✅ Pass |
+| 8 | `getUserIdValue_ShouldReturnCorrectValue` | Verifica que `getUserIdValue()` retorna el valor correcto del value object `UserId` | ✅ Pass |
+
+---
+
+### 9. PaymentAmount — `PaymentAmountTests.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testValidPaymentAmount` | Verifica que `PaymentAmount` acepta un monto válido (100.00) y lo almacena correctamente | ✅ Pass |
+| 2 | `testInvalidPaymentAmount` | Verifica (parametrizado) que `PaymentAmount` lanza `IllegalArgumentException` para montos negativos y cero (-1.0, 0.0, -100.0) | ✅ Pass |
+| 3 | `testPaymentAmountEquality` | Verifica que dos instancias con el mismo monto son iguales y con montos distintos son diferentes | ✅ Pass |
+| 4 | `testToStripeCentsConversion` | Verifica que `toStripeCents()` convierte 49.99 → 4999 centavos correctamente | ✅ Pass |
+| 5 | `testForBasicPlan` | Verifica que el factory method `forBasicPlan()` retorna el monto correcto (9.99) | ✅ Pass |
+| 6 | `testForCorporatePlan` | Verifica que el factory method `forCorporatePlan()` retorna el monto correcto (49.99) | ✅ Pass |
+
+---
+
+### Resumen de cobertura
+
+| Bounded Context | Entidad principal | Archivo de test | Total tests |
+|---|---|---|---|
+| Batches | `Batch` | `BatchDomainContractsTest` | 14 |
+| Observation | `Observation` | `ObservationDomainContractsTest` | 10 |
+| Request | `BusinessSupplierRequest` | `BusinessSupplierRequestTest` | 6 |
+| Reviews | `SupplierReview` | `SupplierReviewTest` | 18 |
+| Profiles | `Businessman` | `BusinessmanDomainContractsTest` | 5 |
+| Profiles | `Supplier` | `SupplierDomainContractsTest` | 5 |
+| IAM | `User` | `UserDomainContractsTest` | 9 |
+| Configuration | `Configuration` | `ConfigurationDomainContractsTest` | 8 |
+| Payment | `PaymentAmount` | `PaymentAmountTests` | 6 |
+| **Total** | | | **81** |
+
+
+#### 6.1.2. Core Integration Tests
+
+Las pruebas de integración validan la comunicación y colaboración entre los distintos módulos del sistema: controladores REST, servicios de aplicación, facades ACL, event handlers y servicios externos. Se utilizó **MockMvc** para simular peticiones HTTP y **Mockito** para aislar dependencias externas, siguiendo el patrón **AAA (Arrange, Act, Assert)**.
+
+---
+
+### 1. PaymentController — `PaymentControllerTests.java`
+
+Valida la integración entre el controlador REST de pagos y el servicio de dominio, simulando peticiones HTTP reales con MockMvc.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que `POST /api/v1/payments/create-intent` retorna `201 Created` con `clientSecret` y `subscriptionPlan` correctos cuando el servicio responde exitosamente | ✅ Pass |
+| 2 | `testCreatePaymentIntent_InvalidSubscription` | Verifica que el endpoint retorna `400 Bad Request` cuando el plan de suscripción es inválido, sin llegar a invocar el servicio | ✅ Pass |
+| 3 | `testCreatePaymentIntent_InvalidUserId` | Verifica que el endpoint retorna `400 Bad Request` cuando el servicio lanza `IllegalArgumentException` por usuario no encontrado | ✅ Pass |
+
+---
+
+### 2. StripePaymentService — `StripePaymentServiceUnitTest.java`
+
+Valida la integración con el servicio de Stripe mediante mock, verificando el contrato de respuesta del payment intent.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que `createPaymentIntent` retorna un string no nulo que comienza con `"pi_"`, simulando la respuesta de Stripe | ✅ Pass |
+
+---
+
+### 3. PaymentCommandServiceImpl — `PaymentCommandServiceImplTest.java`
+
+Valida la integración entre el servicio de comandos de pago, el servicio de Stripe y el servicio externo de configuración.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que el servicio crea el payment intent correctamente cuando el usuario existe, delegando a Stripe con los parámetros correctos | ✅ Pass |
+| 2 | `testCreatePaymentIntent_UserNotFound` | Verifica que se lanza `IllegalArgumentException` cuando el usuario no existe, sin invocar Stripe | ✅ Pass |
+| 3 | `testHandlePaymentSuccess_Success` | Verifica que `handlePaymentSuccess` delega correctamente la actualización del plan de suscripción al servicio externo de configuración | ✅ Pass |
+| 4 | `testHandlePaymentSuccess_Failure` | Verifica que `handlePaymentSuccess` propaga la excepción cuando falla la actualización del plan | ✅ Pass |
+| 5 | `shouldThrow_WhenSubscriptionPlanInvalid` | Verifica que `CreatePaymentIntentCommand` lanza `IllegalArgumentException` si el plan de suscripción es vacío | ✅ Pass |
+| 6 | `shouldThrow_WhenAmountInvalid` | Verifica que `PaymentAmount` lanza `IllegalArgumentException` si el monto es null | ✅ Pass |
+| 7 | `createPaymentIntent_ShouldThrow_WhenStripeFails` | Verifica que el servicio propaga la excepción cuando Stripe falla internamente | ✅ Pass |
+| 8 | `createPaymentIntent_ShouldConvertAmountCorrectly` | Verifica que el monto 10.50 se convierte correctamente a 1050 centavos antes de enviarse a Stripe | ✅ Pass |
+
+---
+
+### 4. IamContextFacadeImpl — `IamContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context IAM con los servicios de consulta y comando de usuarios.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getUserIdByEmail_ShouldReturnId_WhenExists` | Verifica que el facade retorna el ID del usuario cuando se consulta por email existente | ✅ Pass |
+| 2 | `userExists_ShouldReturnTrue_WhenExists` | Verifica que `userExists` retorna true cuando el usuario es encontrado | ✅ Pass |
+| 3 | `getUserRole_ShouldReturnRoleName` | Verifica que `getUserRole` retorna el nombre exacto del rol ("BUSINESSMAN") desde la entidad | ✅ Pass |
+| 4 | `getUserData_ShouldReturnNull_WhenNotFound` | Verifica que `getUserData` retorna null cuando el usuario no existe | ✅ Pass |
+| 5 | `getUserData_ShouldMapValuesSuccessfully` | Verifica que `getUserData` mapea correctamente name, email, country, city, address y phone desde la entidad | ✅ Pass |
+| 6 | `updateUserData_ShouldDispatchCommand` | Verifica que `updateUserData` despacha un `UpdateUserDataCommand` al servicio de comandos | ✅ Pass |
+| 7 | `getUserIdByEmail_ShouldReturnNull_WhenNotFound` | Verifica que `getUserIdByEmail` retorna null cuando el email no existe | ✅ Pass |
+| 8 | `userExists_ShouldReturnFalse_WhenNotFound` | Verifica que `userExists` retorna false cuando el usuario no existe | ✅ Pass |
+| 9 | `getUserRole_ShouldReturnNull_WhenNotFound` | Verifica que `getUserRole` retorna null cuando el usuario no existe | ✅ Pass |
+| 10 | `userExists_ShouldHandleNullUserId` | Verifica que `userExists` retorna false sin lanzar excepción cuando el userId es null | ✅ Pass |
+| 11 | `getUserRole_ShouldHandleNullUserId` | Verifica que `getUserRole` retorna null sin lanzar excepción cuando el userId es null | ✅ Pass |
+| 12 | `getUserIdByEmail_ShouldHandleNullEmail` | Verifica que `getUserIdByEmail` retorna null sin lanzar excepción cuando el email es null | ✅ Pass |
+| 13 | `updateUserData_ShouldDelegateEvenWithNullValues` | Verifica que `updateUserData` delega el comando incluso cuando todos los valores son null | ✅ Pass |
+
+---
+
+### 5. ConfigurationContextFacadeImpl — `ConfigurationContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context Configuration con el servicio de consulta de configuraciones.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `hasConfiguration_ShouldReturnTrue_WhenExists` | Verifica que `hasConfiguration` retorna true cuando la consulta encuentra una configuración existente | ✅ Pass |
+| 2 | `defaultValues_ShouldReturn_WhenConfigIsEmpty` | Verifica que el facade retorna valores por defecto (`"es"`, `"auto"`, `"basic"`, `"pending"`) cuando no existe configuración | ✅ Pass |
+| 3 | `mapRealValues_FromConfiguration` | Verifica que el facade mapea correctamente language, viewMode, subscriptionPlan y subscriptionStatus desde la entidad real | ✅ Pass |
+
+---
+
+### 6. ProfilesContextFacadeImpl — `ProfilesContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context Profiles con los servicios de consulta de Businessman y Supplier.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getBusinessmanByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Businessman cuando existe | ✅ Pass |
+| 2 | `getSupplierByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Supplier cuando existe | ✅ Pass |
+| 3 | `existenceCheck_Methods` | Verifica que `hasBusinessmanProfile` retorna true y `hasSupplierProfile` retorna false según la existencia de cada perfil | ✅ Pass |
+| 4 | `getCompanyNameByUserId_Priorities` | Verifica que el facade prioriza el nombre de Businessman sobre Supplier, y cae al Supplier si no existe Businessman | ✅ Pass |
+| 5 | `shouldReturnNull_WhenNoProfileExists` | Verifica que `getCompanyNameByUserId` retorna null cuando no existe ningún perfil | ✅ Pass |
+
+---
+
+### 7. ExternalProfilesService — `ExternalProfilesServiceTest.java`
+
+Valida la integración del servicio outbound del bounded context Reviews con el facade ACL de Profiles.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getBusinessmanProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Businessman cuando el perfil existe | ✅ Pass |
+| 2 | `getBusinessmanProfileId_ShouldReturnEmpty_OnError` | Verifica que retorna `Optional.empty()` cuando el facade ACL lanza una excepción | ✅ Pass |
+| 3 | `getSupplierProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Supplier cuando el perfil existe | ✅ Pass |
+| 4 | `hasProfiles_ShouldHandleExceptions` | Verifica que `hasBusinessmanProfile` y `hasSupplierProfile` retornan false ante excepciones del facade | ✅ Pass |
+| 5 | `getCompanyNameByUserId_ShouldReturnName` | Verifica que retorna `Optional` con el nombre de la empresa cuando es válido | ✅ Pass |
+| 6 | `idValidations_ShouldRespondCorrectly` | Verifica que `isValidBusinessmanId` e `isValidSupplierId` retornan false para IDs en 0 o null | ✅ Pass |
+| 7 | `shouldReturnEmpty_WhenUserIdIsNull` | Verifica que `getBusinessmanProfileId` retorna `Optional.empty()` cuando el userId es null | ✅ Pass |
+| 8 | `shouldReturnEmpty_WhenCompanyNameBlank` | Verifica que `getCompanyNameByUserId` retorna `Optional.empty()` cuando el nombre es solo espacios en blanco | ✅ Pass |
+| 9 | `shouldReturnEmpty_WhenSupplierIdInvalid` | Verifica que `getSupplierProfileId` retorna `Optional.empty()` cuando el ID retornado es 0 o negativo | ✅ Pass |
+
+---
+
+### 8. IntegrationAdapters (Configuration) — `IntegrationAdaptersTest.java`
+
+Valida la integración del event handler de configuración y el servicio externo IAM dentro del bounded context Configuration.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `on_UserRegisteredEvent_ShouldDispatchCommand` | Verifica que al recibir un `UserRegisteredEvent`, el handler despacha un `CreateConfigurationCommand` al servicio de comandos | ✅ Pass |
+| 2 | `externalIamService_Delegations` | Verifica que `ExternalIamService` delega correctamente `userExists` y `getUserRole` al `IamContextFacade` | ✅ Pass |
+
+---
+
+### 9. UserRegisteredEventHandler (Profiles) — `UserRegisteredEventHandlerTest.java`
+
+Valida la integración del event handler de perfiles con los servicios de creación de Businessman, Supplier y el servicio de email de bienvenida.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `userRegistered_ShouldSendWelcomeEmail` | Verifica que al recibir `UserRegisteredEvent`, el handler obtiene los datos del usuario y envía el email de bienvenida | ✅ Pass |
+| 2 | `userRegistered_ShouldHandleException` | Verifica que si el servicio IAM falla, el flujo no se interrumpe y no se envía el email | ✅ Pass |
+| 3 | `roleUpdated_Businessman_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol BUSINESSMAN, se crea el perfil de Businessman sin tocar el de Supplier | ✅ Pass |
+| 4 | `roleUpdated_Supplier_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol SUPPLIER, se crea el perfil de Supplier sin tocar el de Businessman | ✅ Pass |
+| 5 | `roleUpdated_Pending_ShouldDoNothing` | Verifica que con rol PENDING no se crea ningún perfil | ✅ Pass |
+| 6 | `businessmanCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Businessman no interrumpe el flujo | ✅ Pass |
+| 7 | `supplierCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Supplier no interrumpe el flujo | ✅ Pass |
+
+---
+
+### 10. ReviewCreatedEventHandler — `ReviewCreatedEventHandlerTest.java`
+
+Valida la integración del event handler de reseñas ante eventos de creación.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `on_ReviewCreatedEvent_ShouldProcessSuccessfully` | Verifica que el handler procesa el `ReviewCreatedEvent` correctamente sin lanzar excepciones | ✅ Pass |
+| 2 | `on_ReviewCreatedEvent_ShouldHandleInternalExceptionsSafely` | Verifica que el handler captura excepciones internas de forma segura sin interrumpir el flujo | ✅ Pass |
+
+---
+
+### Resumen de cobertura
+
+| Componente | Archivo de test | Tipo de integración | Total tests |
+|---|---|---|---|
+| `PaymentController` | `PaymentControllerTests` | REST Controller ↔ Service | 3 |
+| `StripePaymentService` | `StripePaymentServiceUnitTest` | Service ↔ Stripe API | 1 |
+| `PaymentCommandServiceImpl` | `PaymentCommandServiceImplTest` | Service ↔ Stripe + Config ACL | 8 |
+| `IamContextFacadeImpl` | `IamContextFacadeImplTest` | ACL Facade ↔ IAM Services | 13 |
+| `ConfigurationContextFacadeImpl` | `ConfigurationContextFacadeImplTest` | ACL Facade ↔ Config Service | 3 |
+| `ProfilesContextFacadeImpl` | `ProfilesContextFacadeImplTest` | ACL Facade ↔ Profile Services | 5 |
+| `ExternalProfilesService` | `ExternalProfilesServiceTest` | Outbound Service ↔ Profiles ACL | 9 |
+| `IntegrationAdapters (Config)` | `IntegrationAdaptersTest` | Event Handler + External IAM | 2 |
+| `UserRegisteredEventHandler` | `UserRegisteredEventHandlerTest` | Event Handler ↔ Profile + Email | 7 |
+| `ReviewCreatedEventHandler` | `ReviewCreatedEventHandlerTest` | Event Handler ↔ Review domain | 2 |
+| **Total** | | | **53** |
+
+
+#### 6.1.3. Core Behavior-Driven Development
+
+Para las pruebas BDD se utilizó **Cucumber** integrado con Spring Boot, describiendo el comportamiento esperado del sistema desde la perspectiva del usuario mediante escenarios escritos en lenguaje **Gherkin**. Los escenarios cubren el flujo de creación y validación de payment intents en el bounded context de pagos.
+
+---
+
+### Configuración de la suite BDD
+
+| Componente | Archivo | Descripción |
+|---|---|---|
+| Test Runner | `CucumberTestRunner.java` | Suite JUnit 5 que ejecuta Cucumber apuntando a `features/payment` con el glue en `payment.acceptance.tests.steps` |
+| Spring Context | `CucumberSpringConfiguration.java` | Levanta el contexto completo de Spring Boot con `WebEnvironment.RANDOM_PORT` y perfil `test` |
+| Step Definitions | `PaymentSteps.java` | Implementación de los pasos Given/When/Then para los escenarios de pago |
+
+---
+
+### Feature 1: Payment Intent Management
+
+**Archivo:** `PaymentIntent.feature`
+
+**Narrativa:**
+
+Feature: Payment Intent Management <br>
+**As** a user <br>
+**I** want to create payment intents <br>
+**So** that I can process payments through the platform <br>
+
+#### Scenario: Crear un intento de pago válido
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is 100.0 in currency "usd" <br>
+**When** the user creates the payment intent <br>
+**Then** the payment intent should be created successfully <br>
+**And** the client secret should be returned <br>
+
+| Paso | Descripción |
+|---|---|
+| Given | Se establece el contexto del usuario con ID 1 |
+| And | Se configura el monto de pago en 100.0 USD |
+| When | El usuario ejecuta la creación del payment intent |
+| Then | Se verifica que el `clientSecret` no es null y comienza con `"pi_"` |
+| And | Se verifica que el `clientSecret` no está vacío |
+
+#### Scenario: Crear un intento de pago con un monto invalido
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is -100.0 in currency "usd" <br>
+**When** the user creates the payment intent <br>
+**Then** an error should be thrown <br>
+
+| Paso | Descripción |
+|---|---|
+| Given | Se establece el contexto del usuario con ID 1 |
+| And | Se configura un monto inválido de -100.0 USD |
+| When | El usuario intenta crear el payment intent |
+| Then | Se verifica que se lanzó una excepción |
+
+---
+
+### Feature 2: Payment Intent Validation
+
+**Archivo:** `PaymentIntentOutline.feature`
+
+**Narrativa:**
+
+Feature: Payment Intent Validation <br>
+As a system <br>
+I want to validate payment intents <br>
+So that only valid payments are processed <br>
+
+#### Scenario Outline: Validar montos válidos
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is in currency "" <br>
+**When** the user creates the payment intent <br>
+**Then** the result should be <br>
+
+**Ejemplos:**
+
+| amount | currency | result | Descripción |
+|--------|----------|--------|-------------|
+| 100.0 | usd | success | Monto válido en USD → payment intent creado exitosamente |
+| 50.0 | eur | success | Monto válido en EUR → payment intent creado exitosamente |
+| -10.0 | usd | error | Monto negativo → se espera error de validación |
+| 0.0 | usd | error | Monto cero → se espera error de validación |
+
+---
+
+### Definición de pasos — `PaymentSteps.java`
+
+| Paso Gherkin | Método | Descripción |
+|---|---|---|
+| `Given a user with id {long} wants to create a payment intent` | `aUserWithIdWantsToCreateAPaymentIntent` | Establece el contexto del usuario |
+| `Given the payment amount is {double} for subscription plan {string}` | `thePaymentAmountIsForSubscriptionPlan` | Construye el `CreatePaymentIntentCommand` con el monto y plan dados |
+| `When the user creates the payment intent` | `theUserCreatesThePaymentIntent` | Invoca `paymentService.createPaymentIntent` y captura posibles excepciones |
+| `Then the payment intent should be created successfully` | `thePaymentIntentShouldBeCreatedSuccessfully` | Verifica que el `clientSecret` no es null, comienza con `"pi_"` y no hubo excepción |
+| `Then the client secret should be returned` | `theClientSecretShouldBeReturned` | Verifica que el `clientSecret` no es null ni vacío |
+| `Then an error should be thrown` | `anErrorShouldBeThrown` | Verifica que se capturó una excepción durante la ejecución |
+
+---
+
+### Resumen de cobertura BDD
+
+| Feature | Escenarios | Tipo | Total casos |
+|---|---|---|---|
+| Payment Intent Management | Create valid payment intent | Escenario simple | 1 |
+| Payment Intent Management | Create payment intent with invalid amount | Escenario simple | 1 |
+| Payment Intent Validation | Validate payment amounts | Scenario Outline | 4 |
+| **Total** | | | **6** |
+
+
+#### 6.1.4. Core System Tests
+
+## **Capítulo VII: DevOps Practices**
+
+### 7.1. Continuous Integration
+
+#### 7.1.1. Tools and Practices
+
+#### 7.1.2. Build & Test Suite Pipeline Components
+
+### 7.2. Continuous Delivery
+
+#### 7.2.1. Tools and Practices
+
+#### 7.2.2. Stages Deployment Pipeline Components
+
+### 7.3. Continuous Deployment
+
+#### 7.3.1. Tools and Practices
+
+#### 7.3.2. Production Deployment Pipeline Components
 
 ## Conclusiones 
 
