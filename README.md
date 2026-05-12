@@ -92,7 +92,7 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV1. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
 
 - Report Contributors:
-![Report Contributors] **FALTA IMAGEN**
+![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
 
 - Report Network:
 ![Report Network] **FALTA IMAGEN**
@@ -218,7 +218,10 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [6.1.2. Core Integration Tests.](#612-core-integration-tests)
     - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests.](#614-core-system-tests)
-
+  - [6.2. Static testing & Verification](#62-static-testing--verification)
+    - [6.2.1. Static Code Analysis.](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard & Code Conventions.](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality & Code Security.](#6212-code-quality--code-security)
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices.](#711-tools-and-practices)
@@ -2758,6 +2761,14 @@ So that only valid payments are processed <br>
 
 
 #### 6.1.4. Core System Tests
+
+
+### 6.2. Static Code Analysis
+
+#### 6.2.1.1. Coding Standard & Code Conventions.
+
+#### 6.2.1.1. Code Quality & Code Security.
+
 
 ## **Capítulo VII: DevOps Practices**
 
