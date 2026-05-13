@@ -245,7 +245,7 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----------------------|---------------------|--------------|
-| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:  <br><br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
+| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:   <br>El desarrollo del Capítulo VI y la implementación de pruebas unitarias, de integración y BDD me permitió reconocer la importancia de actuar con responsabilidad ética y profesional, asegurando la calidad y confiabilidad del software para generar un impacto positivo en los usuarios y en el entorno donde se aplica la solución tecnológica.<br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
 
 
 # Part I: As-Is Software Project
