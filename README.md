@@ -64,9 +64,9 @@
 |---------|------------|-------------------------------|------------------------------------------------------------------------------|
 | TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
 | TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
-|     |  |   |             |
-|     |  |   
-  |    |
+|  TP1   | 28/04/2026 | Bueno Perales, Mathias Eduardo  |   Desarrollo del Capitulo VI, Core Entities Unit Tests, Core Integration Tests, Core Behavior-Driven Development          |
+|  TP1   | 28/04/2026 | Awad Vargas, Giorgio Marzouk  |   Desarrollo del Capitulo IV y V.  |
+|    |
 
 
 ## Project Report Collaboration Insights
@@ -82,17 +82,17 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 | Integrante | Usuario Github | Detalle de avance |
 |------------|----------------|-------------------|
 | Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del Capítulo I, II, III. |
-| Mathias Eduardo Bueno Perales | `MathiasBueno` | |
-| | `Shiftinnnnn` |  |
-|  | `GiorgioAwad` |  |
-| | `Khafna09` |  |
+| Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo del Capitulo II, VI|
+| Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
+| Giorgio Marzouk Awad Vargas | `GiorgioAwad` | Desarrollo del Capitulo IV y V |
+| Hector Javier Rios Pacheco | `Khafna09` |  |
 
 **Report Repository Insights:** 
 
 En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV1. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
 
 - Report Contributors:
-![Report Contributors] **FALTA IMAGEN**
+![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
 
 - Report Network:
 ![Report Network] **FALTA IMAGEN**
@@ -218,30 +218,10 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [6.1.2. Core Integration Tests.](#612-core-integration-tests)
     - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests.](#614-core-system-tests)
-
   - [6.2. Static testing & Verification](#62-static-testing--verification)
-    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
-      - [6.2.1.1. Coding standard & Code conventions.](#6211-coding-standard--code-conventions)
+    - [6.2.1. Static Code Analysis.](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard & Code Conventions.](#6211-coding-standard--code-conventions)
       - [6.2.1.2. Code Quality & Code Security.](#6212-code-quality--code-security)
-    - [6.2.2. Reviews](#622-reviews)
-
-  - [6.3. Validation Interviews.](#63-validation-interviews)
-    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
-    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
-    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
-
-  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
-    - [6.4.1. Auditoría realizada.](#641-auditoría-realizada)
-      - [6.4.1.1. Información del grupo auditado.](#6411-información-del-grupo-auditado)
-      - [6.4.1.2. Cronograma de auditoría realizada.](#6412-cronograma-de-auditoría-realizada)
-      - [6.4.1.3. Contenido de auditoría realizada.](#6413-contenido-de-auditoría-realizada)
-
-    - [6.4.2. Auditoría recibida.](#642-auditoría-recibida)
-      - [6.4.2.1. Información del grupo auditor.](#6421-información-del-grupo-auditor)
-      - [6.4.2.2. Cronograma de auditoría recibida.](#6422-cronograma-de-auditoría-recibida)
-      - [6.4.2.3. Contenido de auditoría recibida.](#6423-contenido-de-auditoría-recibida)
-      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos.](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
-
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices.](#711-tools-and-practices)
@@ -255,12 +235,6 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [7.3.1. Tools and Practices.](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components.](#732-production-deployment-pipeline-components)
 
-  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
-    - [7.4.1. Tools and Practices](#741-tools-and-practices)
-    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
-    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
-    - [7.4.4. Notification Pipeline Components.](#744-notification-pipeline-components)
-
 
 ## Student Outcome
 
@@ -271,7 +245,10 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----------------------|---------------------|--------------|
-| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:  <br><br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
+| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:   <br>El desarrollo del Capítulo VI y la implementación de pruebas unitarias, de integración y BDD me permitió reconocer la importancia de actuar con responsabilidad ética y profesional, asegurando la calidad y confiabilidad del software para generar un impacto positivo en los usuarios y en el entorno donde se aplica la solución tecnológica.<br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
+
+
+# Part I: As-Is Software Project
 
 
 ## Capítulo I: Introducción
@@ -296,7 +273,7 @@ Proporcionar a distribuidores, talleres y empresas textiles una herramienta digi
 
 | Foto | Miembros del equipo | Código de Estudiante | Descripción |
 | :---: | :--- | :--- | :--- |
-|![alt text](assets/fotos/foto-mathias.png) | Mathias Bueno Perales  | u202313433 |Soy una persona optimista y responsable al cumplir mis labores para-con el grupo. Tengo experiencia respecto a proyectos previamente hechos en la rama de Ingenieria de Software y conocimientos en programacion como en HTML y CSS. Siempre procuro lo mejor para el equipo y ayudar en todo lo que este en mi alcance. |
+|![alt text](assets/fotos/foto-mathias-bueno.png) | Mathias Bueno Perales  | u202313433 |Soy un estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, cursando actualmente el 7to ciclo. Soy una persona que busca siempre trabajar en equipo y busco tener nuestros proyectos listos de forma puntual. Cuento con habilidades de trabajo en equipo, mucho compromiso, responsabilidad y empatia. A nivel tecnico tengo manejo de Vue.js, .NET, Angular, Kotlin, Spring Boot y en bases de datos tanto SQL como NoSQL. |
 | ![alt text](assets/fotos/fabriziofoto.jpg)| Paredes Santos, Fabrizio Alberto | U202310914 | Profesional en formación con experiencia en desarrollo de aplicaciones web y móviles utilizando stacks modernos como Vue.js y .NET, Angular y Spring Boot, además de desarrollo móvil con Flutter y Kotlin. También he trabajado en la creación de páginas web con React, Next.js y Tailwind CSS, enfocadas en rendimiento y experiencia de usuario. Me caracterizo por ser proactivo, responsable y orientado a resultados, con capacidad para adaptarme a entornos dinámicos y contribuir eficazmente en equipos de desarrollo. |
 |![alt text] *FOTO* | Rodriguez Macedo, Sebastian | U202310199 | Soy una persona capaz de resolver problemas con el equipo desde un punto de vista diferente, además ofrezco siempre compromiso hacia mis compañeros cumpliendo con las asignaciones de manera responsable. |
 
@@ -672,7 +649,11 @@ Las siguientes preguntas están dirigidas a distribuidores y proveedores textile
 
 **Entrevista 3**
 
-**FALTA**
+| Entrevistado 3 |  Eduardo Andy Bueno Muro |
+| :---- | :---- |
+| Edad | 46 años |
+|  <img src="assets/tp1/entrevista5_segmento2.png" alt="PB" width="800"> | Eduardo no tiene tienda física ni online; vende a través de su cartera de clientes. Distribuye jersey, franela, french terry y gamuza pima. Verifica la calidad en laboratorios midiendo gramaje y encogimiento. Hace inspecciones finales para detectar fallas. Guarda registros digitales por fecha y cliente. Toma muestras por color como respaldo. Le parece buena la idea de una plataforma para compartir evidencia visual, aunque expresa cierta reserva sobre exponer todo el proceso por miedo a que sus clientes copien su ruta de producción. |
+| Timing:12:30 – 18:12 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/personal/u202311220_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311220%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20TextilFlow%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5cb30a6c%2D0c5e%2D4acf%2D8fb2%2Dea5b477f75b8) |
 
 **Segmento #2**
 
@@ -983,7 +964,7 @@ En esta seccion como grupo hemos decidido establecer ciertas directrices de esti
 Nuestro logotipo esta compuesto por una bola de estambre rodeada por el nombre de nuestra start up (TextilFlow). La bola de estambre representando al hilo que es un compuesto del que estan hechos muchos tipos de telas.
 
 <p align="center">
-  <img src="images/LogoTextilFLow.png" width="200">
+  <img src="./assets/tp1/LogoTextilFLow.png" width="200">
 </p>
 
 
@@ -993,13 +974,13 @@ Para TextilFlow, decidimos usar dos fuentes:
 * Manrope: Para los titulos y subtitulos en pesos *bold* y *semibold* respectivamente para cada una.
 
 <p align="center">
-  <img src="images/Manrope.png" width="500" height="300">
+  <img src="./assets/tp1/Manrope.png" width="500" height="300">
 </p>
 
 * Lato: Para el texto de los parrafos, en peso *regular*, permitiendo al usuario una lectura comoda.
 
 <p align="center">
-  <img src="images/Lato.jpg" width="500" height="300">
+  <img src="./assets/tp1/Lato.jpg" width="500" height="300">
 </p>
 
 ### *Spacing:* 
@@ -1011,7 +992,7 @@ Para nuestro espaciado, nos basamos en lo recomendado para el diseño de interfa
 Hemos decidido por colores que dan el ambiente de trabajo en una empresa textil, tonalidades marrones como #2A1905 y #866C52 combinadas con un fonde en su mayoria blanca #FFFFFF y con tonalides grises #E8E2E2 respectivamente. Para el texto decidimos por dejarlo en negro #000000.
 
 <p align="center">
-  <img src="images/PaletaColoresLP.png" width="500" height="200">
+  <img src="./assets/tp1/PaletaColoresLP.png" width="500" height="200">
 </p>
 
 #### **4.1.2. Web Style Guidelines**
@@ -1111,113 +1092,113 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 
 **Inicio de Sesión**
 <p align="center">
-  <img src="images/ww1.png"  width="850">
+  <img src="./assets/tp1/ww1.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww2.png"  width="850">
+  <img src="./assets/tp1/ww2.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww3.png"  width="850">
+  <img src="./assets/tp1/ww3.png"  width="850">
 </p>
 
 #### Empresario 
 
 **Inicio**
 <p align="center">
-  <img src="images/ww4.png"  width="850">
+  <img src="./assets/tp1/ww4.png"  width="850">
 </p>
 
 **Lotes recibidos**
 <p align="center">
-  <img src="images/ww5.png"  width="850">
+  <img src="./assets/tp1/ww5.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww6.png" width="850">
+  <img src="./assets/tp1/ww6.png" width="850">
 </p>
 <p align="center">
-  <img src="images/ww7.png"  width="850">
+  <img src="./assets/tp1/ww7.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww8.png"  width="850">
+  <img src="./assets/tp1/ww8.png"  width="850">
 </p>
 
 **Observaciones Enviadas**
 <p align="center">
-  <img src="images/ww9.png"  width="850">
+  <img src="./assets/tp1/ww9.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww10.png"  width="850">
+  <img src="./assets/tp1/ww10.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/ww11.png"  width="850">
+  <img src="./assets/tp1/ww11.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/ww12.png"  width="850">
+  <img src="./assets/tp1/ww12.png"  width="850">
 </p>
 
 **Perfil**
 <p align="center">
-  <img src="images/ww13.png"  width="850">
+  <img src="./assets/tp1/ww13.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww14.png"  width="850">
+  <img src="./assets/tp1/ww14.png"  width="850">
 </p>
 
 #### Distribuidor 
 
 **Inicio**
 <p align="center">
-  <img src="images/ww15.png"  width="850">
+  <img src="./assets/tp1/ww15.png"  width="850">
 </p>
 
 **Mis Lotes**
 <p align="center">
-  <img src="images/ww16.png"  width="850">
+  <img src="./assets/tp1/ww16.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww17.png" width="850">
+  <img src="./assets/tp1/ww17.png" width="850">
 </p>
 <p align="center">
-  <img src="images/ww18.png"  width="850">
+  <img src="./assets/tp1/ww18.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww19.png"  width="850">
+  <img src="./assets/tp1/ww19.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww20.png"  width="850">
+  <img src="./assets/tp1/ww20.png"  width="850">
 </p>
 
 **Registrar Lotes**
 <p align="center">
-  <img src="images/ww21.png"  width="850">
+  <img src="./assets/tp1/ww21.png"  width="850">
 </p>
 
 
 **Observaciones**
 <p align="center">
-  <img src="images/ww22.png"  width="850">
+  <img src="./assets/tp1/ww22.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/ww23.png"  width="850">
+  <img src="./assets/tp1/ww23.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/ww24.png"  width="850">
+  <img src="./assets/tp1/ww24.png"  width="850">
 </p>
 
 **perfil**
 <p align="center">
-  <img src="images/ww25.png"  width="850">
+  <img src="./assets/tp1/ww25.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/ww26.png"  width="850">
+  <img src="./assets/tp1/ww26.png"  width="850">
 </p>
 
 [ Enlace en Figma de Web Applications Wireframes Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=119-2478&t=JXQyMkXCVQTK4SMK-1)
@@ -1236,7 +1217,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la página de bienvenida de TextilFlow donde se le presentan las opciones para registrarse o iniciar sesión. Al seleccionar iniciar sesión, el usuario debe ingresar sus credenciales (correo y contraseña). Tras validar sus datos, el sistema muestra la pantalla de selección de rol donde el usuario puede elegir entre "Empresa" o "Distribuidor". Dependiendo de su selección, el sistema lo redirige al dashboard correspondiente que muestra información relevante según el rol seleccionado, mostrando información de los lotes por enviar, enviados o confirmados, junto con notificaciones recientes.
 
 <p align="center">
-  <img src="images/Wireflow1.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow1.png" alt="PB" width="1000">
 </p>
 
 
@@ -1247,7 +1228,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** Desde el dashboard principal, el usuario puede visualizar los diferentes estados de los lotes (por enviar, enviados, confirmados o rechazados) con contadores que indican la cantidad en cada categoría. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes a ese estado. Esta tabla incluye información como código, cliente, tipo de tela, fecha, estado y opciones para filtrar o buscar. El usuario puede seleccionar un lote específico para ver información más detallada o realizar acciones adicionales según su rol en el sistema.
 
 <p align="center">
-  <img src="images/Wireflow2.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow2.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 3: Visualización y filtrado de observaciones**
@@ -1257,7 +1238,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección de "Observaciones Enviadas" desde el menú lateral. El sistema muestra una tabla con todas las observaciones registradas, incluyendo información como el lote relacionado, fecha, motivo, evidencia adjunta y estado actual (pendiente, visto, rechazado, confirmado). El usuario puede utilizar las opciones de filtrado ubicadas en la parte superior para refinar la lista según diferentes criterios. Al seleccionar una observación específica, puede ver más detalles o realizar acciones como editar o eliminar, dependiendo del estado actual de la observación.
 
 <p align="center">
-  <img src="images/Wireflow3.png" alt="PB" width="1000">
+  <img src="assets/tp1//Wireflow3.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 4: Gestión de suscripción y planes**
@@ -1267,7 +1248,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección "Planes y suscripción" desde el menú lateral. El sistema muestra los planes disponibles: Plan Básico ($9.99) y Plan Corporativo ($49.99), detallando los beneficios de cada uno. Cada plan incluye información sobre número de lotes permitidos, acceso a estadísticas y funcionalidades adicionales. El usuario puede comparar los planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. El sistema confirma la selección y actualiza la cuenta con los beneficios correspondientes.
 
 <p align="center">
-  <img src="images/Wireflow4.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow4.png" alt="PB" width="1000">
 </p>
 
 ## **User Goal 5: Configuración de la aplicación y perfil**
@@ -1277,120 +1258,120 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a las opciones de configuración a través del menú lateral. Desde aquí, puede personalizar su experiencia en la plataforma ajustando preferencias como el modo de visualización (claro/oscuro) y la información de su perfil. Al seleccionar "Mi perfil", el sistema muestra un formulario con los datos actuales del usuario, permitiéndole editar su nombre, correo electrónico y foto/logo de la empresa. Tras realizar los cambios deseados, el usuario guarda la información actualizada mediante el botón correspondiente. Adicionalmente, en esta sección el usuario puede configurar preferencias específicas como la generación automática o manual de códigos para lotes y otros ajustes que personalicen su experiencia en TextilFlow según sus necesidades operativas.
 
 <p align="center">
-  <img src="images/Wireflow5.png" alt="PB" width="1000">
+  <img src="assets/tp1/Wireflow5.png" alt="PB" width="1000">
 </p>
 
 #### **4.6.3. Web Applications Mock-ups**
 
 **Inicio de Sesión**
 <p align="center">
-  <img src="images/wm1.png"  width="850">
+  <img src="assets/tp1/wm1.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm2.png"  width="850">
+  <img src="assets/tp1/wm2.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm3.png"  width="850">
+  <img src="assets/tp1/wm3.png"  width="850">
 </p>
 
 #### Empresario 
 
 **Inicio**
 <p align="center">
-  <img src="images/wm4.png"  width="850">
+  <img src="assets/tp1/wm4.png"  width="850">
 </p>
 
 **Lotes recibidos**
 <p align="center">
-  <img src="images/wm5.png"  width="850">
+  <img src="assets/tp1/wm5.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm6.png" width="850">
+  <img src="assets/tp1/wm6.png" width="850">
 </p>
 <p align="center">
-  <img src="images/wm7.png"  width="850">
+  <img src="assets/tp1/wm7.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm8.png"  width="850">
+  <img src="assets/tp1/wm8.png"  width="850">
 </p>
 
 **Observaciones Enviadas**
 <p align="center">
-  <img src="images/wm9.png"  width="850">
+  <img src="assets/tp1/wm9.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm10.png"  width="850">
+  <img src="assets/tp1/wm10.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/wm11.png"  width="850">
+  <img src="assets/tp1/wm11.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/wm12.png"  width="850">
+  <img src="assets/tp1/wm12.png"  width="850">
 </p>
 
 **Perfil**
 <p align="center">
-  <img src="images/wm13.png"  width="850">
+  <img src="assets/tp1/wm13.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm14.png"  width="850">
+  <img src="assets/tp1/wm14.png"  width="850">
 </p>
 
 #### Distribuidor 
 
 **Inicio**
 <p align="center">
-  <img src="images/wm15.png"  width="850">
+  <img src="assets/tp1/wm15.png"  width="850">
 </p>
 
 **Mis Lotes**
 <p align="center">
-  <img src="images/wm16.png"  width="850">
+  <img src="assets/tp1/wm16.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm17.png" width="850">
+  <img src="assets/tp1/wm17.png" width="850">
 </p>
 <p align="center">
-  <img src="images/wm18.png"  width="850">
+  <img src="assets/tp1/wm18.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm19.png"  width="850">
+  <img src="assets/tp1/wm19.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm20.png"  width="850">
+  <img src="assets/tp1/wm20.png"  width="850">
 </p>
 
 **Registrar Lotes**
 <p align="center">
-  <img src="images/wm21.png"  width="850">
+  <img src="assets/tp1/wm21.png"  width="850">
 </p>
 
 
 **Observaciones**
 <p align="center">
-  <img src="images/wm22.png"  width="850">
+  <img src="assets/tp1/wm22.png"  width="850">
 </p>
 
 **Configuración**
 <p align="center">
-  <img src="images/wm23.png"  width="850">
+  <img src="assets/tp1/wm23.png"  width="850">
 </p>
 
 **Planes**
 <p align="center">
-  <img src="images/wm24.png"  width="850">
+  <img src="assets/tp1/wm24.png"  width="850">
 </p>
 
 **perfil**
 <p align="center">
-  <img src="images/wm25.png"  width="850">
+  <img src="assets/tp1/wm25.png"  width="850">
 </p>
 <p align="center">
-  <img src="images/wm26.png"  width="850">
+  <img src="assets/tp1/wm26.png"  width="850">
 </p>
 
 [ Enlace en Figma de Web Applications Mock-ups Empresario ](https://www.figma.com/design/zoAlRMYgINLrqksRRdVMiO/TextilFlow?node-id=80-1885&t=JXQyMkXCVQTK4SMK-1)
@@ -1412,7 +1393,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario ingresa a la plataforma TextilFlow a través de la pantalla de bienvenida. En esta primera pantalla, puede elegir entre registrarse como nuevo usuario o iniciar sesión con credenciales existentes. Al seleccionar iniciar sesión, debe ingresar su correo electrónico y contraseña. Una vez validados los datos, el sistema lo dirige a la pantalla de selección de rol, donde debe indicar si actuará como "Empresa" o "Distribuidor". Dependiendo de la selección, el sistema redirige al usuario al dashboard correspondiente, mostrando información relevante según su rol, incluyendo contadores de lotes en diferentes estados (por enviar, enviados, confirmados) y las notificaciones recientes que requieren su atención.
 
 <p align="center">
-  <img src="images/Userflow1.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow1.png" alt="PB" width="1000">
 </p>
 
 ## **2\. User Goal: Gestión de suscripción y planes**
@@ -1422,7 +1403,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario, desde su dashboard principal, accede a la sección de "Planes y suscripción" a través del menú lateral. El sistema muestra una comparativa entre los dos planes disponibles: Plan Básico ($9.99/mes) y Plan Corporativo ($49.99/mes). Cada plan presenta sus beneficios específicos, como límites de lotes, acceso a estadísticas, y funcionalidades adicionales. El usuario puede analizar las diferencias entre ambos planes y seleccionar el que mejor se adapte a sus necesidades haciendo clic en "Cambiar" para el plan básico o "Ir al Plan" para el corporativo. Al confirmar su elección, el sistema actualiza la suscripción y aplica inmediatamente los beneficios correspondientes al plan seleccionado.
 
 <p align="center">
-  <img src="images/Userflow2.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow2.png" alt="PB" width="1000">
 </p>
 
 ## **3\. User Goal: Visualización y gestión de lotes**
@@ -1432,7 +1413,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** Desde el dashboard, el usuario puede ver un resumen de sus lotes clasificados por estado. Al hacer clic en "Ver detalles" de cualquier categoría, el sistema muestra una tabla completa con todos los lotes correspondientes. Esta tabla incluye columnas para código, cliente, tipo de tela, fecha, estado y opciones adicionales. El usuario puede filtrar y ordenar la información según diferentes criterios para encontrar rápidamente lo que busca. Al seleccionar un lote específico, puede ver información más detallada o realizar acciones adicionales como editar, descargar reportes o registrar observaciones. La interfaz permite navegar entre diferentes vistas de lotes según sus estados (enviados, recibidos, confirmados, rechazados) manteniendo una experiencia coherente.
 
 <p align="center">
-  <img src="images/Userflow3.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow3.png" alt="PB" width="1000">
 </p>
 
 ## **4\. User Goal: Registro y envío de nuevos lotes**
@@ -1442,7 +1423,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El distribuidor, desde su dashboard, selecciona la opción "Registrar Lotes" del menú lateral. El sistema muestra un formulario completo para ingresar la información del nuevo lote, incluyendo campos para código del lote (que puede ser automático o manual), cliente, tipo de tela, fecha de registro, y observaciones adicionales. El usuario completa todos los campos requeridos y tiene la opción de añadir información complementaria como calidad de tela o fotos. Una vez completado el formulario, el distribuidor hace clic en "Enviar" para registrar el lote en el sistema. La plataforma confirma el registro exitoso y notifica automáticamente al empresario destinatario sobre el nuevo lote recibido, actualizando los contadores en ambos dashboards.
 
 <p align="center">
-  <img src="images/Userflow4.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow4.png" alt="PB" width="1000">
 </p>
 
 ## **5\. User Goal: Gestión de observaciones de lotes**
@@ -1452,7 +1433,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección "Observaciones" desde su dashboard. Dependiendo de su rol, visualiza las observaciones enviadas (distribuidor) o recibidas (empresario). El sistema muestra una tabla con todas las observaciones, incluyendo información como código de lote relacionado, fecha, motivo, estado y evidencia adjunta. El usuario puede filtrar la lista por diferentes criterios para localizar observaciones específicas. Al seleccionar una observación, puede ver detalles completos, incluyendo imágenes adjuntas como evidencia. Si la observación aún está en estado "pendiente", el empresario puede editarla o eliminarla; si ya fue revisada, estas opciones no están disponibles. El distribuidor puede marcar observaciones como "vistas" y responder a ellas según sea necesario.
 
 <p align="center">
-  <img src="images/Userflow5.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow5.png" alt="PB" width="1000">
 </p>
 
 ## **6\. User Goal: Configuración de la aplicación y perfil**
@@ -1462,13 +1443,13 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Explicación del flujo:** El usuario accede a la sección de configuración a través del menú lateral. Aquí puede personalizar aspectos de su experiencia en la plataforma, incluyendo la información de su perfil y preferencias visuales. Al seleccionar la opción de perfil, puede modificar datos personales como nombre, foto/logo de la empresa y datos de contacto. El sistema permite al usuario elegir entre modo claro u oscuro para la interfaz, así como configurar preferencias específicas como la generación automática o manual de códigos para lotes. Tras realizar los cambios deseados, el usuario confirma las modificaciones y el sistema las aplica inmediatamente. Esta sección también proporciona opciones de seguridad como cambio de contraseña y cierre de sesión, permitiendo al usuario gestionar completamente su experiencia en la plataforma.
 
 <p align="center">
-  <img src="images/Userflow6.png" alt="PB" width="1000">
+  <img src="assets/tp1/Userflow6.png" alt="PB" width="1000">
 </p>
 
 ### **4.7. Web Applications Prototyping**
 
 <p align="center">
-  <img src="images/prototype.png" alt="PB" width="1000">
+  <img src="assets/tp1/prototype.png" alt="PB" width="1000">
 </p>
 
 [Web Applications Prototyping TextilFlow](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311361_upc_edu_pe/EdB5RunylOtGm678FwW-g64BH_ntQg-ugW-fUD7lLYVNQw?e=OmtcdT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
@@ -1481,13 +1462,13 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 #### **4.8.1. Software Architecture Context Diagrams**
 
 <p align="center">
-  <img src="images/contexto.png" alt="PB" width="1000">
+  <img src="assets/tp1/contexto.png" alt="PB" width="1000">
 </p>
 
 #### **4.8.2. Software Architecture Container Diagrams**
 
 <p align="center">
-  <img src="images/Containers.png" alt="PB" width="1000">
+  <img src="assets/tp1/Containers.png" alt="PB" width="1000">
 </p>
 
 #### **4.8.3. Software Architecture Components Diagrams**
@@ -1495,115 +1476,115 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 **Diagrama de Componentes FrontEnd**
 
 <p align="center">
-  <img src="images/SAComponentsDiagram.png" alt="PB" width="1000">
+  <img src="assets/tp1/SAComponentsDiagram.png" alt="PB" width="1000">
 </p>
 
 * AuthService
 
 <p align="center">
-  <img src="images/AuthBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/AuthBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * BatchService
 
 <p align="center">
-  <img src="images/BatchBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/BatchBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Businessman
 
 <p align="center">
-  <img src="images/BusinessmanBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/BusinessmanBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Configuration
 
 <p align="center">
-  <img src="images/ConfigurationBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/ConfigurationBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/ObservationBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/ObservationBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 * Request
 <p align="center">
-  <img src="images/RequestBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/RequestBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/SharedBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/SharedBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 * Supplier
 
 <p align="center">
-  <img src="images/SupplierBoundedContextDetail.png" alt="PB" width="1000">
+  <img src="assets/tp1/SupplierBoundedContextDetail.png" alt="PB" width="1000">
 </p>
 
 **Diagrama de Componente BackEnd**
 
 <p align="center">
-  <img src="images/api.png" alt="PB" width="1000">
+  <img src="assets/tp1/api.png" alt="PB" width="1000">
 </p>
 
 * Batch
 
 <p align="center">
-  <img src="images/structurizr3.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr3.png" alt="PB" width="1000">
 </p>
 
 * User
 
 <p align="center">
-  <img src="images/structurizr4.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr4.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/structurizr5.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr5.png" alt="PB" width="1000">
 </p>
 
 
 * Supplier
 
 <p align="center">
-  <img src="images/structurizr6.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr6.png" alt="PB" width="1000">
 </p>
 
 * Review
 
 <p align="center">
-  <img src="images/structurizr7.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr7.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/structurizr8.png" alt="PB" width="1000">
+  <img src="assets/tp1/structurizr8.png" alt="PB" width="1000">
 </p>
 
 * Request
 
 <p align="center">
-  <img src="images/request.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.png" alt="PB" width="1000">
 </p>
 
 
 * Payment
 
 <p align="center">
-  <img src="images/payment.png" alt="PB" width="1000">
+  <img src="assets/tp1/payment.png" alt="PB" width="1000">
 </p>
 
 * Configurations
 
 <p align="center">
-  <img src="images/configurations.png" alt="PB" width="1000">
+  <img src="assets/tp1/configurations.png" alt="PB" width="1000">
 </p>
 
 ### **4.9. Software Object-Oriented Design**
@@ -1614,52 +1595,52 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 * Auth
 
 <p align="center">
-  <img src="images/auth.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/auth.f.png" alt="PB" width="1000">
 </p>
 
 * Businessman
 
 <p align="center">
-  <img src="images/businessman.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/businessman.f.png" alt="PB" width="1000">
 </p>
 
 * Supplier
 
 <p align="center">
-  <img src="images/supplier.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/supplier.f.png" alt="PB" width="1000">
 </p>
 
 
 * Request
 
 <p align="center">
-  <img src="images/request.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.f.png" alt="PB" width="1000">
 </p>
 
 
 * Configuration
 
 <p align="center">
-  <img src="images/configuration.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/configuration.f.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/shared.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/shared.f.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/observation.f.png" alt="PB" width="1000">
+  <img src="assets/tp1/observation.f.png" alt="PB" width="1000">
 </p>
 
 
 * Batches
 
 <p align="center">
-  <img src="images/batches.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/batches.b.png" alt="PB" width="1000">
 </p>
 
 
@@ -1668,55 +1649,55 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 * IAM
 
 <p align="center">
-  <img src="images/IAM.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/IAM.b.png" alt="PB" width="1000">
 </p>
 
 * Request
 
 <p align="center">
-  <img src="images/request.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/request.b.png" alt="PB" width="1000">
 </p>
 
 * Payment
 
 <p align="center">
-  <img src="images/payment.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/payment.b.png" alt="PB" width="1000">
 </p>
 
 * Configuration
 
 <p align="center">
-  <img src="images/configuration.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/configuration.b.png" alt="PB" width="1000">
 </p>
 
 * Shared
 
 <p align="center">
-  <img src="images/shared.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/shared.b.png" alt="PB" width="1000">
 </p>
 
 * Observation
 
 <p align="center">
-  <img src="images/observation.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/observation.b.png" alt="PB" width="1000">
 </p>
 
 * Reviews
 
 <p align="center">
-  <img src="images/reviews.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/reviews.b.png" alt="PB" width="1000">
 </p>
 
 * Profiles
 
 <p align="center">
-  <img src="images/profiles.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/profiles.b.png" alt="PB" width="1000">
 </p>
 
 * Batches
 
 <p align="center">
-  <img src="images/batches.b.png" alt="PB" width="1000">
+  <img src="assets/tp1/batches.b.png" alt="PB" width="1000">
 </p>
 
 #### **4.9.2. Class Dictionary**
@@ -2003,7 +1984,861 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 #### **4.10.1. Database Diagram**
 
 <p align="center">
-  <img src="images/DatabaseDiagramTF.jpg" alt="PB" width="1000">
+  <img src="assets/tp1/DatabaseDiagramTF.jpg" alt="PB" width="1000">
+</p>
+
+
+
+## **Capítulo V: Product Implementation**
+
+
+### 5.1. Software Configuration Management
+
+En este apartado detallaremos la configuracion de nuestro entorno de desarrollo, la gestion del codigo fuente, las convenciones de estilo y el proceso para desplegar nuestro sistema web de evaluacion y guardado de lotes de telas.
+
+#### 5.1.1. Software Development Environment Configuration
+
+
+**Diseño UX-UI:** Aqui nos centramos en la creacion de las interfaces, procurando que sean amigables e intuitivas para el usu, considerando todo lo que ellos deberian tener a disposicion. Las herramientas que intervinieron en este proceso fueron: 
+
+* Figma: Nos permite crear wireframes, mockups y prototipos de aplicaciones en forma creativa y colaborativa. 
+
+**Desarrollo del Software:** Para todo nuestro proceso con el software, usamos las siguientes herramientas:
+
+* **Github:** Usando Github, creamos y manejamos el repositorio donde alojamos nuestro proyecto y gestionamos distintas versiones de este. Junto la herramienta Git controlamos el flujo de nuestro desarrollo trabajando con ramas (branches).
+
+* **UxPressia:** Usamos esta herramienta para la elaboracion de los User Personas, el Customer Journey Map, los Empathy Maps y el Impact Mapping.
+
+* **Miro:** Empleado para los Scenario Mapping de ambos segmentos.
+
+* **LucidChart:** Pagina que usamos para elaborar los diagramas UML y de flujo, para asi representar de forma visual el desarrollo de los procesos en el proyecto.
+
+* **Trello:** Herramienta en la cual incorporamos nuestro Product Backlog y el nicel de importancia segun el core de nuestro producto.
+
+* **Structurizr:** Herramienta en la que aplicamos el DDD y creamos los diagramas de Contexto, Contenedores y los Bounded Context Diagrams de TextilFlow.
+
+* **Discord:** Aplicacion que nos ayudo a nuestra comunicacion y intercambio de ideas. La usamos para reuniones clave decidiendo el rumbo del proyecto y separacion de labores individuales.
+
+
+#### 5.1.2. Source Code Management
+
+Para el desarrollo de este proyecto es fundamental un flujo y gestio eficiente del trabajo. Nosotros empleamos Git como herramienta por su manejo de versiones y su flajo en ramas (branches). Reunimos todo nuestro proyecto en un repositorio que creamos en GitHub.
+
+Nuestra organizacion: https://github.com/G-0X-Diseno-de-Experimentos
+
+Repositorio: Landing Page: https://github.com/G-0X-Diseno-de-Experimentos/landing-page
+
+En lo que corresponde a como llevamos a cabo el proyecto, establecimos un modelo de ramas en GitFlow
+
+* Ramas Principales:
+
+*main*: La rama principal, aqui se encontrara la ultima version del codigo una vez completado el proceso de produccion. 
+
+*develop*: Rama de desarrollo, antes de enviar los cambios a la rama *main* se validan aqui todas las actualizaciones, correcciones o cambios realizados antes de llevarlo a produccion.
+
+* Ramas auxiliares: 
+
+*feature/feature_name*: Ramas creadas para trabajar los requirements asignados sin afectar el flujo de los demas. Una vez terminado el requirement, se uniran los cambios a la rama de desarrollo o *develop*. Al momento de nombrarlas, se pondra un nombre haciendo referencia al requirement realizado. 
+
+#### Convenciones para los "commits"
+
+Para mantener un historial de cambios simple y de facil identificacion, adoptamos la convencion basada en la estructura de "Conventional Commits". De esta forma, nos es mas sencillo el seguimiento en el desarrollo y analizar todos los cambios que se realizan.
+
+```html
+<type>(scope): <description>
+```
+
+*Ejemplo: feat: adding user stories*
+
+#### Donde:
+
+* **type:** Es un campo obligatorio. En este apartado se especifica el tipo de cambio realizado. Los tipos de commits pueden ser los siguientes:
+
+feat: Para introducir una nueva funcionalidad al código fuente.
+
+fix: Para arreglar algun tipo de error del código fuente.
+
+style: Agrega cambios de estilo al producto, en este caso los archivos CSS.
+
+refactor: Agrega mejoras del código fuente, mas no agrega funcionalidad. Podrian ser arreglar fallas gramaticales o uso de mejores practicas.
+
+docs: Cuando se realizan cambios en la documentacion del proyecto. No afecta en nada a las funcionalidades del proyecto.
+
+build: Cambios en la configuración del proyecto, tales como cambiar, agregar o eliminar dependencias del proyecto.
+
+* **scope:** Un campo opcional. Indica el alcance de impacto que tiene el commit. En este caso pondremos los identificadores de las user stories o requirements.
+* **description:** Es un campo obligatorio. Un breve resumen del commit. Se escribirá en inglés y debe iniciar con un verbo en infinitivo.
+
+#### 5.1.3. Source Code Style Guide & Conventions+
+
+En esta seccion se procedera a explicar a detalle las nomenclaturas de los siguientes lenguajes de programacion y frameworks a emplear.
+
+* HTML
+1. Los nombres de las etiquetas deben estar en lowercase (o minuscula).
+2. Todas las etiquetas deben estar cerradas.
+Los atributos de las etiquetas deben estar en lowercase (o minúscula).
+3. Los valores de los atributos deben estar encerrados en comillas dobles.
+4. Las imágenes tienen que tener los atributos *alt*, *width* y *height* por motivos de ajuste y rendimiento.
+5. No agregar líneas en blanco o espacios sin motivo.
+* CSS
+1. Usar nombres específicos o generales para identificar las clases.
+2. Acortar nombre de las clases sin perder el mensaje.
+3. Para separar las palabras en un nombre de clase se usara “-”.
+4. Evitar selectores de ID.
+5. Usar valores abreviados para las propiedades.
+6. Evitar usar la declaración !important.
+* JavaScript
+1. No usar la palabra reservada var. En vez de eso usar const y let.
+2. Usar camelCase para el nombramiento de variables y funciones.
+3. Usar PascalCase para nombrar clases.
+4. Usar UPPERCASE para nombrar constantes.
+5. No usar el constructor Array para la creación de arreglos.
+6. Uso del Rest Operator
+7. Uso del Spread Operator
+* Angular
+1. Usa una estructura modular desde el inicio (feature modules).
+2. Cada feature debe ir en su propio subdirectorio.
+3. Agrupa archivos por feature, no por tipo de archivo.
+* Gherkin
+1. Las especificaciones deben de ser claras y legibles.
+2. No usar terminologías técnicas para que no exista dificultad de comprension por parte de los colaboradores.
+3. Usar las palabras claves Given, When, Then, And y But para describir el comportamiento del sistema.
+4. Evitar redundancias en las descripciones de los escenarios.
+
+#### 5.1.4. Software Deployment Configuration
+
+
+**Para que nuestra landing page esté disponible para todos nuestros usuarios, la publicamos como un sitio web utilizando la plataforma de GitHub. El proceso se llevó a cabo de la siguiente manera:**
+
+1. **Registro en GitHub** Creamos una cuenta en GitHub para poder gestionar nuestros repositorios.
+
+2. **Creación del repositorio**
+  * Hicimos clic en el botón "New" para generar un nuevo repositorio.
+  * Le asignamos el nombre "LandingPage" dentro de nuestra organización "TextilFlow"
+
+3. **Configuración del repositorio**
+  * Nos aseguramos de que el repositorio sea de acceso público.
+
+4. **Carga de los archivos de la landing page**
+  * Accedimos al repositorio creado.
+  * Esperamos a que todos los contribuyentes hagan los commits del desarrollo para darle Merge a la rama main.
+  * Finalmente, confirmamos la acción con "Commit changes" para guardar los archivos.
+
+5. **Activación de GitHub Pages**
+  * Entramos a la sección "Settings" del repositorio.
+  * Nos desplazamos hasta encontrar el apartado "GitHub Pages".
+  * Elegimos la rama "feature/develop" y guardamos los cambios con "Save".
+
+**Figura**
+*Explicación del paso 5*
+<p align="center">
+  <img src="./assets/tp1/SDC1.jpg" alt="PB" width="850">
+</p>
+
+Nota. Elaboración propia.
+
+6. **Verificación del sitio web** En pocos minutos, el sitio se publica en la siguiente dirección:  https://textilflow-curso-open-source.github.io/Landing-Page-TextilFlow/
+Accedemos a esta URL desde el navegador para confirmar que el sitio está activo.
+
+7. **Actualización del sitio**
+  * Cuando necesitemos modificar el sitio, solo debemos realizar commits y darle merge de nuevo siguiendo los mismos pasos.
+  * Los cambios se verán reflejados automáticamente en línea.
+
+### 5.2. Product Implementation & Deployment
+
+#### 5.2.1. Sprint Backlogs
+
+#### 5.2.2. Implemented Landing Page Evidence
+
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/landing_evidence4.jpg" alt="PB" width="850">
+</p>
+
+
+#### 5.2.3. Implemented Frontend-Web Application Evidence
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence4jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence5.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/frontend_evidence6.jpg" alt="PB" width="850">
+</p>
+
+#### 5.2.4. Acuerdo de Servicio - SaaS
+
+TextilFlow es una plataforma digital diseñada para facilitar la trazabilidad, gestión documental y control de calidad dentro de operaciones textiles.
+
+Estos Términos y Condiciones establecen los derechos, obligaciones y responsabilidades aplicables a todos los usuarios que accedan o utilicen los servicios de la plataforma.
+
+[Acuerdo de Servicio](./assets/tp1/TERMS%20AND%20CONDITIONS%20-%20Qualix.pdf)
+
+#### 5.2.5. Implemented Native-Mobile Application Evidence
+
+#### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence1.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence2.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence3.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence4.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence5.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence6.jpg" alt="PB" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/backend_evidence7.jpg" alt="PB" width="850">
+</p>
+
+#### 5.2.7. RESTful API documentation
+
+| Método HTTP                              | Endpoint                                                      | Descripción                          | Ejemplo de uso                     |
+| ---------------------------------------- | ------------------------------------------------------------- | ------------------------------------ | ---------------------------------- |
+| **Authentication Management**            |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/authentication/sign-up`                              | Registro de nuevo usuario            | Crear cuenta en la plataforma      |
+| POST                                     | `/api/v1/authentication/sign-in`                              | Inicio de sesión                     | Autenticación de usuario           |
+| POST                                     | `/api/v1/authentication/forgot-password`                      | Solicitar recuperación de contraseña | Recuperar acceso a la cuenta       |
+| POST                                     | `/api/v1/authentication/reset-password`                       | Resetear contraseña                  | Establecer nueva contraseña        |
+| **Batch Management**                     |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/batches`                                             | Obtiene todos los lotes              | Visualizar lotes de producción     |
+| GET                                      | `/api/v1/batches/{batchId}`                                   | Obtiene un lote específico           | Detalles del lote de productos     |
+| POST                                     | `/api/v1/batches`                                             | Crea un nuevo lote                   | Registrar nuevo lote de producción |
+| PUT                                      | `/api/v1/batches/{batchId}`                                   | Actualiza un lote existente          | Modificar estado del lote          |
+| DELETE                                   | `/api/v1/batches/{batchId}`                                   | Elimina un lote                      | Dar de baja lote completado        |
+| GET                                      | `/api/v1/batches/test/profiles/{userId}`                      | Test perfiles ACL                    | Verificar permisos de usuario      |
+| **Business Supplier Request Management** |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/business-supplier-requests`                          | Obtiene todas las solicitudes        | Lista de solicitudes               |
+| GET                                      | `/api/v1/business-supplier-requests/{requestId}`              | Obtiene solicitud por ID             | Perfil específico de solicitud     |
+| POST                                     | `/api/v1/business-supplier-requests`                          | Crea solicitud                       | Registrar nueva solicitud          |
+| PUT                                      | `/api/v1/business-supplier-requests/{requestId}`              | Actualiza solicitud                  | Modificar datos de solicitud       |
+| DELETE                                   | `/api/v1/business-supplier-request`                           | Elimina solicitud                    | Borrar solicitud                   |
+| **Businessmen Management**               |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/businessmen`                                         | Obtiene todos los empresarios        | Lista de empresarios textiles      |
+| GET                                      | `/api/v1/businessmen/{userId}`                                | Obtiene empresario por ID            | Perfil específico de empresario    |
+| POST                                     | `/api/v1/businessmen/{userId}`                                | Crea perfil de empresario            | Registrar nuevo empresario         |
+| PUT                                      | `/api/v1/businessmen/{userId}`                                | Actualiza perfil de empresario       | Modificar datos empresariales      |
+| **Observation Management**               |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/observations/{observationId}`                        | Obtiene observación específica       | Detalles de observación de calidad |
+| GET                                      | `/api/v1/observations/supplier/{supplierId}`                  | Observaciones por proveedor          | Historial de observaciones         |
+| GET                                      | `/api/v1/observations/businessman/{businessmanId}`            | Observaciones por empresario         | Control de calidad empresarial     |
+| GET                                      | `/api/v1/observations/batch/{batchId}`                        | Observaciones por lote               | Control de calidad del lote        |
+| POST                                     | `/api/v1/observations`                                        | Crea nueva observación               | Reportar observación de calidad    |
+| PUT                                      | `/api/v1/observations/{observationId}`                        | Actualiza observación                | Modificar estado de observación    |
+| DELETE                                   | `/api/v1/observations/{observationId}`                        | Elimina observación                  | Remover observación resuelta       |
+| **Observation Images Management**        |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/observations/{observationId}/images`                 | Crea nueva imagen de observación     | Adjuntar evidencia visual          |
+| DELETE                                   | `/api/v1/observations/{observationId}/images`                 | Elimina imagen de observación        | Remover evidencia visual           |
+| **Profile Images Management**            |                                                               |                                      |                                    |
+| POST                                     | `/api/v1/profiles/{userId}/images/logo`                       | Sube logo de perfil                  | Actualizar imagen corporativa      |
+| DELETE                                   | `/api/v1/profiles/{userId}/images/logo`                       | Elimina logo de perfil               | Remover imagen de perfil           |
+| **Complete Profiles Management**         |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/profiles/{userId}`                                   | Obtiene perfil completo              | Información completa del usuario   |
+| **Supplier Reviews Management**          |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/supplier-reviews/supplier/{supplierId}`              | Obtiene reviews por proveedor        | Calificaciones del proveedor       |
+| GET                                      | `/api/v1/supplier-reviews/check/{supplierId}/{businessmanId}` | Verifica review existente            | Comprobar si ya evaluó             |
+| POST                                     | `/api/v1/supplier-reviews`                                    | Crea nueva review                    | Evaluar proveedor                  |
+| PUT                                      | `/api/v1/supplier-reviews/{reviewId}`                         | Actualiza review existente           | Modificar evaluación               |
+| **Suppliers Management**                 |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/suppliers`                                           | Obtiene todos los proveedores        | Catálogo de proveedores            |
+| GET                                      | `/api/v1/suppliers/{userId}`                                  | Obtiene proveedor por ID             | Perfil específico de proveedor     |
+| POST                                     | `/api/v1/suppliers/{userId}`                                  | Crea perfil de proveedor             | Registrar nuevo proveedor          |
+| PUT                                      | `/api/v1/suppliers/{userId}`                                  | Actualiza perfil de proveedor        | Modificar datos del proveedor      |
+| **Users Management**                     |                                                               |                                      |                                    |
+| GET                                      | `/api/v1/users/{userId}`                                      | Obtiene usuario por ID               | Información básica del usuario     |
+| PUT                                      | `/api/v1/users/{userId}/role`                                 | Actualiza rol del usuario            | Cambiar permisos de usuario        |
+
+
+#### 5.2.8. Team Collaboration Insights
+
+| Alumno | Actividad |
+|--------|-----------|
+| Fabrizio Alberto Paredes Santos | Implementación de la sección main de la landing page |
+| Sebastian Rodriguez Macedo | Implementación de la sección company de la landing page |
+| Mathias Eduardo Bueno Perales | Implementación de la sección prices de la landing page |
+| Giorgio Marzouk Awad Vargas | Implementación de la sección FAQ de la landing page |
+| Hector Javier Rios Pacheco | Implementación de la sección de terminos y condiciones de la landing page |
+
+### Informe:
+
+<p align="center">
+  <img src="./assets/tp1/team-collab-insights-informe-tp.png" alt="PB" width="850">
+</p>
+
+### 5.3. Video About-the-Product
+
+
+# Part II: Verification, Validation & Pipeline
+
+## **Capítulo VI: Product Verification & Validation**
+
+### 6.1. Testing Suites & Validation
+
+#### 6.1.1. Core Entities Unit Tests
+
+Las pruebas unitarias de entidades principales validan el comportamiento de los agregados y value objects del dominio en aislamiento, sin dependencias de infraestructura ni base de datos. Se siguió el patrón **AAA (Arrange, Act, Assert)** en todos los casos.
+
+---
+
+### 1. Batch — `BatchDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `batch_Constructor_ShouldSetDefaults` | Verifica que el constructor vacío inicializa todos los campos con valores por defecto (strings vacíos, 0 numéricos, status PENDIENTE) | ✅ Pass |
+| 2 | `batch_ConstructorFromCommand_ShouldMapValues` | Verifica que el constructor desde `CreateBatchCommand` mapea correctamente todos los campos al agregado | ✅ Pass |
+| 3 | `createBatchCommand_Validations` | Verifica que `CreateBatchCommand` lanza `IllegalArgumentException` ante campos nulos, IDs en cero, strings vacíos, precio/cantidad en cero, fecha futura y status null | ✅ Pass |
+| 4 | `updateBatchCommand_Validations` | Verifica que `UpdateBatchCommand` lanza `IllegalArgumentException` ante ID inválido, campos vacíos, cantidad/precio negativos, fecha null y status null | ✅ Pass |
+| 5 | `deleteCommands_Validations` | Verifica que `DeleteBatchCommand` y `DeleteBatchImageCommand` rechazan batchId igual a 0 | ✅ Pass |
+| 6 | `updateBatchImageCommand_Validations` | Verifica que `UpdateBatchImageCommand` rechaza batchId en 0, URL null o vacía | ✅ Pass |
+| 7 | `queries_Validations` | Verifica que `GetBatchByIdQuery`, `GetBatchesByBusinessmanIdQuery` y `GetBatchesBySupplierIdQuery` rechazan IDs en 0 | ✅ Pass |
+| 8 | `batchStatus_DisplayName` | Verifica que el enum `BatchStatus` retorna el nombre de visualización correcto para PENDIENTE y ACEPTADO | ✅ Pass |
+| 9 | `events_ContractCoverage` | Verifica que los records `BatchCreatedEvent` y `BatchUpdatedEvent` se instancian correctamente y exponen el campo `batchId` | ✅ Pass |
+| 10 | `updateInformation_ShouldUpdateAllFieldsAndReturnSameInstance` | Verifica que `updateInformation` modifica todos los campos del agregado y retorna la misma instancia (identidad de objeto) | ✅ Pass |
+| 11 | `updateInformation_ShouldAllowNullImageUrl` | Verifica que `updateInformation` acepta `imageUrl` null sin lanzar excepción | ✅ Pass |
+| 12 | `updateInformation_ShouldAllowEmptyStrings` | Verifica que `updateInformation` acepta strings vacíos en todos los campos de texto | ✅ Pass |
+| 13 | `constructorFromCommand_ShouldHandleNullStatus` | Verifica que el constructor lanza `IllegalArgumentException` con mensaje que contiene "Status" cuando el status es null | ✅ Pass |
+| 14 | `updateInformation_ShouldReplaceDateReference` | Verifica que llamadas sucesivas a `updateInformation` reemplazan correctamente la referencia de fecha | ✅ Pass |
+
+---
+
+### 2. Observation — `ObservationDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna correctamente batchId, batchCode, businessmanId, supplierId, reason, imageUrl y status | ✅ Pass |
+| 3 | `updateInformation_ShouldModifyFields` | Verifica que `updateInformation` modifica razón, estado e imagen a partir de un `UpdateObservationCommand` | ✅ Pass |
+| 4 | `imageLifecycle_Management` | Verifica el ciclo de vida de la imagen: `updateImage` asigna la URL y `deleteImage` la elimina (null) | ✅ Pass |
+| 5 | `observationStatus_EnumCheck` | Verifica que el enum `ObservationStatus` contiene los valores de negocio: PENDIENTE, EN_REVISION, RESUELTA, RECHAZADA | ✅ Pass |
+| 6 | `updateImage_ShouldHandleNull` | Verifica que `updateImage(null)` no lanza excepción y deja el valor en null | ✅ Pass |
+| 7 | `imageUrl_IsEmptyEdgeCases` | Verifica que `ImageUrl.isEmpty()` detecta correctamente null, string vacío y espacios en blanco | ✅ Pass |
+| 8 | `updateInformation_ShouldIgnoreNullImage` | Verifica que si el comando trae imageUrl null, la imagen existente no se sobreescribe | ✅ Pass |
+| 9 | `updateInformation_ShouldFailInvalidStatus` | Verifica que `updateInformation` lanza `IllegalArgumentException` si el status del comando es inválido | ✅ Pass |
+| 10 | `constructor_ShouldAllowNullImageUrl` | Verifica que el constructor acepta imageUrl null manteniendo consistencia en los demás campos | ✅ Pass |
+
+---
+
+### 3. BusinessSupplierRequest — `BusinessSupplierRequestTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `constructor_ShouldInitializeCorrectly` | Verifica que el constructor inicializa el agregado en estado PENDING y que `isPending()` retorna true | ✅ Pass |
+| 2 | `updateStatus_ShouldModifyFields` | Verifica que `updateStatus` cambia el estado y el mensaje, y que los flags de estado responden correctamente | ✅ Pass |
+| 3 | `updateRequestDetails_ShouldModifyDetails` | Verifica que `updateRequestDetails` actualiza mensaje, batchType, color, quantity y address usando la misma referencia de objeto | ✅ Pass |
+| 4 | `flags_ShouldRespondToStatus` | Verifica que `isRejected()` e `isCancelled()` responden correctamente al estado asignado mediante `updateStatus` | ✅ Pass |
+| 5 | `shouldHandleNullValuesInUpdateRequestDetails` | Verifica que `updateRequestDetails` acepta valores null en los value objects sin romper invariantes | ✅ Pass |
+| 6 | `shouldAlwaysStartAsPending` | Verifica la invariante de dominio: todo nuevo request debe iniciar en PENDING, con todos los demás flags en false | ✅ Pass |
+
+---
+
+### 4. SupplierReview — `SupplierReviewTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `constructorFromCommand_ShouldInitializeAndRegisterEvent` | Verifica que el constructor desde `CreateSupplierReviewCommand` inicializa supplierId, businessmanId, rating y reviewContent correctamente | ✅ Pass |
+| 2 | `updateFromCommand_ShouldModifyFieldsAndRegisterEvent` | Verifica que `update(UpdateSupplierReviewCommand)` modifica rating y contenido | ✅ Pass |
+| 3 | `updateDirect_ShouldModifyFieldsAndRegisterEvent` | Verifica que `update(int, String)` modifica rating y contenido directamente | ✅ Pass |
+| 4 | `ownershipMethods_ShouldVerifyCorrectly` | Verifica que `belongsToBusinessman` e `isForSupplier` retornan true/false según el ID comparado | ✅ Pass |
+| 5 | `shouldThrow_WhenInvalidRating` | Verifica que el constructor lanza excepción si el rating es -1 | ✅ Pass |
+| 6 | `rating_ShouldThrow_WhenOutOfRange` | Verifica que `Rating` lanza `IllegalArgumentException` para valores 0 y 6 (fuera del rango 1–5) | ✅ Pass |
+| 7 | `rating_StringConstructor_ShouldConvert` | Verifica que el constructor String de `Rating` convierte correctamente "4" → 4 | ✅ Pass |
+| 8 | `reviewContent_ShouldThrow_WhenInvalid` | Verifica que `ReviewContent` rechaza null, string vacío y string con solo espacios | ✅ Pass |
+| 9 | `reviewContent_ShouldAccept_WhenExactlyLimit` | Verifica que `ReviewContent` acepta exactamente 1000 caracteres (límite máximo) | ✅ Pass |
+| 10 | `rating_ShouldAccept_MinBoundary` | Verifica el valor límite mínimo válido del rating: 1 | ✅ Pass |
+| 11 | `rating_ShouldAccept_MaxBoundary` | Verifica el valor límite máximo válido del rating: 5 | ✅ Pass |
+| 12 | `belongsToBusinessman_ShouldHandleNull` | Verifica que `belongsToBusinessman` retorna false sin lanzar excepción cuando se pasa null | ✅ Pass |
+| 13 | `isForSupplier_ShouldHandleNull` | Verifica que `isForSupplier` retorna false sin lanzar excepción cuando se pasa null | ✅ Pass |
+| 14 | `update_ShouldThrow_WhenInvalidRating` | Verifica que `update` lanza `IllegalArgumentException` con rating 0 | ✅ Pass |
+| 15 | `update_ShouldThrow_WhenNullRating` | Verifica que `update` lanza `IllegalArgumentException` con rating null | ✅ Pass |
+| 16 | `supplierReview_ShouldThrow_WhenRatingNull` | Verifica que el constructor lanza `IllegalArgumentException` si el rating del comando es null | ✅ Pass |
+| 17 | `supplierReview_ShouldThrow_WhenContentNull` | Verifica que el constructor lanza `IllegalArgumentException` si el reviewContent del comando es null | ✅ Pass |
+| 18 | `rating_ShouldThrow_WhenNull` | Verifica que `Rating` lanza `IllegalArgumentException` si se pasa null | ✅ Pass |
+
+---
+
+### 5. Businessman — `BusinessmanDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `constructorWithUserId_ShouldInitializeLogo` | Verifica que el constructor con userId asigna el ID y deja el logo vacío | ✅ Pass |
+| 3 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna companyName, ruc, businessType, description y website | ✅ Pass |
+| 4 | `updateInformation_ShouldUpdateFields` | Verifica que `updateInformation` actualiza todos los campos usando value objects | ✅ Pass |
+| 5 | `updateLogo_ShouldChangeLogo` | Verifica que `updateLogo` cambia la URL del logo correctamente | ✅ Pass |
+
+---
+
+### 6. Supplier — `SupplierDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `constructorWithUserId_ShouldInitializeLogo` | Verifica que el constructor con userId asigna el ID y deja el logo null | ✅ Pass |
+| 3 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna companyName, ruc, specialization, description y certifications | ✅ Pass |
+| 4 | `updateInformation_ShouldUpdateFields` | Verifica que `updateInformation` actualiza todos los campos usando value objects | ✅ Pass |
+| 5 | `updateLogo_ShouldChangeLogo` | Verifica que `updateLogo` actualiza la URL del logo correctamente | ✅ Pass |
+
+---
+
+### 7. User — `UserDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitializePendingRole` | Verifica que el constructor vacío inicializa todos los campos como null y el rol como PENDING | ✅ Pass |
+| 2 | `basicConstructor_ShouldAssignValues` | Verifica que el constructor básico asigna name, email, password, country, city, address, phone y rol PENDING | ✅ Pass |
+| 3 | `constructorWithRole_ShouldAssignRole` | Verifica que el constructor con rol asigna el rol especificado (SUPPLIER) | ✅ Pass |
+| 4 | `updateRole_ShouldChangeRole` | Verifica que `updateRole` cambia el rol de PENDING a BUSINESSMAN y que `getRoleName()` retorna "BUSINESSMAN" | ✅ Pass |
+| 5 | `getRoleName_ShouldReturnEnumName` | Verifica que `getRoleName()` retorna el nombre del enum como string ("SUPPLIER") | ✅ Pass |
+| 6 | `constructor_ShouldHandleNullValues` | Verifica que el constructor acepta null en todos los campos y mantiene el rol PENDING | ✅ Pass |
+| 7 | `updateRole_ShouldHandleNull` | Verifica que `updateRole(null)` asigna null al rol sin lanzar excepción | ✅ Pass |
+| 8 | `email_ShouldAllowNullOrEmpty` | Verifica que el agregado acepta email y password vacíos sin validación fuerte | ✅ Pass |
+| 9 | `getRoleName_ShouldHandleNullRole` | Verifica que `getRoleName()` lanza `NullPointerException` cuando el rol es null | ✅ Pass |
+
+---
+
+### 8. Configuration — `ConfigurationDomainContractsTest.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `emptyConstructor_ShouldInitialize` | Verifica que el constructor vacío inicializa todos los campos como null | ✅ Pass |
+| 2 | `fullConstructor_ShouldAssignValues` | Verifica que el constructor completo asigna userId, language, viewMode, subscriptionPlan, y que el status inicial es PENDING | ✅ Pass |
+| 3 | `updateSettings_ShouldModifyFields` | Verifica que `updateSettings` modifica language y viewMode correctamente | ✅ Pass |
+| 4 | `updateSubscriptionPlan_ShouldUpdatePlanAndDate` | Verifica que `updateSubscriptionPlan` cambia el plan y actualiza la fecha de inicio (igual o posterior a la anterior) | ✅ Pass |
+| 5 | `activateSubscription_ShouldActivate` | Verifica que `activateSubscription` cambia el plan y establece el status en ACTIVE | ✅ Pass |
+| 6 | `updateSubscriptionStatus_ShouldChangeStatus` | Verifica que `updateSubscriptionStatus` cambia el estado de suscripción correctamente | ✅ Pass |
+| 7 | `requiresPayment_ShouldReturnTrue_WhenPending` | Verifica que `requiresPayment()` retorna true cuando el status es PENDING | ✅ Pass |
+| 8 | `getUserIdValue_ShouldReturnCorrectValue` | Verifica que `getUserIdValue()` retorna el valor correcto del value object `UserId` | ✅ Pass |
+
+---
+
+### 9. PaymentAmount — `PaymentAmountTests.java`
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testValidPaymentAmount` | Verifica que `PaymentAmount` acepta un monto válido (100.00) y lo almacena correctamente | ✅ Pass |
+| 2 | `testInvalidPaymentAmount` | Verifica (parametrizado) que `PaymentAmount` lanza `IllegalArgumentException` para montos negativos y cero (-1.0, 0.0, -100.0) | ✅ Pass |
+| 3 | `testPaymentAmountEquality` | Verifica que dos instancias con el mismo monto son iguales y con montos distintos son diferentes | ✅ Pass |
+| 4 | `testToStripeCentsConversion` | Verifica que `toStripeCents()` convierte 49.99 → 4999 centavos correctamente | ✅ Pass |
+| 5 | `testForBasicPlan` | Verifica que el factory method `forBasicPlan()` retorna el monto correcto (9.99) | ✅ Pass |
+| 6 | `testForCorporatePlan` | Verifica que el factory method `forCorporatePlan()` retorna el monto correcto (49.99) | ✅ Pass |
+
+---
+
+### Resumen de cobertura
+
+| Bounded Context | Entidad principal | Archivo de test | Total tests |
+|---|---|---|---|
+| Batches | `Batch` | `BatchDomainContractsTest` | 14 |
+| Observation | `Observation` | `ObservationDomainContractsTest` | 10 |
+| Request | `BusinessSupplierRequest` | `BusinessSupplierRequestTest` | 6 |
+| Reviews | `SupplierReview` | `SupplierReviewTest` | 18 |
+| Profiles | `Businessman` | `BusinessmanDomainContractsTest` | 5 |
+| Profiles | `Supplier` | `SupplierDomainContractsTest` | 5 |
+| IAM | `User` | `UserDomainContractsTest` | 9 |
+| Configuration | `Configuration` | `ConfigurationDomainContractsTest` | 8 |
+| Payment | `PaymentAmount` | `PaymentAmountTests` | 6 |
+| **Total** | | | **81** |
+
+
+#### 6.1.2. Core Integration Tests
+
+Las pruebas de integración validan la comunicación y colaboración entre los distintos módulos del sistema: controladores REST, servicios de aplicación, facades ACL, event handlers y servicios externos. Se utilizó **MockMvc** para simular peticiones HTTP y **Mockito** para aislar dependencias externas, siguiendo el patrón **AAA (Arrange, Act, Assert)**.
+
+---
+
+### 1. PaymentController — `PaymentControllerTests.java`
+
+Valida la integración entre el controlador REST de pagos y el servicio de dominio, simulando peticiones HTTP reales con MockMvc.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que `POST /api/v1/payments/create-intent` retorna `201 Created` con `clientSecret` y `subscriptionPlan` correctos cuando el servicio responde exitosamente | ✅ Pass |
+| 2 | `testCreatePaymentIntent_InvalidSubscription` | Verifica que el endpoint retorna `400 Bad Request` cuando el plan de suscripción es inválido, sin llegar a invocar el servicio | ✅ Pass |
+| 3 | `testCreatePaymentIntent_InvalidUserId` | Verifica que el endpoint retorna `400 Bad Request` cuando el servicio lanza `IllegalArgumentException` por usuario no encontrado | ✅ Pass |
+
+---
+
+### 2. StripePaymentService — `StripePaymentServiceUnitTest.java`
+
+Valida la integración con el servicio de Stripe mediante mock, verificando el contrato de respuesta del payment intent.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que `createPaymentIntent` retorna un string no nulo que comienza con `"pi_"`, simulando la respuesta de Stripe | ✅ Pass |
+
+---
+
+### 3. PaymentCommandServiceImpl — `PaymentCommandServiceImplTest.java`
+
+Valida la integración entre el servicio de comandos de pago, el servicio de Stripe y el servicio externo de configuración.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `testCreatePaymentIntent_Success` | Verifica que el servicio crea el payment intent correctamente cuando el usuario existe, delegando a Stripe con los parámetros correctos | ✅ Pass |
+| 2 | `testCreatePaymentIntent_UserNotFound` | Verifica que se lanza `IllegalArgumentException` cuando el usuario no existe, sin invocar Stripe | ✅ Pass |
+| 3 | `testHandlePaymentSuccess_Success` | Verifica que `handlePaymentSuccess` delega correctamente la actualización del plan de suscripción al servicio externo de configuración | ✅ Pass |
+| 4 | `testHandlePaymentSuccess_Failure` | Verifica que `handlePaymentSuccess` propaga la excepción cuando falla la actualización del plan | ✅ Pass |
+| 5 | `shouldThrow_WhenSubscriptionPlanInvalid` | Verifica que `CreatePaymentIntentCommand` lanza `IllegalArgumentException` si el plan de suscripción es vacío | ✅ Pass |
+| 6 | `shouldThrow_WhenAmountInvalid` | Verifica que `PaymentAmount` lanza `IllegalArgumentException` si el monto es null | ✅ Pass |
+| 7 | `createPaymentIntent_ShouldThrow_WhenStripeFails` | Verifica que el servicio propaga la excepción cuando Stripe falla internamente | ✅ Pass |
+| 8 | `createPaymentIntent_ShouldConvertAmountCorrectly` | Verifica que el monto 10.50 se convierte correctamente a 1050 centavos antes de enviarse a Stripe | ✅ Pass |
+
+---
+
+### 4. IamContextFacadeImpl — `IamContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context IAM con los servicios de consulta y comando de usuarios.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getUserIdByEmail_ShouldReturnId_WhenExists` | Verifica que el facade retorna el ID del usuario cuando se consulta por email existente | ✅ Pass |
+| 2 | `userExists_ShouldReturnTrue_WhenExists` | Verifica que `userExists` retorna true cuando el usuario es encontrado | ✅ Pass |
+| 3 | `getUserRole_ShouldReturnRoleName` | Verifica que `getUserRole` retorna el nombre exacto del rol ("BUSINESSMAN") desde la entidad | ✅ Pass |
+| 4 | `getUserData_ShouldReturnNull_WhenNotFound` | Verifica que `getUserData` retorna null cuando el usuario no existe | ✅ Pass |
+| 5 | `getUserData_ShouldMapValuesSuccessfully` | Verifica que `getUserData` mapea correctamente name, email, country, city, address y phone desde la entidad | ✅ Pass |
+| 6 | `updateUserData_ShouldDispatchCommand` | Verifica que `updateUserData` despacha un `UpdateUserDataCommand` al servicio de comandos | ✅ Pass |
+| 7 | `getUserIdByEmail_ShouldReturnNull_WhenNotFound` | Verifica que `getUserIdByEmail` retorna null cuando el email no existe | ✅ Pass |
+| 8 | `userExists_ShouldReturnFalse_WhenNotFound` | Verifica que `userExists` retorna false cuando el usuario no existe | ✅ Pass |
+| 9 | `getUserRole_ShouldReturnNull_WhenNotFound` | Verifica que `getUserRole` retorna null cuando el usuario no existe | ✅ Pass |
+| 10 | `userExists_ShouldHandleNullUserId` | Verifica que `userExists` retorna false sin lanzar excepción cuando el userId es null | ✅ Pass |
+| 11 | `getUserRole_ShouldHandleNullUserId` | Verifica que `getUserRole` retorna null sin lanzar excepción cuando el userId es null | ✅ Pass |
+| 12 | `getUserIdByEmail_ShouldHandleNullEmail` | Verifica que `getUserIdByEmail` retorna null sin lanzar excepción cuando el email es null | ✅ Pass |
+| 13 | `updateUserData_ShouldDelegateEvenWithNullValues` | Verifica que `updateUserData` delega el comando incluso cuando todos los valores son null | ✅ Pass |
+
+---
+
+### 5. ConfigurationContextFacadeImpl — `ConfigurationContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context Configuration con el servicio de consulta de configuraciones.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `hasConfiguration_ShouldReturnTrue_WhenExists` | Verifica que `hasConfiguration` retorna true cuando la consulta encuentra una configuración existente | ✅ Pass |
+| 2 | `defaultValues_ShouldReturn_WhenConfigIsEmpty` | Verifica que el facade retorna valores por defecto (`"es"`, `"auto"`, `"basic"`, `"pending"`) cuando no existe configuración | ✅ Pass |
+| 3 | `mapRealValues_FromConfiguration` | Verifica que el facade mapea correctamente language, viewMode, subscriptionPlan y subscriptionStatus desde la entidad real | ✅ Pass |
+
+---
+
+### 6. ProfilesContextFacadeImpl — `ProfilesContextFacadeImplTest.java`
+
+Valida la integración del facade ACL del bounded context Profiles con los servicios de consulta de Businessman y Supplier.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getBusinessmanByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Businessman cuando existe | ✅ Pass |
+| 2 | `getSupplierByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Supplier cuando existe | ✅ Pass |
+| 3 | `existenceCheck_Methods` | Verifica que `hasBusinessmanProfile` retorna true y `hasSupplierProfile` retorna false según la existencia de cada perfil | ✅ Pass |
+| 4 | `getCompanyNameByUserId_Priorities` | Verifica que el facade prioriza el nombre de Businessman sobre Supplier, y cae al Supplier si no existe Businessman | ✅ Pass |
+| 5 | `shouldReturnNull_WhenNoProfileExists` | Verifica que `getCompanyNameByUserId` retorna null cuando no existe ningún perfil | ✅ Pass |
+
+---
+
+### 7. ExternalProfilesService — `ExternalProfilesServiceTest.java`
+
+Valida la integración del servicio outbound del bounded context Reviews con el facade ACL de Profiles.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `getBusinessmanProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Businessman cuando el perfil existe | ✅ Pass |
+| 2 | `getBusinessmanProfileId_ShouldReturnEmpty_OnError` | Verifica que retorna `Optional.empty()` cuando el facade ACL lanza una excepción | ✅ Pass |
+| 3 | `getSupplierProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Supplier cuando el perfil existe | ✅ Pass |
+| 4 | `hasProfiles_ShouldHandleExceptions` | Verifica que `hasBusinessmanProfile` y `hasSupplierProfile` retornan false ante excepciones del facade | ✅ Pass |
+| 5 | `getCompanyNameByUserId_ShouldReturnName` | Verifica que retorna `Optional` con el nombre de la empresa cuando es válido | ✅ Pass |
+| 6 | `idValidations_ShouldRespondCorrectly` | Verifica que `isValidBusinessmanId` e `isValidSupplierId` retornan false para IDs en 0 o null | ✅ Pass |
+| 7 | `shouldReturnEmpty_WhenUserIdIsNull` | Verifica que `getBusinessmanProfileId` retorna `Optional.empty()` cuando el userId es null | ✅ Pass |
+| 8 | `shouldReturnEmpty_WhenCompanyNameBlank` | Verifica que `getCompanyNameByUserId` retorna `Optional.empty()` cuando el nombre es solo espacios en blanco | ✅ Pass |
+| 9 | `shouldReturnEmpty_WhenSupplierIdInvalid` | Verifica que `getSupplierProfileId` retorna `Optional.empty()` cuando el ID retornado es 0 o negativo | ✅ Pass |
+
+---
+
+### 8. IntegrationAdapters (Configuration) — `IntegrationAdaptersTest.java`
+
+Valida la integración del event handler de configuración y el servicio externo IAM dentro del bounded context Configuration.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `on_UserRegisteredEvent_ShouldDispatchCommand` | Verifica que al recibir un `UserRegisteredEvent`, el handler despacha un `CreateConfigurationCommand` al servicio de comandos | ✅ Pass |
+| 2 | `externalIamService_Delegations` | Verifica que `ExternalIamService` delega correctamente `userExists` y `getUserRole` al `IamContextFacade` | ✅ Pass |
+
+---
+
+### 9. UserRegisteredEventHandler (Profiles) — `UserRegisteredEventHandlerTest.java`
+
+Valida la integración del event handler de perfiles con los servicios de creación de Businessman, Supplier y el servicio de email de bienvenida.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `userRegistered_ShouldSendWelcomeEmail` | Verifica que al recibir `UserRegisteredEvent`, el handler obtiene los datos del usuario y envía el email de bienvenida | ✅ Pass |
+| 2 | `userRegistered_ShouldHandleException` | Verifica que si el servicio IAM falla, el flujo no se interrumpe y no se envía el email | ✅ Pass |
+| 3 | `roleUpdated_Businessman_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol BUSINESSMAN, se crea el perfil de Businessman sin tocar el de Supplier | ✅ Pass |
+| 4 | `roleUpdated_Supplier_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol SUPPLIER, se crea el perfil de Supplier sin tocar el de Businessman | ✅ Pass |
+| 5 | `roleUpdated_Pending_ShouldDoNothing` | Verifica que con rol PENDING no se crea ningún perfil | ✅ Pass |
+| 6 | `businessmanCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Businessman no interrumpe el flujo | ✅ Pass |
+| 7 | `supplierCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Supplier no interrumpe el flujo | ✅ Pass |
+
+---
+
+### 10. ReviewCreatedEventHandler — `ReviewCreatedEventHandlerTest.java`
+
+Valida la integración del event handler de reseñas ante eventos de creación.
+
+| # | Nombre del test | Descripción | Resultado |
+|---|---|---|---|
+| 1 | `on_ReviewCreatedEvent_ShouldProcessSuccessfully` | Verifica que el handler procesa el `ReviewCreatedEvent` correctamente sin lanzar excepciones | ✅ Pass |
+| 2 | `on_ReviewCreatedEvent_ShouldHandleInternalExceptionsSafely` | Verifica que el handler captura excepciones internas de forma segura sin interrumpir el flujo | ✅ Pass |
+
+---
+
+### Resumen de cobertura
+
+| Componente | Archivo de test | Tipo de integración | Total tests |
+|---|---|---|---|
+| `PaymentController` | `PaymentControllerTests` | REST Controller ↔ Service | 3 |
+| `StripePaymentService` | `StripePaymentServiceUnitTest` | Service ↔ Stripe API | 1 |
+| `PaymentCommandServiceImpl` | `PaymentCommandServiceImplTest` | Service ↔ Stripe + Config ACL | 8 |
+| `IamContextFacadeImpl` | `IamContextFacadeImplTest` | ACL Facade ↔ IAM Services | 13 |
+| `ConfigurationContextFacadeImpl` | `ConfigurationContextFacadeImplTest` | ACL Facade ↔ Config Service | 3 |
+| `ProfilesContextFacadeImpl` | `ProfilesContextFacadeImplTest` | ACL Facade ↔ Profile Services | 5 |
+| `ExternalProfilesService` | `ExternalProfilesServiceTest` | Outbound Service ↔ Profiles ACL | 9 |
+| `IntegrationAdapters (Config)` | `IntegrationAdaptersTest` | Event Handler + External IAM | 2 |
+| `UserRegisteredEventHandler` | `UserRegisteredEventHandlerTest` | Event Handler ↔ Profile + Email | 7 |
+| `ReviewCreatedEventHandler` | `ReviewCreatedEventHandlerTest` | Event Handler ↔ Review domain | 2 |
+| **Total** | | | **53** |
+
+
+#### 6.1.3. Core Behavior-Driven Development
+
+Para las pruebas BDD se utilizó **Cucumber** integrado con Spring Boot, describiendo el comportamiento esperado del sistema desde la perspectiva del usuario mediante escenarios escritos en lenguaje **Gherkin**. Los escenarios cubren el flujo de creación y validación de payment intents en el bounded context de pagos.
+
+---
+
+### Configuración de la suite BDD
+
+| Componente | Archivo | Descripción |
+|---|---|---|
+| Test Runner | `CucumberTestRunner.java` | Suite JUnit 5 que ejecuta Cucumber apuntando a `features/payment` con el glue en `payment.acceptance.tests.steps` |
+| Spring Context | `CucumberSpringConfiguration.java` | Levanta el contexto completo de Spring Boot con `WebEnvironment.RANDOM_PORT` y perfil `test` |
+| Step Definitions | `PaymentSteps.java` | Implementación de los pasos Given/When/Then para los escenarios de pago |
+
+---
+
+### Feature 1: Payment Intent Management
+
+**Archivo:** `PaymentIntent.feature`
+
+**Narrativa:**
+
+Feature: Payment Intent Management <br>
+**As** a user <br>
+**I** want to create payment intents <br>
+**So** that I can process payments through the platform <br>
+
+#### Scenario: Crear un intento de pago válido
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is 100.0 in currency "usd" <br>
+**When** the user creates the payment intent <br>
+**Then** the payment intent should be created successfully <br>
+**And** the client secret should be returned <br>
+
+| Paso | Descripción |
+|---|---|
+| Given | Se establece el contexto del usuario con ID 1 |
+| And | Se configura el monto de pago en 100.0 USD |
+| When | El usuario ejecuta la creación del payment intent |
+| Then | Se verifica que el `clientSecret` no es null y comienza con `"pi_"` |
+| And | Se verifica que el `clientSecret` no está vacío |
+
+#### Scenario: Crear un intento de pago con un monto invalido
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is -100.0 in currency "usd" <br>
+**When** the user creates the payment intent <br>
+**Then** an error should be thrown <br>
+
+| Paso | Descripción |
+|---|---|
+| Given | Se establece el contexto del usuario con ID 1 |
+| And | Se configura un monto inválido de -100.0 USD |
+| When | El usuario intenta crear el payment intent |
+| Then | Se verifica que se lanzó una excepción |
+
+---
+
+### Feature 2: Payment Intent Validation
+
+**Archivo:** `PaymentIntentOutline.feature`
+
+**Narrativa:**
+
+Feature: Payment Intent Validation <br>
+As a system <br>
+I want to validate payment intents <br>
+So that only valid payments are processed <br>
+
+#### Scenario Outline: Validar montos válidos
+
+**Given** a user with id 1 wants to create a payment intent <br>
+**And** the payment amount is in currency "" <br>
+**When** the user creates the payment intent <br>
+**Then** the result should be <br>
+
+**Ejemplos:**
+
+| amount | currency | result | Descripción |
+|--------|----------|--------|-------------|
+| 100.0 | usd | success | Monto válido en USD → payment intent creado exitosamente |
+| 50.0 | eur | success | Monto válido en EUR → payment intent creado exitosamente |
+| -10.0 | usd | error | Monto negativo → se espera error de validación |
+| 0.0 | usd | error | Monto cero → se espera error de validación |
+
+---
+
+### Definición de pasos — `PaymentSteps.java`
+
+| Paso Gherkin | Método | Descripción |
+|---|---|---|
+| `Given a user with id {long} wants to create a payment intent` | `aUserWithIdWantsToCreateAPaymentIntent` | Establece el contexto del usuario |
+| `Given the payment amount is {double} for subscription plan {string}` | `thePaymentAmountIsForSubscriptionPlan` | Construye el `CreatePaymentIntentCommand` con el monto y plan dados |
+| `When the user creates the payment intent` | `theUserCreatesThePaymentIntent` | Invoca `paymentService.createPaymentIntent` y captura posibles excepciones |
+| `Then the payment intent should be created successfully` | `thePaymentIntentShouldBeCreatedSuccessfully` | Verifica que el `clientSecret` no es null, comienza con `"pi_"` y no hubo excepción |
+| `Then the client secret should be returned` | `theClientSecretShouldBeReturned` | Verifica que el `clientSecret` no es null ni vacío |
+| `Then an error should be thrown` | `anErrorShouldBeThrown` | Verifica que se capturó una excepción durante la ejecución |
+
+---
+
+### Resumen de cobertura BDD
+
+| Feature | Escenarios | Tipo | Total casos |
+|---|---|---|---|
+| Payment Intent Management | Create valid payment intent | Escenario simple | 1 |
+| Payment Intent Management | Create payment intent with invalid amount | Escenario simple | 1 |
+| Payment Intent Validation | Validate payment amounts | Scenario Outline | 4 |
+| **Total** | | | **6** |
+
+### 6.2. Static Code Analysis
+
+#### 6.2.1.1. Coding Standard & Code Conventions.
+
+#### 6.2.1.1. Code Quality & Code Security.
+
+Mediante la ejecución y configuración del SonarQube podemos concluir que hemos realizado un correcta implementación de test enfocados en el core y lógica de la aplicación, sin embargo, aún tenemos algunas observaciones que corregir
+
+<p align="center">
+  <img src="./assets/tp1/sonarqube-execution.jpg" width="400"/>
+</p>
+
+
+
+## **Capítulo VII: DevOps Practices**
+
+### 7.1. Continuous Integration
+
+
+#### 7.1.1. Tools and Practices
+
+
+#### 7.1.2. Build & Test Suite Pipeline Components
+El pipeline de integración continua implementado en Jenkins para la aplicación TextilFlow automatiza el proceso de construcción, validación y empaquetado del sistema utilizando Maven y JDK 21. Este flujo permite garantizar la calidad del software mediante validaciones automáticas de compilación, estándares de código, pruebas unitarias y cobertura de pruebas antes de generar el artefacto final del proyecto.
+
+
+**Checkout SCM:**
+Obtiene el código fuente de TextilFlow desde el repositorio Git y configura variables de entorno relacionadas con el control de versiones, como la rama y el commit actual.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline1.png" width="400"/>
+</p>
+
+**Tool Install:**
+Configura automáticamente las herramientas necesarias para la ejecución del pipeline, incluyendo Maven 3.9.11 y JDK 21, además de las variables de entorno requeridas.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline2.png" width="400"/>
+</p>
+
+**Compile Project:**
+Ejecuta el comando mvn clean compile para limpiar compilaciones anteriores y compilar el proyecto, verificando que no existan errores de compilación.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline3.png" width="400"/>
+</p>
+
+**Validate Checkstyle:**
+Ejecuta mvn checkstyle:check para validar que el código cumpla con los estándares de calidad y convenciones de programación definidas para TextilFlow.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline4.png" width="400"/>
+</p>
+
+**Validate Unit Tests:**
+Ejecuta mvn test para correr las pruebas unitarias del sistema y verificar el correcto funcionamiento de los componentes desarrollados.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline5.png" width="400"/>
+</p>
+
+**Validate Test Coverage:**
+Utiliza JaCoCo mediante los comandos mvn clean verify jacoco:report y mvn jacoco:check para generar y validar los reportes de cobertura de pruebas.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline6.png" width="400"/>
+</p>
+
+**Package Project:**
+Ejecuta mvn package para generar el artefacto final de la aplicación, como archivos .jar o .war, listos para despliegue.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline7.png" width="400"/>
+</p>
+
+**Post Actions:**
+Ejecuta acciones finales del pipeline, mostrando mensajes de finalización y confirmando el estado exitoso del proceso de integración continua.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline8.png" width="400"/>
 </p>
 
 
@@ -2011,8 +2846,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 
 ## Conclusiones 
 
-#FALTA
-
+- En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de TextilFlow, incluyendo el análisis del problema, diseño UX/UI, arquitectura del sistema, modelado de datos y definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
 ## Bibliográfia
 
 TV Perú. (2024, abril 4). _Gamarra: Conoce la historia del emporio comercial más grande del Perú_. https://www.tvperu.gob.pe/novedades/sucedio-en-el-peru/gamarra-conoce-la-historia-del-emporio-comercial-mas-grande-del-peru
