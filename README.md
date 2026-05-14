@@ -1161,7 +1161,11 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
   <img src="./assets/tp1/mobile-userflow3.jpeg" alt="Mobile Applications User Flow Diagram 3" width="850">
 </p>
 
-### **4.5. Mobile Applications Prototyping**
+### **4.5. Mobile Applications Prototyping** 
+
+<p align="center">
+  <img src="./assets/tp1/prototype_mobile.jpg" alt="Mobile Applications User Flow Diagram 3" width="850">
+</p>
 
 ### **4.6. Web Applications UX/UI Design**
 
