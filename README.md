@@ -2892,6 +2892,70 @@ So that only valid payments are processed <br>
 ### 6.2. Static Code Analysis
 
 #### 6.2.1.1. Coding Standard & Code Conventions.
+Para el desarrollo de **TextilFlow** se definieron estándares de codificación y convenciones de desarrollo con el objetivo de mantener un código limpio, consistente, mantenible y fácil de comprender para todos los integrantes del equipo.
+
+Estas prácticas permitieron mejorar la calidad del software, facilitar el trabajo colaborativo y reducir errores durante el proceso de desarrollo e integración continua.
+
+Las principales convenciones y estándares aplicados fueron los siguientes:
+
+- **Uso de Java Code Conventions**  
+  El backend desarrollado en Java siguió convenciones estándar de nomenclatura, estructura y organización recomendadas para proyectos empresariales.
+
+- **Convenciones de nombres**
+  - Clases en formato `PascalCase`.
+  - Métodos y variables en formato `camelCase`.
+  - Constantes en formato `UPPER_CASE`.
+  - Paquetes organizados por dominio y funcionalidad.
+
+- **Arquitectura organizada por capas**
+  El proyecto fue estructurado separando responsabilidades en componentes como:
+  - Controllers
+  - Services
+  - Repositories
+  - Domain Models
+  - DTOs
+
+  Esto permitió mejorar la mantenibilidad y escalabilidad del sistema.
+
+- **Uso de principios de Clean Code**
+  Se aplicaron buenas prácticas orientadas a:
+  - Métodos pequeños y reutilizables.
+  - Nombres descriptivos.
+  - Reducción de duplicidad de código.
+  - Separación de responsabilidades.
+  - Comentarios únicamente cuando eran necesarios.
+
+- **Control de calidad mediante Checkstyle**
+  Se integró la herramienta **Checkstyle** dentro del pipeline de Jenkins para validar automáticamente:
+  - Formato del código.
+  - Organización de imports.
+  - Convenciones de nombres.
+  - Longitud de métodos y clases.
+  - Reglas de estilo configuradas para el proyecto.
+
+- **Análisis estático con SonarQube**
+  Se utilizó **SonarQube** para realizar análisis estáico del código y detectar:
+  - Bugs potenciales.
+  - Vulnerabilidades.
+  - Código duplicado.
+  - Problemas de mantenibilidad.
+  - Code smells.
+
+- **Convenciones para pruebas unitarias**
+  Las pruebas implementadas con **JUnit** siguieron una estructura clara basada en:
+  - Preparación de datos.
+  - Ejecución de la funcionalidad.
+  - Validación de resultados esperados.
+
+  Además, los nombres de las pruebas describen el comportamiento validado.
+
+- **Uso de Git Flow básico**
+  Se trabajó utilizando ramas para nuevas funcionalidades, correcciones y validaciones antes de integrarlas a la rama principal del proyecto.
+
+- **Integración Continua**
+  Todas las validaciones de compilación, pruebas, cobertura y calidad fueron ejecutadas automáticamente mediante Jenkins antes de generar el paquete final de la aplicación.
+
+Estas convenciones permitieron mantener un entorno de desarrollo organizado, facilitar la colaboración entre los integrantes del equipo y asegurar estándares mínimos de calidad durante la construcción de TextilFlow.
 
 #### 6.2.1.2. Code Quality & Code Security.
 
@@ -2909,7 +2973,67 @@ Mediante la ejecución y configuración del SonarQube podemos concluir que hemos
 
 
 #### 7.1.1. Tools and Practices
+Para la implementación del pipeline de integración continua de **TextilFlow** se utilizaron herramientas y prácticas orientadas a automatizar la construcción, validación y aseguramiento de calidad del software. Estas tecnologías permiten mantener un flujo de desarrollo estandarizado, confiable y reproducible.
 
+Las principales herramientas utilizadas son las siguientes:
+
+- **Jenkins**  
+  Utilizado como servidor de Integración Continua (CI) para automatizar la ejecución del pipeline, gestionar las etapas de compilación, pruebas y empaquetado, así como coordinar la ejecución de tareas posteriores al build.
+
+<p align="center">
+  <img src="./assets/tp1/Jenkins.png" width="200"/>
+</p>
+
+
+- **Git**  
+  Empleado como sistema de control de versiones para administrar el código fuente de TextilFlow y permitir la integración automática del repositorio con Jenkins mediante el proceso de Checkout SCM.
+
+  <p align="center">
+  <img src="./assets/tp1/Github.jpg" width="200"/>
+</p>
+
+
+- **Maven 3.9.11**  
+  Utilizado como herramienta de automatización y gestión de dependencias del proyecto Java. Maven ejecuta las tareas de compilación, pruebas, validaciones y generación del paquete final de la aplicación.
+
+  <p align="center">
+  <img src="./assets/tp1/Maven.png" width="200"/>
+</p>
+
+- **JDK 21**  
+  Utilizado como entorno de desarrollo y compilación para la aplicación Java, garantizando compatibilidad con las funcionalidades y librerías utilizadas en el proyecto.
+
+  <p align="center">
+  <img src="./assets/tp1/JDK.png" width="200"/>
+</p>
+
+- **Checkstyle**  
+  Herramienta empleada para validar estándares de codificación y buenas prácticas de programación, permitiendo mantener uniformidad y calidad en el código fuente.
+
+<p align="center">
+  <img src="./assets/tp1/Checkstyle.png" width="200"/>
+</p>
+
+- **JUnit**  
+  Framework utilizado para la ejecución de pruebas unitarias, verificando el correcto funcionamiento de los componentes individuales del sistema.
+
+<p align="center">
+  <img src="./assets/tp1/JUnit.png" width="200"/>
+</p>
+
+- **JaCoCo**  
+  Herramienta utilizada para medir y generar reportes de cobertura de pruebas, permitiendo validar que las pruebas unitarias cubran una parte significativa del código fuente.
+
+  <p align="center">
+  <img src="./assets/tp1/JaCoCo.png" width="200"/>
+</p>
+
+- **SonarQube**  
+  Plataforma utilizada para el análisis estático de código y monitoreo continuo de calidad, permitiendo detectar vulnerabilidades, bugs, duplicación de código y problemas de mantenibilidad dentro del proyecto.
+
+  <p align="center">
+  <img src="./assets/tp1/SonarQube.png" width="200"/>
+</p>
 
 #### 7.1.2. Build & Test Suite Pipeline Components
 El pipeline de integración continua implementado en Jenkins para la aplicación TextilFlow automatiza el proceso de construcción, validación y empaquetado del sistema utilizando Maven y JDK 21. Este flujo permite garantizar la calidad del software mediante validaciones automáticas de compilación, estándares de código, pruebas unitarias y cobertura de pruebas antes de generar el artefacto final del proyecto.
@@ -2976,7 +3100,16 @@ Ejecuta acciones finales del pipeline, mostrando mensajes de finalización y con
 
 ## Conclusiones 
 
-- En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de TextilFlow, incluyendo el análisis del problema, diseño UX/UI, arquitectura del sistema, modelado de datos y definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
+
+- En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
+
+- Como equipo, se priorizó la calidad, mantenibilidad y seguridad del software mediante la integración de herramientas como **Jenkins** y **SonarQube**, permitiendo detectar errores, vulnerabilidades y problemas de calidad de manera temprana durante el desarrollo.
+
+- Las pruebas implementadas fueron alineadas con los requerimientos funcionales y las User Stories definidas, asegurando que el comportamiento desarrollado responda correctamente a las necesidades y expectativas de los usuarios.
+
+- La automatización de los pipelines de integración continua permitió reducir errores manuales, mantener una integración estable entre los avances del equipo y fortalecer el trabajo colaborativo durante el desarrollo del proyecto.
+
+
 ## Bibliográfia
 
 TV Perú. (2024, abril 4). _Gamarra: Conoce la historia del emporio comercial más grande del Perú_. https://www.tvperu.gob.pe/novedades/sucedio-en-el-peru/gamarra-conoce-la-historia-del-emporio-comercial-mas-grande-del-peru
