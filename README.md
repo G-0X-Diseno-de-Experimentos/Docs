@@ -640,19 +640,32 @@ Las siguientes preguntas están dirigidas a distribuidores y proveedores textile
 #### 2.2.2. Registro de entrevistas
 
 **Segmento #1:**
+<br> 
 
 **Entrevista 1**
+<br>
 
-|Entrevistado 1 |  |
-| :------------- | :------------------------------------------------------------ |
-| Edad |  |
-| Distrito/Ciudad |  |
-| Imagen | <p align="center"><img src="./assets/entrevistas/Entrevista1.png" width="200"/></p> |
-| Resumen |  |
-| Duración |  |
+ Entrevistado 1 |  Jeanfer Ichiro Oshiro Asato |
+| :---- | :---- |
+| Edad | 25 años |
+| Distrito/Ciudad | Lima |
+| <img src="" alt="PB" width="800"> | Cuenta con 2 años de experiencia trabajando en una fábrica textil de ropa deportiva. Realiza funciones en el área de almacén y control de calidad. Al recibir un nuevo lote, primero verifica que coincida con la guía, luego hace una inspección visual. Aunque existe un protocolo de revisión, no siempre se aplica por falta de tiempo. Los aspectos que evalúa son color, textura, elasticidad, manchas y metraje. Usa papel, Excel y WhatsApp para los registros, aunque de forma no constante. Toman fotos, pero no están organizadas. Cree que una plataforma que centralice esta información sería muy útil para el orden y los reclamos. |
+| Timing:00:02 – 06:20 min | [Entrevista 1 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  |
+
+<br> 
 
 **Entrevista 2**
-**FALTA**
+
+<br>
+
+| Entrevistado 2 |  Victor Eduardo Orbezo Paredes |
+| :---- | :---- |
+| Edad | 25 años |
+| Distrito/Ciudad | Lima |
+|  <img src="images/entrevista7.png" alt="PB" width="800">  | Tiene entre 8 a 10 años de experiencia trabajando en un negocio familiar textil. Cuando recibe tela, se almacena y revisa visualmente sin seguir un protocolo técnico. La revisión se basa en la experiencia y se limita a aspectos generales como color, textura y elasticidad. Los registros se hacen en papel o por WhatsApp, de manera informal. Considera difícil reclamar a proveedores por falta de evidencia. Afirma que una plataforma que permita registrar evidencias visuales y observaciones facilitaría el orden interno y el respaldo ante reclamos. |
+| Timing:06:23 – 12:27 min | [Entrevista 2 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+<br> 
 
 **Entrevista 3**
 
@@ -660,22 +673,45 @@ Las siguientes preguntas están dirigidas a distribuidores y proveedores textile
 | :---- | :---- |
 | Edad | 46 años |
 |  <img src="assets/tp1/entrevista5_segmento2.png" alt="PB" width="800"> | Eduardo no tiene tienda física ni online; vende a través de su cartera de clientes. Distribuye jersey, franela, french terry y gamuza pima. Verifica la calidad en laboratorios midiendo gramaje y encogimiento. Hace inspecciones finales para detectar fallas. Guarda registros digitales por fecha y cliente. Toma muestras por color como respaldo. Le parece buena la idea de una plataforma para compartir evidencia visual, aunque expresa cierta reserva sobre exponer todo el proceso por miedo a que sus clientes copien su ruta de producción. |
-| Timing:12:30 – 18:12 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/personal/u202311220_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311220%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20TextilFlow%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5cb30a6c%2D0c5e%2D4acf%2D8fb2%2Dea5b477f75b8) |
+| Timing:12:30 – 18:12 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 **Segmento #2**
+<br>
 
 **Entrevista 4**
+<br>
 
-**FALTA**
+| Entrevistado 4 |  Daniela Gomez |
+| :---- | :---- |
+| Edad | 28 años |
+| Distrito/Ciudad | Lima |
+| <img src="" alt="PB" width="800">| Daniela trabaja por pedidos para marcas pequeñas. Verifica calidad al tacto y visualmente. No tiene respaldo formal; cuando detecta defectos, no puede reclamar. Lleva registros en notas manuales y carpetas, lo que le genera desorden. Solo toma fotos si el cliente es nuevo o ha reclamado antes. Considera que una plataforma sería muy útil para mostrar evidencia, evitar errores y tener orden. Le gustaría que tanto proveedor como cliente puedan ver los controles para evitar malentendidos. |
+| Timing:18:13 – 22:16 min | [Entrevista 4 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+<br> 
 
 **Entrevista 5**
+<br> 
 
-**FALTA**
+ Entrevistado 5 |  Antonio Ramirez |
+| :---- | :---- |
+| Edad | 22 años |
+| Distrito/Ciudad | Lima |
+| <img src="images/" alt="PB" width="800">| Tiene una tienda física en Gamarra y vende también por redes. Distribuye algodón licrado, denim y telas deportivas. Verifica calidad de forma visual, usando a veces lámparas para ver imperfecciones. A veces envía fotos por WhatsApp, pero no tiene respaldo formal. Ha tenido reclamos por diferencias de tono sin tener pruebas. Lleva registros en cuadernos o Excel de manera intermitente. Le parece excelente una plataforma donde pueda registrar evidencia, tener orden y compartir información con el cliente. |
+| Timing:22:19 – 26:35 min | [Entrevista 5 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
+<br> 
 **Entrevista 6**
+<br>
 
-**FALTA**
+| Entrevistado 6 | Luis García |
+| :---- | :---- |
+| Edad | 20 años |
+| Distrito/Ciudad | Lima |
+| <img src="" alt="PB" width="800"> | Tiene una tienda física y también vende por redes y WhatsApp. Distribuye franela, jersey, algodón licrado y telas sintéticas. Revisa el lote cuando llega del mayorista, pero no siempre documenta. Toma algunas fotos, pero no están organizadas. Ha recibido reclamos por diferencias de tono. Registra pedidos en Excel de forma básica. Considera que una plataforma sería muy útil para evitar malentendidos y mostrar evidencia a los clientes. |
+| Timing:26:38 – 31:55 min | [Entrevista 6 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
+[Ver las entrevistas en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 #### 2.2.3. Análisis de entrevistas
 **FALTA**
@@ -2844,7 +2880,7 @@ So that only valid payments are processed <br>
 
 #### 6.2.1.1. Coding Standard & Code Conventions.
 
-#### 6.2.1.1. Code Quality & Code Security.
+#### 6.2.1.2. Code Quality & Code Security.
 
 Mediante la ejecución y configuración del SonarQube podemos concluir que hemos realizado un correcta implementación de test enfocados en el core y lógica de la aplicación, sin embargo, aún tenemos algunas observaciones que corregir
 
