@@ -85,7 +85,7 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 | Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo del Capitulo II, VI|
 | Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
 | Giorgio Marzouk Awad Vargas | `GiorgioAwad` | Desarrollo del Capitulo IV y V |
-| Hector Javier Rios Pacheco | `Khafna09` |  |
+| Hector Javier Rios Pacheco | `Khafna09` | Desarrollo del caoitulo IV, V y VI |
 
 **Report Repository Insights:** 
 
