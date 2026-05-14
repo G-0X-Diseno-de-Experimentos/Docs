@@ -2759,10 +2759,6 @@ So that only valid payments are processed <br>
 | Payment Intent Validation | Validate payment amounts | Scenario Outline | 4 |
 | **Total** | | | **6** |
 
-
-#### 6.1.4. Core System Tests
-
-
 ### 6.2. Static Code Analysis
 
 #### 6.2.1.1. Coding Standard & Code Conventions.
@@ -2774,21 +2770,72 @@ So that only valid payments are processed <br>
 
 ### 7.1. Continuous Integration
 
+
 #### 7.1.1. Tools and Practices
 
+
 #### 7.1.2. Build & Test Suite Pipeline Components
+El pipeline de integración continua implementado en Jenkins para la aplicación TextilFlow automatiza el proceso de construcción, validación y empaquetado del sistema utilizando Maven y JDK 21. Este flujo permite garantizar la calidad del software mediante validaciones automáticas de compilación, estándares de código, pruebas unitarias y cobertura de pruebas antes de generar el artefacto final del proyecto.
 
-### 7.2. Continuous Delivery
 
-#### 7.2.1. Tools and Practices
+**Checkout SCM:**
+Obtiene el código fuente de TextilFlow desde el repositorio Git y configura variables de entorno relacionadas con el control de versiones, como la rama y el commit actual.
 
-#### 7.2.2. Stages Deployment Pipeline Components
+<p align="center">
+  <img src="./assets/tp1/Pipeline1.png" width="400"/>
+</p>
 
-### 7.3. Continuous Deployment
+**Tool Install:**
+Configura automáticamente las herramientas necesarias para la ejecución del pipeline, incluyendo Maven 3.9.11 y JDK 21, además de las variables de entorno requeridas.
 
-#### 7.3.1. Tools and Practices
+<p align="center">
+  <img src="./assets/tp1/Pipeline2.png" width="400"/>
+</p>
 
-#### 7.3.2. Production Deployment Pipeline Components
+**Compile Project:**
+Ejecuta el comando mvn clean compile para limpiar compilaciones anteriores y compilar el proyecto, verificando que no existan errores de compilación.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline3.png" width="400"/>
+</p>
+
+**Validate Checkstyle:**
+Ejecuta mvn checkstyle:check para validar que el código cumpla con los estándares de calidad y convenciones de programación definidas para TextilFlow.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline4.png" width="400"/>
+</p>
+
+**Validate Unit Tests:**
+Ejecuta mvn test para correr las pruebas unitarias del sistema y verificar el correcto funcionamiento de los componentes desarrollados.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline5.png" width="400"/>
+</p>
+
+**Validate Test Coverage:**
+Utiliza JaCoCo mediante los comandos mvn clean verify jacoco:report y mvn jacoco:check para generar y validar los reportes de cobertura de pruebas.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline6.png" width="400"/>
+</p>
+
+**Package Project:**
+Ejecuta mvn package para generar el artefacto final de la aplicación, como archivos .jar o .war, listos para despliegue.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline7.png" width="400"/>
+</p>
+
+**Post Actions:**
+Ejecuta acciones finales del pipeline, mostrando mensajes de finalización y confirmando el estado exitoso del proceso de integración continua.
+
+<p align="center">
+  <img src="./assets/tp1/Pipeline8.png" width="400"/>
+</p>
+
+
+
 
 ## Conclusiones 
 
