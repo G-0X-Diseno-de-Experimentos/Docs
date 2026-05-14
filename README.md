@@ -2618,168 +2618,165 @@ Las pruebas unitarias de entidades principales validan el comportamiento de los 
 
 #### 6.1.2. Core Integration Tests
 
-Las pruebas de integración validan la comunicación y colaboración entre los distintos módulos del sistema: controladores REST, servicios de aplicación, facades ACL, event handlers y servicios externos. Se utilizó **MockMvc** para simular peticiones HTTP y **Mockito** para aislar dependencias externas, siguiendo el patrón **AAA (Arrange, Act, Assert)**.
+### Pruebas de Integración con Karate DSL
+
+Las siguientes pruebas utilizan **Karate DSL** para validar la integración entre el cliente HTTP y la API REST real. Cada feature realiza autenticación JWT dinámica en el `Background` e inyecta el token en las cabeceras de cada escenario, ejecutándose contra `http://localhost:8080/api/v1`.
 
 ---
 
-### 1. PaymentController — `PaymentControllerTests.java`
+### 10. IAM — `Iam.feature`
 
-Valida la integración entre el controlador REST de pagos y el servicio de dominio, simulando peticiones HTTP reales con MockMvc.
+**Endpoint base:** `/api/v1/authentication`, `/api/v1/users`
 
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `testCreatePaymentIntent_Success` | Verifica que `POST /api/v1/payments/create-intent` retorna `201 Created` con `clientSecret` y `subscriptionPlan` correctos cuando el servicio responde exitosamente | ✅ Pass |
-| 2 | `testCreatePaymentIntent_InvalidSubscription` | Verifica que el endpoint retorna `400 Bad Request` cuando el plan de suscripción es inválido, sin llegar a invocar el servicio | ✅ Pass |
-| 3 | `testCreatePaymentIntent_InvalidUserId` | Verifica que el endpoint retorna `400 Bad Request` cuando el servicio lanza `IllegalArgumentException` por usuario no encontrado | ✅ Pass |
-
----
-
-### 2. StripePaymentService — `StripePaymentServiceUnitTest.java`
-
-Valida la integración con el servicio de Stripe mediante mock, verificando el contrato de respuesta del payment intent.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `testCreatePaymentIntent_Success` | Verifica que `createPaymentIntent` retorna un string no nulo que comienza con `"pi_"`, simulando la respuesta de Stripe | ✅ Pass |
-
----
-
-### 3. PaymentCommandServiceImpl — `PaymentCommandServiceImplTest.java`
-
-Valida la integración entre el servicio de comandos de pago, el servicio de Stripe y el servicio externo de configuración.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `testCreatePaymentIntent_Success` | Verifica que el servicio crea el payment intent correctamente cuando el usuario existe, delegando a Stripe con los parámetros correctos | ✅ Pass |
-| 2 | `testCreatePaymentIntent_UserNotFound` | Verifica que se lanza `IllegalArgumentException` cuando el usuario no existe, sin invocar Stripe | ✅ Pass |
-| 3 | `testHandlePaymentSuccess_Success` | Verifica que `handlePaymentSuccess` delega correctamente la actualización del plan de suscripción al servicio externo de configuración | ✅ Pass |
-| 4 | `testHandlePaymentSuccess_Failure` | Verifica que `handlePaymentSuccess` propaga la excepción cuando falla la actualización del plan | ✅ Pass |
-| 5 | `shouldThrow_WhenSubscriptionPlanInvalid` | Verifica que `CreatePaymentIntentCommand` lanza `IllegalArgumentException` si el plan de suscripción es vacío | ✅ Pass |
-| 6 | `shouldThrow_WhenAmountInvalid` | Verifica que `PaymentAmount` lanza `IllegalArgumentException` si el monto es null | ✅ Pass |
-| 7 | `createPaymentIntent_ShouldThrow_WhenStripeFails` | Verifica que el servicio propaga la excepción cuando Stripe falla internamente | ✅ Pass |
-| 8 | `createPaymentIntent_ShouldConvertAmountCorrectly` | Verifica que el monto 10.50 se convierte correctamente a 1050 centavos antes de enviarse a Stripe | ✅ Pass |
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Sign Up a new user successfully | POST | `/authentication/sign-up` | 500 (SMTP failure) |
+| 2 | Sign Up with missing or malformed data fails | POST | `/authentication/sign-up` | 500 (JPA constraint) |
+| 3 | Sign In and get JWT Token successfully | POST | `/authentication/sign-in` | 200 ✅ |
+| 4 | Sign In with invalid password fails | POST | `/authentication/sign-in` | 500 |
+| 5 | Request password reset successfully | POST | `/authentication/forgot-password` | 500 (SMTP failure) |
+| 6 | Request password reset for non-existent email | POST | `/authentication/forgot-password` | 200 ✅ |
+| 7 | Reset password with mocked token fails JWT validation | POST | `/authentication/reset-password` | 400 |
+| 8 | Reset password with invalid or expired token fails | POST | `/authentication/reset-password` | 400 |
+| 9 | Access protected endpoint without Bearer Token is rejected | GET | `/users/1` | 401/403 |
+| 10 | Get existing User by ID successfully | GET | `/users/{id}` | 200 ✅ |
+| 11 | Get non-existent User returns Not Found | GET | `/users/999999` | 404 |
+| 12 | Update User role successfully | PUT | `/users/{id}/role` | 200 ✅ |
+| 13 | Update User role with invalid payload fails | PUT | `/users/{id}/role` | 500 |
 
 ---
 
-### 4. IamContextFacadeImpl — `IamContextFacadeImplTest.java`
+### 11. Batches — `batches.feature`
 
-Valida la integración del facade ACL del bounded context IAM con los servicios de consulta y comando de usuarios.
+**Endpoint base:** `/api/v1/batches`
 
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `getUserIdByEmail_ShouldReturnId_WhenExists` | Verifica que el facade retorna el ID del usuario cuando se consulta por email existente | ✅ Pass |
-| 2 | `userExists_ShouldReturnTrue_WhenExists` | Verifica que `userExists` retorna true cuando el usuario es encontrado | ✅ Pass |
-| 3 | `getUserRole_ShouldReturnRoleName` | Verifica que `getUserRole` retorna el nombre exacto del rol ("BUSINESSMAN") desde la entidad | ✅ Pass |
-| 4 | `getUserData_ShouldReturnNull_WhenNotFound` | Verifica que `getUserData` retorna null cuando el usuario no existe | ✅ Pass |
-| 5 | `getUserData_ShouldMapValuesSuccessfully` | Verifica que `getUserData` mapea correctamente name, email, country, city, address y phone desde la entidad | ✅ Pass |
-| 6 | `updateUserData_ShouldDispatchCommand` | Verifica que `updateUserData` despacha un `UpdateUserDataCommand` al servicio de comandos | ✅ Pass |
-| 7 | `getUserIdByEmail_ShouldReturnNull_WhenNotFound` | Verifica que `getUserIdByEmail` retorna null cuando el email no existe | ✅ Pass |
-| 8 | `userExists_ShouldReturnFalse_WhenNotFound` | Verifica que `userExists` retorna false cuando el usuario no existe | ✅ Pass |
-| 9 | `getUserRole_ShouldReturnNull_WhenNotFound` | Verifica que `getUserRole` retorna null cuando el usuario no existe | ✅ Pass |
-| 10 | `userExists_ShouldHandleNullUserId` | Verifica que `userExists` retorna false sin lanzar excepción cuando el userId es null | ✅ Pass |
-| 11 | `getUserRole_ShouldHandleNullUserId` | Verifica que `getUserRole` retorna null sin lanzar excepción cuando el userId es null | ✅ Pass |
-| 12 | `getUserIdByEmail_ShouldHandleNullEmail` | Verifica que `getUserIdByEmail` retorna null sin lanzar excepción cuando el email es null | ✅ Pass |
-| 13 | `updateUserData_ShouldDelegateEvenWithNullValues` | Verifica que `updateUserData` delega el comando incluso cuando todos los valores son null | ✅ Pass |
-
----
-
-### 5. ConfigurationContextFacadeImpl — `ConfigurationContextFacadeImplTest.java`
-
-Valida la integración del facade ACL del bounded context Configuration con el servicio de consulta de configuraciones.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `hasConfiguration_ShouldReturnTrue_WhenExists` | Verifica que `hasConfiguration` retorna true cuando la consulta encuentra una configuración existente | ✅ Pass |
-| 2 | `defaultValues_ShouldReturn_WhenConfigIsEmpty` | Verifica que el facade retorna valores por defecto (`"es"`, `"auto"`, `"basic"`, `"pending"`) cuando no existe configuración | ✅ Pass |
-| 3 | `mapRealValues_FromConfiguration` | Verifica que el facade mapea correctamente language, viewMode, subscriptionPlan y subscriptionStatus desde la entidad real | ✅ Pass |
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create a new production batch | POST | `/batches` | 500 (Domain Event failure) |
+| 2 | Create a batch with empty constraints | POST | `/batches` | 400 |
+| 3 | Get all available production batches | GET | `/batches` | 200 ✅ |
+| 4 | Get batch by ID returns null when not found | GET | `/batches/1` | 200 ✅ |
+| 5 | Get batches filtered by Supplier ID | GET | `/batches/supplier/2` | 200 ✅ |
+| 6 | Get batches filtered by Businessman ID | GET | `/batches/businessman/1` | 200 ✅ |
+| 7 | Test custom Profiles ACL validation endpoint | GET | `/batches/test/profiles/1` | 200 ✅ |
+| 8 | Update batch details for non-existent entity | PUT | `/batches/1` | 500 |
+| 9 | Upload batch image with empty file payload | POST | `/batches/1/image` | 400 |
+| 10 | Upload batch image with non-image format | POST | `/batches/1/image` | 400 |
+| 11 | Upload batch image with valid binary (Cloudinary failure) | POST | `/batches/1/image` | 400 |
+| 12 | Delete batch image returns 404 (entity not found) | DELETE | `/batches/1/image` | 404 |
+| 13 | Delete a production batch for non-existent entity | DELETE | `/batches/1` | 500 |
 
 ---
 
-### 6. ProfilesContextFacadeImpl — `ProfilesContextFacadeImplTest.java`
+### 12. Observations — `observations.feature`
 
-Valida la integración del facade ACL del bounded context Profiles con los servicios de consulta de Businessman y Supplier.
+**Endpoint base:** `/api/v1/observations`
 
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `getBusinessmanByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Businessman cuando existe | ✅ Pass |
-| 2 | `getSupplierByUserId_ShouldReturnId` | Verifica que el facade retorna el userId del Supplier cuando existe | ✅ Pass |
-| 3 | `existenceCheck_Methods` | Verifica que `hasBusinessmanProfile` retorna true y `hasSupplierProfile` retorna false según la existencia de cada perfil | ✅ Pass |
-| 4 | `getCompanyNameByUserId_Priorities` | Verifica que el facade prioriza el nombre de Businessman sobre Supplier, y cae al Supplier si no existe Businessman | ✅ Pass |
-| 5 | `shouldReturnNull_WhenNoProfileExists` | Verifica que `getCompanyNameByUserId` retorna null cuando no existe ningún perfil | ✅ Pass |
-
----
-
-### 7. ExternalProfilesService — `ExternalProfilesServiceTest.java`
-
-Valida la integración del servicio outbound del bounded context Reviews con el facade ACL de Profiles.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `getBusinessmanProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Businessman cuando el perfil existe | ✅ Pass |
-| 2 | `getBusinessmanProfileId_ShouldReturnEmpty_OnError` | Verifica que retorna `Optional.empty()` cuando el facade ACL lanza una excepción | ✅ Pass |
-| 3 | `getSupplierProfileId_ShouldReturnId_WhenExists` | Verifica que retorna `Optional` con el ID del Supplier cuando el perfil existe | ✅ Pass |
-| 4 | `hasProfiles_ShouldHandleExceptions` | Verifica que `hasBusinessmanProfile` y `hasSupplierProfile` retornan false ante excepciones del facade | ✅ Pass |
-| 5 | `getCompanyNameByUserId_ShouldReturnName` | Verifica que retorna `Optional` con el nombre de la empresa cuando es válido | ✅ Pass |
-| 6 | `idValidations_ShouldRespondCorrectly` | Verifica que `isValidBusinessmanId` e `isValidSupplierId` retornan false para IDs en 0 o null | ✅ Pass |
-| 7 | `shouldReturnEmpty_WhenUserIdIsNull` | Verifica que `getBusinessmanProfileId` retorna `Optional.empty()` cuando el userId es null | ✅ Pass |
-| 8 | `shouldReturnEmpty_WhenCompanyNameBlank` | Verifica que `getCompanyNameByUserId` retorna `Optional.empty()` cuando el nombre es solo espacios en blanco | ✅ Pass |
-| 9 | `shouldReturnEmpty_WhenSupplierIdInvalid` | Verifica que `getSupplierProfileId` retorna `Optional.empty()` cuando el ID retornado es 0 o negativo | ✅ Pass |
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create a new observation successfully | POST | `/observations` | 201 ✅ |
+| 2 | Create observation with empty batchCode | POST | `/observations` | 500 (VO validation) |
+| 3 | Create observation with invalid status enum | POST | `/observations` | 500 |
+| 4 | Get observation by non-existent ID | GET | `/observations/999999` | 404 |
+| 5 | Get observations by Batch ID | GET | `/observations/batch/1` | 200 ✅ |
+| 6 | Get observations by Businessman ID | GET | `/observations/businessman/1` | 200 ✅ |
+| 7 | Get observations by Supplier ID | GET | `/observations/supplier/2` | 200 ✅ |
+| 8 | Update observation for non-existent ID | PUT | `/observations/999999` | 404 |
+| 9 | Upload image to non-existent observation | POST | `/observations/999999/images` | 404 |
+| 10 | Delete image from non-existent observation | DELETE | `/observations/999999/images` | 404 |
+| 11 | Delete an observation successfully | DELETE | `/observations/{id}` | 204 ✅ |
 
 ---
 
-### 8. IntegrationAdapters (Configuration) — `IntegrationAdaptersTest.java`
+### 13. Profiles — `profiles.feature`
 
-Valida la integración del event handler de configuración y el servicio externo IAM dentro del bounded context Configuration.
+**Endpoint base:** `/api/v1/businessmen`, `/api/v1/suppliers`, `/api/v1/profiles`
 
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `on_UserRegisteredEvent_ShouldDispatchCommand` | Verifica que al recibir un `UserRegisteredEvent`, el handler despacha un `CreateConfigurationCommand` al servicio de comandos | ✅ Pass |
-| 2 | `externalIamService_Delegations` | Verifica que `ExternalIamService` delega correctamente `userExists` y `getUserRole` al `IamContextFacade` | ✅ Pass |
-
----
-
-### 9. UserRegisteredEventHandler (Profiles) — `UserRegisteredEventHandlerTest.java`
-
-Valida la integración del event handler de perfiles con los servicios de creación de Businessman, Supplier y el servicio de email de bienvenida.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `userRegistered_ShouldSendWelcomeEmail` | Verifica que al recibir `UserRegisteredEvent`, el handler obtiene los datos del usuario y envía el email de bienvenida | ✅ Pass |
-| 2 | `userRegistered_ShouldHandleException` | Verifica que si el servicio IAM falla, el flujo no se interrumpe y no se envía el email | ✅ Pass |
-| 3 | `roleUpdated_Businessman_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol BUSINESSMAN, se crea el perfil de Businessman sin tocar el de Supplier | ✅ Pass |
-| 4 | `roleUpdated_Supplier_ShouldCreateProfile` | Verifica que al recibir `UserRoleUpdatedEvent` con rol SUPPLIER, se crea el perfil de Supplier sin tocar el de Businessman | ✅ Pass |
-| 5 | `roleUpdated_Pending_ShouldDoNothing` | Verifica que con rol PENDING no se crea ningún perfil | ✅ Pass |
-| 6 | `businessmanCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Businessman no interrumpe el flujo | ✅ Pass |
-| 7 | `supplierCreation_ShouldHandleException` | Verifica que un error en la creación del perfil Supplier no interrumpe el flujo | ✅ Pass |
-
----
-
-### 10. ReviewCreatedEventHandler — `ReviewCreatedEventHandlerTest.java`
-
-Valida la integración del event handler de reseñas ante eventos de creación.
-
-| # | Nombre del test | Descripción | Resultado |
-|---|---|---|---|
-| 1 | `on_ReviewCreatedEvent_ShouldProcessSuccessfully` | Verifica que el handler procesa el `ReviewCreatedEvent` correctamente sin lanzar excepciones | ✅ Pass |
-| 2 | `on_ReviewCreatedEvent_ShouldHandleInternalExceptionsSafely` | Verifica que el handler captura excepciones internas de forma segura sin interrumpir el flujo | ✅ Pass |
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create a new businessman profile successfully | POST | `/businessmen/1` | 201 ✅ |
+| 2 | Get existing businessman profile by User ID | GET | `/businessmen/1` | 200 ✅ |
+| 3 | Get businessman profile for non-existent User ID | GET | `/businessmen/999999` | 404 |
+| 4 | Get all businessmen profiles | GET | `/businessmen` | 200 ✅ |
+| 5 | Update existing businessman profile successfully | PUT | `/businessmen/1` | 200 ✅ |
+| 6 | Update non-existent businessman profile | PUT | `/businessmen/999999` | 500 |
+| 7 | Update businessman profile with invalid RUC | PUT | `/businessmen/1` | 500 (VO exception) |
+| 8 | Create a new supplier profile successfully | POST | `/suppliers/1` | 201 ✅ |
+| 9 | Get existing supplier profile by User ID | GET | `/suppliers/1` | 200 ✅ |
+| 10 | Get supplier profile for non-existent User ID | GET | `/suppliers/999999` | 404 |
+| 11 | Get all suppliers profiles | GET | `/suppliers` | 200 ✅ |
+| 12 | Update existing supplier profile successfully | PUT | `/suppliers/1` | 200 ✅ |
+| 13 | Get complete combined profile for existing user | GET | `/profiles/1` | 200 ✅ |
+| 14 | Get complete profile for non-existent User ID | GET | `/profiles/999999` | 404 |
+| 15 | Upload profile logo (Cloudinary failure) | POST | `/profiles/1/images/logo` | 500 |
+| 16 | Delete profile logo successfully | DELETE | `/profiles/1/images/logo` | 200 ✅ |
+| 17 | Delete profile logo for non-existent profile | DELETE | `/profiles/999999/images/logo` | 500 |
 
 ---
 
-### Resumen de cobertura
+### 14. Requests — `requests.feature`
 
-| Componente | Archivo de test | Tipo de integración | Total tests |
+**Endpoint base:** `/api/v1/business-supplier-requests`
+
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create a new business-supplier request successfully | POST | `/business-supplier-requests` | 201 ✅ |
+| 2 | Create request with blank constraints | POST | `/business-supplier-requests` | 500 (VO validation) |
+| 3 | Get specific request by non-existent ID | GET | `/business-supplier-requests/999999` | 404 |
+| 4 | Get all existing requests | GET | `/business-supplier-requests` | 200 ✅ |
+| 5 | Get requests filtered by Businessman ID | GET | `/business-supplier-requests/businessman/1` | 200 ✅ |
+| 6 | Get requests filtered by Supplier ID | GET | `/business-supplier-requests/supplier/2` | 200 ✅ |
+| 7 | Update request status on non-existent resource | PUT | `/business-supplier-requests/999999/status` | 404 |
+| 8 | Update request details on non-existent resource | PUT | `/business-supplier-requests/999999/details` | 404 |
+| 9 | Delete a request successfully | DELETE | `/business-supplier-requests/{id}` | 204 ✅ |
+
+---
+
+### 15. Reviews — `reviews.feature`
+
+**Endpoint base:** `/api/v1/supplier-reviews`
+
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create a new supplier review successfully | POST | `/supplier-reviews` | 201 ✅ |
+| 2 | Create a duplicate review from same businessman | POST | `/supplier-reviews` | 500 |
+| 3 | Create review with invalid rating value | POST | `/supplier-reviews` | 400 |
+| 4 | Check if businessman reviewed supplier | GET | `/supplier-reviews/check/2/1` | 200 ✅ |
+| 5 | Get reviews for unreviewed supplier | GET | `/supplier-reviews/supplier/999999` | 404 |
+| 6 | Get existing reviews for valid supplier | GET | `/supplier-reviews/supplier/2` | 200 ✅ |
+| 7 | Update a non-existent review | PUT | `/supplier-reviews/999999` | 500 |
+
+---
+
+### 16. Configuration — `configurations.feature`
+
+**Endpoint base:** `/api/v1/configurations`
+
+| # | Escenario | Método | Endpoint | Status esperado |
+|---|---|---|---|---|
+| 1 | Create configuration fails due to DB constraints | POST | `/configurations` | 400 |
+| 2 | Create configuration with invalid enum mapping | POST | `/configurations` | 400 |
+| 3 | Create duplicate configuration for existing User ID | POST | `/configurations` | 400 |
+| 4 | Get configuration for unpopulated User ID | GET | `/configurations?userId=1` | 404 |
+| 5 | Get configuration for non-existent User ID | GET | `/configurations?userId=999999` | 404 |
+| 6 | Update configuration for non-existent entity | PUT | `/configurations/1` | 400 |
+| 7 | Update configuration for non-existent resource ID | PUT | `/configurations/999999` | 400 |
+| 8 | Update configuration with malformed enum status | PUT | `/configurations/1` | 400 |
+
+---
+
+### Cobertura de Karate DSL
+
+| Feature | Archivo | Bounded Context | Total escenarios |
 |---|---|---|---|
-| `PaymentController` | `PaymentControllerTests` | REST Controller ↔ Service | 3 |
-| `StripePaymentService` | `StripePaymentServiceUnitTest` | Service ↔ Stripe API | 1 |
-| `PaymentCommandServiceImpl` | `PaymentCommandServiceImplTest` | Service ↔ Stripe + Config ACL | 8 |
-| `IamContextFacadeImpl` | `IamContextFacadeImplTest` | ACL Facade ↔ IAM Services | 13 |
-| `ConfigurationContextFacadeImpl` | `ConfigurationContextFacadeImplTest` | ACL Facade ↔ Config Service | 3 |
-| `ProfilesContextFacadeImpl` | `ProfilesContextFacadeImplTest` | ACL Facade ↔ Profile Services | 5 |
-| `ExternalProfilesService` | `ExternalProfilesServiceTest` | Outbound Service ↔ Profiles ACL | 9 |
-| `IntegrationAdapters (Config)` | `IntegrationAdaptersTest` | Event Handler + External IAM | 2 |
-| `UserRegisteredEventHandler` | `UserRegisteredEventHandlerTest` | Event Handler ↔ Profile + Email | 7 |
-| `ReviewCreatedEventHandler` | `ReviewCreatedEventHandlerTest` | Event Handler ↔ Review domain | 2 |
-| **Total** | | | **53** |
+| Authentication & Users | `Iam.feature` | IAM | 13 |
+| Batches Management | `batches.feature` | Batches | 13 |
+| Observations Management | `observations.feature` | Observation | 11 |
+| Profiles Management | `profiles.feature` | Profiles | 17 |
+| Requests Management | `requests.feature` | Request | 9 |
+| Reviews Management | `reviews.feature` | Reviews | 7 |
+| Configuration Management | `configurations.feature` | Configuration | 8 |
+| **Total** | | | **78** |
 
 
 #### 6.1.3. Core Behavior-Driven Development
