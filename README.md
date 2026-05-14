@@ -2765,6 +2765,13 @@ So that only valid payments are processed <br>
 
 #### 6.2.1.1. Code Quality & Code Security.
 
+Mediante la ejecución y configuración del SonarQube podemos concluir que hemos realizado un correcta implementación de test enfocados en el core y lógica de la aplicación, sin embargo, aún tenemos algunas observaciones que corregir
+
+<p align="center">
+  <img src="./assets/tp1/sonarqube-execution.jpg" width="400"/>
+</p>
+
+
 
 ## **Capítulo VII: DevOps Practices**
 
