@@ -714,9 +714,25 @@ Las siguientes preguntas están dirigidas a distribuidores y proveedores textile
 [Ver las entrevistas en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202313433_upc_edu_pe/IQDOiPCSKvfFRqHFIDzcksyzAXN8Vne5bEdhY4BeuOF4-Sk?e=Ju3rGw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 #### 2.2.3. Análisis de entrevistas
-**FALTA**
-### 2.3. Needfinding
-**FALTA**
+
+<p align="center">
+  <img src="assets/tp1/analisis_entrevistas_1.png" width="800">
+</p> 
+
+<p align="center">
+  <img src="assets/tp1/analisis_entrevistas_2.png" width="800">
+</p> 
+
+<p align="center">
+  <img src="assets/tp1/analisis_entrevistas_3.png" width="800">
+</p> 
+
+<p align="center">
+  <img src="assets/tp1/analisis_entrevistas_4.png" width="800">
+</p> 
+
+## 2.3. Needfinding
+
 #### 2.3.1. User Personas
 
 Las User Personas representan arquetipos de usuarios basados en datos reales o supuestos fundamentados, permitiendo comprender sus necesidades, comportamientos y motivaciones para orientar el diseño del sistema (Cooper, 1999).
