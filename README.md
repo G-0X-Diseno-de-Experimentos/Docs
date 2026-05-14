@@ -65,8 +65,8 @@
 | TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
 | TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
 |  TP1   | 28/04/2026 | Bueno Perales, Mathias Eduardo  |   Desarrollo del Capitulo VI, Core Entities Unit Tests, Core Integration Tests, Core Behavior-Driven Development          |
-|     |  |   
-  |    |
+|  TP1   | 28/04/2026 | Awad Vargas, Giorgio Marzouk  |   Desarrollo del Capitulo IV y V.  |
+|    |
 
 
 ## Project Report Collaboration Insights
@@ -84,7 +84,7 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 | Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del Capítulo I, II, III. |
 | Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo del Capitulo II, VI|
 | Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
-| Giorgio Marzouk Awad Vargas | `GiorgioAwad` |  |
+| Giorgio Marzouk Awad Vargas | `GiorgioAwad` | Desarrollo del Capitulo IV y V |
 | Hector Javier Rios Pacheco | `Khafna09` |  |
 
 **Report Repository Insights:** 
