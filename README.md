@@ -245,7 +245,7 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----------------------|---------------------|--------------|
-| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:   <br>El desarrollo del Capítulo VI y la implementación de pruebas unitarias, de integración y BDD me permitió reconocer la importancia de actuar con responsabilidad ética y profesional, asegurando la calidad y confiabilidad del software para generar un impacto positivo en los usuarios y en el entorno donde se aplica la solución tecnológica.<br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br>  |
+| La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales. | **TP1**<br><br> Bueno Perales, Mathias Eduardo:   <br>El desarrollo del Capítulo VI y la implementación de pruebas unitarias, de integración y BDD me permitió reconocer la importancia de actuar con responsabilidad ética y profesional, asegurando la calidad y confiabilidad del software para generar un impacto positivo en los usuarios y en el entorno donde se aplica la solución tecnológica.<br>  <br><br> Paredes Santos, Fabrizio Alberto:  <br><br> Awad Vargas, Giorgio Marzouk: <br>El desarrollo de los Capítulos IV y V me permitió reconocer la importancia de diseñar e implementar una solución digital considerando la responsabilidad ética y profesional en la experiencia del usuario, la arquitectura del producto, la gestión de la información y la entrega de funcionalidades alineadas a las necesidades del sector textil. <br><br>  |
 
 
 # Part I: As-Is Software Project
@@ -275,6 +275,7 @@ Proporcionar a distribuidores, talleres y empresas textiles una herramienta digi
 | :---: | :--- | :--- | :--- |
 |![alt text](assets/fotos/foto-mathias-bueno.png) | Mathias Bueno Perales  | u202313433 |Soy un estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas, cursando actualmente el 7to ciclo. Soy una persona que busca siempre trabajar en equipo y busco tener nuestros proyectos listos de forma puntual. Cuento con habilidades de trabajo en equipo, mucho compromiso, responsabilidad y empatia. A nivel tecnico tengo manejo de Vue.js, .NET, Angular, Kotlin, Spring Boot y en bases de datos tanto SQL como NoSQL. |
 | ![alt text](assets/fotos/fabriziofoto.jpg)| Paredes Santos, Fabrizio Alberto | U202310914 | Profesional en formación con experiencia en desarrollo de aplicaciones web y móviles utilizando stacks modernos como Vue.js y .NET, Angular y Spring Boot, además de desarrollo móvil con Flutter y Kotlin. También he trabajado en la creación de páginas web con React, Next.js y Tailwind CSS, enfocadas en rendimiento y experiencia de usuario. Me caracterizo por ser proactivo, responsable y orientado a resultados, con capacidad para adaptarme a entornos dinámicos y contribuir eficazmente en equipos de desarrollo. |
+| ![alt text](assets/fotos/giorgio.jpeg) | Awad Vargas, Giorgio Marzouk | U202324041 | Soy estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Me interesa el desarrollo de soluciones web y móviles, especialmente en el diseño de interfaces, arquitectura de producto e implementación de funcionalidades orientadas a mejorar la experiencia del usuario. Me considero una persona responsable, comprometida y orientada al trabajo en equipo. |
 |![alt text] *FOTO* | Rodriguez Macedo, Sebastian | U202310199 | Soy una persona capaz de resolver problemas con el equipo desde un punto de vista diferente, además ofrezco siempre compromiso hacia mis compañeros cumpliendo con las asignaciones de manera responsable. |
 
 ### 1.2. Solution Profile
@@ -1083,6 +1084,76 @@ En la landing page, el sistema de navegación se ubica en la parte superior de l
 En la aplicación web, se utiliza un sidebar que facilita la navegación por las funciones principales, manteniendo siempre visibles las etiquetas textuales para identificar cada sección. Esto asegura que el usuario pueda recorrer los módulos de control, trazabilidad y reportes de calidad de manera eficiente.
 
 Los encabezados y labels presentes en las pantallas informan claramente sobre el contenido que visualizará el usuario al acceder a cada sección, garantizando una experiencia fluida y coherente.
+
+### **4.4. Mobile Applications UX/UI Design.**
+
+#### **4.4.1. Mobile Applications Wireframes.**
+
+<p align="center">
+  <img src="./assets/tp1/wireframe-mobile1.png" alt="Mobile Applications Wireframe 1" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/wireframe-mobile2.png" alt="Mobile Applications Wireframe 2" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/wireframe-mobile3.png" alt="Mobile Applications Wireframe 3" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/wireframe-mobile4.png" alt="Mobile Applications Wireframe 4" width="850">
+</p>
+
+#### **4.4.2. Mobile Applications Wireflow Diagrams.**
+
+<p align="center">
+  <img src="./assets/tp1/wireflow11.png" alt="Mobile Applications Wireflow Diagram 1" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/wireflow22.png" alt="Mobile Applications Wireflow Diagram 2" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/wireflow33.png" alt="Mobile Applications Wireflow Diagram 3" width="850">
+</p>
+
+#### **4.4.3. Mobile Applications Mock-ups.**
+
+<p align="center">
+  <img src="./assets/tp1/mockups1.png" alt="Mobile Applications Mock-up 1" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mockups2.png" alt="Mobile Applications Mock-up 2" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mockups3.png" alt="Mobile Applications Mock-up 3" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mockups4.png" alt="Mobile Applications Mock-up 4" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mockups5.png" alt="Mobile Applications Mock-up 5" width="850">
+</p>
+
+#### **4.4.4. Mobile Applications User Flow Diagrams.**
+
+<p align="center">
+  <img src="./assets/tp1/mobile-userflow1.jpeg" alt="Mobile Applications User Flow Diagram 1" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mobile-userflow2.jpeg" alt="Mobile Applications User Flow Diagram 2" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/mobile-userflow3.jpeg" alt="Mobile Applications User Flow Diagram 3" width="850">
+</p>
 
 ### **4.5. Mobile Applications Prototyping**
 
