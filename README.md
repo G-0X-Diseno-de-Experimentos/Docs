@@ -2138,7 +2138,7 @@ En este apartado detallaremos la configuracion de nuestro entorno de desarrollo,
 
 **Desarrollo del Software:** Para todo nuestro proceso con el software, usamos las siguientes herramientas:
 
-* **Github:** Usando Github, creamos y manejamos el repositorio donde alojamos nuestro proyecto y gestionamos distintas versiones de este. Junto la herramienta Git controlamos el flujo de nuestro desarrollo trabajando con ramas (branches).
+* **Github:** Usando Github, creamos y manejamos los repositorios individuales para los distintos productos de nuestro alcance (Landing Page, Server Side Software, Web y Mobile Apps). Para el control de versiones y la colaboración del equipo, aplicamos GitFlow como nuestro Workflow principal, gestionando el desarrollo ordenado a través de ramas (branches) específicas.
 
 * **UxPressia:** Usamos esta herramienta para la elaboracion de los User Personas, el Customer Journey Map, los Empathy Maps y el Impact Mapping.
 
@@ -2151,6 +2151,14 @@ En este apartado detallaremos la configuracion de nuestro entorno de desarrollo,
 * **Structurizr:** Herramienta en la que aplicamos el DDD y creamos los diagramas de Contexto, Contenedores y los Bounded Context Diagrams de TextilFlow.
 
 * **Discord:** Aplicacion que nos ayudo a nuestra comunicacion y intercambio de ideas. La usamos para reuniones clave decidiendo el rumbo del proyecto y separacion de labores individuales.
+
+* **Pruebas Unitarias y de Integración:** Implementadas para validar que los componentes individuales del código funcionen correctamente de forma aislada, así como para asegurar que la interacción entre los distintos módulos del sistema opere sin errores.
+
+* **Cucumber:** Herramienta utilizada para aplicar el enfoque BDD (Behavior-Driven Development). Nos permitió escribir y ejecutar pruebas automatizadas basadas en los comportamientos esperados del sistema, utilizando archivos feature comprensibles tanto para el equipo técnico como para el de negocio.
+
+* **Jenkins:** Utilizado como nuestro servidor de Integración Continua (CI). Nos permitió automatizar la construcción (build) del proyecto y la ejecución de nuestro pipeline de pruebas cada vez que se integraba nuevo código en el repositorio.
+
+* **SonarQube:** Plataforma que integramos para realizar la inspección continua de la calidad de nuestro código. Nos ayudó a realizar análisis estático para detectar bugs, vulnerabilidades de seguridad y code smells, asegurando un código más limpio y mantenible.
 
 
 #### 5.1.2. Source Code Management
