@@ -2281,6 +2281,131 @@ Accedemos a esta URL desde el navegador para confirmar que el sitio está activo
 
 #### 5.2.1. Sprint Backlogs
 
+- **Sprint Backlog 1:**
+
+Para este primer Sprint, nuestro objetivo principal es desarrollar la **Landing Page de TextilFlow**. Para lograrlo, hemos creado tareas específicas para cada historia de usuario relacionada con la landing y las hemos asignado entre los integrantes del equipo. Además, para una mejor organización y seguimiento del Backlog, estamos utilizando la herramienta **Trello**  
+
+| Sprint #   | Sprint 1                                                |                |                                             |                                                                            |                    |                     |                                              |
+| :--------- | :------------------------------------------------------ | :------------- | :------------------------------------------ | :------------------------------------------------------------------------- | :----------------- | :------------------ | :------------------------------------------- |
+| User Story |                                                         | Work Item/Task |                                             |                                                                            |                    |                     |                                              |
+| Id         | Title                                                   | Id             | Title                                       | Description                                                                | Estimation (Hours) | Assigned To         | Status (To-do / InProcess / ToReview / Done) |
+| 26         | Visualizar información principal sobre la plataforma    | T1             | Sección Principal                           | Implementar sección principal en landing page                              | 2                  | Giorgio Awad        | Done                                         |
+| 27         | Conocer los beneficios de usar TextilFlow               | T1             | Sección de Beneficios                       | Implementar sección de beneficios en la web                                | 3                  | Hector Rios         | Done                                         |
+| 28         | Consultar información sobre la empresa                  | T1             | Redacción "Sobre Nosotros"                  | Escribir un breve resumen de la historia y propósito de la empresa.        | 1                  | Sebastian Rodriguez | Done                                         |
+|            |                                                         | T2             | Implementar sección "Sobre Nosotros"        | Integrar la sección informativa de la empresa en la landing page.          | 2                  | Sebastian Rodriguez | Done                                         |
+| 29         | Comparar planes de suscripción disponibles              | T1             | Diseñar estructura de comparación de planes | Crear el esquema visual de los diferentes planes ofrecidos.                | 2                  | Fabrizio Paredes          | Done                                         |
+|            |                                                         | T2             | Implementar sección de planes en la landing | Programar la estructura visual con precios y beneficios.                   | 3                  | Fabrizio Paredes          | Done                                         |
+| 30         | Resolver dudas frecuentes sobre el uso de la plataforma | T1             | Redactar contenido de preguntas frecuentes  | Crear preguntas y respuestas claras sobre el funcionamiento de TextilFlow. | 1                  | Mathias Bueno       | Done                                         |
+|            |                                                         | T2             | Implementar sección FAQs                    | Programar e integrar el contenido en la landing page.                      | 2                  | Mathias Bueno       | Done                                         |
+| 31         | Contactar al equipo de TextilFlow                       | T1             | Diseñar formulario de contacto              | Crear la interfaz visual del formulario con campos necesarios.             | 1                  | Giorgio Awad        | Done                                         |
+|            |                                                         | T2             | Programar envío del formulario              | Desarrollar la lógica para el envío de mensajes o solicitudes.             | 3                  | Giorgio Awad        | Done                                         |
+| 32         | Acceder a la opción de iniciar sesión                   | T1             | Agregar botón "Iniciar sesión" al header    | Insertar el botón visual en el encabezado de la landing.                   | 1                  | Hector Rios         | In process                                   |
+| 33         | Conocer las secciones del sitio desde el menú           | T1             | Diseñar estructura del menú de navegación   | Definir los elementos del menú (Producto, Nosotros, Planes, Registro).     | 2                  | Sebastian Rodriguez | Done                                         |
+|            |                                                         | T2             | Programar menú responsive                   | Implementar el menú adaptable para diferentes dispositivos.                | 3                  | Sebastian Rodriguez | Done                                         |
+| 34         | Visualizar información legal y de autor                 | T1             | Redactar información legal                  | Escribir el texto de derechos de autor y condiciones legales.              | 1                  | Fabrizio Paredes          | Done                                         |
+|            |                                                         | T2             | Implementar sección legal en el footer      | Agregar el contenido legal al pie de página.                               | 2                  | Fabrizio Paredes          | Done                                         |
+| 35         | Acceder a redes sociales o enlaces adicionales          | T1             | Insertar íconos de redes sociales           | Agregar íconos representativos de redes sociales en el footer.             | 1                  | Mathias Bueno       | Done                                         |
+|            |                                                         | T2             | Configurar enlaces hacia redes sociales     | Programar los íconos para abrir los enlaces correspondientes.              | 2                  | Mathias Bueno       | Done                                         |
+
+
+
+<p align="center">
+  <img src="/assets/tp1/sprint1.jpg" alt="PB" width="850">
+</p>
+
+[Sprint Backlog en Trello](https://trello.com/invite/b/680818ed983bfbaa57371360/ATTI81adeca1028e61e1ddeba590e4bd2b9eA0A8A093/trello-agile-sprint-board-template)
+
+
+- **Sprint Backlog 2:**
+
+Para este segundo sprint, nuestro objetivo es desarrollar nuestra aplicacion de TextilFlow. Para llevarlo a cabo, definimmos tareas especificas para cada historia de usuario relacionada con la funcionalidad y las hemos asignado entre los integrantes del equipo. Para una mejor organizacion en el Backlog, usamos la herramienta Trello.
+
+| Sprint #   | Sprint 2                                      |                |                                                        |                                                        |                    |                     |                                              |
+| :--------- | :-------------------------------------------- | :------------- | :----------------------------------------------------- | :----------------------------------------------------- | :----------------- | :------------------ | :------------------------------------------- |
+| User Story |                                               | Work Item/Task |                                                        |                                                        |                    |                     |                                              |
+| Id         | Title                                         | Id             | Title                                                  | Description                                            | Estimation (Hours) | Assigned To         | Status (To-do / InProcess / ToReview / Done) |
+| 21         | Registro de usuario                           | T1             | Desarrollar registro de usuario                        | Implementar registro de usuario en Angular             | 2                  | Giorgio Awad        | Done                                         |
+| 22         | Inicio de Sesion                              | T1             | Desarrollar inicio de sesion                           | Implementar inicio de sesion en Angular                | 2                  | Giorgio Awad        | Done                                         |
+| 24         | Seleccion de Tipo de Usuario                  | T1             | Desarrollar la seleccion segun el tipo de usuario      | Implementar la seleccion de usuario en Angular         | 1                  | Giorgio Awad        | Done                                         |
+| 01         | Visualizar listado de lotes recibidos         | T1             | Ver todos los lotes recibidos                          | Implementar la visualizacion de lotes recibidos        | 3                  | Hector Rios         | Done                                         |
+| 04         | Ver detalles de un lote específico            | T1             | Ver los detalles de los lotes                          | Desarrollar la muestra de detalles de los lotes        | 4                  | Hector Rios         | Done                                         |
+| 05         | Enviar observaciones sobre un lote recibido   | T1             | Enviar observaciones de alertas en el lote             | Desarrollar la logica de envio de observaciones        | 3                  | Hector Rios         | Done                                         |
+| 12         | Visualizar planes de suscripción disponibles  | T1             | Mostrar los planes disponibles                         | Agregar la seccion de planes disponibles en Angular    | 2                  | Fabrizio Paredes          | Done                                         |
+| 14         | Personalizar la vista de la plataforma        | T1             | Personalizacion de la vista segun lo quiera el usuario | Desarrollar la personalizacion de la app en Angular    | 3                  | Mathias Bueno       | Done                                         |
+| 15         | Editar datos del perfil                       | T1             | Desarrollar la edicion de datos del perfil             | Implementar la logica de personalizacion del perfil    | 1                  | Mathias Bueno       | Done                                         |
+| 18         | Registrar lote por código automático o manual | T1             | Desarrollar el registro de lote                        | Implementar logica de registro de lote en Angular      | 4                  | Sebastian Rodriguez | Done                                         |
+| 08         | Visualizar observaciones enviadas             | T1             | Ver todas las observaciones                            | Desarrollar la visualizacion de observaciones enviadas | 3                  | Fabrizio Paredes          | In process                                   |
+
+
+
+<p align="center">
+  <img src="/assets/tp1/sprint2.jpg" alt="PB" width="850">
+</p>
+
+[Sprint Backlog en Trello](https://trello.com/invite/b/680818ed983bfbaa57371360/ATTI81adeca1028e61e1ddeba590e4bd2b9eA0A8A093/trello-agile-sprint-board-template)
+
+
+- **Sprint Backlog 3:**
+
+El objetivo principal del sprint backlog 3 es desarrollar nuestro backend considerando los bounded context del negocio, permitiendo guardar sus datos, acceder a ellos y modificarlos. Para la entrega de este sprint, el equipo se ha organizado en tareas detalladas, siguiendo las historias tecnicas y basandonos en los diagramas resaltando los puntos clave del negocio, y se ha asignado el trabajo de forma equitativa para cumplir en los tiempos estimados.
+
+
+| Sprint #   | Sprint 3                                                  |                |                                            |                                                                                   |                    |                     |                                              |
+| :--------- | :-------------------------------------------------------- | :------------- | :----------------------------------------- | :-------------------------------------------------------------------------------- | :----------------- | :------------------ | :------------------------------------------- |
+| User Story |                                                           | Work Item/Task |                                            |                                                                                   |                    |                     |                                              |
+| Id         | Title                                                     | Id             | Title                                      | Description                                                                       | Estimation (Hours) | Assigned To         | Status (To-do / InProcess / ToReview / Done) |
+| US-22      | Inicio de Sesion                                          | T1             | Obtener listado de usuarios                | Recuperar todos los datos de usuarios por medio de un endpoint POST               | 2                  | Giorgio Awad        | Done                                         |
+| TS26       | Distribuidores Actuales                                   | T1             | Obtener datos de los distribuidores por id | Recuperar datos de distribuidores por id por medio de un endpoint GET             | 2                  | Giorgio Awad        | Done                                         |
+| TS29       | Distribuidores Disponibles                                | T1             | Obtener datos de los distribuidores por id | Recuperar datos de distribuidores disponibles por id por medio de un endpoint GET | 3                  | Giorgio Awad        | Done                                         |
+| TS07       | Enviar observaciones de un lote reibido                   | T1             | Obtener listado de observaciones           | Recuperar todos los datos de observaciones por medio de un endpoint               | 3                  | Hector Rios         | Done                                         |
+| TS07       | Enviar observaciones de un lote reibido                   | T1             | Crear nueva observacion                    | Crear observaciones por medio de un endpoint POST                                 | 4                  | Hector Rios         | Done                                         |
+| TS21       | Registro de Usuario                                       | T1             | Crear nuevo usuario                        | Crear usuarios por medio de un endpoint                                           | 3                  | Sebastian Rodriguez | Done                                         |
+| TS01       | Ver detalles de un lote en especifico                     | T1             | Obtener listado de lotes                   | Recuperar todos los datos de los lotes por medio de un endpoint GET               | 3                  | Mathias Bueno       | Done                                         |
+| TS04       | Filtrar y buscar lotes por distintos criterios            | T1             | Obtener datos de lotes por id              | Recuperar datos de lotes por id por medio de un endpoint GET                      | 2                  | Mathias Bueno       | Done                                         |
+| TS09       | Registrar y enviar lote                                   | T1             | Crear nuevo lote                           | Crear lotes por medio de un endpoint                                              | 2                  | Mathias Bueno       | Done                                         |
+| TS07       | Enviar observaciones sobre un lote recibido               | T1             | Crear una observacion                      | Crear una observacion por medio de un endpoint POST                               | 3                  | Fabrizio Paredes          | Done                                         |
+| TS41       | Eliminar observación enviada (si no ha sido revisada aún) | T1             | Eliminar de observacion                    | Crear un endpoint para poder eliminar una observation                             | 4                  | Fabrizio Paredes          | Done                                         |
+| TS15       | Marcar observaciones como vistas                          | T1             | Modificar el status de la observacion      | Modificar el status al actualizar                                                 | 3                  | Fabrizio Paredes          | Done                                         |
+
+
+
+<p align="center">
+  <img src="/assets/tp1/sprint3.jpg" alt="PB" width="850">
+</p>
+
+[TextilFlow Trello for Sprint Review 3](https://trello.com/b/CSyAHWGI/trello-agile-sprint-textilflow)
+
+
+
+- **Sprint Backlog 4:**
+
+El objetivo principal del sprint backlog 4 es culminar el desarrollo de nuestro backend y completar los bounded context faltantes. Para la entrega de este sprint, el equipo se ha organizado en tareas detalladas, siguiendo las historias tecnicas y basandonos en los diagramas resaltando los puntos clave del negocio, y se ha asignado el trabajo de forma equitativa para cumplir en los tiempos estimados.
+
+| Sprint #   | Sprint 4                                          |                |                                                                |                                                                                                 |                    |                     |                                              |
+| :--------- | :------------------------------------------------ | :------------- | :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :----------------- | :------------------ | :------------------------------------------- |
+| User Story |                                                   | Work Item/Task |                                                                |                                                                                                 |                    |                     |                                              |
+| Id         | Title                                             | Id             | Title                                                          | Description                                                                                     | Estimation (Hours) | Assigned To         | Status (To-do / InProcess / ToReview / Done) |
+| TS26       | Distribuidores asociados a empresario autenticado | T1             | Devolver todos los distribuidores                              | Recuperar datos de distribuidores asociados por medio de un endpoint GET                        | 2                  | Giorgio Awad        | Done                                         |
+| TS05       | Busquedas por codigo y cliente desde el backend   | T1             | Devolver datos relacionados a la busqueda segun el parametro   | Recuperar los datos asociados a esos parametros mediante un endpoint GET                        | 2                  | Giorgio Awad        | Done                                         |
+| TS23       | Invalidar sesion en backend                       | T1             | Asegurarse que el token para la sesion se valide correctamente | Crear logica de creacion de autenticacion para manejar los endpoints                            | 3                  | Giorgio Awad        | Done                                         |
+| TS12       | Observaciones enviadas                            | T1             | Devolver observaciones enviadas por id                         | Recuperar datos de observaciones por medio de un endpoint GET                                   | 3                  | Hector Rios         | Done                                         |
+| TS18       | Plan de suscripcion                               | T1             | Añadir pasarela de pagos para simular suscripcion              | Crear logica de simulacion de pagos                                                             | 4                  | Hector Rios         | Done                                         |
+| US13       | Cambiar plan de suscripcion                       | T1             | Permitir cambio de suscripcion al usuario                      | Crear opciones de suscripcion y poder cambiarla en cualquier moemnto                            | 3                  | Hector Rios         | Done                                         |
+| TS08       | Lotes en estado por enviar                        | T1             | Actualizar el estado de los lotes                              | Actualizar informacion de lotes por medio de un endpoint PUT                                    | 3                  | Mathias Bueno       | Done                                         |
+| TS09       | Campos obligatorios en el registro del lote       | T1             | Validar campos obligatorios en la creacion de lotes            | Establecer validaciones para los atributos de un lote, no pudiendo crear uno hasta validar todo | 2                  | Mathias Bueno       | Done                                         |
+| TS02       | Obtener lote por distribuidor                     | T1             | Obtener datos de lote segun el id del distribuidor             | Recuperar datos de lotes por id de distribuidor por medio de un endpoint GET                    | 2                  | Mathias Bueno       | Done                                         |
+| TS14       | Eliminar observaciones                            | T1             | Permitir eliminar observaciones en estado pendiente            | Eliminar observaciones segun su estado por medio de un endpoint DELETE                          | 3                  | Fabrizio Paredes          | Done                                         |
+| US37       | Solicitar lote                                    | T1             | Crear nueva solicitud de lote                                  | Crear solicitudes por medio de un endpoint POST                                                 | 4                  | Fabrizio Paredes          | Done                                         |
+| US37       | Devolver datos de solicitudes                     | T1             | Devolver solicitudes enviadas                                  | Recuperar datos de solicitudes por medio de un endpoint GET                                     | 3                  | Sebastian Rodriguez | Done                                         |
+
+
+
+[TextilFlow Trello for Sprint Review 4](https://trello.com/b/CSyAHWGI/trello-agile-sprint-textilflow)
+
+
+
+
+
 #### 5.2.2. Implemented Landing Page Evidence
 
 
