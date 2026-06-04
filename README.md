@@ -2117,7 +2117,7 @@ Los encabezados y labels presentes en las pantallas informan claramente sobre el
 #### **4.10.1. Database Diagram**
 
 <p align="center">
-  <img src="assets/tp1/DatabaseDiagramTF.jpg" alt="PB" width="1000">
+  <img src="assets/tp1/DatabaseDiagramTF2.png" alt="PB" width="1000">
 </p>
 
 
