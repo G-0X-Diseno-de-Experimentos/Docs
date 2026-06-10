@@ -3511,6 +3511,82 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Conditions** | Entrevistas informales durante tiempos de descanso. |
 | **Scale** | 15 operarios de almacén textil. |
 
+### 8.2. Experiment Design
+
+#### 8.2.1. Hypotheses
+
+ ### Experiment 1 – Pre-Despacho Digital
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Es cierto que la posibilidad de blindarse contra devoluciones motivará a los distribuidores de tela a invertir tiempo en subir fotos proactivamente? |
+| **Belief** | La protección contra pérdidas económicas por devoluciones injustificadas es el mayor dolor comercial del distribuidor, por lo que estará dispuesto a incorporar un paso extra en su flujo de trabajo. |
+| **Hypothesis** | Ofrecer un Certificado de Pre-Despacho Digital motivará al menos al **60%** de los distribuidores abordados a participar en un piloto de registro fotográfico proactivo. |
+| **Null Hypothesis** | Ofrecer un Certificado de Pre-Despacho Digital no será responsable de la adopción del registro fotográfico, y la tasa de aceptación será inferior al **60%** o estará motivada por otros factores. |
+
+### Experiment 2 – Catálogo Estandarizado
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Es verdad que el uso de un catálogo estandarizado de defectos eliminará las discusiones técnicas entre operarios de taller y proveedores? |
+| **Belief** | Las disputas comerciales nacen porque ambas partes utilizan un lenguaje informal y subjetivo para clasificar el daño en la tela. |
+| **Hypothesis** | El uso de un catálogo visual estandarizado de defectos textiles incrementará la coincidencia exacta en la categorización de fallas entre proveedores y talleres a un **80% o más**. |
+| **Null Hypothesis** | El uso de un catálogo visual estandarizado no influirá en la categorización de las fallas, y las discrepancias técnicas continuarán igual que antes. |
+
+### Experiment 3 – Adopción Operativa
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Importaría si lanzamos la aplicación sin un módulo de reportes gerenciales que fuerce a los dueños a exigir su uso a los operarios? |
+| **Belief** | Los operarios priorizan la rapidez física de la descarga y percibirán la aplicación como una pérdida de tiempo si no existe una política obligatoria de uso. |
+| **Hypothesis** | Sin mandato gerencial obligatorio, la tasa de registro voluntario de incidencias será menor al **10%** del total de lotes recibidos. |
+| **Null Hypothesis** | La ausencia de un mandato gerencial no impedirá la adopción, y los operarios registrarán voluntariamente más del **10%** de los lotes recibidos. |
+
+### Experiment 4 – Flujo de Tiempo en Almacén
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Es verdad que los operarios evalúan y registran la tela inmediatamente en la puerta de recepción? |
+| **Belief** | La prioridad logística es despejar rápidamente la zona de descarga, relegando la inspección de calidad para después. |
+| **Hypothesis** | Más del **70%** de las inspecciones visuales se realizarán al menos **1 hora después** de que el rollo ingresó al almacén. |
+| **Null Hypothesis** | Las inspecciones no se postergarán y más del **30%** se realizarán inmediatamente en la puerta de recepción. |
+
+### Experiment 5 – Usabilidad con Guantes
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Le importaría a los operarios si utilizamos una cuadrícula fina en la interfaz para mapear los defectos de la tela? |
+| **Belief** | El uso de guantes gruesos dificulta la interacción táctil precisa y genera frustración durante el registro. |
+| **Hypothesis** | El uso de la función de Mapeo Visual producirá una tasa de errores superior al **40%** cuando sea utilizada con guantes de trabajo. |
+| **Null Hypothesis** | El uso de guantes no aumentará significativamente los errores táctiles y la tasa de error será similar a la de usuarios sin guantes. |
+
+### Experiment 6 – Modo Offline-First
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Es cierto que mostrar un estado explícito de "Guardado localmente" calmará la desconfianza del usuario cuando se quede sin señal? |
+| **Belief** | Los operarios asumen que la aplicación falló cuando no reciben una confirmación inmediata de envío. |
+| **Hypothesis** | Mostrar un indicador de "Pendiente de red" reducirá los intentos repetidos de envío a menos de **2 clics** por usuario. |
+| **Null Hypothesis** | Mostrar un indicador explícito de estado no modificará el comportamiento de los usuarios, quienes seguirán intentando enviar múltiples veces. |
+
+### Experiment 7 – Evidencia Irrefutable
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Sería suficiente si la aplicación solo permite tomar una fotografía cercana de la mancha o agujero para ganar un reclamo? |
+| **Belief** | Los distribuidores requieren evidencia contextual que vincule la falla con el lote original para aceptar un reclamo. |
+| **Hypothesis** | Los reportes que incluyan la falla y la etiqueta del código de barras tendrán una tasa de aceptación **50% mayor** que los reportes con fotografías aisladas. |
+| **Null Hypothesis** | La presencia de la etiqueta del código de barras no influirá en la aceptación de los reclamos por parte de los proveedores. |
+
+### Experiment 8 – Consumo de Datos
+
+| Campo | Descripción |
+|---------|---------|
+| **Question** | ¿Se molestaría algún operario si la aplicación sube las fotografías pesadas utilizando sus datos móviles? |
+| **Belief** | Los trabajadores consideran injusto utilizar recursos personales para actividades laborales de la empresa. |
+| **Hypothesis** | Más del **80%** de los operarios preferirán sincronizar únicamente mediante WiFi corporativo y rechazarán usar sus datos móviles personales. |
+| **Null Hypothesis** | El origen de la conexión no será una preocupación significativa y menos del **80%** de los operarios mostrará rechazo al uso de datos personales. |
+
 ## Conclusiones 
 
 
