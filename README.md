@@ -3333,7 +3333,41 @@ Tras la próxima experimentación, esperamos que los usuarios obtengan los sigui
 
 > "Me genera mucho estrés tener que registrar datos a mano en un cuaderno mientras estoy descargando rollos pesados."
 
+#### 8.1.3. Experiment-Ready Questions
 
+### Questions
+
+En esta sección se desarrollarán las preguntas que nos realizamos para guiar la experimentación y validar las suposiciones sobre el núcleo operativo de TextilFlow. Se utilizó el método de las **5W y 1H** (Qué, Quién, Dónde, Cuándo, Por qué y Cómo) para estructurar tanto preguntas exploratorias como aquellas impulsadas por creencias (*Belief-led*).
+
+#### What (Qué)
+
+- ¿Qué tipo de evidencia fotográfica (por ejemplo, uso de cinta métrica junto a la falla o etiqueta visible del rollo) convence realmente al proveedor para aceptar un reclamo sin disputas?
+- ¿Qué acciones tomarán los operarios de almacén cuando la aplicación almacene registros en modo **Offline-First** debido a la falta de señal en sótanos comerciales?
+
+#### Who (Quién)
+
+- ¿Quiénes adoptarán más rápidamente el registro visual de rollos de tela: los operarios de almacén durante la descarga o los cortadores en la mesa de confección?
+- ¿Quiénes, dentro de la distribuidora de telas, serán responsables de revisar el historial del lote para aprobar o rechazar incidencias reportadas?
+
+#### Where (Dónde)
+
+- ¿Dónde se registrará la evidencia visual con mayor frecuencia: en la zona de recepción o en áreas de almacenamiento temporal?
+- ¿Dónde deberán ubicarse los botones de categorización rápida (mancha, merma, teñido, entre otros) dentro de la interfaz de la cámara para garantizar que el operario complete el proceso en menos de tres toques?
+
+#### When (Cuándo)
+
+- ¿Cuándo decide un operario que una falla visual en la tela es lo suficientemente grave como para detener la descarga y registrarla en la aplicación?
+- ¿Cuándo sincronizará la aplicación los datos almacenados localmente con la nube sin interrumpir el flujo de trabajo del operario?
+
+#### Why (Por qué)
+
+- ¿Por qué un distribuidor de telas decidiría subir fotografías del estado de sus rollos antes de despacharlos al taller de confección?
+- ¿Por qué las pequeñas empresas textiles (Mypes) confiarían sus métricas de calidad a un historial centralizado en lugar de mantener registros físicos propios?
+
+#### How (Cómo)
+
+- ¿Cómo interactuarán los operarios con la funcionalidad de **Mapeo Visual** desde sus celulares cuando tengan las manos ocupadas o utilicen guantes de carga pesada?
+- ¿Cómo impactará el uso de un catálogo estandarizado de defectos textiles en el tiempo promedio de resolución de devoluciones entre talleres y proveedores?
 
 
 
