@@ -3243,6 +3243,99 @@ Finalmente, la empresa decide buscar una herramienta digital y empieza a utiliza
 
 Por su parte, el distribuidor de telas despacha sus rollos, dudando si el cliente los manipulará mal y le echará la culpa. Luego, recibe el reporte digital del taller a través de la plataforma, corrobora la evidencia fotográfica de inmediato y evalúa si procede la nota de crédito. Finalmente, ambos revisan el historial de calidad en la plataforma, sintiendo que esta es una manera más transparente y justa de llevar sus relaciones comerciales.
 
+#### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+### Assumptions
+
+#### Business Outcomes
+
+##### Reducción de pérdidas y mejora operativa
+- Reducir el porcentaje de pérdidas económicas por reprocesos de tela defectuosa en un **30%**.
+- Aumentar la eficiencia de los operarios al brindarles una opción rápida (**menos de 3 clics o toques**) para registrar observaciones técnicas en el almacén.
+- Aumentar en **15%** o mantener la adopción de herramientas digitales en talleres que antes dependían exclusivamente del papel.
+
+##### Transparencia y confianza comercial
+- Fortalecer la confianza comercial en un **25%** mediante la creación de un historial transparente de calidad entre clientes y proveedores.
+- Estar presentes en al menos el **80% de las recepciones de lotes de tela** realizadas por nuestros usuarios.
+
+#### Customer (Talleres y empresas textiles)
+
+- Los talleres podrían sentirse más seguros al contar con un respaldo visual irrefutable ante posibles defectos detectados en la tela.
+- Los talleres podrían valorar la conveniencia de categorizar mermas, manchas u otras incidencias rápidamente desde un dispositivo móvil durante la descarga de mercadería.
+- Los operarios podrían sentirse más organizados al no depender de cuadernos físicos o fotografías dispersas en aplicaciones de mensajería.
+
+#### Supplier (Distribuidores de tela)
+
+- Los proveedores podrían necesitar un mecanismo que les permita protegerse oportunamente de devoluciones injustificadas atribuidas a daños de transporte.
+- Los proveedores podrían apreciar la oportunidad de demostrar la calidad de sus lotes antes del envío para fortalecer su reputación comercial.
+
+### User Outcomes
+
+Tras la próxima experimentación, esperamos que los usuarios obtengan los siguientes resultados:
+
+#### Customer (Talleres y empresas textiles)
+
+##### Trazabilidad y control
+- Acceso rápido a un historial detallado de cada rollo de tela recibido.
+- Toma de decisiones de compra más informadas basadas en el historial de calidad de cada proveedor.
+
+##### Seguridad y respaldo
+- Sensación de respaldo y confianza al contar con evidencia fotográfica estandarizada para sustentar reclamos.
+
+#### Supplier (Distribuidores de tela)
+
+##### Gestión de reclamos
+- Capacidad para gestionar reclamos sustentados en evidencia técnica y no en opiniones subjetivas.
+
+##### Transparencia y mejora continua
+- Mayor transparencia y agilidad en la relación con sus clientes.
+- Mejor control interno al identificar lotes o tipos de tela con incidencias recurrentes.
+
+### Knowledge Gaps
+
+#### Infraestructura y conectividad
+
+- No sabemos si la conexión a internet en almacenes cerrados (por ejemplo, sótanos en Gamarra) es suficientemente estable para soportar la carga de fotografías en tiempo real.
+
+#### Adopción por parte de usuarios
+
+- No sabemos si los operarios estarán dispuestos a utilizar la cámara de sus dispositivos personales cuando la empresa no proporcione equipos corporativos.
+
+#### Procesos comerciales
+
+- No sabemos cuál es el tiempo límite real (horas o días) que tiene un taller para inspeccionar y reportar una falla antes de perder el derecho comercial a presentar un reclamo.
+
+#### Trazabilidad
+
+- No sabemos si los proveedores y talleres utilizan sistemas de codificación de lotes diferentes que dificulten la trazabilidad entre ambas partes.
+
+### Ideas
+
+#### Funcionamiento Offline
+
+- Implementar un enfoque **Offline-First**, permitiendo que fotografías y datos de los lotes se almacenen localmente y se sincronicen automáticamente cuando el dispositivo recupere conexión.
+
+#### Captura automática de datos
+
+- Integrar un escáner rápido basado en la cámara para leer códigos de barras o códigos QR presentes en las etiquetas físicas de los rollos de tela.
+
+#### Registro visual de incidencias
+
+- Incorporar una cuadrícula visual sobre las fotografías para que el operario pueda señalar la ubicación exacta de una mancha o defecto sin necesidad de redactar descripciones extensas.
+
+### Claims
+
+#### Talleres y operarios
+
+> "Pierdo mucho tiempo y dinero cuando descubro una falla en la tela y esta ya está estirada en la mesa de corte."
+
+> "Los reclamos por WhatsApp no sirven porque las fotos se mezclan o el proveedor asegura que el rollo salió perfecto de su local."
+
+> "Me genera mucho estrés tener que registrar datos a mano en un cuaderno mientras estoy descargando rollos pesados."
+
+
+
+
 
 
 ## Conclusiones 
