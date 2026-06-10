@@ -3231,6 +3231,20 @@ Ejecuta acciones finales del pipeline, mostrando mensajes de finalización y con
 
 
 
+## **Capítulo VIII: Experiment-Driven Development**
+
+### 8.1 Experiment Planning
+
+#### 8.1.1. As-Is Summary
+
+El encargado de almacén textil siente que tiene un problema: recibe un lote de rollos de tela, lo revisa rápidamente "al ojo" por la presión del tiempo, y lo registra en un cuaderno o toma fotos por WhatsApp mientras se pregunta si esa evidencia será suficiente para que el proveedor le acepte un reclamo si luego descubren fallas. Días después, en la mesa de corte descubren tela manchada, lo que genera pérdidas de dinero y discusiones con el distribuidor.
+
+Finalmente, la empresa decide buscar una herramienta digital y empieza a utilizar nuestra aplicación para registrar fotos y datos técnicos en el momento exacto de la recepción.
+
+Por su parte, el distribuidor de telas despacha sus rollos, dudando si el cliente los manipulará mal y le echará la culpa. Luego, recibe el reporte digital del taller a través de la plataforma, corrobora la evidencia fotográfica de inmediato y evalúa si procede la nota de crédito. Finalmente, ambos revisan el historial de calidad en la plataforma, sintiendo que esta es una manera más transparente y justa de llevar sus relaciones comerciales.
+
+
+
 ## Conclusiones 
 
 
