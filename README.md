@@ -3370,6 +3370,46 @@ En esta sección se desarrollarán las preguntas que nos realizamos para guiar l
 - ¿Cómo impactará el uso de un catálogo estandarizado de defectos textiles en el tiempo promedio de resolución de devoluciones entre talleres y proveedores?
 
 
+### 8.1.4. Question Backlog
+
+Esta sección presenta el backlog estructurado como una lista priorizada de preguntas de investigación, alejándose de la tradicional lista de funcionalidades. El objetivo es identificar las incertidumbres más críticas del modelo operativo de TextilFlow antes de desarrollar soluciones definitivas.
+
+**Sistema de Puntuación (Scoring System)**
+Para priorizar el backlog, se evaluó cada pregunta en una escala del 1 al 5 utilizando la siguiente fórmula:
+**Puntuación = (Riesgo + Impacto + Interés) - Confianza**
+
+* **Confianza:** Nivel de certeza actual que tiene el equipo sobre la respuesta (1 = Baja certeza / 5 = Alta certeza). *A menor confianza, mayor necesidad de investigar, por lo que este valor se resta.*
+* **Riesgo:** Gravedad de las consecuencias si asumimos una respuesta incorrecta (1 = Bajo / 5 = Alto).
+* **Impacto:** Valor potencial para el negocio o el usuario si resolvemos esta pregunta (1 = Bajo / 5 = Alto).
+* **Interés:** Nivel de curiosidad o relevancia estratégica para el equipo (1 = Bajo / 5 = Alto).
+* *Regla de desempate:* En caso de que dos preguntas obtengan la misma puntuación total, se priorizará aquella que tenga el puntaje más alto en la columna de **Riesgo**.
+
+---
+
+#### 1. Broad Question Backlog (Backlog Amplio)
+
+Estas preguntas exploran las premisas fundamentales del modelo de negocio, la adopción de la herramienta y el comportamiento macro de los actores en la cadena de suministro textil.
+
+| Orden | Pregunta (What, Who, Where, When, Why, How) | ¿Por qué investigarlo? (Motivación) | Confianza | Riesgo | Impacto | Interés | Puntuación Total |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **1** | **Why:** ¿Por qué un distribuidor de telas decidiría invertir tiempo en subir proactivamente fotos del estado de sus rollos antes de despacharlos al taller? | Si los proveedores no ven valor en protegerse de reclamos, la app será vista como un sistema de vigilancia unilateral y no habrá colaboración. | 2 | **5** | 5 | 4 | **12** |
+| **2** | **How:** ¿Cómo afectará el uso de un catálogo estandarizado de defectos a los desacuerdos técnicos entre operarios de taller y proveedores? | Necesitamos saber si estandarizar la evidencia visual realmente reduce las disputas o si los proveedores seguirán rechazando los reclamos. | 2 | **4** | 5 | 5 | **12*** |
+| **3** | **Who:** ¿Quiénes impulsarán realmente el uso continuo de la plataforma: el mandato del dueño del taller o la conveniencia para el operario de almacén? | Determina a quién debemos dirigir la propuesta de valor y el diseño de la experiencia principal (operativo vs. gerencial). | 3 | 4 | 4 | 4 | **9** |
+| **4** | **Where:** ¿Dónde se realizará el registro visual con mayor frecuencia: inmediatamente en la puerta de recepción o horas después en el área de almacenamiento? | Afecta directamente el tiempo de respuesta comercial válido para reportar una falla y el diseño del flujo de trabajo de la app. | 3 | 3 | 4 | 3 | **7** |
+
+
+---
+
+#### 2. Deep Question Backlog (Backlog Profundo)
+
+Estas preguntas profundizan en las interacciones específicas, la usabilidad en campo (almacenes textiles) y las limitaciones técnicas o físicas de los usuarios finales.
+
+| Orden | Pregunta (What, Who, Where, When, Why, How) | ¿Por qué investigarlo? (Motivación) | Confianza | Riesgo | Impacto | Interés | Puntuación Total |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **1** | **How:** ¿Cómo interactuarán los operarios con la función de "Mapeo Visual" (cuadrícula) en la cámara si utilizan guantes de carga o tienen las manos ocupadas? | Si la interacción táctil es compleja en un entorno físico rudo, los operarios simplemente abandonarán el registro de incidencias. | 1 | **5** | 5 | 5 | **14** |
+| **2** | **What:** ¿Qué acciones tomarán los operarios cuando la aplicación guarde las fotos en modo "Offline-First" al no tener señal en sótanos comerciales (ej. Gamarra)? | Si el operario cree que la foto no se envió y la aplicación falló, se generará desconfianza técnica y se volverá al uso de WhatsApp. | 2 | **5** | 4 | 4 | **11** |
+| **3** | **What:** ¿Qué tipo exacto de evidencia fotográfica (ej. usar cinta métrica, mostrar etiqueta del rollo) es considerada como "irrefutable" por un proveedor? | Si las fotos capturadas no cumplen con el rigor técnico esperado por el proveedor, la plataforma no resolverá el problema de las devoluciones. | 2 | **4** | 5 | 4 | **11*** |
+| **4** | **When:** ¿Cuándo es el momento exacto en el que la aplicación debe sincronizar en segundo plano sin ralentizar el celular personal del operario? | Subir imágenes pesadas de telas puede consumir el plan de datos o batería del dispositivo personal, generando resistencia en el trabajador. | 3 | 3 | 4 | 4 | **8** |
 
 
 ## Conclusiones 
