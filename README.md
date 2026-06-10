@@ -3412,6 +3412,105 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **4** | **When:** ¿Cuándo es el momento exacto en el que la aplicación debe sincronizar en segundo plano sin ralentizar el celular personal del operario? | Subir imágenes pesadas de telas puede consumir el plan de datos o batería del dispositivo personal, generando resistencia en el trabajador. | 3 | 3 | 4 | 4 | **8** |
 
 
+### 8.1.5. Experiment Cards
+
+
+### Experiment Card 1
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Por qué un distribuidor de telas decidiría invertir tiempo en subir proactivamente fotos del estado de sus rollos antes de despacharlos al taller? |
+| **Why** | • Si los proveedores no ven un valor claro en realizar este esfuerzo extra, la plataforma será vista como una herramienta unilateral de vigilancia.<br>• Sin el compromiso proactivo del distribuidor, no existirá el componente colaborativo B2B.<br>• Necesitamos entender si la protección contra devoluciones injustificadas es una motivación suficientemente fuerte para cambiar su flujo de trabajo habitual. |
+| **What** | • Realizar entrevistas de validación en locales comerciales de distribuidores.<br>• Mostrar un mockup físico o digital de un Certificado de Pre-Despacho Digital.<br>• Consultar cuánto dinero perdieron el último trimestre por devoluciones de tela que afirman haber enviado en buen estado. |
+| **Hypothesis** | Creemos que los distribuidores percibirán valor en generar evidencia proactiva para blindarse frente a devoluciones por mala manipulación del cliente. |
+| **Measures** | Nivel de interés declarado (escala 1-5) y cantidad de distribuidores dispuestos a dejar sus datos para un piloto real. |
+| **Conditions** | Entrevistas presenciales de 15 minutos en almacenes, presentadas como un estudio de eficiencia operativa. |
+| **Scale** | 8 distribuidores mayoristas de tela. |
+
+### Experiment Card 2
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Cómo afectará el uso de un catálogo estandarizado de defectos a los desacuerdos técnicos entre operarios de taller y proveedores? |
+| **Why** | • Necesitamos comprobar si la estandarización visual reduce las disputas técnicas.<br>• Debemos descartar que los proveedores sigan considerando subjetiva la categorización.<br>• Queremos validar que la nomenclatura sea entendida por ambas partes. |
+| **What** | • Diseñar una prueba de clasificación visual (Card Sorting).<br>• Mostrar 10 fotografías reales de telas dañadas.<br>• Solicitar la clasificación utilizando únicamente el catálogo propuesto. |
+| **Hypothesis** | Creemos que un catálogo estandarizado reducirá en un 80% el tiempo de discusión sobre el origen de una falla. |
+| **Measures** | Porcentaje de coincidencia exacta en la categorización entre proveedor y taller. |
+| **Conditions** | Evaluación individual y rápida simulando presión operativa real. |
+| **Scale** | 5 jefes de almacén y 5 encargados de calidad evaluando 10 imágenes cada uno. |
+
+### Experiment Card 3
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Quiénes impulsarán realmente el uso continuo de la plataforma: el dueño del taller o el operario de almacén? |
+| **Why** | • Define el enfoque comercial y la propuesta de valor principal.<br>• Determina si la UX debe centrarse en operarios o gerencia.<br>• Permite identificar quién influye en el éxito del onboarding. |
+| **What** | • Ejecutar un piloto entregando un celular con el prototipo.<br>• Explicar beneficios al operario.<br>• Solicitar a la gerencia que no obligue el uso.<br>• Monitorear registros voluntarios. |
+| **Hypothesis** | Creemos que el operario no adoptará la herramienta por iniciativa propia y solo la utilizará si la gerencia establece su uso como política. |
+| **Measures** | Tasa de registros visuales voluntarios respecto al total de lotes recibidos. |
+| **Conditions** | Operación real sin intervención del equipo de experimentación. |
+| **Scale** | 3 talleres Mype durante 3 días consecutivos. |
+
+### Experiment Card 4
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Dónde se realizará el registro visual con mayor frecuencia: en recepción o almacenamiento? |
+| **Why** | • Afecta requerimientos de iluminación y conectividad.<br>• Impacta el tiempo disponible para reportar fallas.<br>• Define el flujo de la interfaz. |
+| **What** | • Realizar sesiones de shadowing.<br>• Acompañar a los operarios durante la recepción.<br>• Registrar lugar y momento exacto de inspección. |
+| **Hypothesis** | Creemos que la revisión fotográfica será postergada para evitar retrasar la descarga. |
+| **Measures** | Tiempo transcurrido entre recepción e inspección. |
+| **Conditions** | Observación pasiva sin intervención. |
+| **Scale** | 10 descargas completas de mercadería. |
+
+### Experiment Card 5
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Cómo interactuarán los operarios con la función de Mapeo Visual usando guantes? |
+| **Why** | • Una interacción compleja genera errores y frustración.<br>• La frustración es una causa común de abandono.<br>• Debemos validar si se requieren controles más grandes. |
+| **What** | • Diseñar una prueba de usabilidad en el entorno real.<br>• Entregar un prototipo navegable.<br>• Solicitar el registro de una falla usando guantes. |
+| **Hypothesis** | Creemos que la interacción fina generará alta frustración y requerirá un rediseño hacia elementos más grandes. |
+| **Measures** | Tasa de errores táctiles y tiempo de completado. |
+| **Conditions** | Prueba en almacén usando el equipo de protección habitual. |
+| **Scale** | 8 operarios realizando 3 pruebas cada uno. |
+
+### Experiment Card 6
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Qué acciones tomarán los operarios cuando la aplicación funcione en modo Offline-First? |
+| **Why** | • Queremos evitar que interpreten la ausencia de sincronización como un error.<br>• Los intentos repetidos pueden generar registros duplicados.<br>• La pérdida de confianza puede provocar abandono de la aplicación. |
+| **What** | • Realizar una prueba con el celular en modo avión.<br>• Simular captura y almacenamiento offline.<br>• Observar la reacción del usuario. |
+| **Hypothesis** | Creemos que un indicador visual claro será suficiente para evitar intentos repetidos de envío. |
+| **Measures** | Número de reintentos y comprensión verbalizada del estado offline. |
+| **Conditions** | Conexión desactivada sin previo aviso. |
+| **Scale** | 5 sesiones individuales. |
+
+### Experiment Card 7
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Qué evidencia fotográfica es considerada irrefutable por los proveedores? |
+| **Why** | • Necesitamos validar que las fotos generadas sean aceptadas.<br>• Debemos identificar requisitos contextuales obligatorios.<br>• Queremos estandarizar las guías visuales de captura. |
+| **What** | • Realizar un experimento tipo Mago de Oz.<br>• Enviar tres tipos de reportes por WhatsApp.<br>• Medir aceptación y cuestionamientos generados. |
+| **Hypothesis** | Creemos que la combinación de falla y etiqueta del código de barras será la única evidencia considerada válida. |
+| **Measures** | Porcentaje de aceptación, rechazo o solicitud de información adicional. |
+| **Conditions** | Reportes enviados de forma asíncrona simulando casos reales. |
+| **Scale** | 10 proveedores recibiendo 3 reportes distintos cada uno. |
+
+### Experiment Card 8
+
+| Campo | Contenido |
+|---------|---------|
+| **Question** | ¿Cuándo debe sincronizar la aplicación datos pesados sin afectar al operario? |
+| **Why** | • Evitar consumo excesivo de datos móviles personales.<br>• Reducir rechazo hacia la herramienta.<br>• Definir condiciones de sincronización automática. |
+| **What** | • Realizar entrevistas rápidas sobre conectividad.<br>• Consultar límites de datos móviles.<br>• Identificar momentos de acceso a WiFi corporativo. |
+| **Hypothesis** | Creemos que los operarios preferirán sincronizar únicamente mediante WiFi empresarial. |
+| **Measures** | Preferencia declarada sobre uso de datos móviles versus WiFi y horarios de conexión. |
+| **Conditions** | Entrevistas informales durante tiempos de descanso. |
+| **Scale** | 15 operarios de almacén textil. |
+
 ## Conclusiones 
 
 
