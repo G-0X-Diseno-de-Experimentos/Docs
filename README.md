@@ -234,6 +234,20 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
   - [7.3. Continuous deployment](#73-continuous-deployment)
     - [7.3.1. Tools and Practices.](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components.](#732-production-deployment-pipeline-components)
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+  - [8.1. Experiment Planning](#81-experiment-planning)
+    - [8.1.1. As-Is Summary.](#811-as-is-summary)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideasm Claims.](#812-raw-material-asuumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions.](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog.](#814-question-backlog)
+    - [8.1.5. Experiment Cards.](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses.](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics.](#822-domain-business-metrics)
+    - [8.2.3. Measures.](#823-measures)
+    - [8.2.4. Conditions.](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions.](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection.](#826-methods-selection)
 
 
 ## Student Outcome
