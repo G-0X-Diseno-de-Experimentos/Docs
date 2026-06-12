@@ -3587,6 +3587,50 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Hypothesis** | Más del **80%** de los operarios preferirán sincronizar únicamente mediante WiFi corporativo y rechazarán usar sus datos móviles personales. |
 | **Null Hypothesis** | El origen de la conexión no será una preocupación significativa y menos del **80%** de los operarios mostrará rechazo al uso de datos personales. |
 
+
+#### 8.2.2. Domain Business Metrics
+
+
+#### 8.2.3. Measures
+
+Esta sección describe los indicadores de TextilFlow que se someterán al proceso de análisis junto con la fase de experimentación. Es importante mencionar que se han seleccionado las siguientes características: representativas, calculables y proporcionales.
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Es cierto que la posibilidad de blindarse contra devoluciones motivará a los distribuidores a subir fotos proactivamente? |
+| **Medida** | Porcentaje de distribuidores abordados que aceptan participar en el piloto de registro fotográfico pre-despacho. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Sin mandato gerencial, los operarios registrarán voluntariamente las incidencias en la aplicación? |
+| **Medida** | Porcentaje de lotes recibidos con al menos un registro de incidencia ingresado voluntariamente en la plataforma. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Los operarios realizan la inspección visual inmediatamente al recibir el lote en la puerta del almacén? |
+| **Medida** | Tiempo transcurrido en minutos entre el ingreso del rollo al almacén y el registro de la inspección en la aplicación. |
+
+<br>
+
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Incluir la etiqueta del código de barras junto a la foto de la falla aumenta la tasa de aceptación del reclamo? |
+| **Medida** | Porcentaje de reclamos aceptados por el proveedor según tipo de evidencia: foto aislada vs. foto con código de barras del lote. |
+
+#### 8.2.4. Conditions
+
+
+#### 8.2.5. Scale Calculations and Decisions
+
+
+#### 8.2.6. Methods Selections 
+
+
 ## Conclusiones 
 
 
