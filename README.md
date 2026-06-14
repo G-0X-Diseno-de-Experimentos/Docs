@@ -3607,43 +3607,123 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.3. Measures
 
-Esta sección describe los indicadores de TextilFlow que se someterán al proceso de análisis junto con la fase de experimentación. Es importante mencionar que se han seleccionado las siguientes características: representativas, calculables y proporcionales.
-
-|  |  |
-| :--- | :--- |
-| **Pregunta** | ¿Es cierto que la posibilidad de blindarse contra devoluciones motivará a los distribuidores a subir fotos proactivamente? |
-| **Medida** | Porcentaje de distribuidores abordados que aceptan participar en el piloto de registro fotográfico pre-despacho. |
-
-<br>
-
-|  |  |
-| :--- | :--- |
-| **Pregunta** | ¿Sin mandato gerencial, los operarios registrarán voluntariamente las incidencias en la aplicación? |
-| **Medida** | Porcentaje de lotes recibidos con al menos un registro de incidencia ingresado voluntariamente en la plataforma. |
-
-<br>
-
-|  |  |
-| :--- | :--- |
-| **Pregunta** | ¿Los operarios realizan la inspección visual inmediatamente al recibir el lote en la puerta del almacén? |
-| **Medida** | Tiempo transcurrido en minutos entre el ingreso del rollo al almacén y el registro de la inspección en la aplicación. |
-
-<br>
+Esta sección describe los indicadores de TextilFlow que serán utilizados para recopilar evidencia durante la experimentación. Las métricas seleccionadas son representativas del cambio esperado, calculables a partir de datos observables y proporcionales a los objetivos de negocio planteados. Cada métrica incluye su fórmula de cálculo, técnica de recolección y meta deseada, permitiendo alinear los experimentos con los objetivos de validación definidos en las hipótesis.
 
 
-|  |  |
-| :--- | :--- |
-| **Pregunta** | ¿Incluir la etiqueta del código de barras junto a la foto de la falla aumenta la tasa de aceptación del reclamo? |
-| **Medida** | Porcentaje de reclamos aceptados por el proveedor según tipo de evidencia: foto aislada vs. foto con código de barras del lote. |
+| Métrica                                               | Fórmula de Cálculo                                                                   | Técnica de Recolección                        | Meta Deseada                                       |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------- | -------------------------------------------------- |
+| Tasa de aceptación del piloto de pre-despacho digital | (Distribuidores que aceptan participar / Distribuidores entrevistados) × 100         | Entrevistas semiestructuradas                 | ≥ 60%                                              |
+| Coincidencia en clasificación de defectos             | (Clasificaciones coincidentes / Total de clasificaciones realizadas) × 100           | Prueba comparativa con catálogo visual        | ≥ 80%                                              |
+| Tasa de registro voluntario de incidencias            | (Lotes con incidencias registradas voluntariamente / Total de lotes recibidos) × 100 | Observación operativa y registros del sistema | < 10%                                              |
+| Tiempo de realización de inspecciones                 | (Inspecciones realizadas después de 1 hora / Total de inspecciones observadas) × 100                           | Observación directa (Shadowing)               | > 70% de inspecciones realizadas después de 1 hora |
+| Tasa de errores en mapeo visual con guantes           | (Intentos fallidos / Total de intentos realizados) × 100                             | Pruebas de usabilidad                         | > 40%                                              |
+| Promedio de intentos repetidos de envío               | Total de intentos de envío / Total de usuarios observados                            | Pruebas de usabilidad controladas             | < 2 intentos                                       |
+| Incremento en aceptación de reclamos                  | ((Aceptación experimental - Aceptación control) / Aceptación control) × 100          | Experimento comparativo                       | ≥ 50%                                              |
+| Preferencia por sincronización mediante WiFi          | (Operarios que prefieren WiFi / Total de operarios encuestados) × 100                | Encuestas                                     | > 80%                                              |
+
 
 #### 8.2.4. Conditions
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Qué tan aceptado sería un Certificado de Pre-Despacho Digital basado en evidencia fotográfica? |
+| **Condición Experimental** | La cantidad de distribuidores que aceptan participar en el piloto de registro fotográfico pre-despacho es mayor o igual al 60%. | 
+| **Condición de control** | La cantidad de distribuidores que aceptan participar en el piloto de registro fotográfico pre-despacho es menor al 60%. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Qué tan efectivo sería un catálogo visual estandarizado para clasificar defectos textiles? |
+| **Condición Experimental** | La coincidencia exacta en la categorización de defectos entre proveedores y talleres es mayor o igual al 80%. | 
+| **Condición de Control** | La coincidencia exacta en la categorización de defectos entre proveedores y talleres es menor al 80%. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Los operarios registrarían incidencias voluntariamente sin una política obligatoria de uso? |
+| **Condición Experimental** | La tasa de registro voluntario de incidencias es menor al 10% del total de lotes recibidos. | 
+| **Condición de Control** | La tasa de registro voluntario de incidencias es mayor o igual al 10% del total de lotes recibidos. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Cuándo se realizan las inspecciones visuales de los lotes dentro del almacén? |
+| **Condición Experimental** | Más del 70% de las inspecciones visuales se realizan al menos una hora después del ingreso del lote al almacén. | 
+| **Condición de Control** | Menos del 70% de las inspecciones visuales se realizan una hora después del ingreso del lote al almacén. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Qué tan usable es la funcionalidad de mapeo visual cuando los operarios utilizan guantes? |
+| **Condición Experimental** | La tasa de errores durante el uso de la función de mapeo visual con guantes es superior al 40%. | 
+| **Condición de Control** | La tasa de errores durante el uso de la función de mapeo visual con guantes es menor o igual al 40%. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Mostrar el estado "Pendiente de red" reduce los intentos repetidos de envío?|
+| **Condición Experimental** | La cantidad promedio de intentos repetidos de envío es menor a 2 clics por usuario. | 
+| **Condición de Control** | La cantidad promedio de intentos repetidos de envío es mayor o igual a 2 clics por usuario. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Qué impacto tiene incluir el código de barras del lote en la evidencia fotográfica del reclamo?|
+| **Condición Experimental** | La tasa de aceptación de reclamos con fotografía de la falla y código de barras es al menos 50% mayor que la tasa de aceptación de reclamos con fotografías aisladas. | 
+| **Condición de Control** | La tasa de aceptación de reclamos con fotografía de la falla y código de barras aumenta menos del 50% respecto a fotografías aisladas. |
+
+<br>
+
+|  |  |
+| :--- | :--- |
+| **Pregunta** | ¿Qué preferencia tienen los operarios respecto al uso de datos móviles para sincronizar fotografías?|
+| **Condición Experimental** | Más del 80% de los operarios prefieren sincronizar fotografías únicamente mediante WiFi corporativo. | 
+| **Condición de Control** | Menos del 80% de los operarios prefieren sincronizar fotografías únicamente mediante WiFi corporativo. |
+
 
 
 #### 8.2.5. Scale Calculations and Decisions
 
 
-#### 8.2.6. Methods Selections 
+A continuación, se presenta una tabla con los atributos Scale Calculation, Decision y Factor. Scale Calculation representa la hipótesis que se desea poner a prueba. Decision representa la acción o funcionalidad propuesta para generar el cambio esperado. Finalmente, el Factor establece los rangos de evaluación para determinar el nivel de éxito alcanzado.
 
+| Scale Calculation                                                                                                                                                            | Decision                                                                               | Desfavorable | Aceptable       | Ideal       | Excelente  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------ | --------------- | ----------- | ---------- |
+| Creemos que ofrecer un Certificado de Pre-Despacho Digital motivará a los distribuidores a participar activamente en el registro fotográfico de los lotes antes de su envío. | Implementar un módulo de pre-despacho digital con evidencia fotográfica.               | x < 30%      | x ≥ 30%         | x ≥ 60%     | x ≥ 80%    |
+| Creemos que un catálogo visual estandarizado reducirá la subjetividad en la clasificación de defectos textiles.                                                              | Implementar un catálogo visual de defectos textiles dentro de la plataforma.           | x < 60%      | x ≥ 60%         | x ≥ 80%     | x ≥ 90%    |
+| Creemos que sin una política obligatoria de uso los operarios no adoptarán voluntariamente el registro digital de incidencias.                                               | Evaluar la adopción espontánea de la plataforma.                                       | x ≥ 20%      | 10% ≤ x < 20%   | x < 10%     | x < 5%     |
+| Creemos que las inspecciones de calidad son postergadas debido a las prioridades operativas de descarga.                                                                     | Registrar los tiempos de recepción e inspección de los lotes.                          | x < 50%      | x ≥ 50%         | x ≥ 70%     | x ≥ 85%    |
+| Creemos que el uso de una cuadrícula fina con guantes generará errores significativos de interacción.                                                                        | Realizar pruebas de usabilidad utilizando guantes de trabajo.                          | x < 25%      | x ≥ 25%         | x > 40%     | x > 60%    |
+| Creemos que mostrar un indicador de estado de red reducirá los intentos repetidos de envío.                                                                                  | Implementar el indicador "Pendiente de red".                                           | x ≥ 4 clics  | 2 ≤ x < 4 clics | x < 2 clics | x ≤ 1 clic |
+| Creemos que incluir el código de barras del lote incrementará la aceptación de los reclamos de calidad.                                                                      | Incorporar la captura obligatoria del código de barras en los reportes de incidencias. | x < 20%      | x ≥ 20%         | x ≥ 50%     | x ≥ 70%    |
+| Creemos que los operarios rechazarán utilizar sus datos móviles personales para actividades laborales.                                                                       | Implementar sincronización prioritaria mediante WiFi corporativo.                      | x < 60%      | x ≥ 60%         | x ≥ 80%     | x ≥ 90%    |
+
+
+
+#### 8.2.6. Methods Selection
+
+Para validar las hipótesis planteadas en TextilFlow se seleccionaron métodos de investigación que cumplen con el principio de *Simplest Useful Thing*, permitiendo obtener evidencia suficiente con el menor nivel de complejidad posible.
+
+
+| Método                          | Aplicación                                                                              | Ventajas                                                           | Limitaciones                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------- |
+| Entrevistas semiestructuradas   | Validar aceptación del pre-despacho digital y preferencias sobre sincronización.        | Permiten comprender motivaciones y preocupaciones reales.          | Requieren interpretación cualitativa.                    |
+| Encuestas                       | Medir aceptación, preferencias y percepción de valor de nuevas funcionalidades.         | Son rápidas y fáciles de aplicar.                                  | Dependen de respuestas declaradas.                       |
+| Pruebas de usabilidad           | Evaluar el mapeo visual con guantes y el indicador de red.                              | Permiten observar errores reales de interacción.                   | Requieren usuarios disponibles para las pruebas.         |
+| Observación directa (Shadowing) | Analizar el momento real en que se realizan las inspecciones de calidad.                | Permite observar el comportamiento operativo real.                 | Puede requerir más tiempo de ejecución.                  |
+| Experimentos comparativos       | Comparar reclamos con y sin código de barras o clasificación con y sin catálogo visual. | Permiten validar causalidad entre la funcionalidad y el resultado. | Deben controlarse cuidadosamente las variables externas. |
+
+Es importante distinguir entre el objeto de investigación y el método de investigación. El objeto de investigación corresponde a las hipótesis planteadas, como la aceptación del pre-despacho digital, la adopción voluntaria de la plataforma o la efectividad del catálogo visual de defectos. Por otro lado, el método corresponde a la técnica utilizada para obtener evidencia, como entrevistas, encuestas, pruebas de usabilidad u observación directa.
+
+Asimismo, se evitará ejecutar simultáneamente dos o más experimentos sobre una misma funcionalidad cuando estos puedan exponer a un mismo participante a múltiples condiciones experimentales. Esta medida busca preservar la validez de los resultados obtenidos, reducir sesgos de comportamiento y garantizar que cada hipótesis sea evaluada de forma independiente.
+
+Finalmente, se respetarán principios éticos durante la ejecución de los experimentos, evitando afectar las operaciones normales de los almacenes textiles, garantizando la confidencialidad de la información recopilada y asegurando que ningún participante sufra perjuicios económicos, laborales o personales como consecuencia de su participación en la investigación.
 
 ## Conclusiones 
 
