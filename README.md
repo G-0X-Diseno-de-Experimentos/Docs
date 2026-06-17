@@ -3243,6 +3243,141 @@ Ejecuta acciones finales del pipeline, mostrando mensajes de finalización y con
 </p>
 
 
+### 7.2. Continuous Delivery
+
+#### 7.2.1. Tools and Practices
+
+Para la implementación del pipeline de entrega continua de **TextilFlow** se utilizaron herramientas y prácticas orientadas a automatizar el análisis de calidad del código, la construcción de imágenes Docker y el despliegue del sistema. Estas tecnologías permiten mantener un flujo de entrega estandarizado, confiable y reproducible.
+
+Las principales herramientas utilizadas son las siguientes:
+
+- **Jenkins**  
+  Utilizado como servidor de Entrega Continua (CD) para automatizar la ejecución del pipeline completo, coordinando las etapas de análisis de calidad, construcción de imágenes Docker y despliegue de la aplicación.
+
+<p align="center">
+  <img src="./assets/tp1/Jenkins.png" width="200"/>
+</p>
+
+
+- **Git**  
+  Empleado como sistema de control de versiones para administrar el código fuente de TextilFlow y permitir la integración automática del repositorio con Jenkins mediante el proceso de Checkout SCM.
+
+<p align="center">
+  <img src="./assets/tp1/Github.jpg" width="200"/>
+</p>
+
+- **Maven 3.9.11**  
+  Utilizado como herramienta de automatización y gestión de dependencias del proyecto Java. Maven ejecuta las tareas de compilación, pruebas, validaciones y análisis de calidad integradas en el pipeline.
+
+<p align="center">
+  <img src="./assets/tp1/Maven.png" width="200"/>
+</p>
+
+- **JDK 21**  
+  Utilizado como entorno de desarrollo y compilación para la aplicación Java, garantizando compatibilidad con las funcionalidades y librerías utilizadas en el proyecto TextilFlow.
+
+<p align="center">
+  <img src="./assets/tp1/JDK.png" width="200"/>
+</p>
+
+- **SonarQube (lts-community)**  
+  Plataforma utilizada para el análisis estático de código y monitoreo continuo de calidad. Permite detectar vulnerabilidades, bugs, duplicación de código y problemas de mantenibilidad. Integrado con Jenkins mediante un Webhook para notificar el resultado del Quality Gate de forma asíncrona.
+
+<p align="center">
+  <img src="./assets/tp1/SonarQube.png" width="200"/>
+</p>
+
+- **JaCoCo**  
+  Herramienta utilizada para medir y generar reportes de cobertura de pruebas, permitiendo validar que las pruebas unitarias cubran al menos el 80% del código fuente del proyecto antes de continuar con el análisis de SonarQube.
+
+  <p align="center">
+  <img src="./assets/tp1/JaCoCo.png" width="200"/>
+</p>
+
+- **Docker**  
+  Plataforma utilizada para containerizar la aplicación TextilFlow. El pipeline construye automáticamente una imagen Docker optimizada para arquitectura `linux/amd64` con cada ejecución del build, garantizando portabilidad y consistencia entre entornos.
+
+  <p align="center">
+  <img src="./assets/tb2/Docker.png" width="200"/>
+</p>
+
+<br>
+
+#### 7.2.2. Stages Deployment Pipeline Components
+
+El pipeline de entrega continua implementado en Jenkins para la aplicación TextilFlow extiende el proceso de integración continua añadiendo etapas de análisis de calidad con SonarQube y construcción automatizada de imágenes Docker. Este flujo garantiza que solo el código que supera los criterios de calidad definidos sea empaquetado y preparado para despliegue.
+
+**Checkout SCM:**
+Obtiene el código fuente de TextilFlow desde el repositorio Git `https://github.com/G-0X-Diseno-de-Experimentos/backend.git` y configura las variables de entorno relacionadas con el control de versiones.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline1.png" width="400"/>
+</p>
+
+
+**Tool Install:**
+Configura automáticamente las herramientas necesarias para la ejecución del pipeline, incluyendo Maven 3.9.11 y JDK 21, además de las variables de entorno `IMAGE_NAME` y `TAG` utilizadas en la construcción de la imagen Docker.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline2.png" width="400"/>
+</p>
+
+
+**Compile Project:**
+Ejecuta el comando `mvn clean compile` para limpiar compilaciones anteriores y compilar el proyecto, verificando que no existan errores de compilación en el código fuente de TextilFlow.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline3.png" width="400"/>
+</p>
+
+
+**Validate Checkstyle:**
+Ejecuta `mvn checkstyle:check` para validar que el código cumpla con los estándares de calidad y convenciones de programación definidas para TextilFlow mediante las reglas de Google Checks.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline4.png" width="400"/>
+</p>
+
+
+**Validate Unit Tests:**
+Ejecuta `mvn test` para correr las pruebas unitarias del sistema y verificar el correcto funcionamiento de los componentes desarrollados en los bounded contexts del proyecto.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline5.png" width="400"/>
+</p>
+
+
+**Validate Test Coverage:**
+Utiliza JaCoCo mediante los comandos `mvn clean verify jacoco:report` y `mvn jacoco:check` para generar y validar los reportes de cobertura de pruebas, exigiendo un mínimo del 80% de cobertura de instrucciones.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline6.png" width="400"/>
+</p>
+
+
+**SonarQube Analysis:**
+Ejecuta `mvn clean verify sonar:sonar -Dsonar.projectKey=textilflow-platform` para enviar el código a SonarQube y realizar el análisis estático completo. El pipeline pausa su ejecución mediante `waitForQualityGate()` esperando la notificación del Webhook configurado. Si el Quality Gate no es superado, el pipeline se detiene automáticamente con un error.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline7.png" width="400"/>
+</p>
+
+
+**Construir Imagen Docker:**
+Utiliza `docker buildx build --platform linux/amd64` para construir la imagen Docker de TextilFlow en dos variantes: una etiquetada con el número de build (`textilflow-platform:${BUILD_NUMBER}`) y otra como versión `latest`, garantizando compatibilidad con arquitecturas de producción estándar.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline8.png" width="400"/>
+</p>
+
+
+**Post Actions:**
+Ejecuta acciones finales del pipeline, mostrando mensajes de confirmación del estado del build (`Build exitoso ✔` o `Build falló ❌`) y el mensaje de finalización del proceso de entrega continua.
+
+<p align="center">
+  <img src="./assets/tb2/Pipeline9.png" width="400"/>
+</p>
+
 
 
 ## **Capítulo VIII: Experiment-Driven Development**
