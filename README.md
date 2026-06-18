@@ -3817,6 +3817,17 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.2. Domain Business Metrics
 
+| Nombre de la Métrica | Objetivo de Negocio / Experimento | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada (Hipótesis) |
+|---|---|---|---|---|
+| Tasa de Adopción de Pre-Despacho | Validar la motivación del distribuidor (Exp. 1) para subir fotos proactivamente y blindarse comercialmente. | Tasa_Adopcion = (Distribuidores_Interesados_Piloto / Total_Distribuidores_Consultados) × 100 | Entrevistas presenciales presentando el mockup del Certificado de Pre-Despacho Digital. | ≥ 60% de aceptación para participar en el piloto. |
+| Tasa de Coincidencia de Categorización | Medir si el catálogo estandarizado reduce la subjetividad en reclamos (Exp. 2). | Coincidencia = (Evaluaciones_Exactas_Taller_Proveedor / Total_Evaluaciones_Realizadas) × 100 | Prueba de clasificación visual (Card Sorting) con 10 fotografías reales. | ≥ 80% de coincidencia exacta entre ambas partes. |
+| Tasa de Registro Voluntario | Determinar quién impulsa el uso de la app (gerencia vs. operario) y la adopción operativa real (Exp. 3). | Registro_Voluntario = (Lotes_Registrados_Voluntariamente / Total_Lotes_Recibidos) × 100 | Monitoreo pasivo (Analytics) durante piloto en 3 talleres Mype por 3 días sin orden gerencial. | < 10% (Confirma que se requiere mandato gerencial para el éxito inicial). |
+| Tasa de Inspección Retardada | Entender el flujo de tiempos reales en almacén para ajustar la UX/UI (Exp. 4). | Inspeccion_Retardada = (Inspecciones con Δt > 1h / Total_Inspecciones_Observadas) × 100, donde Δt = t_inspeccion - t_recepcion | Sesiones de Shadowing (observación pasiva de tiempos) en 10 descargas. | > 70% de inspecciones realizadas después de 1 hora de la recepción. |
+| Tasa de Error Táctil | Validar si los elementos UI finos (Mapeo Visual) generan fricción al usar equipo de protección (Exp. 5). | Tasa_Error = (Toques_Fallidos_O_Cancelados / Total_Toques_Realizados) × 100 | Prueba de usabilidad presencial con operarios usando guantes de trabajo. | > 40% (De cumplirse, obliga a rediseñar la UI a elementos más grandes). |
+| Tasa de Reintentos de Envío Offline | Medir la comprensión del estado del sistema ante la falta de conexión en sótanos/almacenes (Exp. 6). | Reintentos_Promedio = Σ Intentos_Manuales_De_Envio / Total_Usuarios_En_Prueba | Observación directa de interacción con conexión simulada en modo avión. | < 2 intentos extra por usuario tras visualizar el estado "Guardado localmente". |
+| Diferencial de Aceptación de Reclamos | Identificar qué evidencia fotográfica es considerada irrefutable por el proveedor (Exp. 7). | ΔAceptacion = Tasa_Aceptacion_Completa − Tasa_Aceptacion_Aislada, donde Tasa = Reclamos_Aceptados / Total_Enviados | Experimento Mago de Oz simulando reportes vía WhatsApp con y sin código de barras. | ≥ 50% mayor aceptación en fotos que incluyen falla + etiqueta del rollo. |
+| Preferencia de Sincronización WiFi | Evitar rechazo por consumo de datos móviles personales y definir la arquitectura de subida de datos (Exp. 8). | Preferencia_WiFi = (Operarios_Que_Eligen_Solo_WiFi / Total_Operarios_Entrevistados) × 100 | Entrevistas estructuradas cortas sobre planes de datos a 15 operarios. | > 80% de operarios prefiriendo usar exclusivamente la red WiFi de la empresa. |
+
 
 #### 8.2.3. Measures
 
