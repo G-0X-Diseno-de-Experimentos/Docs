@@ -66,7 +66,12 @@
 | TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
 |  TP1   | 28/04/2026 | Bueno Perales, Mathias Eduardo  |   Desarrollo del Capitulo VI, Core Entities Unit Tests, Core Integration Tests, Core Behavior-Driven Development          |
 |  TP1   | 28/04/2026 | Awad Vargas, Giorgio Marzouk  |   Desarrollo del Capitulo IV y V.  |
-|    |
+|  AV2   | 02/06/2026 |   |   |
+|  AV2   | 06/06/2026 |   |   |
+|  AV2   | 08/06/2026 |   |   |
+|  AV2   | 12/06/2026 |   |   |
+|  AV2   | 15/06/2026 | Paredes Santos, Fabrizio Alberto  |  Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
+
 
 
 ## Project Report Collaboration Insights
@@ -89,13 +94,30 @@ Para la elaboración de la entrega TP1 de este informe, el equipo se organizó m
 
 **Report Repository Insights:** 
 
-En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV1. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
+En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase TP1. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
 
 - Report Contributors:
 ![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
 
-- Report Network:
-![Report Network] **FALTA IMAGEN**
+**AV2:**
+
+Para la elaboración de la entrega AV2 de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por puntos de cada capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
+
+| Integrante | Usuario Github | Detalle de avance |
+|------------|----------------|-------------------|
+| Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
+| Mathias Eduardo Bueno Perales | `MathiasBueno` | |
+| Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
+| Giorgio Marzouk Awad Vargas | `GiorgioAwad` |  |
+| Hector Javier Rios Pacheco | `Khafna09` |  |
+
+**Report Repository Insights:** 
+
+En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV2. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
+
+- Report Contributors:
+![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
+
 
 
 ## Contenido
@@ -260,13 +282,15 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 | Criterio específico | Integrante | Entregable | Acciones realizadas | Conclusiones |
 |---|---|---|---|---|
 | 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | Bueno Perales, Mathias Eduardo | TP1 | Desarrollo del Capítulo VI del proyecto e implementación exhaustiva de pruebas unitarias y de integración para asegurar la correcta cobertura y el funcionamiento de la lógica de negocio. | El cumplimiento riguroso de pruebas unitarias y de integración garantiza la entrega de un software confiable y transparente, lo cual representa un pilar fundamental de la responsabilidad ética y profesional frente a los usuarios finales. |
-|  | Paredes Santos, Fabrizio Alberto | TP1 | Integración y configuración de herramientas de análisis estático de código mediante SonarQube para la auditoría de calidad, identificando vulnerabilidades, code smells y reduciendo la deuda técnica. | La auditoría constante del código con SonarQube refleja una conducta profesional proactiva, garantizando que el producto cumpla con altos estándares de seguridad y calidad antes de llegar a producción, protegiendo la integridad del sistema. |
+|  | Paredes Santos, Fabrizio Alberto | TP1 | Elaboración de las secciones Measures, Conditions y Methods Selection para la validación de hipótesis de TextilFlow, considerando principios éticos y el uso responsable de la información obtenida de los usuarios. | La definición de métricas, condiciones y métodos de investigación permitió validar las hipótesis de manera objetiva y responsable, asegurando que la obtención de evidencia se realice bajo criterios éticos y profesionales propios de la ingeniería de software |
 |  | Rios Pacheco, Hector Javier | TP1 | Configuración de pipelines de Integración Continua (CI) haciendo uso de Jenkins para automatizar la ejecución de pruebas y asegurar que cada construcción cumpla con los estándares definidos. | La automatización mediante Jenkins elimina errores manuales y fomenta la transparencia en el desarrollo, asumiendo la responsabilidad ética de proveer entregables estables que respeten el tiempo y los recursos del equipo y del cliente. |
-|  | Bueno Perales Mathias Eduardo | TB2 | Configuracion de ambiente docker para Jenkins y SonarQube, desarrollo del pipeline para asegurar que cada construccion cumpla con los estandares definidos asi como conectar este mismo con Sonarqube a traves de un webhook | La implementación del ambiente Docker para Jenkins y SonarQube, junto con el pipeline de validación de estándares, evidencia el reconocimiento de la responsabilidad ética y profesional en ingeniería de software. Al garantizar calidad, seguridad y cumplimiento de normas en cada construcción, se promueve la confiabilidad del producto y se asegura un proceso transparente y responsable frente al equipo y los usuarios. |
+|  | Bueno Perales Mathias Eduardo | AV2 | Configuracion de ambiente docker para Jenkins y SonarQube, desarrollo del pipeline para asegurar que cada construccion cumpla con los estandares definidos asi como conectar este mismo con Sonarqube a traves de un webhook | La implementación del ambiente Docker para Jenkins y SonarQube, junto con el pipeline de validación de estándares, evidencia el reconocimiento de la responsabilidad ética y profesional en ingeniería de software. Al garantizar calidad, seguridad y cumplimiento de normas en cada construcción, se promueve la confiabilidad del producto y se asegura un proceso transparente y responsable frente al equipo y los usuarios. |
+|  | Paredes Santos, Fabrizio Alberto | AV2 | Integración y configuración de herramientas de análisis estático de código mediante SonarQube para la auditoría de calidad, identificando vulnerabilidades, code smells y reduciendo la deuda técnica. | La auditoría constante del código con SonarQube refleja una conducta profesional proactiva, garantizando que el producto cumpla con altos estándares de seguridad y calidad antes de llegar a producción, protegiendo la integridad del sistema. |
 | 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | Bueno Perales, Mathias Eduardo | TP1 | Aplicación del enfoque de Desarrollo Guiado por Comportamiento (BDD) para alinear los requerimientos del negocio y las expectativas de los usuarios con el software desarrollado. | El uso de metodologías como BDD permite emitir juicios informados sobre cómo las funcionalidades impactan directamente en la satisfacción social y económica del usuario, asegurando que la solución resuelva problemas reales de forma eficiente. |
 |  | Paredes Santos, Fabrizio Alberto | TP1 | Trabajo en equipo para la toma de decisiones arquitectónicas y evaluación conjunta de reportes de métricas, analizando cómo la calidad interna del software repercute en el ciclo de vida del sistema. | Evaluar la mantenibilidad del sistema en equipo permite comprender el impacto económico a largo plazo para las organizaciones, previniendo sobrecostos operativos y asegurando la sostenibilidad técnica del proyecto en un entorno global. |
 |  | Rios Pacheco, Hector Javier | TP1 | Gestión y ejecución del proceso de deploy (despliegue continuo) automatizado hacia los servidores, optimizando el uso de recursos de infraestructura para asegurar la alta disponibilidad. | Optimizar los procesos de despliegue continuo reduce significativamente el time-to-market (impacto económico positivo) y promueve una gestión eficiente de los recursos en los servidores en la nube (contexto ambiental y de sostenibilidad). |
-|  | Bueno Perales Mathias Eduardo | TB2 | Configuracion de ambiente docker para Jenkins y SonarQube, desarrollo del pipeline para asegurar que cada construccion cumpla con los estandares definidos asi como conectar este mismo con Sonarqube a traves de un webhook | La integración de Jenkins y SonarQube mediante Docker y la definición de un pipeline que asegura el cumplimiento de estándares refleja la emisión de juicios informados en ingeniería de software. Esta práctica considera el impacto global al fomentar la calidad y seguridad del producto, el impacto económico al optimizar recursos y reducir errores, y el impacto social y ambiental al promover soluciones sostenibles y confiables para los usuarios y organizaciones. |
+|  | Bueno Perales Mathias Eduardo | AV2 | Configuracion de ambiente docker para Jenkins y SonarQube, desarrollo del pipeline para asegurar que cada construccion cumpla con los estandares definidos asi como conectar este mismo con Sonarqube a traves de un webhook | La integración de Jenkins y SonarQube mediante Docker y la definición de un pipeline que asegura el cumplimiento de estándares refleja la emisión de juicios informados en ingeniería de software. Esta práctica considera el impacto global al fomentar la calidad y seguridad del producto, el impacto económico al optimizar recursos y reducir errores, y el impacto social y ambiental al promover soluciones sostenibles y confiables para los usuarios y organizaciones. |
+|  | Paredes Santos, Fabrizio Alberto | AV2 | Desarrollo de las secciones Scale Calculations and Decisions, Measures y Conditions, estableciendo criterios de evaluación y niveles de evidencia que permitieron analizar el impacto de las funcionalidades propuestas en la eficiencia operativa. | El análisis de las métricas y criterios de evaluación permitió valorar el impacto de las funcionalidades propuestas en la eficiencia operativa y la experiencia de los usuarios, facilitando la toma de decisiones informadas para el desarrollo de la solución. |
 
 
 # Part I: As-Is Software Project
