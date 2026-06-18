@@ -69,7 +69,7 @@
 |  AV2   | 02/06/2026 |   |   |
 |  AV2   | 06/06/2026 |   |   |
 |  AV2   | 08/06/2026 |   |   |
-|  AV2   | 12/06/2026 |   |   |
+|  AV2   | 12/06/2026 | Bueno Perales, Mathias Eduardo  | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2  |
 |  AV2   | 15/06/2026 | Paredes Santos, Fabrizio Alberto  |  Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
 
 
@@ -106,7 +106,7 @@ Para la elaboración de la entrega AV2 de este informe, el equipo se organizó m
 | Integrante | Usuario Github | Detalle de avance |
 |------------|----------------|-------------------|
 | Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
-| Mathias Eduardo Bueno Perales | `MathiasBueno` | |
+| Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2 |
 | Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
 | Giorgio Marzouk Awad Vargas | `GiorgioAwad` |  |
 | Hector Javier Rios Pacheco | `Khafna09` |  |
