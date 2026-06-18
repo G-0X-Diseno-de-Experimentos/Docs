@@ -105,13 +105,14 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 
 Para la elaboración de la entrega AV2 de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por puntos de cada capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
 
-| Integrante | Usuario Github | Detalle de avance |
-|------------|----------------|-------------------|
-| Fabrizio Alberto Paredes Santos | `psfa29` | Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
-| Mathias Eduardo Bueno Perales | `MathiasBueno` | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2 |
-| Sebastian Rodriguez Macedo| `Shiftinnnnn` |  |
-| Giorgio Marzouk Awad Vargas | `GiorgioAwad` |  |
-| Hector Javier Rios Pacheco | `Khafna09` |  |
+| Integrante                      | Usuario Github | Detalle de avance                                                                                                                                                                                                                                                                                                            |
+| ------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fabrizio Alberto Paredes Santos | `psfa29`       | Desarrollo de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6.                                                                                                                                                                                                                                                                        |
+| Mathias Eduardo Bueno Perales   | `MathiasBueno` | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2.                                                                                                                                                                                                                                                                                 |
+| Sebastian Rodriguez Macedo      | `Shiftinnnnn`  | Desarrollo de evidencias de la aplicación móvil nativa, incluyendo capturas de pantalla y documentación de las funcionalidades implementadas en el informe.                                                                                                                                                                  |
+| Giorgio Marzouk Awad Vargas     | `GiorgioAwad`  | Desarrollo de evidencias de la aplicación móvil nativa, incluyendo capturas de pantalla y documentación de las funcionalidades implementadas en el informe.                                                                                                                                                                  |
+| Hector Javier Rios Pacheco      | `Khafna09`     | Desarrollo del análisis del sistema As-Is, Raw Material, Experiment-ready Questions, Question Backlog, Experiment Cards, hipótesis de experimentación (sección 8.2.1). Correcciones de la retoralimentación. |
+
 
 **Report Repository Insights:** 
 
