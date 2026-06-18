@@ -60,17 +60,19 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                         | Descripción                                                                  |
-|---------|------------|-------------------------------|------------------------------------------------------------------------------|
-| TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
-| TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto | Desarrollo del Capítulo I, II, III organización de la estructura del informe y elaboración de las referencias bibliográficas. |
-|  TP1   | 28/04/2026 | Bueno Perales, Mathias Eduardo  |   Desarrollo del Capitulo VI, Core Entities Unit Tests, Core Integration Tests, Core Behavior-Driven Development          |
-|  TP1   | 28/04/2026 | Awad Vargas, Giorgio Marzouk  |   Desarrollo del Capitulo IV y V.  |
-|  AV2   | 02/06/2026 |   |   |
-|  AV2   | 06/06/2026 |   |   |
-|  AV2   | 08/06/2026 |   |   |
-|  AV2   | 12/06/2026 | Bueno Perales, Mathias Eduardo  | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2  |
-|  AV2   | 15/06/2026 | Paredes Santos, Fabrizio Alberto  |  Desarrollo del de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6 |
+| Versión | Fecha      | Autor                                              | Descripción                                                                                                                                                                |
+| ------- | ---------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TP1     | 20/04/2026 | Paredes Santos, Fabrizio Alberto                   | Desarrollo de la carátula, tabla de contenidos y estructura general del informe.                                                                                           |
+| TP1     | 21/04/2026 | Paredes Santos, Fabrizio Alberto                   | Desarrollo del Capítulo I, II, III, organización de la estructura del informe y elaboración de las referencias bibliográficas.                                             |
+| TP1     | 28/04/2026 | Bueno Perales, Mathias Eduardo                     | Desarrollo del Capítulo VI, Core Entities Unit Tests, Core Integration Tests y Core Behavior-Driven Development.                                                           |
+| TP1     | 28/04/2026 | Awad Vargas, Giorgio Marzouk                       | Desarrollo del Capítulo IV y V.                                                                                                                                            |
+| AV2     | 04/06/2026 | Rios Pacheco, Hector Javier                        | Actualización del diseño de base de datos, configuración del entorno de desarrollo de software y desarrollo de Sprint Backlogs.                                            |
+| AV2     | 09/06/2026 | Rios Pacheco, Hector Javier                        | Desarrollo del análisis del sistema As-Is, materia prima, preguntas listas para experimentación, Question Backlog, Experiment Cards e hipótesis iniciales (sección 8.2.1). |
+| AV2     | 12/06/2026 | Bueno Perales, Mathias Eduardo                     | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2.                                                                                                                               |
+| AV2     | 15/06/2026 | Paredes Santos, Fabrizio Alberto                   | Desarrollo de los puntos 8.2.3, 8.2.4, 8.2.5 y 8.2.6.                                                                                                                      |
+| AV2     | 17/06/2026 | Awad Vargas, Giorgio Marzouk; Rodríguez Macedo, Sebastián | Desarrollo de evidencias de la aplicación móvil nativa, capturas de pantalla de la aplicación y documentación de la evidencia correspondiente en el informe.               |
+
+
 
 
 
