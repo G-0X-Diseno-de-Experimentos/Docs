@@ -2510,6 +2510,37 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 #### 5.2.5. Implemented Native-Mobile Application Evidence
 
+##### Empresario
+
+<p align="center">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781755057.png" alt="Empresario mobile screen 1" width="230">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781755075.png" alt="Empresario mobile screen 2" width="230">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781755196.png" alt="Empresario mobile screen 3" width="230">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781756711.png" alt="Empresario mobile screen 4" width="230">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781756754.png" alt="Empresario mobile screen 5" width="230">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781756767.png" alt="Empresario mobile screen 6" width="230">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/EMPRESARIO/Screenshot_1781756879.png" alt="Empresario mobile screen 7" width="230">
+</p>
+
+##### Distribuidor
+
+<p align="center">
+  <img src="./assets/tp1/DISTRIBUIDOR/Screenshot_1781757010.png" alt="Distribuidor mobile screen 1" width="230">
+  <img src="./assets/tp1/DISTRIBUIDOR/Screenshot_1781757016.png" alt="Distribuidor mobile screen 2" width="230">
+  <img src="./assets/tp1/DISTRIBUIDOR/Screenshot_1781757024.png" alt="Distribuidor mobile screen 3" width="230">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/DISTRIBUIDOR/Screenshot_1781757031.png" alt="Distribuidor mobile screen 4" width="230">
+  <img src="./assets/tp1/DISTRIBUIDOR/Screenshot_1781757039.png" alt="Distribuidor mobile screen 5" width="230">
+</p>
+
 #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
 <p align="center">
