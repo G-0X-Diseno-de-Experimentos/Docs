@@ -2591,6 +2591,21 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 ### 5.3. Video About-the-Product
 
 
+En esta sección se presenta el Video About-the-Product de Soft Focus, un material orientado a los visitantes del Landing Page y a los usuarios de la aplicación que desean comprender de manera rápida y visual el modelo de negocio, las funcionalidades clave y el valor que ofrece nuestra solución. El video resume cómo Soft Focus integra inteligencia artificial, monitoreo emocional en tiempo real y acompañamiento profesional para transformar la experiencia de bienestar mental. A través del testimonio de nuestro equipo, se explica el funcionamiento del producto, su impacto, los elementos innovadores de su tecnología y la propuesta que lo diferencia dentro del ecosistema digital de salud emocional.
+
+*Figura**  
+*Screenshot del Video About the product*
+
+<p align="center">
+  <img src="assets/tb2/about-the-product-textilflow.png" alt="PB" width="850">
+</p>
+
+
+*Nota.* Elaboración propia. Obtenido de [Link Video About-The-Product](https://youtu.be/7AxHiCyZTMQ)
+
+
+
+
 # Part II: Verification, Validation & Pipeline
 
 ## **Capítulo VI: Product Verification & Validation**
