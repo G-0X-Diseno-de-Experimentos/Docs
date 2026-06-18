@@ -45,6 +45,10 @@
       <td>Sebastian Rodriguez Macedo</td>
       <td>U202310199</td>
     </tr>
+    <tr>
+      <td>Héctor Javier Rios Pacheco</td>
+      <td>u20231c540</td>
+    </tr>
   </tbody>
 </table>
 
