@@ -3938,16 +3938,28 @@ Asimismo, se evitará ejecutar simultáneamente dos o más experimentos sobre un
 
 Finalmente, se respetarán principios éticos durante la ejecución de los experimentos, evitando afectar las operaciones normales de los almacenes textiles, garantizando la confidencialidad de la información recopilada y asegurando que ningún participante sufra perjuicios económicos, laborales o personales como consecuencia de su participación en la investigación.
 
-## Conclusiones 
+## Conclusiones
 
+* En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
 
-- En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
+* Como equipo, se priorizó la calidad, mantenibilidad y seguridad del software mediante la integración de herramientas como **Jenkins** y **SonarQube**, permitiendo detectar errores, vulnerabilidades y problemas de calidad de manera temprana durante el desarrollo.
 
-- Como equipo, se priorizó la calidad, mantenibilidad y seguridad del software mediante la integración de herramientas como **Jenkins** y **SonarQube**, permitiendo detectar errores, vulnerabilidades y problemas de calidad de manera temprana durante el desarrollo.
+* Las pruebas implementadas fueron alineadas con los requerimientos funcionales y las User Stories definidas, asegurando que el comportamiento desarrollado responda correctamente a las necesidades y expectativas de los usuarios.
 
-- Las pruebas implementadas fueron alineadas con los requerimientos funcionales y las User Stories definidas, asegurando que el comportamiento desarrollado responda correctamente a las necesidades y expectativas de los usuarios.
+* La automatización de los pipelines de integración continua permitió reducir errores manuales, mantener una integración estable entre los avances del equipo y fortalecer el trabajo colaborativo durante el desarrollo del proyecto.
 
-- La automatización de los pipelines de integración continua permitió reducir errores manuales, mantener una integración estable entre los avances del equipo y fortalecer el trabajo colaborativo durante el desarrollo del proyecto.
+* La implementación de prácticas de **Continuous Delivery**, mediante la definición de herramientas, procesos y etapas del pipeline de construcción y validación, permitió establecer un flujo de desarrollo más confiable y controlado. Esto garantiza que cada nueva modificación del sistema pase por procesos automatizados de compilación, pruebas y evaluación de calidad antes de ser considerada apta para una futura entrega.
+
+* El uso de herramientas de análisis estático de código y automatización de procesos contribuyó a disminuir la deuda técnica del proyecto, promoviendo una cultura de mejora continua y facilitando la mantenibilidad del software a largo plazo.
+
+* La aplicación del enfoque **Experiment-Driven Development** permitió identificar supuestos, brechas de conocimiento y preguntas críticas relacionadas con la problemática del negocio. A través de la elaboración del As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards, se logró estructurar un proceso de validación basado en evidencia para reducir la incertidumbre durante el desarrollo de la solución.
+
+* La definición de hipótesis, métricas de negocio, medidas, condiciones, cálculos de escala y métodos de selección permitió diseñar experimentos rigurosos orientados a evaluar la viabilidad de las funcionalidades propuestas y su impacto en la eficiencia operativa de los usuarios de TextilFlow.
+
+* La adopción de un enfoque basado en métricas y evidencia favoreció la toma de decisiones informadas durante el desarrollo del proyecto, asegurando que las funcionalidades implementadas generen valor real para los usuarios finales y contribuyan a la sostenibilidad técnica y económica de la solución.
+
+* Finalmente, la correcta distribución de responsabilidades, el uso de herramientas colaborativas y la integración constante de los avances del equipo permitieron mantener una documentación actualizada y un proceso de desarrollo organizado, fortaleciendo las buenas prácticas profesionales dentro de la ingeniería de software.
+
 
 
 ## Bibliográfia
