@@ -3658,10 +3658,10 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 | Campo | Contenido |
 |---------|---------|
-| **Question** | ¿Por qué un distribuidor de telas decidiría invertir tiempo en subir proactivamente fotos del estado de sus rollos antes de despacharlos al taller? |
+| **Question** | ¿Por qué un distribuidor de telas decidiría invertir tiempo en registrar evidencia fotográfica del estado de sus rollos antes de despacharlos al taller? |
 | **Why** | • Si los proveedores no ven un valor claro en realizar este esfuerzo extra, la plataforma será vista como una herramienta unilateral de vigilancia.<br>• Sin el compromiso proactivo del distribuidor, no existirá el componente colaborativo B2B.<br>• Necesitamos entender si la protección contra devoluciones injustificadas es una motivación suficientemente fuerte para cambiar su flujo de trabajo habitual. |
 | **What** | • Realizar entrevistas de validación en locales comerciales de distribuidores.<br>• Mostrar un mockup físico o digital de un Certificado de Pre-Despacho Digital.<br>• Consultar cuánto dinero perdieron el último trimestre por devoluciones de tela que afirman haber enviado en buen estado. |
-| **Hypothesis** | Creemos que los distribuidores percibirán valor en generar evidencia proactiva para blindarse frente a devoluciones por mala manipulación del cliente. |
+| **Hypothesis** | Creemos que los distribuidores percibirán valor en generar evidencia proactiva para blindarse frente a devoluciones por mala manipulación del cliente, lo cual se reflejará en su disposición a participar en un piloto de registro fotográfico. |
 | **Measures** | Nivel de interés declarado (escala 1-5) y cantidad de distribuidores dispuestos a dejar sus datos para un piloto real. |
 | **Conditions** | Entrevistas presenciales de 15 minutos en almacenes, presentadas como un estudio de eficiencia operativa. |
 | **Scale** | 8 distribuidores mayoristas de tela. |
@@ -3673,7 +3673,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Cómo afectará el uso de un catálogo estandarizado de defectos a los desacuerdos técnicos entre operarios de taller y proveedores? |
 | **Why** | • Necesitamos comprobar si la estandarización visual reduce las disputas técnicas.<br>• Debemos descartar que los proveedores sigan considerando subjetiva la categorización.<br>• Queremos validar que la nomenclatura sea entendida por ambas partes. |
 | **What** | • Diseñar una prueba de clasificación visual (Card Sorting).<br>• Mostrar 10 fotografías reales de telas dañadas.<br>• Solicitar la clasificación utilizando únicamente el catálogo propuesto. |
-| **Hypothesis** | Creemos que un catálogo estandarizado reducirá en un 80% el tiempo de discusión sobre el origen de una falla. |
+| **Hypothesis** | Creemos que un catálogo estandarizado de defectos aumentará la coincidencia en la clasificación de fallas entre talleres y proveedores, reduciendo las discusiones técnicas sobre el estado de la tela. |
 | **Measures** | Porcentaje de coincidencia exacta en la categorización entre proveedor y taller. |
 | **Conditions** | Evaluación individual y rápida simulando presión operativa real. |
 | **Scale** | 5 jefes de almacén y 5 encargados de calidad evaluando 10 imágenes cada uno. |
@@ -3697,7 +3697,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Dónde se realizará el registro visual con mayor frecuencia: en recepción o almacenamiento? |
 | **Why** | • Afecta requerimientos de iluminación y conectividad.<br>• Impacta el tiempo disponible para reportar fallas.<br>• Define el flujo de la interfaz. |
 | **What** | • Realizar sesiones de shadowing.<br>• Acompañar a los operarios durante la recepción.<br>• Registrar lugar y momento exacto de inspección. |
-| **Hypothesis** | Creemos que la revisión fotográfica será postergada para evitar retrasar la descarga. |
+| **Hypothesis** | Creemos que la revisión fotográfica será postergada después de la recepción inicial, porque los operarios priorizarán despejar la zona de descarga antes que registrar evidencias. |
 | **Measures** | Tiempo transcurrido entre recepción e inspección. |
 | **Conditions** | Observación pasiva sin intervención. |
 | **Scale** | 10 descargas completas de mercadería. |
@@ -3709,7 +3709,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Cómo interactuarán los operarios con la función de Mapeo Visual usando guantes? |
 | **Why** | • Una interacción compleja genera errores y frustración.<br>• La frustración es una causa común de abandono.<br>• Debemos validar si se requieren controles más grandes. |
 | **What** | • Diseñar una prueba de usabilidad en el entorno real.<br>• Entregar un prototipo navegable.<br>• Solicitar el registro de una falla usando guantes. |
-| **Hypothesis** | Creemos que la interacción fina generará alta frustración y requerirá un rediseño hacia elementos más grandes. |
+| **Hypothesis** | Creemos que la interacción con una cuadrícula fina generará más errores táctiles y mayor tiempo de completado cuando los operarios usen guantes de trabajo. |
 | **Measures** | Tasa de errores táctiles y tiempo de completado. |
 | **Conditions** | Prueba en almacén usando el equipo de protección habitual. |
 | **Scale** | 8 operarios realizando 3 pruebas cada uno. |
@@ -3721,7 +3721,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Qué acciones tomarán los operarios cuando la aplicación funcione en modo Offline-First? |
 | **Why** | • Queremos evitar que interpreten la ausencia de sincronización como un error.<br>• Los intentos repetidos pueden generar registros duplicados.<br>• La pérdida de confianza puede provocar abandono de la aplicación. |
 | **What** | • Realizar una prueba con el celular en modo avión.<br>• Simular captura y almacenamiento offline.<br>• Observar la reacción del usuario. |
-| **Hypothesis** | Creemos que un indicador visual claro será suficiente para evitar intentos repetidos de envío. |
+| **Hypothesis** | Creemos que un indicador visual claro de estado offline reducirá los intentos repetidos de envío y ayudará a que el usuario entienda que el registro fue guardado localmente. |
 | **Measures** | Número de reintentos y comprensión verbalizada del estado offline. |
 | **Conditions** | Conexión desactivada sin previo aviso. |
 | **Scale** | 5 sesiones individuales. |
@@ -3733,7 +3733,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Qué evidencia fotográfica es considerada irrefutable por los proveedores? |
 | **Why** | • Necesitamos validar que las fotos generadas sean aceptadas.<br>• Debemos identificar requisitos contextuales obligatorios.<br>• Queremos estandarizar las guías visuales de captura. |
 | **What** | • Realizar un experimento tipo Mago de Oz.<br>• Enviar tres tipos de reportes por WhatsApp.<br>• Medir aceptación y cuestionamientos generados. |
-| **Hypothesis** | Creemos que la combinación de falla y etiqueta del código de barras será la única evidencia considerada válida. |
+| **Hypothesis** | Creemos que los reportes que combinen fotografía de la falla y etiqueta del código de barras serán más aceptados por los proveedores que los reportes con fotografías aisladas. |
 | **Measures** | Porcentaje de aceptación, rechazo o solicitud de información adicional. |
 | **Conditions** | Reportes enviados de forma asíncrona simulando casos reales. |
 | **Scale** | 10 proveedores recibiendo 3 reportes distintos cada uno. |
@@ -3745,7 +3745,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 | **Question** | ¿Cuándo debe sincronizar la aplicación datos pesados sin afectar al operario? |
 | **Why** | • Evitar consumo excesivo de datos móviles personales.<br>• Reducir rechazo hacia la herramienta.<br>• Definir condiciones de sincronización automática. |
 | **What** | • Realizar entrevistas rápidas sobre conectividad.<br>• Consultar límites de datos móviles.<br>• Identificar momentos de acceso a WiFi corporativo. |
-| **Hypothesis** | Creemos que los operarios preferirán sincronizar únicamente mediante WiFi empresarial. |
+| **Hypothesis** | Creemos que los operarios preferirán sincronizar fotografías pesadas únicamente mediante WiFi empresarial para evitar el uso de sus datos móviles personales. |
 | **Measures** | Preferencia declarada sobre uso de datos móviles versus WiFi y horarios de conexión. |
 | **Conditions** | Entrevistas informales durante tiempos de descanso. |
 | **Scale** | 15 operarios de almacén textil. |
@@ -3754,77 +3754,78 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.1. Hypotheses
 
- ### Experiment 1 – Pre-Despacho Digital
+### Experiment 1 – Pre-Despacho Digital
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Es cierto que la posibilidad de blindarse contra devoluciones motivará a los distribuidores de tela a invertir tiempo en subir fotos proactivamente? |
-| **Belief** | La protección contra pérdidas económicas por devoluciones injustificadas es el mayor dolor comercial del distribuidor, por lo que estará dispuesto a incorporar un paso extra en su flujo de trabajo. |
-| **Hypothesis** | Ofrecer un Certificado de Pre-Despacho Digital motivará al menos al **60%** de los distribuidores abordados a participar en un piloto de registro fotográfico proactivo. |
-| **Null Hypothesis** | Ofrecer un Certificado de Pre-Despacho Digital no será responsable de la adopción del registro fotográfico, y la tasa de aceptación será inferior al **60%** o estará motivada por otros factores. |
+| Campo               | Descripción                                                                                                                                                                                                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**        | ¿Es cierto que la posibilidad de blindarse contra devoluciones motivará a los distribuidores de tela a invertir tiempo en subir fotos proactivamente?                                                                                                                                                 |
+| **Belief**          | La protección contra pérdidas económicas por devoluciones injustificadas es uno de los principales dolores comerciales del distribuidor, por lo que estaría dispuesto a incorporar un paso adicional en su flujo de trabajo.                                                                          |
+| **Hypothesis**      | Creemos que ofrecer un Certificado de Pre-Despacho Digital motivará a los distribuidores a registrar evidencia fotográfica antes del envío, cuya evidencia se reflejará en que al menos el **60%** de los distribuidores abordados acepten participar en un piloto de registro fotográfico proactivo. |
+| **Null Hypothesis** | Ofrecer un Certificado de Pre-Despacho Digital no generará una aceptación mínima del **60%** en el piloto de registro fotográfico proactivo; cualquier aceptación menor podrá deberse a otros factores, como curiosidad inicial, presión comercial o interés temporal.                                |
 
 ### Experiment 2 – Catálogo Estandarizado
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Es verdad que el uso de un catálogo estandarizado de defectos eliminará las discusiones técnicas entre operarios de taller y proveedores? |
-| **Belief** | Las disputas comerciales nacen porque ambas partes utilizan un lenguaje informal y subjetivo para clasificar el daño en la tela. |
-| **Hypothesis** | El uso de un catálogo visual estandarizado de defectos textiles incrementará la coincidencia exacta en la categorización de fallas entre proveedores y talleres a un **80% o más**. |
-| **Null Hypothesis** | El uso de un catálogo visual estandarizado no influirá en la categorización de las fallas, y las discrepancias técnicas continuarán igual que antes. |
+| Campo               | Descripción                                                                                                                                                                                                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**        | ¿Es verdad que el uso de un catálogo estandarizado de defectos reducirá las discusiones técnicas entre operarios de taller y proveedores?                                                                                                                                    |
+| **Belief**          | Las disputas comerciales nacen porque ambas partes utilizan un lenguaje informal y subjetivo para clasificar el daño en la tela.                                                                                                                                             |
+| **Hypothesis**      | Creemos que el uso de un catálogo visual estandarizado de defectos textiles mejorará la clasificación común de fallas, cuya evidencia se reflejará en una coincidencia exacta de categorización del **80% o más** entre proveedores y talleres.                              |
+| **Null Hypothesis** | El uso de un catálogo visual estandarizado no alcanzará una coincidencia exacta del **80%** en la categorización de fallas entre proveedores y talleres; las diferencias observadas podrán deberse a interpretación individual, experiencia previa o ambigüedad del defecto. |
 
 ### Experiment 3 – Adopción Operativa
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Importaría si lanzamos la aplicación sin un módulo de reportes gerenciales que fuerce a los dueños a exigir su uso a los operarios? |
-| **Belief** | Los operarios priorizan la rapidez física de la descarga y percibirán la aplicación como una pérdida de tiempo si no existe una política obligatoria de uso. |
-| **Hypothesis** | Sin mandato gerencial obligatorio, la tasa de registro voluntario de incidencias será menor al **10%** del total de lotes recibidos. |
-| **Null Hypothesis** | La ausencia de un mandato gerencial no impedirá la adopción, y los operarios registrarán voluntariamente más del **10%** de los lotes recibidos. |
+| Campo               | Descripción                                                                                                                                                                                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**        | ¿Importaría si lanzamos la aplicación sin un módulo de reportes gerenciales que fuerce a los dueños a exigir su uso a los operarios?                                                                                                                            |
+| **Belief**          | Los operarios priorizan la rapidez física de la descarga y pueden percibir la aplicación como una carga adicional si no existe una política obligatoria de uso.                                                                                                 |
+| **Hypothesis**      | Creemos que, sin un mandato gerencial obligatorio, los operarios tendrán una baja adopción voluntaria del registro de incidencias, cuya evidencia se reflejará en una tasa menor al **10%** del total de lotes recibidos.                                       |
+| **Null Hypothesis** | La ausencia de un mandato gerencial obligatorio no será responsable de que la adopción voluntaria sea menor al **10%** del total de lotes recibidos. Si la tasa de registro se mantiene por debajo de ese porcentaje, podría deberse a otros factores como falta de tiempo, baja familiaridad con la aplicación, poca claridad del flujo o desinterés operativo de los usuarios.|
 
 ### Experiment 4 – Flujo de Tiempo en Almacén
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Es verdad que los operarios evalúan y registran la tela inmediatamente en la puerta de recepción? |
-| **Belief** | La prioridad logística es despejar rápidamente la zona de descarga, relegando la inspección de calidad para después. |
-| **Hypothesis** | Más del **70%** de las inspecciones visuales se realizarán al menos **1 hora después** de que el rollo ingresó al almacén. |
-| **Null Hypothesis** | Las inspecciones no se postergarán y más del **30%** se realizarán inmediatamente en la puerta de recepción. |
+| Campo               | Descripción                                                                                                                                                                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Question**        | ¿Es verdad que los operarios evalúan y registran la tela inmediatamente en la puerta de recepción?                                                                                                                                         |
+| **Belief**          | La prioridad logística es despejar rápidamente la zona de descarga, por lo que la inspección de calidad podría postergarse para después.                                                                                                   |
+| **Hypothesis**      | Creemos que la inspección visual de los rollos no se realiza inmediatamente al ingreso, cuya evidencia se reflejará en que más del **70%** de las inspecciones se realicen al menos **1 hora después** de que el rollo ingresó al almacén. |
+| **Null Hypothesis** |  La inspección visual no se postergará en más del **70%** de los casos después del ingreso del rollo al almacén. Si se observa una postergación mayor, esta podría deberse a factores externos como carga laboral del día, cantidad de lotes recibidos, falta de personal o disponibilidad del área de revisión, y no necesariamente al flujo normal de recepción.                      |
 
 ### Experiment 5 – Usabilidad con Guantes
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Le importaría a los operarios si utilizamos una cuadrícula fina en la interfaz para mapear los defectos de la tela? |
-| **Belief** | El uso de guantes gruesos dificulta la interacción táctil precisa y genera frustración durante el registro. |
-| **Hypothesis** | El uso de la función de Mapeo Visual producirá una tasa de errores superior al **40%** cuando sea utilizada con guantes de trabajo. |
-| **Null Hypothesis** | El uso de guantes no aumentará significativamente los errores táctiles y la tasa de error será similar a la de usuarios sin guantes. |
+| Campo               | Descripción                                                                                                                                                                                                                                                |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**        | ¿Le importaría a los operarios si utilizamos una cuadrícula fina en la interfaz para mapear los defectos de la tela?                                                                                                                                       |
+| **Belief**          | El uso de guantes gruesos dificulta la interacción táctil precisa y puede generar frustración durante el registro de defectos.                                                                                                                             |
+| **Hypothesis**      | Creemos que el uso de una cuadrícula fina en la función de Mapeo Visual dificultará el registro con guantes de trabajo, cuya evidencia se reflejará en una tasa de errores táctiles superior al **40%** durante la selección de zonas defectuosas.         |
+| **Null Hypothesis** | El uso de guantes de trabajo no generará una tasa de errores táctiles superior al **40%** al utilizar la cuadrícula fina de Mapeo Visual; cualquier error podrá deberse a falta de familiaridad con la interfaz o a la complejidad del defecto registrado. |
 
 ### Experiment 6 – Modo Offline-First
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Es cierto que mostrar un estado explícito de "Guardado localmente" calmará la desconfianza del usuario cuando se quede sin señal? |
-| **Belief** | Los operarios asumen que la aplicación falló cuando no reciben una confirmación inmediata de envío. |
-| **Hypothesis** | Mostrar un indicador de "Pendiente de red" reducirá los intentos repetidos de envío a menos de **2 clics** por usuario. |
-| **Null Hypothesis** | Mostrar un indicador explícito de estado no modificará el comportamiento de los usuarios, quienes seguirán intentando enviar múltiples veces. |
+| Campo               | Descripción                                                                                                                                                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Question**        | ¿Es cierto que mostrar un estado explícito de “Guardado localmente” calmará la desconfianza del usuario cuando se quede sin señal?                                                                                                                     |
+| **Belief**          | Los operarios pueden asumir que la aplicación falló cuando no reciben una confirmación inmediata de envío.                                                                                                                                             |
+| **Hypothesis**      | Creemos que mostrar un indicador explícito de “Guardado localmente” o “Pendiente de red” reducirá la incertidumbre del usuario, cuya evidencia se reflejará en menos de **2 intentos repetidos de envío** por usuario durante escenarios sin conexión. |
+| **Null Hypothesis** | Mostrar un indicador explícito de estado no reducirá los intentos repetidos de envío a menos de **2 intentos por usuario**; los usuarios seguirán intentando reenviar por desconfianza, costumbre o falta de comprensión del estado offline.            |
 
 ### Experiment 7 – Evidencia Irrefutable
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Sería suficiente si la aplicación solo permite tomar una fotografía cercana de la mancha o agujero para ganar un reclamo? |
-| **Belief** | Los distribuidores requieren evidencia contextual que vincule la falla con el lote original para aceptar un reclamo. |
-| **Hypothesis** | Los reportes que incluyan la falla y la etiqueta del código de barras tendrán una tasa de aceptación **50% mayor** que los reportes con fotografías aisladas. |
-| **Null Hypothesis** | La presencia de la etiqueta del código de barras no influirá en la aceptación de los reclamos por parte de los proveedores. |
+| Campo               | Descripción                                                                                                                                                                                                                                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Question**        | ¿Sería suficiente si la aplicación solo permite tomar una fotografía cercana de la mancha o agujero para ganar un reclamo?                                                                                                                                                                                         |
+| **Belief**          | Los distribuidores requieren evidencia contextual que vincule la falla con el lote original para aceptar un reclamo.                                                                                                                                                                                               |
+| **Hypothesis**      | Creemos que los reportes que incluyan una fotografía de la falla junto con la etiqueta o código de barras del lote serán más confiables para los proveedores, cuya evidencia se reflejará en una tasa de aceptación de reclamos **50% mayor** frente a reportes con fotografías aisladas.                          |
+| **Null Hypothesis** | Incluir la etiqueta o código de barras del lote junto con la fotografía de la falla no generará una tasa de aceptación de reclamos **50% mayor** frente a reportes con fotografías aisladas; cualquier diferencia podrá deberse al tipo de defecto, relación comercial previa o criterio individual del proveedor. |
 
 ### Experiment 8 – Consumo de Datos
 
-| Campo | Descripción |
-|---------|---------|
-| **Question** | ¿Se molestaría algún operario si la aplicación sube las fotografías pesadas utilizando sus datos móviles? |
-| **Belief** | Los trabajadores consideran injusto utilizar recursos personales para actividades laborales de la empresa. |
-| **Hypothesis** | Más del **80%** de los operarios preferirán sincronizar únicamente mediante WiFi corporativo y rechazarán usar sus datos móviles personales. |
-| **Null Hypothesis** | El origen de la conexión no será una preocupación significativa y menos del **80%** de los operarios mostrará rechazo al uso de datos personales. |
+| Campo               | Descripción                                                                                                                                                                                                                                                |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Question**        | ¿Se molestaría algún operario si la aplicación sube las fotografías pesadas utilizando sus datos móviles?                                                                                                                                                  |
+| **Belief**          | Los trabajadores consideran injusto utilizar recursos personales para actividades laborales de la empresa.                                                                                                                                                 |
+| **Hypothesis**      | Creemos que los operarios rechazarán el uso de datos móviles personales para sincronizar fotografías pesadas de trabajo, cuya evidencia se reflejará en que más del **80%** prefiera sincronizar únicamente mediante WiFi corporativo.                     |
+| **Null Hypothesis** | El uso de datos móviles personales no generará un rechazo superior al **80%** entre los operarios, y la preferencia por WiFi corporativo podrá no ser significativa o depender de factores como urgencia, tamaño del archivo o disponibilidad de conexión. |
+
 
 
 #### 8.2.2. Domain Business Metrics
