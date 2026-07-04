@@ -3483,6 +3483,57 @@ Ejecuta acciones finales del pipeline, mostrando mensajes de confirmación del e
 </p>
 
 
+**Proceso del Pipeline**
+
+1. Creacion de la red: Se creo la red spring-mysql-net para el proyecto
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_1.png" width="400"/>
+</p>
+
+2. Construir la imagen de Jenkins: Nos ubicamos en la carpeta donde están el Dockerfile y el plugins.txt de Jenkins y ejecutamos: docker build --platform linux/amd64 -t jenkins-ci-cd:2026.final .
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_2.png" width="400"/>
+</p>
+
+3. Construir el contenedor de Jenkins: Ahora procedemos a lanzar el contenedor: <br>
+docker run -d --name jenkins-master --platform linux/amd64 --user root --network spring-mysql-net -p 9089:9089 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_data:/var/jenkins_home -e JENKINS_OPTS="--httpPort=9089" jenkins-ci-cd:2026.final
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_3.png" width="400"/>
+</p>
+
+**Evidencia Jenkins**
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_4.png" width="400"/>
+</p>
+
+4. Lanzar el contenedor de Sonarqube: Ejecutamos este comando: <br> docker run -d --name sonarqube-server --network spring-mysql-net -p 9000:9000 -v sonarqube_data:/opt/sonarqube/data -v sonarqube_extensions:/opt/sonarqube/extensions -v sonarqube_logs:/opt/sonarqube/logs sonarqube:lts-community
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_5.png" width="400"/>
+</p>
+
+**Evidencia SonarQube**
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_6.png" width="400"/>
+</p>
+
+**Webhook**
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_7.png" width="400"/>
+</p>
+
+**Pipeline**
+
+<p align="center">
+  <img src="./assets/tb2/evidencia_pipeline_8.png" width="400"/>
+</p>
+
 
 ## **Capítulo VIII: Experiment-Driven Development**
 
