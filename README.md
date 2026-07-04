@@ -2474,6 +2474,8 @@ El objetivo principal del sprint backlog 4 es culminar el desarrollo de nuestro 
 
 #### 5.2.2. Implemented Landing Page Evidence
 
+En esta sección se presenta la evidencia visual del Landing Page desarrollado para TextilFlow. A través de capturas de pantalla, se muestran las diferentes secciones diseñadas para captar el interés de los usuarios, detallando la propuesta de valor, los beneficios del software y los canales de contacto de la startup.
+
 
 <p align="center">
   <img src="./assets/tp1/landing_evidence1.jpg" alt="PB" width="850">
@@ -2493,6 +2495,8 @@ El objetivo principal del sprint backlog 4 es culminar el desarrollo de nuestro 
 
 
 #### 5.2.3. Implemented Frontend-Web Application Evidence
+
+Esta sección recopila las capturas de pantalla de la aplicación web frontend de TextilFlow. En ellas se aprecian las interfaces principales del sistema en su versión de escritorio, incluyendo los dashboards de control, listados de insumos y formularios de registro que facilitan la navegación y operación del usuario.
 
 <p align="center">
   <img src="./assets/tp1/frontend_evidence1.jpg" alt="PB" width="850">
@@ -2520,6 +2524,8 @@ El objetivo principal del sprint backlog 4 es culminar el desarrollo de nuestro 
 
 #### 5.2.4. Acuerdo de Servicio - SaaS
 
+En este apartado se presenta el Acuerdo de Servicio (SLA) y los términos y condiciones de uso para el modelo de software como servicio (SaaS) de TextilFlow. Este documento regula el uso de la plataforma, delimitando las responsabilidades de los usuarios y las garantías del servicio de software.
+
 TextilFlow es una plataforma digital diseñada para facilitar la trazabilidad, gestión documental y control de calidad dentro de operaciones textiles.
 
 Estos Términos y Condiciones establecen los derechos, obligaciones y responsabilidades aplicables a todos los usuarios que accedan o utilicen los servicios de la plataforma.
@@ -2527,6 +2533,8 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 [Acuerdo de Servicio](./assets/tp1/TERMS%20AND%20CONDITIONS%20-%20Qualix.pdf)
 
 #### 5.2.5. Implemented Native-Mobile Application Evidence
+
+Aquí se documenta la evidencia visual del funcionamiento de la aplicación móvil nativa de TextilFlow. Las capturas muestran los flujos de interacción clave y las interfaces adaptadas específicamente para los roles de Empresario y Distribuidor, evidenciando la portabilidad y usabilidad móvil en el entorno del almacén.
 
 ##### Empresario
 
@@ -2561,6 +2569,8 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 #### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
+Esta sección muestra las evidencias de la implementación y correcto funcionamiento del backend RESTful y servicios serverless de TextilFlow. A través de capturas de ejecución de pruebas de endpoints, logs de servidor o consolas de base de datos, se demuestra la solidez de la lógica de negocio y la persistencia de datos en el servidor.
+
 <p align="center">
   <img src="./assets/tp1/backend_evidence1.jpg" alt="PB" width="850">
 </p>
@@ -2590,6 +2600,8 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 </p>
 
 #### 5.2.7. RESTful API documentation
+
+En esta sección se presenta la documentación técnica de la API RESTful de la plataforma. Se detallan los métodos HTTP, las rutas de los endpoints, descripciones funcionales y ejemplos de uso para cada uno de los controladores del backend, sirviendo como guía de integración para desarrolladores.
 
 | Método HTTP                              | Endpoint                                                      | Descripción                          | Ejemplo de uso                     |
 | ---------------------------------------- | ------------------------------------------------------------- | ------------------------------------ | ---------------------------------- |
@@ -2648,6 +2660,8 @@ Estos Términos y Condiciones establecen los derechos, obligaciones y responsabi
 
 
 #### 5.2.8. Team Collaboration Insights
+
+Este apartado expone el registro de contribución, avance y colaboración de los miembros del equipo en el desarrollo del proyecto y del presente informe. A través de cuadros de distribución de tareas y analíticos de repositorios de control de versiones, se evidencia el trabajo colaborativo e iterativo de cada integrante.
 
 | Alumno | Actividad |
 |--------|-----------|
@@ -3484,6 +3498,8 @@ Por su parte, el distribuidor de telas despacha sus rollos, dudando si el client
 
 #### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
+En esta sección se reúne la "materia prima" o insumos fundamentales que sirven de base para la planificación experimental. Aquí se estructuran los supuestos (assumptions) iniciales sobre los resultados del negocio y del usuario, las brechas de conocimiento identificadas, las ideas operativas propuestas y las declaraciones o reclamos reales recolectados de los usuarios del sector textil.
+
 ### Assumptions
 
 #### Business Outcomes
@@ -3653,6 +3669,8 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 ### 8.1.5. Experiment Cards
 
+Esta sección presenta las Tarjetas de Experimentación (Experiment Cards) diseñadas para guiar el proceso de validación. Cada tarjeta detalla de forma estructurada la pregunta de investigación, la justificación de su importancia, el experimento a realizar, la hipótesis formulada, las métricas de medición, las condiciones ideales de prueba y la escala de evaluación del éxito del experimento.
+
 
 ### Experiment Card 1
 
@@ -3754,6 +3772,8 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.1. Hypotheses
 
+En esta sección se detallan las hipótesis de investigación y las hipótesis nulas formuladas para cada uno de los experimentos propuestos. La definición de estas hipótesis permite contrastar científicamente las suposiciones iniciales del negocio frente a los resultados numéricos y la evidencia real recopilada en campo.
+
 ### Experiment 1 – Pre-Despacho Digital
 
 | Campo               | Descripción                                                                                                                                                                                                                                                                                           |
@@ -3830,6 +3850,8 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.2. Domain Business Metrics
 
+En este apartado se definen y consolidan las métricas de negocio aplicables al dominio de TextilFlow. Para cada indicador se especifica el objetivo del experimento relacionado, la fórmula matemática de cálculo, la técnica de recolección de datos correspondiente y la meta porcentual o cuantitativa que validaría nuestra hipótesis.
+
 | Nombre de la Métrica | Objetivo de Negocio / Experimento | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada (Hipótesis) |
 |---|---|---|---|---|
 | Tasa de Adopción de Pre-Despacho | Validar la motivación del distribuidor (Exp. 1) para subir fotos proactivamente y blindarse comercialmente. | Tasa_Adopcion = (Distribuidores_Interesados_Piloto / Total_Distribuidores_Consultados) × 100 | Entrevistas presenciales presentando el mockup del Certificado de Pre-Despacho Digital. | ≥ 60% de aceptación para participar en el piloto. |
@@ -3844,7 +3866,7 @@ Estas preguntas profundizan en las interacciones específicas, la usabilidad en 
 
 #### 8.2.3. Measures
 
-Esta sección describe los indicadores de TextilFlow que serán utilizados para recopilar evidencia durante la experimentación. Las métricas seleccionadas son representativas del cambio esperado, calculables a partir de datos observables y proporcionales a los objetivos de negocio planteados. Cada métrica incluye su fórmula de cálculo, técnica de recolección y meta deseada, permitiendo alinear los experimentos con los objetivos de validación definidos en las hipótesis.
+Esta sección describe los indicadores y medidas de TextilFlow que serán utilizados para recopilar evidencia durante la experimentación. Las métricas seleccionadas son representativas del cambio esperado, calculables a partir de datos de uso observables y proporcionales a los objetivos de negocio planteados. Cada métrica incluye su fórmula de cálculo, técnica de recolección y meta deseada, permitiendo estructurar la recopilación de datos de forma sistemática y alinear los experimentos con las hipótesis y metas de validación.
 
 
 | Métrica                                               | Fórmula de Cálculo                                                                   | Técnica de Recolección                        | Meta Deseada                                       |
@@ -3860,6 +3882,8 @@ Esta sección describe los indicadores de TextilFlow que serán utilizados para 
 
 
 #### 8.2.4. Conditions
+
+En esta sección se definen las condiciones experimentales y de control para cada una de las preguntas de investigación. Estas condiciones delimitan los criterios de comparación necesarios para evaluar el comportamiento del sistema bajo prueba frente a las alternativas tradicionales, permitiendo determinar con claridad si la hipótesis ha sido validada.
 
 |  |  |
 | :--- | :--- |
