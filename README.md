@@ -277,6 +277,14 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [8.2.4. Conditions.](#824-conditions)
     - [8.2.5. Scale Calculations and Decisions.](#825-scale-calculations-and-decisions)
     - [8.2.6. Methods Selection.](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web and Mobile Tracking Plan.](#828-web-and-mobile-tracking-plan)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories.](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog.](#832-to-be-product-backlog)
+  - [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
 
 
 ## Student Outcome
@@ -4201,6 +4209,43 @@ A partir de las historias de usuario concebidas en la sección anterior, se ha e
 | 6 | US02 | Implementación de Catálogo Visual de Defectos Textiles | Como operario quiero clasificar el defecto utilizando un catálogo visual estandarizado para evitar discusiones técnicas subjetivas con el proveedor. | 3 |
 | 7 | US04 | Implementación de escáner de Código de Barras para lotes | Como operario quiero escanear el código de barras del rollo como evidencia irrefutable para evitar ingresar los datos manualmente. | 3 |
 | 8 | US05 | Implementación de sincronización prioritaria por WiFi | Como operario quiero que mis reportes pesados solo se suban cuando esté conectado a WiFi para evitar consumir mi plan de datos móviles personales. | 2 |
+
+### 8.4. Experiment Aftermath & Analysis
+
+#### 8.4.1. Analysis and Interpretation of Results
+
+Podemos observar que, tras la evaluación de los experimentos, las funcionalidades relacionadas con la adaptabilidad en entornos físicos extremos (modo Offline-First y Mapeo Visual con guantes) resultaron ser las más críticas y necesarias para el éxito de TextilFlow. Los resultados indican que los operarios en los sótanos de Gamarra no adoptarán la aplicación si se requiere conectividad constante o si la interfaz no es amigable para el trabajo pesado. Por otro lado, desde la perspectiva comercial, la generación del Certificado de Pre-Despacho demostró un altísimo impacto, convirtiéndose en el principal motor para que los distribuidores mitiguen devoluciones injustificadas.
+
+#### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+A continuación, se re-evalúan las preguntas de investigación iniciales basándose en el aprendizaje obtenido de los experimentos. Tras validar las hipótesis, el puntaje de "Confianza" ha aumentado significativamente y, por lo tanto, las preguntas se re-puntúan ahora en base a su importancia final para el desarrollo (sumatoria en escala del 1 al 10).
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Qué acciones tomarán los operarios cuando la aplicación guarde las fotos en modo "Offline-First" al no tener señal en sótanos comerciales (ej. Gamarra)? | 9 | 9 | 9 | 8 | 35 |
+| ¿Cómo interactuarán los operarios con la función de "Mapeo Visual" (cuadrícula) en la cámara si utilizan guantes de carga o tienen las manos ocupadas? | 8 | 8 | 9 | 8 | 33 |
+| ¿Por qué un distribuidor de telas decidiría invertir tiempo en subir proactivamente fotos del estado de sus rollos antes de despacharlos al taller? | 9 | 8 | 8 | 8 | 33 |
+| ¿Quiénes impulsarán realmente el uso continuo de la plataforma: el mandato del dueño del taller o la conveniencia para el operario de almacén? | 8 | 7 | 8 | 8 | 31 |
+| ¿Dónde se realizará el registro visual con mayor frecuencia: inmediatamente en la puerta de recepción o horas después en el área de almacenamiento? | 9 | 7 | 7 | 7 | 30 |
+| ¿Cómo afectará el uso de un catálogo estandarizado de defectos a los desacuerdos técnicos entre operarios de taller y proveedores? | 8 | 6 | 7 | 7 | 28 |
+| ¿Qué tipo exacto de evidencia fotográfica (ej. usar cinta métrica, mostrar etiqueta del rollo) es considerada como "irrefutable" por un proveedor? | 8 | 6 | 7 | 6 | 27 |
+| ¿Cuándo es el momento exacto en el que la aplicación debe sincronizar en segundo plano sin ralentizar el celular personal del operario? | 7 | 5 | 6 | 6 | 24 |
+
+<br>
+
+| Prioridad (1 / 2 / 3 / 5 / 8) | Pregunta |
+| :---: | :--- |
+| **8** | ¿Qué acciones tomarán los operarios cuando la aplicación guarde las fotos en modo "Offline-First" al no tener señal en sótanos comerciales (ej. Gamarra)? |
+| **8** | ¿Cómo interactuarán los operarios con la función de "Mapeo Visual" (cuadrícula) en la cámara si utilizan guantes de carga o tienen las manos ocupadas? |
+| **5** | ¿Por qué un distribuidor de telas decidiría invertir tiempo en subir proactivamente fotos del estado de sus rollos antes de despacharlos al taller? |
+| **5** | ¿Quiénes impulsarán realmente el uso continuo de la plataforma: el mandato del dueño del taller o la conveniencia para el operario de almacén? |
+| **5** | ¿Dónde se realizará el registro visual con mayor frecuencia: inmediatamente en la puerta de recepción o horas después en el área de almacenamiento? |
+| **3** | ¿Cómo afectará el uso de un catálogo estandarizado de defectos a los desacuerdos técnicos entre operarios de taller y proveedores? |
+| **3** | ¿Qué tipo exacto de evidencia fotográfica (ej. usar cinta métrica, mostrar etiqueta del rollo) es considerada como "irrefutable" por un proveedor? |
+| **2** | ¿Cuándo es el momento exacto en el que la aplicación debe sincronizar en segundo plano sin ralentizar el celular personal del operario? |
+
+**Observación sobre el reordenamiento:**
+Al concluir la etapa de experimentación y observar el *Aftermath*, ocurrió un reordenamiento significativo en el *Question Backlog* original. Preguntas que inicialmente parecían secundarias desde una visión estrictamente de negocios (como la interacción con guantes o la falta de señal en sótanos) escalaron a las prioridades más altas. Esto sucedió porque los experimentos demostraron que sin resolver estos impedimentos físicos y técnicos del entorno real de trabajo, la adopción operativa sería nula, volviendo inútil cualquier otra funcionalidad de la plataforma.
 
 
 ## Bibliográfia
