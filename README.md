@@ -287,6 +287,8 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
     - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
   - [8.5. Continuous Learning](#85-continuous-learning)
     - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 
 
 ## Student Outcome
@@ -4253,57 +4255,65 @@ Al concluir la etapa de experimentación y observar el *Aftermath*, ocurrió un 
 
 **New Raw Material**
 
-Gracias a los resultados obtenidos de los experimentos del pre-despacho y del catálogo de defectos, se observó una excelente acogida del registro digital de incidencias como medio de prueba. Sin embargo, para cerrar el círculo comercial y evitar que las disputas vuelvan a canales informales (WhatsApp, llamadas), identificamos la necesidad de integrar un flujo directo de resolución comercial. Por ello, pensamos implementar un **Módulo de Conciliación y Resolución Automática de Disputas (Smart Settlement)** que permita a distribuidores y talleres acordar compensaciones financieras (notas de crédito, reembolsos o reposición) directamente dentro de la aplicación.
+Gracias a los resultados obtenidos en la validación del Certificado de Pre-Despacho Digital y del Mapeo Visual adaptado a entornos difíciles, observamos una excelente recepción en el control de calidad en almacén. Con base en esta validación, pensamos implementar una funcionalidad que consolide el historial de incidencias recopiladas para generar un **Reporte de Calidad del Proveedor**. Esto permitirá a los talleres de confección evaluar la reputación y tasa de defectos de los distribuidores de tela antes de realizar una compra, previniendo pérdidas de insumos.
 
 **Assumptions**
 
 **Business Outcomes**
 
 Como empresa buscamos:
-- La funcionalidad de conciliación automatizada reducirá el tiempo promedio de resolución de disputas de calidad en un 25%.
-- La integración de Smart Settlement incrementará la retención de talleres y distribuidores en la plataforma en un 12%.
+* La funcionalidad del Reporte de Calidad del Proveedor aumentará la retención de talleres activos en la plataforma en un 10%.
+* La visibilidad del historial de fallas mutuo fortalecerá la confianza comercial entre talleres y distribuidores, reduciendo los desacuerdos en un 15%.
 
-**Customer (Distribuidor)**
-- Los distribuidores están interesados en automatizar las compensaciones de mermas menores para fidelizar y mantener contentos a sus talleres clientes.
-- La automatización de descuentos y notas de crédito reducirá el costo administrativo y contable de procesar reclamos manuales.
-- Los distribuidores valorarán contar con reglas de negocio configurables para autorizar compensaciones directas según el reporte visual de fallas.
-- Los distribuidores buscarán acelerar el despacho de rollos de reposición para evitar que el taller paralice sus líneas de producción.
+**Customer (Talleres y empresas textiles)**
 
-**Workshop Owner (Dueño de Taller)**
-- Los dueños de taller están dispuestos a aceptar resoluciones financieras rápidas (como descuentos automáticos) a cambio de no iniciar reclamos físicos lentos.
-- Los dueños de taller valorarán la transparencia y la velocidad con la que se solucionan sus incidencias de calidad.
-- Los dueños de taller buscarán negociar de forma directa y amigable dentro de la app para proteger su relación comercial con proveedores clave.
+* Los talleres de confección están interesados en conocer el historial de calidad de los proveedores de tela antes de realizar una compra importante.
+* La visualización de un reporte estandarizado de fallas fomentará compras de lotes más seguras y reducirá el desperdicio en la mesa de corte.
+* Los operarios y dueños de taller valorarán poder registrar valoraciones sobre el estado del lote para alimentar el historial colaborativo de calidad.
+* Los talleres buscarán priorizar a distribuidores que cuenten de forma proactiva con Certificados de Pre-Despacho Digitales válidos.
+
+**Supplier (Distribuidores de tela)**
+
+* Los distribuidores de tela estarán dispuestos a mejorar la calidad de sus lotes para mantener una buena reputación dentro del sistema.
+* La existencia de un historial compartido motivará a los proveedores a verificar sus telas antes del despacho para evitar reportes negativos de mermas o manchas.
+* Los proveedores buscarán solucionar rápidamente cualquier reclamo o incidencia reportada para evitar penalizaciones en su calificación histórica de servicio.
 
 **User Outcomes**
 
 Tras la próxima experimentación, esperamos que los usuarios sigan con los siguientes resultados:
 
-**Customer (Distribuidor)**
-- Ahorro de tiempo al evitar revisiones presenciales de rollos de tela con defectos menores.
-- Mayor control y visibilidad sobre el volumen de mermas aceptadas para ajustar acuerdos con tejedurías.
-- Incremento de la lealtad de sus talleres clientes gracias a una respuesta post-venta ágil y moderna.
+**Customer (Talleres y empresas textiles)**
 
-**Workshop Owner (Dueño de Taller)**
-- Obtención de compensaciones por defectos textiles sin necesidad de llamadas tensas ni discusiones.
-- Reducción del impacto financiero y tiempos de parada operativa causados por mermas en los rollos.
-- Mayor sensación de equidad al contar con evidencias digitales aceptadas por defecto por el proveedor.
+* Sentimiento de pertenencia y mayor poder de negociación frente a distribuidores que entregan rollos defectuosos de manera recurrente.
+* Acceso a un registro seguro e inalterable para respaldar compras y justificar solicitudes de notas de crédito.
+* Aumento de la seguridad y tranquilidad operativa en el taller al saber que se adquieren insumos de proveedores con calidad validada.
+* Reducción de tiempos muertos en la mesa de corte al evitar trabajar con lotes de tela con fallas críticas (teñido o mermas).
+
+**Supplier (Distribuidores de tela)**
+
+* Oportunidad de demostrar formalmente la calidad de su servicio y rollos para fidelizar a los talleres clientes.
+* Acceso a estadísticas internas detalladas sobre las incidencias reportadas (ej. tipo de defecto más común) para mejorar sus procesos de compra al por mayor.
+* Disminución drástica de discusiones comerciales subjetivas gracias a la mediación de reportes de calidad basados en evidencia fotográfica.
+* Identificación oportuna de defectos recurrentes para negociar o reclamar directamente a las fábricas textiles o hilanderas proveedoras.
 
 **Knowledge Gaps**
-- ¿Cómo podemos asegurar que el distribuidor confíe plenamente en la clasificación y severidad del defecto registrada por el operario antes de emitir un descuento automático?
-- ¿Hasta qué porcentaje del valor del rollo de tela están dispuestos los distribuidores a autorizar descuentos automáticos sin firma gerencial manual?
-- ¿Cómo podemos diseñar la interfaz de negociación interactiva para evitar ofertas y contraofertas repetitivas que alarguen la disputa?
-- ¿De qué manera impactarán los descuentos automáticos y reembolsos en la emisión formal de notas de crédito ante la SUNAT para las Mypes?
+
+* ¿Cómo podemos asegurar que las calificaciones de calidad del proveedor no se utilicen de forma maliciosa por parte de talleres malintencionados?
+* ¿Cómo podemos unificar la trazabilidad si los talleres y proveedores utilizan códigos de barras o SKU incompatibles entre sus sistemas?
+* ¿De qué manera motivamos al operario a clasificar de forma objetiva la gravedad del daño para no perjudicar injustamente la calificación del distribuidor?
+* ¿Cómo afectará este reporte a los distribuidores de menor escala que apenas inician y no cuentan con suficiente historial calificado?
 
 **Ideas**
-- Implementar un calculador de ofertas sugeridas en base a la categoría del defecto y la cantidad de metros afectados (ej. mancha de aceite en zona media = 12% de descuento automático sugerido).
-- Diseñar un flujo de conciliación ágil con límite de 3 rondas (oferta de distribuidor, contraoferta de taller, aceptación o derivación a mediación humana).
-- Generar de manera automática el reporte fiscal estructurado para facilitar la nota de crédito electrónica.
-- Crear una métrica interna de reputación o "Tasa de Transparencia" para desincentivar reportes fraudulentos de defectos.
+
+* Diseñar insignias de calidad destacadas en la plataforma para los distribuidores que mantengan una tasa de incidencias menor al 5% en el mes.
+* Implementar un flujo de contra-argumentación para que los distribuidores puedan apelar un reporte de incidencia si consideran que la tela fue dañada después del despacho.
+* Habilitar reportes mensuales de calidad descargables en PDF con gráficos sencillos para facilitar el análisis gerencial del taller y distribuidor.
+* Crear un canal privado de resolución rápida de disputas comerciales que permita al distribuidor reponer tela antes de que el reporte afecte su calificación pública.
 
 **Claims**
-- *"Acepté el rollo manchado porque el transportista tenía prisa y el proveedor me prometió por teléfono un descuento, pero ahora se hace el desentendido."*
-- *"El trámite administrativo de solicitar una nota de crédito por 5 metros de tela dañada da tanto dolor de cabeza que a veces prefiero perder el dinero antes de lidiar con el distribuidor."*
 
+* "Es muy difícil saber qué proveedor en Gamarra entrega tela con menos fallas de teñido, siempre compramos con el riesgo de que el rollo venga defectuoso."
+* "Si el proveedor me entrega rollos con mermas ocultas en el medio, no tengo forma de probarle que él me despachó esa tela dañada de manera recurrente."
 
 ### 8.6. To-Be Software Platform Pre-launch
 
