@@ -4076,6 +4076,132 @@ Gracias a Google Analytics, podremos seguir de manera detallada los resultados d
 
 ### 8.2.8. Web and Mobile Tracking Plan.
 
+### 8.3. Experimentation
+
+#### 8.3.1. To-Be User Stories.
+
+Los User Stories de la sección "To-Be" surgen como resultado del proceso de experimentación (Capítulo VIII). Representan las nuevas funcionalidades validadas que buscan resolver las incertidumbres operativas de los usuarios, tales como la desconfianza comercial y la subjetividad técnica al momento de reportar defectos. A continuación, se detallan las historias de usuario bajo el formato GIVEN-WHEN-THEN:
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US01 |
+| **USER** | Distribuidor |
+| **PRIORITY** | High |
+| **EPIC** | EP01 |
+| **TITLE** | Implementación de Certificado de Pre-Despacho Digital |
+| **DESCRIPTION** | Como distribuidor quiero poder generar un certificado de pre-despacho con evidencia fotográfica para protegerme de devoluciones injustificadas por daños en el transporte. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Generar certificado de pre-despacho antes del envío de mercadería.<br>**GIVEN** que el distribuidor ha preparado el lote de rollos de tela y desea enviarlo al taller.<br>**WHEN** seleccione la opción "Generar Pre-Despacho" dentro de la plataforma.<br>**THEN** se habilitará la cámara para adjuntar evidencia fotográfica del buen estado del rollo y se generará un certificado digital inmutable. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 1</strong> (Pre-Despacho Digital).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US02 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | High |
+| **EPIC** | EP02 |
+| **TITLE** | Implementación de Catálogo Visual de Defectos Textiles |
+| **DESCRIPTION** | Como operario de almacén quiero clasificar el tipo de defecto utilizando un catálogo visual estandarizado para evitar discusiones técnicas subjetivas con el proveedor. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Categorizar una falla encontrada durante la descarga de la tela.<br>**GIVEN** que el operario detecta un defecto visual en el rollo de tela.<br>**WHEN** inicie el registro de la incidencia y seleccione "Categorizar falla".<br>**THEN** el sistema mostrará un catálogo visual con imágenes de referencia (manchas, mermas, teñido) para que el operario seleccione la que corresponda de forma estandarizada. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 2</strong> (Catálogo Estandarizado).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US03 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | High |
+| **EPIC** | EP03 |
+| **TITLE** | Implementación de Mapeo Visual en modo Offline-First |
+| **DESCRIPTION** | Como operario de almacén quiero registrar fotografías y mapear defectos sin conexión a internet para no interrumpir mi trabajo en el sótano del taller comercial. |
+| **ACCEPTANCE CRITERIA** | **Scenario 1:** Guardar registro de incidencia sin conexión a internet.<br>**GIVEN** que el operario no tiene señal de internet en el almacén subterráneo.<br>**WHEN** capture la fotografía de la tela y guarde el reporte.<br>**THEN** la aplicación almacenará los datos de forma local y mostrará un indicador visual de "Pendiente de red".<br><br>**Scenario 2:** Sincronización automática de registros pendientes.<br>**GIVEN** que el operario cuenta con reportes guardados localmente.<br>**WHEN** el dispositivo recupere conexión a internet (WiFi o Datos).<br>**THEN** la aplicación sincronizará automáticamente las fotografías con el servidor sin interrumpir el flujo de trabajo del usuario. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 6</strong> (Modo Offline-First).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US04 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | High |
+| **EPIC** | EP04 |
+| **TITLE** | Implementación de escáner de Código de Barras para lotes |
+| **DESCRIPTION** | Como operario de almacén quiero escanear el código de barras de la etiqueta del rollo para adjuntar evidencia irrefutable y evitar ingresar los datos del lote manualmente. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Captura obligatoria de etiqueta con código de barras.<br>**GIVEN** que el operario está registrando una incidencia en la tela.<br>**WHEN** proceda a enviar el reporte visual de la falla.<br>**THEN** el sistema exigirá escanear el código de barras de la etiqueta del rollo mediante la cámara para vincular innegablemente la foto al producto. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 7</strong> (Evidencia Irrefutable).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US05 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | High |
+| **EPIC** | EP03 |
+| **TITLE** | Implementación de sincronización prioritaria por WiFi |
+| **DESCRIPTION** | Como operario de almacén quiero que mis reportes pesados solo se suban cuando esté conectado a una red WiFi corporativa para evitar consumir mi plan de datos móviles personales. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Sincronización masiva de fotografías de incidencias.<br>**GIVEN** que el operario tiene reportes con fotografías de alta calidad almacenados localmente.<br>**WHEN** recupere conectividad a internet pero a través de una red móvil (4G/5G).<br>**THEN** el sistema pausará la subida y esperará hasta conectarse a una red WiFi para completar el envío, a menos que el usuario autorice explícitamente el uso de datos. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 8</strong> (Consumo de Datos).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US06 |
+| **USER** | Dueño de taller |
+| **PRIORITY** | Medium |
+| **EPIC** | EP05 |
+| **TITLE** | Implementación de Dashboard Gerencial de Auditoría de Lotes |
+| **DESCRIPTION** | Como dueño de taller quiero visualizar un panel de reportes de calidad para monitorear el desempeño de mis operarios y exigir el uso continuo de la plataforma. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Monitoreo gerencial de la adopción de la aplicación.<br>**GIVEN** que el dueño del taller accede al portal web de administración.<br>**WHEN** ingrese a la sección de auditoría de calidad.<br>**THEN** visualizará estadísticas comparativas entre la cantidad de lotes físicos recibidos y los reportes digitales ingresados, facilitando la supervisión operativa. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 3</strong> (Adopción Operativa).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US07 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | Medium |
+| **EPIC** | EP02 |
+| **TITLE** | Implementación de Flujo de Recepción Diferida |
+| **DESCRIPTION** | Como operario de almacén quiero registrar la recepción rápida de los rollos primero y realizar el mapeo visual de defectos horas después, para no obstaculizar la zona de descarga. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Registro asíncrono de incidencias de calidad.<br>**GIVEN** que el camión de despacho se encuentra bloqueando la puerta de ingreso.<br>**WHEN** el operario recibe el producto.<br>**THEN** podrá escanear rápidamente los rollos como "Recibidos" y el sistema generará una alerta de "Evaluación Pendiente" para que realice la inspección visual con tranquilidad más tarde. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 4</strong> (Flujo de Tiempo en Almacén).*</em></p>
+<br>
+
+| Campo | Detalle |
+| :--- | :--- |
+| **ID** | US08 |
+| **USER** | Operario de almacén |
+| **PRIORITY** | High |
+| **EPIC** | EP02 |
+| **TITLE** | Implementación de Mapeo Visual por Zonas Amplias (Apto para Guantes) |
+| **DESCRIPTION** | Como operario de almacén quiero seleccionar la ubicación de un defecto utilizando zonas amplias en la pantalla táctil para evitar errores al usar guantes de protección gruesos. |
+| **ACCEPTANCE CRITERIA** | **Scenario:** Mapeo táctil usando guantes de trabajo.<br>**GIVEN** que el operario está utilizando guantes industriales gruesos.<br>**WHEN** acceda a la herramienta de Mapeo Visual en el celular.<br>**THEN** la interfaz mostrará una cuadrícula dividida en cuadrantes grandes (ej. 2x2 o 3x3) y botones de gran tamaño que faciliten la pulsación precisa. |
+
+<p align="center"><em>*Perteneciente a la <strong>Experiment Card 5</strong> (Usabilidad con Guantes).*</em></p>
+<br>
+
+
+#### 8.3.2. To-Be Product Backlog
+
+A partir de las historias de usuario concebidas en la sección anterior, se ha estructurado el siguiente Product Backlog. Este backlog prioriza las características validadas por los experimentos y estima el esfuerzo requerido utilizando Story Points (sucesión de Fibonacci: 1, 2, 3, 5, 8).
+
+| To-Be Product Backlog#Orden | Código | Título | Descripción | Story Point(1/2/3/5/8) |
+| :---: | :---: | :--- | :--- | :---: |
+| 1 | US03 | Implementación de Mapeo Visual en modo Offline-First | Como operario de almacén quiero registrar fotografías y mapear defectos sin conexión a internet para no interrumpir mi trabajo en el sótano del taller comercial. | 8 |
+| 2 | US08 | Implementación de Mapeo Visual por Zonas Amplias (Apto para Guantes) | Como operario quiero seleccionar defectos en cuadrantes grandes para evitar errores al usar guantes de protección. | 5 |
+| 3 | US01 | Implementación de Certificado de Pre-Despacho Digital | Como distribuidor quiero poder generar un certificado de pre-despacho con evidencia fotográfica para protegerme de devoluciones injustificadas por daños en el transporte. | 5 |
+| 4 | US07 | Implementación de Flujo de Recepción Diferida | Como operario quiero registrar la recepción rápida primero y realizar el mapeo de defectos horas después, para no obstaculizar la descarga. | 5 |
+| 5 | US06 | Implementación de Dashboard Gerencial de Auditoría de Lotes | Como dueño de taller quiero visualizar un panel de reportes de calidad para monitorear a mis operarios y exigir el uso continuo de la plataforma. | 5 |
+| 6 | US02 | Implementación de Catálogo Visual de Defectos Textiles | Como operario quiero clasificar el defecto utilizando un catálogo visual estandarizado para evitar discusiones técnicas subjetivas con el proveedor. | 3 |
+| 7 | US04 | Implementación de escáner de Código de Barras para lotes | Como operario quiero escanear el código de barras del rollo como evidencia irrefutable para evitar ingresar los datos manualmente. | 3 |
+| 8 | US05 | Implementación de sincronización prioritaria por WiFi | Como operario quiero que mis reportes pesados solo se suban cuando esté conectado a WiFi para evitar consumir mi plan de datos móviles personales. | 2 |
+
 
 ## Bibliográfia
 
