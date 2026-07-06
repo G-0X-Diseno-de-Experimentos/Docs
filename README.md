@@ -285,6 +285,8 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
   - [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
     - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
     - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
 
 
 ## Student Outcome
@@ -4248,6 +4250,60 @@ Al concluir la etapa de experimentación y observar el *Aftermath*, ocurrió un 
 ### 8.5. Continuous Learning
 
 #### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+**New Raw Material**
+
+Gracias a los resultados obtenidos de los experimentos del pre-despacho y del catálogo de defectos, se observó una excelente acogida del registro digital de incidencias como medio de prueba. Sin embargo, para cerrar el círculo comercial y evitar que las disputas vuelvan a canales informales (WhatsApp, llamadas), identificamos la necesidad de integrar un flujo directo de resolución comercial. Por ello, pensamos implementar un **Módulo de Conciliación y Resolución Automática de Disputas (Smart Settlement)** que permita a distribuidores y talleres acordar compensaciones financieras (notas de crédito, reembolsos o reposición) directamente dentro de la aplicación.
+
+**Assumptions**
+
+**Business Outcomes**
+
+Como empresa buscamos:
+- La funcionalidad de conciliación automatizada reducirá el tiempo promedio de resolución de disputas de calidad en un 25%.
+- La integración de Smart Settlement incrementará la retención de talleres y distribuidores en la plataforma en un 12%.
+
+**Customer (Distribuidor)**
+- Los distribuidores están interesados en automatizar las compensaciones de mermas menores para fidelizar y mantener contentos a sus talleres clientes.
+- La automatización de descuentos y notas de crédito reducirá el costo administrativo y contable de procesar reclamos manuales.
+- Los distribuidores valorarán contar con reglas de negocio configurables para autorizar compensaciones directas según el reporte visual de fallas.
+- Los distribuidores buscarán acelerar el despacho de rollos de reposición para evitar que el taller paralice sus líneas de producción.
+
+**Workshop Owner (Dueño de Taller)**
+- Los dueños de taller están dispuestos a aceptar resoluciones financieras rápidas (como descuentos automáticos) a cambio de no iniciar reclamos físicos lentos.
+- Los dueños de taller valorarán la transparencia y la velocidad con la que se solucionan sus incidencias de calidad.
+- Los dueños de taller buscarán negociar de forma directa y amigable dentro de la app para proteger su relación comercial con proveedores clave.
+
+**User Outcomes**
+
+Tras la próxima experimentación, esperamos que los usuarios sigan con los siguientes resultados:
+
+**Customer (Distribuidor)**
+- Ahorro de tiempo al evitar revisiones presenciales de rollos de tela con defectos menores.
+- Mayor control y visibilidad sobre el volumen de mermas aceptadas para ajustar acuerdos con tejedurías.
+- Incremento de la lealtad de sus talleres clientes gracias a una respuesta post-venta ágil y moderna.
+
+**Workshop Owner (Dueño de Taller)**
+- Obtención de compensaciones por defectos textiles sin necesidad de llamadas tensas ni discusiones.
+- Reducción del impacto financiero y tiempos de parada operativa causados por mermas en los rollos.
+- Mayor sensación de equidad al contar con evidencias digitales aceptadas por defecto por el proveedor.
+
+**Knowledge Gaps**
+- ¿Cómo podemos asegurar que el distribuidor confíe plenamente en la clasificación y severidad del defecto registrada por el operario antes de emitir un descuento automático?
+- ¿Hasta qué porcentaje del valor del rollo de tela están dispuestos los distribuidores a autorizar descuentos automáticos sin firma gerencial manual?
+- ¿Cómo podemos diseñar la interfaz de negociación interactiva para evitar ofertas y contraofertas repetitivas que alarguen la disputa?
+- ¿De qué manera impactarán los descuentos automáticos y reembolsos en la emisión formal de notas de crédito ante la SUNAT para las Mypes?
+
+**Ideas**
+- Implementar un calculador de ofertas sugeridas en base a la categoría del defecto y la cantidad de metros afectados (ej. mancha de aceite en zona media = 12% de descuento automático sugerido).
+- Diseñar un flujo de conciliación ágil con límite de 3 rondas (oferta de distribuidor, contraoferta de taller, aceptación o derivación a mediación humana).
+- Generar de manera automática el reporte fiscal estructurado para facilitar la nota de crédito electrónica.
+- Crear una métrica interna de reputación o "Tasa de Transparencia" para desincentivar reportes fraudulentos de defectos.
+
+**Claims**
+- *"Acepté el rollo manchado porque el transportista tenía prisa y el proveedor me prometió por teléfono un descuento, pero ahora se hace el desentendido."*
+- *"El trámite administrativo de solicitar una nota de crédito por 5 metros de tela dañada da tanto dolor de cabeza que a veces prefiero perder el dinero antes de lidiar con el distribuidor."*
+
 
 ### 8.6. To-Be Software Platform Pre-launch
 
