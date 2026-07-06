@@ -4045,30 +4045,8 @@ Asimismo, se evitará ejecutar simultáneamente dos o más experimentos sobre un
 
 Finalmente, se respetarán principios éticos durante la ejecución de los experimentos, evitando afectar las operaciones normales de los almacenes textiles, garantizando la confidencialidad de la información recopilada y asegurando que ningún participante sufra perjuicios económicos, laborales o personales como consecuencia de su participación en la investigación.
 
-## Conclusiones
 
-* En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
-
-* Como equipo, se priorizó la calidad, mantenibilidad y seguridad del software mediante la integración de herramientas como **Jenkins** y **SonarQube**, permitiendo detectar errores, vulnerabilidades y problemas de calidad de manera temprana durante el desarrollo.
-
-* Las pruebas implementadas fueron alineadas con los requerimientos funcionales y las User Stories definidas, asegurando que el comportamiento desarrollado responda correctamente a las necesidades y expectativas de los usuarios.
-
-* La automatización de los pipelines de integración continua permitió reducir errores manuales, mantener una integración estable entre los avances del equipo y fortalecer el trabajo colaborativo durante el desarrollo del proyecto.
-
-* La implementación de prácticas de **Continuous Delivery**, mediante la definición de herramientas, procesos y etapas del pipeline de construcción y validación, permitió establecer un flujo de desarrollo más confiable y controlado. Esto garantiza que cada nueva modificación del sistema pase por procesos automatizados de compilación, pruebas y evaluación de calidad antes de ser considerada apta para una futura entrega.
-
-* El uso de herramientas de análisis estático de código y automatización de procesos contribuyó a disminuir la deuda técnica del proyecto, promoviendo una cultura de mejora continua y facilitando la mantenibilidad del software a largo plazo.
-
-* La aplicación del enfoque **Experiment-Driven Development** permitió identificar supuestos, brechas de conocimiento y preguntas críticas relacionadas con la problemática del negocio. A través de la elaboración del As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards, se logró estructurar un proceso de validación basado en evidencia para reducir la incertidumbre durante el desarrollo de la solución.
-
-* La definición de hipótesis, métricas de negocio, medidas, condiciones, cálculos de escala y métodos de selección permitió diseñar experimentos rigurosos orientados a evaluar la viabilidad de las funcionalidades propuestas y su impacto en la eficiencia operativa de los usuarios de TextilFlow.
-
-* La adopción de un enfoque basado en métricas y evidencia favoreció la toma de decisiones informadas durante el desarrollo del proyecto, asegurando que las funcionalidades implementadas generen valor real para los usuarios finales y contribuyan a la sostenibilidad técnica y económica de la solución.
-
-* Finalmente, la correcta distribución de responsabilidades, el uso de herramientas colaborativas y la integración constante de los avances del equipo permitieron mantener una documentación actualizada y un proceso de desarrollo organizado, fortaleciendo las buenas prácticas profesionales dentro de la ingeniería de software.
-
-
-### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 
 Data Analytics: Goals, KPIs and Metrics Selection. (Análisis de Datos: Metas, KPIs y Selección de Métricas)
 Esta sección presenta la preparación analítica basada en la selección de medidas, con el objetivo de asegurar la economía en el rastreo de datos y garantizar que las métricas elegidas permitan detectar diferencias o cambios precisos.
@@ -4082,7 +4060,7 @@ Pensamos que Google Analytics nos beneficiará para aumentar nuestras capacidade
 
 Gracias a Google Analytics, podremos seguir de manera detallada los resultados de cada experimento para evaluar si se están cumpliendo con las metas establecidas que son: aumentar el ratio de interacción en un 15% tras cada mejora, aumentar en 10% la cantidad de nuevos usuarios cada mes, y disminuir el tiempo de registro de incidencias para asegurar la eficiencia operativa.
 
-### 8.2.8. Web and Mobile Tracking Plan.
+#### 8.2.8. Web and Mobile Tracking Plan.
 
 ### 8.3. Experimentation
 
@@ -4210,6 +4188,26 @@ A partir de las historias de usuario concebidas en la sección anterior, se ha e
 | 7 | US04 | Implementación de escáner de Código de Barras para lotes | Como operario quiero escanear el código de barras del rollo como evidencia irrefutable para evitar ingresar los datos manualmente. | 3 |
 | 8 | US05 | Implementación de sincronización prioritaria por WiFi | Como operario quiero que mis reportes pesados solo se suban cuando esté conectado a WiFi para evitar consumir mi plan de datos móviles personales. | 2 |
 
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+##### 8.3.3.1 To-Be Sprint Backlogs
+
+##### 8.3.3.2 Implemented To-Be Landing Page Evidence
+
+##### 8.3.3.3 Implemented To-Be Frontend-Web Application Evidence
+
+##### 8.3.3.4 Implemented To-Be Native-Mobile Application Evidence
+
+##### 8.3.3.5 Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+##### 8.3.3.6 Team Collaboration Insights
+
+#### 8.3.4. To-Be Validation Interviews
+
+##### 8.3.4.1 Diseño de Entrevistas
+
+##### 8.3.4.2 Registro de Entrevistas
+
 ### 8.4. Experiment Aftermath & Analysis
 
 #### 8.4.1. Analysis and Interpretation of Results
@@ -4247,6 +4245,35 @@ A continuación, se re-evalúan las preguntas de investigación iniciales basán
 **Observación sobre el reordenamiento:**
 Al concluir la etapa de experimentación y observar el *Aftermath*, ocurrió un reordenamiento significativo en el *Question Backlog* original. Preguntas que inicialmente parecían secundarias desde una visión estrictamente de negocios (como la interacción con guantes o la falta de señal en sótanos) escalaron a las prioridades más altas. Esto sucedió porque los experimentos demostraron que sin resolver estos impedimentos físicos y técnicos del entorno real de trabajo, la adopción operativa sería nula, volviendo inútil cualquier otra funcionalidad de la plataforma.
 
+### 8.5. Continuous Learning
+
+#### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+### 8.6. To-Be Software Platform Pre-launch
+
+#### 8.6.1. About-the-Product Intro Video
+
+## Conclusiones
+
+* En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
+
+* Como equipo, se priorizó la calidad, mantenibilidad y seguridad del software mediante la integración de herramientas como **Jenkins** y **SonarQube**, permitiendo detectar errores, vulnerabilidades y problemas de calidad de manera temprana durante el desarrollo.
+
+* Las pruebas implementadas fueron alineadas con los requerimientos funcionales y las User Stories definidas, asegurando que el comportamiento desarrollado responda correctamente a las necesidades y expectativas de los usuarios.
+
+* La automatización de los pipelines de integración continua permitió reducir errores manuales, mantener una integración estable entre los avances del equipo y fortalecer el trabajo colaborativo durante el desarrollo del proyecto.
+
+* La implementación de prácticas de **Continuous Delivery**, mediante la definición de herramientas, procesos y etapas del pipeline de construcción y validación, permitió establecer un flujo de desarrollo más confiable y controlado. Esto garantiza que cada nueva modificación del sistema pase por procesos automatizados de compilación, pruebas y evaluación de calidad antes de ser considerada apta para una futura entrega.
+
+* El uso de herramientas de análisis estático de código y automatización de procesos contribuyó a disminuir la deuda técnica del proyecto, promoviendo una cultura de mejora continua y facilitando la mantenibilidad del software a largo plazo.
+
+* La aplicación del enfoque **Experiment-Driven Development** permitió identificar supuestos, brechas de conocimiento y preguntas críticas relacionadas con la problemática del negocio. A través de la elaboración del As-Is Summary, Raw Material, Experiment-Ready Questions, Question Backlog y Experiment Cards, se logró estructurar un proceso de validación basado en evidencia para reducir la incertidumbre durante el desarrollo de la solución.
+
+* La definición de hipótesis, métricas de negocio, medidas, condiciones, cálculos de escala y métodos de selección permitió diseñar experimentos rigurosos orientados a evaluar la viabilidad de las funcionalidades propuestas y su impacto en la eficiencia operativa de los usuarios de TextilFlow.
+
+* La adopción de un enfoque basado en métricas y evidencia favoreció la toma de decisiones informadas durante el desarrollo del proyecto, asegurando que las funcionalidades implementadas generen valor real para los usuarios finales y contribuyan a la sostenibilidad técnica y económica de la solución.
+
+* Finalmente, la correcta distribución de responsabilidades, el uso de herramientas colaborativas y la integración constante de los avances del equipo permitieron mantener una documentación actualizada y un proceso de desarrollo organizado, fortaleciendo las buenas prácticas profesionales dentro de la ingeniería de software.
 
 ## Bibliográfia
 
