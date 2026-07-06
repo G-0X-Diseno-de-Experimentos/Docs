@@ -4060,6 +4060,22 @@ Finalmente, se respetarán principios éticos durante la ejecución de los exper
 * Finalmente, la correcta distribución de responsabilidades, el uso de herramientas colaborativas y la integración constante de los avances del equipo permitieron mantener una documentación actualizada y un proceso de desarrollo organizado, fortaleciendo las buenas prácticas profesionales dentro de la ingeniería de software.
 
 
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+Data Analytics: Goals, KPIs and Metrics Selection. (Análisis de Datos: Metas, KPIs y Selección de Métricas)
+Esta sección presenta la preparación analítica basada en la selección de medidas, con el objetivo de asegurar la economía en el rastreo de datos y garantizar que las métricas elegidas permitan detectar diferencias o cambios precisos.
+
+Pensamos que Google Analytics nos beneficiará para aumentar nuestras capacidades de progreso y a estar en concordancia con los experimentos que hacemos. Para conseguir esto, aplicaremos los siguientes indicadores:
+
+- **Cantidad de interacciones y reportes generados por semana**: mantendremos un registro del número de interacciones que realizan los operarios con la plataforma durante todo el proceso de recepción y evaluación de tela (captura de fotos, mapeo visual de defectos). De acuerdo al experimento sugerido, se espera que más del 50% de los talleres activos generen al menos un reporte semanal, aumentando el ratio de interacción entre usuario y plataforma en un 15% tras cada mejora.
+- **Cantidad de nuevos usuarios (Talleres y Distribuidores)**: clasificación de los usuarios registrados recientemente en la plataforma de acuerdo a su cantidad y el tipo de usuario (si es un taller de confección o un distribuidor mayorista). De acuerdo al experimento sugerido, se espera aumentar en un 10% la cantidad de nuevos usuarios en la plataforma cada mes.
+- **Tiempo medio de registro de una incidencia (Mediciones de tiempo)**: mantendremos un registro del tiempo en promedio que tarda un operario de almacén en registrar una falla visual (desde que abre la cámara hasta que envía el reporte). Esto se realizará agregando una marca de tiempo en el evento en Google Analytics. De acuerdo al experimento sugerido, se espera que la duración media disminuya en un 3% cada mes, facilitando el uso en entornos dinámicos.
+- **Calificación de la aplicación**: Podemos añadir un evento personalizado para recopilar información relacionada con la satisfacción del usuario (estrellas) sobre la resolución de disputas comerciales.
+
+Gracias a Google Analytics, podremos seguir de manera detallada los resultados de cada experimento para evaluar si se están cumpliendo con las metas establecidas que son: aumentar el ratio de interacción en un 15% tras cada mejora, aumentar en 10% la cantidad de nuevos usuarios cada mes, y disminuir el tiempo de registro de incidencias para asegurar la eficiencia operativa.
+
+### 8.2.8. Web and Mobile Tracking Plan.
+
 
 ## Bibliográfia
 
