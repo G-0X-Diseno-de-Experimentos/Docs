@@ -3152,6 +3152,56 @@ So that only valid payments are processed <br>
 | Payment Intent Validation | Validate payment amounts | Scenario Outline | 4 |
 | **Total** | | | **6** |
 
+#### 6.1.4. Core System Tests
+
+En esta sección, el equipo define las pruebas de sistema (End-to-End o E2E) para validar que la aplicación funciona correctamente en su totalidad, tanto en el entorno web como móvil. Estas pruebas cubren los flujos principales (Core) simulando el comportamiento de un usuario real desde la interfaz de usuario hasta la persistencia en la base de datos.
+
+Al revisar el repositorio de código, se determinó que actualmente no existen implementaciones automatizadas de pruebas End-to-End (como Cypress, Playwright o Appium) integradas en el proyecto. Por lo tanto, a continuación se documentan los casos de prueba de sistema diseñados teóricamente, los cuales conforman la base para su futura automatización y validación del sistema completo.
+
+##### Web System Tests (Frontend Angular + Backend Spring Boot)
+
+**1. Flujo de Autenticación y Registro**
+* **ID:** `ST-WEB-01`
+* **Descripción:** Validar que un usuario (Distribuidor o Comprador) pueda registrarse en la plataforma, confirmar su cuenta e iniciar sesión correctamente.
+* **Pasos:** 
+  1. Navegar a la página de registro.
+  2. Llenar el formulario con datos válidos y seleccionar el rol.
+  3. Enviar el formulario y verificar la redirección al login.
+  4. Ingresar credenciales y acceder al dashboard principal.
+* **Resultado Esperado:** El usuario accede a su dashboard correspondiente sin errores, visualizando sus datos de perfil.
+
+**2. Flujo de Registro de Evidencia de Calidad (Observación)**
+* **ID:** `ST-WEB-02`
+* **Descripción:** Validar que un usuario pueda registrar una nueva observación o reclamo subiendo evidencia fotográfica de un lote de tela.
+* **Pasos:** 
+  1. Iniciar sesión y navegar a la sección de "Observaciones".
+  2. Hacer clic en "Nueva Observación".
+  3. Completar los detalles requeridos (lote, tipo de tela, descripción del defecto).
+  4. Adjuntar un archivo de imagen (mockup).
+  5. Guardar la observación.
+* **Resultado Esperado:** La observación se registra exitosamente y aparece listada en la tabla principal de evidencias con el estado "Pendiente".
+
+##### Mobile System Tests (App Móvil + Backend API)
+
+**1. Flujo de Navegación y Sincronización Offline-First**
+* **ID:** `ST-MOB-01`
+* **Descripción:** Validar que el usuario pueda registrar una evidencia en almacén sin conexión a internet y que esta se sincronice al recuperar la red.
+* **Pasos:** 
+  1. Desactivar la conexión de red en el emulador/dispositivo móvil.
+  2. Iniciar la aplicación e ingresar a registrar un lote de tela.
+  3. Guardar el registro localmente.
+  4. Activar la conexión de red.
+* **Resultado Esperado:** La aplicación detecta la red y envía los datos al servidor en segundo plano de manera automática, actualizando el estado de "Local" a "Sincronizado".
+
+**2. Flujo de Pago de Suscripción (Payment Intent)**
+* **ID:** `ST-MOB-02`
+* **Descripción:** Validar el proceso completo de suscripción al plan premium utilizando la pasarela de pagos integrada a la API.
+* **Pasos:** 
+  1. Navegar a la sección "Suscripciones" en el menú de perfil del usuario.
+  2. Seleccionar el plan "Premium".
+  3. Ingresar datos de tarjeta de prueba proporcionados para el entorno Sandbox y confirmar pago.
+* **Resultado Esperado:** La pasarela retorna un token exitoso, la transacción se aprueba, y el perfil del usuario cambia a "Premium", desbloqueando funciones avanzadas en tiempo real.
+
 ### 6.2. Static Code Analysis
 
 #### 6.2.1.1. Coding Standard & Code Conventions.
