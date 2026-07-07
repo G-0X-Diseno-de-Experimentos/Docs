@@ -3596,6 +3596,66 @@ docker run -d --name jenkins-master --platform linux/amd64 --user root --network
   <img src="./assets/tb2/evidencia_pipeline_8.png" width="400"/>
 </p>
 
+### 7.3. Continuous Deployment
+
+En esta sección se detalla el flujo de despliegue continuo implementado para colocar los entregables de **TextilFlow** en sus respectivos entornos de producción, garantizando que el sistema esté disponible en todo momento y se actualice de forma consistente.
+
+#### 7.3.1. Tools and Practices
+
+Para automatizar y asegurar el proceso de despliegue, el equipo seleccionó un conjunto de herramientas modernas e infraestructuras como servicio (IaaS/SaaS/PaaS) alineadas con la arquitectura del sistema:
+
+* **Render (PaaS - Platform as a Service):** 
+  Utilizado para el despliegue del backend de la aplicación. Render ofrece un entorno de ejecución nativo basado en contenedores Docker, lo cual permite leer directamente el `Dockerfile` de nuestro repositorio, compilar la aplicación Spring Boot y exponer la API pública.
+* **Aiven (Managed Database):** 
+  Servicio en la nube utilizado para hospedar la base de datos MySQL en producción. Garantiza alta disponibilidad, respaldos automáticos y conexión segura mediante SSL obligado para proteger la integridad de los datos de los usuarios.
+* **Firebase Hosting (SaaS - Software as a Service):** 
+  Plataforma de Google utilizada para alojar la aplicación web de Angular. Ofrece un servicio optimizado de CDN de baja latencia con certificados SSL automáticos y reescritura de rutas (*URL rewrites*) optimizadas para aplicaciones de una sola página (SPA).
+* **Firebase CLI (Command Line Interface):** 
+  Herramienta por línea de comandos empleada para autenticar al desarrollador con la plataforma Firebase (`firebase login`), configurar los parámetros de despliegue y publicar los archivos generados.
+* **Variables de Entorno Seguras:** 
+  Uso de almacenes de secretos en la nube para inyectar credenciales confidenciales de base de datos (`DB_PASSWORD`), pasarela de pago (`STRIPE_SECRET_KEY`) y tokens (`JWT_SECRET`) sin exponerlos en el código fuente.
+
+#### 7.3.2. Production Deployment Pipeline Components
+
+El proceso de despliegue continuo de los componentes de TextilFlow se divide en dos flujos independientes pero estrechamente integrados:
+
+##### A. Componente Backend (Spring Boot + MySQL)
+
+El pipeline de despliegue continuo para el backend funciona de la siguiente manera:
+
+```mermaid
+graph TD
+    A[Cambio confirmado en repositorio Git] --> B[Webhook notifica a Render]
+    B --> C[Render lee Dockerfile en directorio raíz]
+    C --> D[Construcción de imagen Docker e instalación de dependencias]
+    D --> E[Inyección de Variables de Entorno de Producción]
+    E --> F[Conexión a base de datos MySQL alojada en Aiven]
+    F --> G[Puesta en marcha del contenedor de Spring Boot]
+    G --> H[API disponible en https://textilflow-backend.onrender.com]
+```
+
+1. **Construcción y empaquetamiento:** Render clona el repositorio del backend y utiliza la imagen `maven:3.9.9-eclipse-temurin-24` declarada en el `Dockerfile` para ejecutar el build (`mvn clean package -DskipTests`), generando el archivo ejecutable `.jar`.
+2. **Inyección de secretos de entorno:** Durante el arranque del contenedor, Render inyecta las variables requeridas por `application.properties` para la conexión a la base de datos en Aiven (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`), además de secretos adicionales (`JWT_SECRET`, Stripe, Cloudinary).
+3. **Liberación y exposición:** El contenedor expone el puerto `8080` de manera interna. El balanceador de carga de Render gestiona el tráfico HTTP de forma automática hacia el dominio seguro de la API.
+
+##### B. Componente Frontend (Angular SPA)
+
+El pipeline de despliegue del cliente web Angular se realiza mediante los siguientes componentes:
+
+```mermaid
+graph TD
+    A[Actualizar serverBaseUrl en environment.prod.ts] --> B[Ejecutar compilación en Angular: npm run build]
+    B --> C[Generar archivos de producción en /dist]
+    C --> D[Autenticación en Firebase: firebase login]
+    D --> E[Despliegue a producción: firebase deploy]
+    E --> F[Assets distribuidos en CDN de Firebase]
+```
+
+1. **Vinculación con el entorno de API:** Se configura el archivo de variables de entorno de Angular (`src/environments/environment.prod.ts`), apuntando la dirección de `serverBaseUrl` a la URL pública del backend en Render: `https://textilflow-backend.onrender.com/api/v1`.
+2. **Compilación de producción:** Se compilan los assets estáticos usando el comando `npm run build`, que optimiza el bundle (HTML, CSS y JS compilado) y lo almacena en `dist/textil-flow-front-end/browser`.
+3. **Publicación y CDN:** Utilizando la herramienta Firebase CLI, se ejecuta el despliegue mediante `npx firebase deploy --only hosting`. Firebase recibe el directorio compilado indicado en `firebase.json` y distribuye el contenido a través de su CDN global bajo la URL pública asignada.
+
+---
 
 ## **Capítulo VIII: Experiment-Driven Development**
 
