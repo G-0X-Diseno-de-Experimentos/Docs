@@ -3638,6 +3638,20 @@ graph TD
 2. **Inyección de secretos de entorno:** Durante el arranque del contenedor, Render inyecta las variables requeridas por `application.properties` para la conexión a la base de datos en Aiven (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`), además de secretos adicionales (`JWT_SECRET`, Stripe, Cloudinary).
 3. **Liberación y exposición:** El contenedor expone el puerto `8080` de manera interna. El balanceador de carga de Render gestiona el tráfico HTTP de forma automática hacia el dominio seguro de la API.
 
+<p align="center">
+  <img src="./assets/tp1/continuos_deployment1.jpg" alt="continuos_deployment2" width="850">
+</p>
+
+<p align="center">
+  <img src="./assets/tp1/continuos_deployment1.jpg" alt="continuos_deployment2" width="850">
+</p>
+
+https://textilflow-backend.onrender.com/swagger-ui/index.html
+
+
+continuos_deployment3
+
+
 ##### B. Componente Frontend (Angular SPA)
 
 El pipeline de despliegue del cliente web Angular se realiza mediante los siguientes componentes:
@@ -3656,6 +3670,14 @@ graph TD
 3. **Publicación y CDN:** Utilizando la herramienta Firebase CLI, se ejecuta el despliegue mediante `npx firebase deploy --only hosting`. Firebase recibe el directorio compilado indicado en `firebase.json` y distribuye el contenido a través de su CDN global bajo la URL pública asignada.
 
 ---
+
+
+<p align="center">
+  <img src="./assets/tp1/continuos_deployment3.jpg" alt="continuos_deployment3" width="850">
+</p>
+
+
+https://textilflow.web.app/
 
 ## **Capítulo VIII: Experiment-Driven Development**
 
