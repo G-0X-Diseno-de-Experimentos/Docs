@@ -3202,9 +3202,11 @@ Al revisar el repositorio de código, se determinó que actualmente no existen i
   3. Ingresar datos de tarjeta de prueba proporcionados para el entorno Sandbox y confirmar pago.
 * **Resultado Esperado:** La pasarela retorna un token exitoso, la transacción se aprueba, y el perfil del usuario cambia a "Premium", desbloqueando funciones avanzadas en tiempo real.
 
-### 6.2. Static Code Analysis
+### 6.2 Static testing & Verification
 
-#### 6.2.1.1. Coding Standard & Code Conventions.
+#### 6.2.1 Static Code Analysis
+
+##### 6.2.1.1. Coding Standard & Code Conventions.
 Para el desarrollo de **TextilFlow** se definieron estándares de codificación y convenciones de desarrollo con el objetivo de mantener un código limpio, consistente, mantenible y fácil de comprender para todos los integrantes del equipo.
 
 Estas prácticas permitieron mejorar la calidad del software, facilitar el trabajo colaborativo y reducir errores durante el proceso de desarrollo e integración continua.
@@ -3270,7 +3272,7 @@ Las principales convenciones y estándares aplicados fueron los siguientes:
 
 Estas convenciones permitieron mantener un entorno de desarrollo organizado, facilitar la colaboración entre los integrantes del equipo y asegurar estándares mínimos de calidad durante la construcción de TextilFlow.
 
-#### 6.2.1.2. Code Quality & Code Security.
+##### 6.2.1.2. Code Quality & Code Security.
 
 Mediante la ejecución y configuración del SonarQube podemos concluir que hemos realizado un correcta implementación de test enfocados en el core y lógica de la aplicación, sin embargo, aún tenemos algunas observaciones que corregir
 
@@ -3278,6 +3280,198 @@ Mediante la ejecución y configuración del SonarQube podemos concluir que hemos
   <img src="./assets/tp1/sonarqube-execution.jpg" width="400"/>
 </p>
 
+
+### 6.3. Validation Interviews 
+
+Después de avanzar en el desarrollo de la Landing page, la aplicación front-end y la API RESTful de TextilFLow, llevamos a cabo entrevistas de validación. Estas entrevistas permitieron a nuestros usuarios de los segmentos objetivo obtener una primera impresión del software.
+
+#### 6.3.1 Diseño de Entrevistas
+
+Segmento Objetivo: Empresas textiles y distribuidores de telas
+
+##### 1. ¿Cuál es su nombre completo? ¿Qué edad tiene? ¿En que distrito vive actualmente?
+
+##### 2. ¿Que opina del diseño de nuestra landing page? ¿Le sirve de incentivo para entrar a la aplicación y registrarse?
+
+##### 3. ¿Considera que nuestra aplicación tiene una interfaz fácil y sencilla de usar? en caso que si, que funcionalidades le agradan más? y en lo contrario, que funcionalidad piensa que sobra o falta para aumentar su interés en usarla?
+
+##### 4. ¿Que dispositivo utilizo para probar la pagina y aplicación web?
+
+##### 5. ¿Hubo algún aspecto visual que no le agrado?
+
+#### 6.3.2 Registro de Entrevistas
+
+### Segmento 1: Empresarios
+
+| Entrevistado 1 |  Eduardo Andy Bueno Muro |
+| :---- | :---- |
+| Edad | 46 años |
+| Distrito/Ciudad | Lima |
+| <img src="assets/tb2/entrevista1-Validacion.png" alt="PB" width="800"> | utilizó su computadora personal para probar la plataforma. Considera que tanto la landing page como la aplicación son interesantes, intuitivas y productivas. Valora que la aplicación le permite mantener el orden en sus stocks, proveedores y flujos operativos, lo que incentiva su registro. No identificó aspectos visuales negativos, y destacó que recomendaría su uso, principalmente por su utilidad y simplicidad. |
+
+| Timing:00:02 – 08:45 min | [Entrevista1 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  |
+
+| Entrevistado 2 |  Óscar Aldeir Zúñiga |
+| :---- | :---- |
+| Edad | 19 años |
+| Distrito/Ciudad | Comas |
+|  <img src="assets/tb2/entrevista2-Validacion.png" alt="PB" width="800">  | Óscar trabaja en una empresa de venta de ropa. Accedió desde laptop y smartphone, y destacó el diseño de la landing page como profesional, limpio y confiable, lo que motivó su registro. Encontró la interfaz intuitiva, resaltando la visualización de precios mayoristas y stock en tiempo real como funcionalidades clave. Aunque la experiencia fue positiva, sugirió mejorar la carga de imágenes desde móviles para facilitar decisiones rápidas. |
+| Timing:08:45 – 14:21 min | [Entrevista 2 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+| Entrevistado 3 |  Daniela Araceli Gómez Flores |
+| :---- | :---- |
+| Edad | 28 años |
+|  <img src="assets/tb2/entrevista3-Validacion.png" alt="PB" width="800"> | Probó la plataforma desde su PC con Windows y también desde celular. Calificó la landing page como visualmente atractiva, con colores cálidos y buen contraste. Destacó la claridad y orden en la interfaz, y valoró funcionalidades como la gestión de lotes, observaciones y solicitudes empresariales. Recomendó mejorar el tamaño de algunos botones en móvil y el contraste del texto en modo oscuro para mejorar la legibilidad.
+
+ |
+| Timing:14:22 – 24:36 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+
+### Segmento 2: Distribuidores de Telas 
+
+| Entrevistado 4 |  Antonio Encizo |
+| :---- | :---- |
+| Edad | 23 años |
+| Distrito/Ciudad | Lima |
+| <img src="assets/tb2/entrevista4-calidacion.png" alt="PB" width="800">| Probó la plataforma desde PC, pero considera el celular como su medio ideal de uso. Opina que la landing page es clara e intuitiva, cumpliendo estándares comunes. Valora funcionalidades como el historial de envíos y la sección de observaciones por el feedback que aportan. A nivel visual, elogió el uso de colores y no reportó fallas. Sugiere seguir fortaleciendo el registro de envíos como funcionalidad destacada. |
+| Timing:24:40 – 29:22 min | [Entrevista 4 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+| Entrevistado 5 |  Luis Garcia |
+| :---- | :---- |
+| Edad | 20 años |
+| Distrito/Ciudad | Lima |
+| <img src="assets/tb2/entrevista5-validacion.png" alt="PB" width="800">| Tiene una tienda física en Gamarra y vende también por redes. Distribuye algodón licrado, denim y telas deportivas. Verifica calidad de forma visual, usando a veces lámparas para ver imperfecciones. A veces envía fotos por WhatsApp, pero no tiene respaldo formal. Ha tenido reclamos por diferencias de tono sin tener pruebas. Lleva registros en cuadernos o Excel de manera intermitente. Le parece excelente una plataforma donde pueda registrar evidencia, tener orden y compartir información con el cliente. |
+| Timing:29:23 – 35:10 min | [Entrevista 5 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+
+#### 6.3.3 Evaluaciones según heurísticas
+
+
+##### SITE o APP A EVALUAR: TextilFlow
+
+##### TAREAS A EVALUAR:
+
+- Registro y visualización de lotes (enviados, pendientes, aceptados).
+
+- Registro y consulta de observaciones con imágenes.
+
+- Visualización de planes y suscripciones.
+
+- Interacción con solicitudes de empresarios/distribuidores.
+
+- Registro de perfiles y datos empresariales.
+
+- Subida de imágenes de productos/telas.
+
+- Interacción desde dispositivos móviles.
+
+- Cambio de idioma y tema (modo oscuro).
+
+- Exploración de la landing page.
+
+- Uso de formularios de envío/registro.
+
+- Registro de históricos y flujos.
+
+- Clasificación y edición de categorías.
+
+- Alertas y notificaciones automáticas.
+
+- Visualización y seguimiento de entregas.
+
+#### ESCALA DE SEVERIDAD
+
+| Nivel | Descripción                                                                                   |
+| ----- | --------------------------------------------------------------------------------------------- |
+| 1     | Problema superficial: fácilmente superado o poco frecuente. No requiere corrección inmediata. |
+| 2     | Problema menor: puede dificultar algo la experiencia. Se recomienda corregir pronto.          |
+| 3     | Problema mayor: frecuente o difícil de superar. Debe corregirse con prioridad.                |
+| 4     | Problema muy grave: impide el uso normal. Requiere solución inmediata.                        |
+
+#### TABLA RESUMEN DE HALLAZGOS HEURISTICOS
+
+| #  | Problema                                                                         | Severidad | Heurística violada                                            |
+| -- | -------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------- |
+| 1 | Botones pequeños y textos con poco contraste en modo oscuro.                     | 3         | Estándares de accesibilidad (Nielsen #4)                      |
+| 2  | Campos de fecha no editables al registrar lotes.                                 | 2         | Flexibilidad y eficiencia de uso (Nielsen #7)                 |
+| 3  | Formularios no permiten duplicar registros previos (ej.: tela similar).          | 2         | Reconocimiento antes que recuerdo (Nielsen #6)                |
+| 4  | Algunos íconos no son claros al primer vistazo.                                  | 2         | Consistencia y estándares (Nielsen #4)                        |
+| 5  | En móviles, algunos elementos visuales se muestran demasiado pequeños.           | 3         | Diseño responsivo y usabilidad móvil                          |
+| 6  | Landing page carece de imágenes reales de telas o ejemplos de uso.               | 2         | Correspondencia entre el sistema y el mundo real (Nielsen #2) |
+
+
+<br>
+
+
+#### PROBLEMA #1: Contraste bajo en modo oscuro <br>
+- Severidad: 3 <br>
+- Heurística violada: Estándares de accesibilidad / Diseño estético y minimalista (Nielsen #4) <br>
+- Descripción:
+Daniela indicó que en modo oscuro algunas letras eran poco legibles. Esto afecta la lectura fluida y puede ser un obstáculo para quienes trabajan en ambientes con baja iluminación. Además, compromete la accesibilidad, especialmente para personas con dificultades visuales.
+- Recomendación:
+Ajustar los colores de texto y fondo en modo oscuro para cumplir con los estándares WCAG (relación de contraste mínima de 4.5:1).
+
+<p align="center">
+  <img src="assets/tb2/Heuristica1.jpeg" alt="PB" width="600">
+</p>
+
+#### PROBLEMA #2: Campos de fecha no editables al registrar lotes <br>
+- Severidad: 2 <br>
+- Heurística violada: Flexibilidad y eficiencia de uso (Nielsen #7) <br>
+- Descripción:
+Un proveedor sugirió que los campos de fecha deberían poder modificarse al registrar lotes. Actualmente están fijos, lo que impide ajustes necesarios ante imprevistos logísticos. Esto reduce la capacidad de adaptación y puede llevar a errores o registros incorrectos.
+- Recomendación:
+Permitir la edición manual de fechas o incluir un selector de fecha personalizable al registrar un lote.
+
+<p align="center">
+  <img src="assets/tb2/Heuristica2.jpeg" alt="PB" width="600">
+</p>
+
+#### PROBLEMA #3: Formularios no permiten duplicar datos anteriores <br>
+- Severidad: 2 <br>
+- Heurística violada: Reconocimiento antes que recuerdo (Nielsen #6) <br>
+- Descripción:
+Un entrevistado mencionó que sería útil poder duplicar productos ya registrados para evitar ingresar todos los datos desde cero. La falta de esta función incrementa la carga cognitiva y el tiempo requerido, especialmente en tareas repetitivas.
+- Recomendación:
+Agregar un botón “Duplicar último” o “Cargar plantilla anterior” en los formularios de registro de lote.
+
+<p align="center">
+  <img src="assets/tb2/Heuristica3.jpeg" alt="PB" width="600">
+</p>
+
+#### PROBLEMA #4: Íconos poco claros en ciertas secciones <br>
+- Severidad: 2 <br>
+- Heurística violada: Consistencia y estándares (Nielsen #4) <br>
+- Descripción:
+Daniela señaló que algunos íconos no son intuitivos y requieren exploración para entender su función. Esto genera fricción en la navegación y puede llevar a errores por mala interpretación.
+- Recomendación:
+Incluir etiquetas o tooltips al pasar el cursor sobre los íconos, y considerar rediseñar los menos intuitivos.
+
+<p align="center">
+  <img src="assets/tb2/Heuristica4.jpeg" alt="PB" width="600">
+</p>
+
+#### PROBLEMA #5: Tamaño reducido de botones y elementos en móvil <br>
+- Severidad: 3 <br>
+- Heurística violada: Usabilidad móvil / Control y libertad del usuario (Nielsen #3) <br>
+- Descripción:
+Varios usuarios mencionaron que algunos botones se ven demasiado pequeños desde el celular, dificultando su interacción. Esto perjudica la usabilidad y puede provocar errores al intentar presionar el elemento correcto.
+- Recomendación: Incrementar el tamaño mínimo de los botones a 44px x 44px según guías de usabilidad móvil y revisar el espaciado táctil.
+
+<p align="center">
+  <img src="assets/tb2/Heuristica5.jpeg" alt="PB" width="600">
+</p>
+
+#### PROBLEMA #6: Landing Page carece de imágenes reales o ejemplos de uso <br>
+- Severidad: 2 <br>
+- Heurística violada: Correspondencia entre el sistema y el mundo real (Nielsen #2) <br>
+- Descripción:
+Un proveedor sugirió mostrar imágenes reales de telas o casos de uso reales entre proveedor y cliente. Esto ayudaría a transmitir mejor la utilidad de la plataforma y generar mayor conexión con el público objetivo.
+- Recomendación:
+Incorporar fotos reales de telas, usuarios en acción o capturas de pantalla del flujo entre proveedor y empresario.
+
+<p align="center">
+  <img src="assets/tb2/Heuristica6.jpeg" alt="PB" width="600">
+</p>
 
 
 ## **Capítulo VII: DevOps Practices**
@@ -4352,65 +4546,14 @@ Nuestro método de trabajo se basó en implementar las funcionalidades asociadas
 
 #### 8.3.4. To-Be Validation Interviews
 
-Después de avanzar en el desarrollo de la Landing page, la aplicación front-end y la API RESTful de TextilFLow, llevamos a cabo entrevistas de validación. Estas entrevistas permitieron a nuestros usuarios de los segmentos objetivo obtener una primera impresión del software.
+
 
 ##### 8.3.4.1 Diseño de Entrevistas
 
-Segmento Objetivo: Empresas textiles y distribuidores de telas
 
-##### 1. ¿Cuál es su nombre completo? ¿Qué edad tiene? ¿En que distrito vive actualmente?
-
-##### 2. ¿Que opina del diseño de nuestra landing page? ¿Le sirve de incentivo para entrar a la aplicación y registrarse?
-
-##### 3. ¿Considera que nuestra aplicación tiene una interfaz fácil y sencilla de usar? en caso que si, que funcionalidades le agradan más? y en lo contrario, que funcionalidad piensa que sobra o falta para aumentar su interés en usarla?
-
-##### 4. ¿Que dispositivo utilizo para probar la pagina y aplicación web?
-
-##### 5. ¿Hubo algún aspecto visual que no le agrado?
 
 ##### 8.3.4.2 Registro de Entrevistas
 
-### Segmento 1: Empresarios
-
-| Entrevistado 1 |  Eduardo Andy Bueno Muro |
-| :---- | :---- |
-| Edad | 46 años |
-| Distrito/Ciudad | Lima |
-| <img src="images/entrevista1-Validacion.png" alt="PB" width="800"> | utilizó su computadora personal para probar la plataforma. Considera que tanto la landing page como la aplicación son interesantes, intuitivas y productivas. Valora que la aplicación le permite mantener el orden en sus stocks, proveedores y flujos operativos, lo que incentiva su registro. No identificó aspectos visuales negativos, y destacó que recomendaría su uso, principalmente por su utilidad y simplicidad. |
-
-| Timing:00:02 – 08:45 min | [Entrevista1 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  |
-
-| Entrevistado 2 |  Óscar Aldeir Zúñiga |
-| :---- | :---- |
-| Edad | 19 años |
-| Distrito/Ciudad | Comas |
-|  <img src="images/entrevista2-Validacion.png" alt="PB" width="800">  | Óscar trabaja en una empresa de venta de ropa. Accedió desde laptop y smartphone, y destacó el diseño de la landing page como profesional, limpio y confiable, lo que motivó su registro. Encontró la interfaz intuitiva, resaltando la visualización de precios mayoristas y stock en tiempo real como funcionalidades clave. Aunque la experiencia fue positiva, sugirió mejorar la carga de imágenes desde móviles para facilitar decisiones rápidas. |
-| Timing:08:45 – 14:21 min | [Entrevista 2 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-
-| Entrevistado 3 |  Daniela Araceli Gómez Flores |
-| :---- | :---- |
-| Edad | 28 años |
-|  <img src="images/entrevista3-Validacion.png" alt="PB" width="800"> | Probó la plataforma desde su PC con Windows y también desde celular. Calificó la landing page como visualmente atractiva, con colores cálidos y buen contraste. Destacó la claridad y orden en la interfaz, y valoró funcionalidades como la gestión de lotes, observaciones y solicitudes empresariales. Recomendó mejorar el tamaño de algunos botones en móvil y el contraste del texto en modo oscuro para mejorar la legibilidad.
-
- |
-| Timing:14:22 – 24:36 min | [Entrevista 3 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-
-
-### Segmento 2: Distribuidores de Telas 
-
-| Entrevistado 4 |  Antonio Encizo |
-| :---- | :---- |
-| Edad | 23 años |
-| Distrito/Ciudad | Lima |
-| <img src="images/entrevista4-calidacion.png" alt="PB" width="800">| Probó la plataforma desde PC, pero considera el celular como su medio ideal de uso. Opina que la landing page es clara e intuitiva, cumpliendo estándares comunes. Valora funcionalidades como el historial de envíos y la sección de observaciones por el feedback que aportan. A nivel visual, elogió el uso de colores y no reportó fallas. Sugiere seguir fortaleciendo el registro de envíos como funcionalidad destacada. |
-| Timing:24:40 – 29:22 min | [Entrevista 4 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-
-| Entrevistado 5 |  Luis Garcia |
-| :---- | :---- |
-| Edad | 20 años |
-| Distrito/Ciudad | Lima |
-| <img src="images/entrevista5-validacion.png" alt="PB" width="800">| Tiene una tienda física en Gamarra y vende también por redes. Distribuye algodón licrado, denim y telas deportivas. Verifica calidad de forma visual, usando a veces lámparas para ver imperfecciones. A veces envía fotos por WhatsApp, pero no tiene respaldo formal. Ha tenido reclamos por diferencias de tono sin tener pruebas. Lleva registros en cuadernos o Excel de manera intermitente. Le parece excelente una plataforma donde pueda registrar evidencia, tener orden y compartir información con el cliente. |
-| Timing:29:23 – 35:10 min | [Entrevista 5 TextilFlow.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/ESy6k56K6z5DiDoWFb9fmgQBUcnfMbva_C08-hH36jJWfw?e=QVvdff&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 ### 8.4. Experiment Aftermath & Analysis
 
