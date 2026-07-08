@@ -105,6 +105,8 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 - Report Contributors:
 ![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
 
+[Video about the team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/EbG5wNSCGy9Pi8e-YrOxJIIBCOZ88maFdTEU-QCXD-Xr1w?e=hVZPIZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 **AV2:**
 
 Para la elaboración de la entrega AV2 de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por puntos de cada capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
@@ -4697,5 +4699,7 @@ Barbaachán, M. A. (1999). Desempeño de la pequeña y mediana empresa exportado
 Burga Spray, R., & Gutiérrez Medina, V. P. (2024). Implementación de modelo para disminuir el nivel de productos defectuosos [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. https://repositorioacademico.upc.edu.pe/handle/10757/68297  
 
 Serna, L., & Isabel, A. (2024). Propuesta de Gestión de Procesos de Producción para mejorar la calidad del producto de una empresa textil peruana.https://titula.universidadeuropea.com/handle/20.500.12880/10986 
+
+[Video about the team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311220_upc_edu_pe/EbG5wNSCGy9Pi8e-YrOxJIIBCOZ88maFdTEU-QCXD-Xr1w?e=hVZPIZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ## Anexos
