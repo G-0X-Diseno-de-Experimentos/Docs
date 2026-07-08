@@ -4324,17 +4324,142 @@ A partir de las historias de usuario concebidas en la sección anterior, se ha e
 | 7 | US04 | Implementación de escáner de Código de Barras para lotes | Como operario quiero escanear el código de barras del rollo como evidencia irrefutable para evitar ingresar los datos manualmente. | 3 |
 | 8 | US05 | Implementación de sincronización prioritaria por WiFi | Como operario quiero que mis reportes pesados solo se suban cuando esté conectado a WiFi para evitar consumir mi plan de datos móviles personales. | 2 |
 
-#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
-##### 8.3.3.1 To-Be Sprint Backlogs
+El ciclo de vida de la plataforma *To-Be* de TextilFlow se encuentra alineado con un enfoque de desarrollo guiado por experimentos y soportado por prácticas de integración, entrega y despliegue continuo. Esto permite que cada mejora funcional sea incorporada, validada y desplegada de manera controlada, asegurando que las decisiones de producto se basen en evidencia obtenida durante los experimentos.
 
-##### 8.3.3.2 Implemented To-Be Landing Page Evidence
+La plataforma *To-Be* busca validar las funcionalidades críticas relacionadas con el registro de lotes textiles, carga de evidencia visual, generación de reportes, trazabilidad de incidencias y uso de herramientas móviles por parte de empresas textiles y distribuidores. Para ello, el ciclo de desarrollo se apoya en el Product Backlog, los Sprint Backlogs, el pipeline de integración continua y la documentación de evidencias implementadas.
 
-##### 8.3.3.3 Implemented To-Be Frontend-Web Application Evidence
+El flujo general del ciclo de vida es el siguiente:
 
-##### 8.3.3.4 Implemented To-Be Native-Mobile Application Evidence
+1. Identificación de hipótesis y preguntas de experimentación.
+2. Priorización de funcionalidades en el To-Be Product Backlog.
+3. Planificación de Sprint Backlogs orientados a validar hipótesis.
+4. Implementación de funcionalidades web, móviles y backend.
+5. Ejecución del pipeline de integración y validación.
+6. Registro de evidencias funcionales.
+7. Recolección de métricas y retroalimentación de usuarios.
+8. Análisis de resultados para validar, iterar o descartar hipótesis.
 
-##### 8.3.3.5 Implemented To-Be RESTful API and/or Serverless Backend Evidence
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+Los Sprint Backlogs *To-Be* permiten organizar el trabajo de implementación necesario para validar las hipótesis planteadas en la sección de experimentación. Cada sprint se enfoca en construir funcionalidades mínimas pero funcionales que permitan obtener evidencia del comportamiento de los usuarios frente a TextilFlow.
+
+| Sprint | Objetivo | User Stories relacionadas | Evidencia esperada |
+|--------|----------|---------------------------|--------------------|
+| Sprint 1 | Implementar el registro de lotes textiles con datos básicos. | US_01, US_02 | Pantallas de creación de lote, formulario de datos y guardado exitoso. |
+| Sprint 2 | Incorporar carga de evidencia visual y observaciones técnicas. | US_02, US_03 | Registro de fotografías, comentarios y visualización del detalle del lote. |
+| Sprint 3 | Implementar reportes digitales de evidencia para reclamos. | US_03, US_05 | Reporte generado con datos del lote, fotografías y observaciones. |
+| Sprint 4 | Implementar registro pre-despacho para distribuidores. | US_04 | Flujo para que el distribuidor documente el estado del lote antes de entregarlo. |
+| Sprint 5 | Optimizar la experiencia móvil para uso operativo. | US_06 | Evidencia de registro rápido desde aplicación móvil. |
+| Sprint 6 | Incorporar historial de lotes, métricas básicas y propuesta premium. | US_07, US_08, US_09 | Consulta de historial, dashboard inicial e intención de pago por funcionalidades avanzadas. |
+
+Estas actividades permiten que el desarrollo de TextilFlow no se limite únicamente a construir funcionalidades, sino que cada entrega responda a una hipótesis de negocio o de uso previamente definida.
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+La Landing Page *To-Be* de TextilFlow tiene como finalidad comunicar de forma clara la propuesta de valor del producto, presentar el problema del sector textil y motivar a empresas textiles y distribuidores a registrarse o solicitar información sobre la plataforma.
+
+La implementación de la Landing Page considera las siguientes secciones principales:
+
+| Sección | Descripción | Propósito |
+|---------|-------------|-----------|
+| Hero principal | Presenta a TextilFlow como una solución para registrar lotes, evidencias e incidencias textiles. | Comunicar rápidamente el valor del producto. |
+| Problema | Explica las dificultades actuales: registros manuales, pérdida de evidencia y reclamos poco sustentados. | Generar identificación con el usuario objetivo. |
+| Solución | Muestra cómo TextilFlow centraliza fotografías, observaciones, reportes e historial. | Explicar cómo la plataforma resuelve el problema. |
+| Beneficios | Presenta beneficios para empresas textiles y distribuidores. | Diferenciar el valor por segmento. |
+| Funcionalidades | Registro de lotes, evidencia visual, reportes, trazabilidad e historial. | Mostrar capacidades principales del producto. |
+| Llamado a la acción | Botones para registrarse, solicitar demo o conocer planes. | Medir interés y conversión inicial. |
+
+**Evidencia de implementación:**
+
+<p align="center">
+  <img src="./assets/chapter-8/to-be-landing-page-evidence.png" alt="Implemented To-Be Landing Page Evidence" width="900"/>
+</p>
+
+La Landing Page permite validar el interés inicial de los usuarios mediante eventos como visualización de la propuesta de valor, clics en llamadas a la acción y solicitudes de información sobre el producto.
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+La aplicación web *To-Be* de TextilFlow permite a los usuarios gestionar lotes textiles, consultar información histórica, revisar reportes de evidencia y administrar incidencias desde una interfaz organizada y orientada a la trazabilidad.
+
+Las principales funcionalidades implementadas en la aplicación web son:
+
+| Funcionalidad | Descripción | Hipótesis relacionada |
+|---------------|-------------|-----------------------|
+| Gestión de lotes | Permite registrar y consultar lotes textiles con proveedor, tipo de tela, fecha y estado. | H1 |
+| Detalle de lote | Muestra fotografías, observaciones técnicas y estado del material. | H1 / H3 |
+| Reporte de evidencia | Genera un resumen documentado para sustentar reclamos. | H3 |
+| Historial de lotes | Permite consultar registros anteriores por proveedor, fecha o estado. | H3 / H5 |
+| Dashboard básico | Presenta métricas iniciales sobre lotes aprobados, observados o rechazados. | H5 |
+| Plan premium | Presenta funcionalidades avanzadas y registra intención de interés. | H5 |
+
+**Evidencia de implementación:**
+
+<p align="center">
+  <img src="./assets/chapter-8/to-be-frontend-web-evidence.png" alt="Implemented To-Be Frontend-Web Application Evidence" width="900"/>
+</p>
+
+Esta evidencia permite demostrar que la aplicación web soporta los flujos necesarios para validar la trazabilidad de lotes, la generación de reportes y la gestión documental de incidencias textiles.
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+La aplicación móvil nativa *To-Be* de TextilFlow está diseñada para facilitar el uso de la plataforma en entornos operativos, como almacenes textiles, talleres o puntos de despacho. Su objetivo principal es permitir que los usuarios registren lotes y evidencias desde el lugar donde ocurre la recepción o revisión del material.
+
+Las funcionalidades móviles implementadas son:
+
+| Funcionalidad | Descripción | Hipótesis relacionada |
+|---------------|-------------|-----------------------|
+| Registro rápido de lote | Permite crear un lote desde el dispositivo móvil en pocos pasos. | H1 / H4 |
+| Carga de fotografías | Permite adjuntar evidencia visual directamente desde la cámara o galería. | H1 / H3 |
+| Observaciones técnicas | Permite registrar comentarios sobre defectos, manchas, color, textura o metraje. | H1 / H3 |
+| Cambio de estado del lote | Permite marcar un lote como aprobado, observado, rechazado o pendiente. | H1 |
+| Registro pre-despacho | Permite a distribuidores documentar el estado del lote antes de entregarlo. | H2 |
+| Consulta de historial | Permite revisar lotes registrados previamente desde el celular. | H3 / H4 |
+
+**Evidencia de implementación:**
+
+<p align="center">
+  <img src="./assets/chapter-8/to-be-native-mobile-evidence.png" alt="Implemented To-Be Native-Mobile Application Evidence" width="900"/>
+</p>
+
+La implementación móvil permite validar si TextilFlow puede ser adoptado en situaciones reales de trabajo, donde el tiempo disponible es limitado y los usuarios necesitan registrar información de forma rápida, visual y sencilla.
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+El backend *To-Be* de TextilFlow soporta las operaciones necesarias para registrar lotes, almacenar evidencia, consultar historial, generar reportes y gestionar usuarios según su rol dentro de la plataforma.
+
+La implementación del backend considera los siguientes módulos principales:
+
+| Módulo | Descripción | Funcionalidad soportada |
+|--------|-------------|-------------------------|
+| Autenticación | Gestiona el acceso de usuarios según rol. | Inicio de sesión y control de permisos. |
+| Gestión de lotes | Permite crear, actualizar y consultar lotes textiles. | Registro de lote e historial. |
+| Evidencias | Permite asociar fotografías y observaciones a un lote. | Documentación visual y técnica. |
+| Reportes | Genera información estructurada para sustentar reclamos. | Reporte digital de evidencia. |
+| Pre-despacho | Permite registrar evidencia antes de la entrega del lote. | Validación del estado inicial del material. |
+| Métricas | Consolida datos básicos sobre uso, registros e incidencias. | Dashboard y análisis experimental. |
+
+**Endpoints principales implementados:**
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| POST | `/api/lots` | Registra un nuevo lote textil. |
+| GET | `/api/lots` | Lista los lotes registrados. |
+| GET | `/api/lots/{id}` | Obtiene el detalle de un lote específico. |
+| POST | `/api/lots/{id}/evidence` | Adjunta evidencia visual o técnica a un lote. |
+| PATCH | `/api/lots/{id}/status` | Actualiza el estado del lote. |
+| POST | `/api/dispatch-reports` | Genera un registro pre-despacho. |
+| GET | `/api/reports/{id}` | Obtiene un reporte digital de evidencia. |
+| GET | `/api/metrics` | Consulta métricas básicas de uso y trazabilidad. |
+
+**Evidencia de implementación:**
+
+<p align="center">
+  <img src="./assets/chapter-8/to-be-restful-api-evidence.png" alt="Implemented To-Be RESTful API Evidence" width="900"/>
+</p>
+
+Esta implementación backend permite que la plataforma web y móvil compartan información de manera centralizada, asegurando trazabilidad, consistencia de datos y soporte para la recolección de métricas experimentales.
 
 ##### 8.3.3.6 Team Collaboration Insights
 
