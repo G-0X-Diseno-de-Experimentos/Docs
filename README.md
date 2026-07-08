@@ -4539,11 +4539,11 @@ A partir de las historias de usuario concebidas en la sección anterior, se ha e
 Nuestro método de trabajo se basó en implementar las funcionalidades asociadas a las tareas asignadas para este período. Aqui adjuntamos una imagen que muestra la cotribucion de todos los miembros del equipo con los commits durante este proceso de desarrollo.
 
 <p align="center">
-  <img src="images/BackEnd_Insights.jpg" alt="PB" width="850">
+  <img src="assets/tb2/BackEnd_Insights.jpg" alt="PB" width="850">
 </p>
 
 <p align="center">
-  <img src="images/FrontEnd_Insights.png" alt="PB" width="850">
+  <img src="assets/tb2/FrontEnd_Insights.png" alt="PB" width="850">
 </p>
 
 #### 8.3.4. To-Be Validation Interviews
