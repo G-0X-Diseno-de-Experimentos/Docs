@@ -4524,15 +4524,61 @@ A partir de las historias de usuario concebidas en la sección anterior, se ha e
 
 #### 8.3.3.1. To-Be Sprint Backlogs
 
+En este sprint nos hemos enfocado en implementar botones interactivos y elementos de medición para recolectar datos sobre las hipótesis de nuestros experimentos. Las tareas incluyeron:
+- Creación de un endpoint RESTful (Backend) para registrar la recolección de interacciones.
+- Implementación de un servicio en Angular y funciones JS en la Landing Page para el envío de métricas.
+- Inserción de UI (botones y toggles experimentales) asociados a cada experimento (US01 a US08) a lo largo de las vistas para medir la tasa de clicks/conversión.
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+Se añadió una nueva sección ("Diseñado para el Trabajo de Campo") resaltando las funcionalidades de **Modo Offline (US03)** y **Uso con Guantes (US08)**. Se incorporó un botón "Notificarme cuando esté disponible" que, mediante una función `trackExperiment()` en Javascript nativo, registra el interés de los visitantes comunicándose con nuestro backend.
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe.jpg" width="600"/>
+</p>
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
+En la aplicación Web (Angular) se han integrado múltiples botones asociados a nuestros experimentos para medir el interés y la interacción de los usuarios. Cada botón invoca el método `track()` del `ExperimentTrackingService` que envía el evento a la base de datos a través de Spring Boot:
+- **US01 y US04 (Proveedor):** Botón para generar "Certificado de Pre-Despacho Digital" y botón para "Escanear Código de Barras".
+- **US02, US03, US08 (Observación):** Botones para "Categorizar Falla Visualmente", simular "Modo Offline" y "Mapeo Visual (Zonas Amplias)".
+- **US05 (Configuración):** Toggle para "Sincronizar reportes pesados solo por WiFi".
+- **US06 (Home):** Botón para acceder al "Dashboard Gerencial de Auditoría".
+- **US07 (Lotes):** Opción para "Marcar como Recibido rápido (Evaluar después)".
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe1.jpg" width="600"/>
+</p>
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe2.jpg" width="600"/>
+</p>
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe3.jpg" width="600"/>
+</p>
+
+
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
+Actualmente, las interacciones experimentales críticas para operarios de campo (como US03 y US08) están siendo evaluadas preliminarmente a través de las vistas responsivas de la plataforma, midiendo las interacciones táctiles y decisiones del usuario. Una vez validados, estos flujos se integrarán permanentemente a la arquitectura nativa.
+
+
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+En el backend (Spring Boot), se construyó la infraestructura para soportar las mediciones:
+- **`ExperimentTracking` (Entity/Repository):** Modelo de datos para persistir cada interacción experimental (ID experimento, acción, timestamp).
+- **`ExperimentController`:** Controlador que expone el endpoint `POST /api/v1/experiments/track` recibiendo un `ExperimentTrackRequest`.
+- Esto nos brinda un registro centralizado y una tabla auditable en PostgreSQL para determinar el grado de éxito de cada experimento.
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe4.jpg" width="600"/>
+</p>
+
+<p align="center">
+  <img src="./assets/tb2/landingtobe5.jpg" width="600"/>
+</p>
 
 ##### 8.3.3.6 Team Collaboration Insights
 
