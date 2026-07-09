@@ -3872,8 +3872,103 @@ graph TD
   <img src="./assets/tp1/continuos_deployment3.jpg" alt="continuos_deployment3" width="850">
 </p>
 
-
 https://textilflow.web.app/
+
+### 7.4. Continuous Monitoring
+
+Para la implementación del monitoreo continuo de TextilFlow se utilizaron herramientas orientadas a la recolección, almacenamiento y visualización de métricas en tiempo real del sistema en ejecución. Estas tecnologías permiten observar el comportamiento de la aplicación de forma continua y detectar anomalías operativas.
+
+#### 7.4.1. Tools and Practices
+
+
+Las principales herramientas utilizadas son las siguientes:
+
+- **Spring Boot Actuator** <br>
+ Módulo de Spring Boot utilizado para exponer endpoints de monitoreo de la aplicación. Proporciona información sobre el estado de salud, métricas de JVM, uso de memoria, threads activos y estadísticas de peticiones HTTP a través del endpoint /actuator/prometheus.
+
+ <p align="center">
+  <img src="./assets/tf/spring_boot.png" width="200"/>
+</p>
+
+- **Micrometer** <br>
+ Librería de instrumentación utilizada como fachada de métricas para Spring Boot. Permite recolectar automáticamente métricas de la aplicación en formato compatible con Prometheus, incluyendo tiempos de respuesta HTTP, uso de memoria heap, garbage collection y estado de conexiones a base de datos.
+
+<p align="center">
+  <img src="./assets/tf/micrometer.png" width="200"/>
+</p>
+
+- **Prometheus** <br> 
+Sistema de monitoreo y base de datos de series temporales utilizado para recolectar y almacenar las métricas expuestas por la aplicación TextilFlow. Configurado para raspar el endpoint /actuator/prometheus cada 15 segundos mediante el contenedor prometheus-server integrado en la red Docker del proyecto.
+
+<p align="center">
+  <img src="./assets/tf/prometheus.png" width="200"/>
+</p>
+
+- **Grafana** <br> 
+Plataforma de visualización utilizada para construir dashboards interactivos a partir de las métricas almacenadas en Prometheus. Permite observar en tiempo real el comportamiento de la JVM, el rendimiento de los endpoints REST y el estado general de la aplicación TextilFlow.
+
+<p align="center">
+  <img src="./assets/tf/grafana.jpg" width="200"/>
+</p>
+
+#### 7.4.2. Monitoring Pipeline Components
+
+El pipeline de monitoreo continuo implementado para TextilFlow sigue el siguiente flujo de recolección y visualización de métricas:
+
+- **Exposición de métricas (Spring Boot Actuator + Micrometer):** <br>
+
+La aplicación TextilFlow expone automáticamente métricas en formato Prometheus a través del endpoint http://textilflow-spring:8080/actuator/prometheus. Las métricas incluyen uso de memoria JVM, threads activos, tiempos de respuesta HTTP, estado de la base de datos y garbage collection. Este endpoint es accesible públicamente dentro de la red Docker sin requerir autenticación.
+
+**Configuracion de Data Source en Grafana**
+
+<p align="center">
+  <img src="./assets/tf/grafana_data_source_1.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="./assets/tf/grafana_data_source_2.png" width="500"/>
+</p>
+
+- **Recolección de métricas (Prometheus):** <br>
+
+Prometheus raspa el endpoint /actuator/prometheus del contenedor textilflow-spring cada 15 segundos según la configuración definida en prometheus.yml. Las métricas recolectadas son almacenadas como series temporales y quedan disponibles para consulta mediante PromQL en http://localhost:9090. El estado del target puede verificarse en http://localhost:9090/targets, donde el job textilflow debe aparecer con estado UP.
+
+<p align="center">
+  <img src="./assets/tf/prometheus_health_up.png" width="500"/>
+</p>
+
+- **Visualización de métricas (Grafana):** <br> 
+
+Grafana se conecta a Prometheus como Data Source mediante la URL interna http://prometheus-server:9090, aprovechando la red compartida textilflow-network de Docker. Los dashboards importados desde Grafana.com (ID 4701 — JVM Micrometer) permiten visualizar en tiempo real métricas de la JVM, uso de heap, non-heap, threads, peticiones HTTP y tiempos de respuesta de los endpoints REST de TextilFlow.
+
+<p align="center">
+  <img src="./assets/tf/grafana_dashboard.png" width="500"/>
+</p>
+
+#### 7.4.3. Alerting Pipeline Components
+
+En la configuración actual del monitoreo de TextilFlow, Prometheus actúa como fuente de verdad para el estado de los targets. El endpoint http://localhost:9090/targets permite verificar en tiempo real si el servicio textilflow-spring está respondiendo correctamente.
+
+Grafana permite configurar alertas visuales directamente desde los dashboards cuando una métrica supera un umbral definido, como uso de memoria heap por encima del 85%, tiempo de respuesta HTTP superior a 2 segundos o caída del target en Prometheus. Estas alertas pueden ser configuradas desde el panel de cada gráfica en Alert > Create alert rule.
+
+**Ejecucion de POST en el backend**
+
+<p align="center">
+  <img src="./assets/tf/backend_query.png" width="500"/>
+</p>
+
+**Estado en Prometheus**
+
+<p align="center">
+  <img src="./assets/tf/prometheus_response.png" width="500"/>
+</p>
+
+#### 7.4.4. Notification Pipeline Components
+
+Las notificaciones del sistema de monitoreo de TextilFlow pueden ser canalizadas desde Grafana mediante la configuración de Contact Points en Alerting > Contact points. Grafana soporta múltiples canales de notificación incluyendo correo electrónico, Slack y webhooks personalizados.
+
+Para activar notificaciones por correo, Grafana utiliza las credenciales SMTP configuradas en sus variables de entorno del contenedor. Una vez configurado el Contact Point, se asocia a una Notification Policy que define qué alertas disparan qué notificaciones, completando así el flujo de monitoreo continuo: métricas expuestas por la aplicación → recolectadas por Prometheus → visualizadas y alertadas por Grafana → notificadas al equipo de desarrollo.
+
 
 ## **Capítulo VIII: Experiment-Driven Development**
 
