@@ -4593,14 +4593,92 @@ Nuestro método de trabajo se basó en implementar las funcionalidades asociadas
 </p>
 
 #### 8.3.4. To-Be Validation Interviews
+Después de implementar las funcionalidades To-Be derivadas del proceso de experimentación de TextilFlow, se realizaron entrevistas de validación con usuarios pertenecientes a los segmentos objetivo. Estas entrevistas tuvieron como finalidad evaluar si las nuevas funcionalidades propuestas realmente responden a las necesidades detectadas durante la etapa As-Is y si aportan valor en escenarios reales de operación textil.
 
+Las entrevistas se centraron en validar la percepción de utilidad, facilidad de uso e intención de adopción de funcionalidades como el Certificado de Pre-Despacho Digital, el Catálogo Visual de Defectos Textiles, el registro de evidencias en modo offline, el uso de código de barras, la sincronización por WiFi, el dashboard de auditoría y el mapeo visual de zonas afectadas. De esta manera, se buscó contrastar las hipótesis planteadas en el Capítulo VIII con la opinión directa de empresarios textiles, operarios de almacén y distribuidores de telas.
 
 
 ##### 8.3.4.1 Diseño de Entrevistas
 
+Segmento Objetivo: Empresas textiles, operarios de almacén y distribuidores de telas.
+
+Preguntas generales
+1. ¿Cuál es su nombre completo, edad y distrito o ciudad donde trabaja actualmente?
+2. ¿Cuál es su rol dentro del negocio textil?
+
+Por ejemplo: empresario textil, distribuidor de telas, encargado de almacén, operario de control de calidad o vendedor.
+
+3. ¿Qué dispositivo utilizó para probar la plataforma o revisar el prototipo To-Be?
+
+Por ejemplo: laptop, computadora de escritorio, celular o tablet.
+
+Preguntas sobre funcionalidades To-Be
+4. Después de revisar la funcionalidad de Certificado de Pre-Despacho Digital, ¿considera que esta herramienta ayudaría a reducir reclamos injustificados entre distribuidores y empresas textiles?
+5. ¿Le parece útil que el distribuidor pueda registrar fotos del lote antes del envío para dejar evidencia del estado de la tela?
+6. ¿Qué opina del Catálogo Visual de Defectos Textiles? ¿Considera que ayuda a clasificar mejor fallas como manchas, mermas, problemas de teñido o daños físicos?
+7. ¿La clasificación visual de defectos le parece más clara que describir el problema solo con texto libre o mensajes por WhatsApp?
+8. En un entorno de almacén o taller con mala conexión a internet, ¿considera importante que la plataforma permita registrar evidencias en modo offline?
+9. ¿El indicador de estado de red o “Pendiente de sincronización” le parece claro para saber si una evidencia ya fue enviada correctamente?
+10. ¿Considera necesario registrar o escanear el código de barras del lote para dar mayor validez a los reclamos o reportes de calidad?
+11. ¿Qué opina de permitir que los reportes pesados, como fotos o evidencias, se sincronicen solo cuando exista conexión WiFi?
+12. ¿El dashboard gerencial de auditoría le ayudaría a tomar mejores decisiones sobre proveedores, lotes rechazados o incidencias frecuentes?
+13. ¿El mapeo visual de zonas afectadas en el rollo de tela le parece fácil de entender y utilizar durante una revisión de calidad?
+Preguntas de cierre
+14. ¿Cuál de las funcionalidades To-Be considera más útil para su trabajo diario? ¿Por qué?
+15. ¿Hubo alguna funcionalidad que le pareció innecesaria, confusa o difícil de usar?
+16. ¿Qué mejora recomendaría antes de lanzar TextilFlow a usuarios reales del sector textil?
+17. Después de revisar estas funcionalidades, ¿estaría dispuesto a utilizar TextilFlow en su proceso de control, despacho o recepción de telas?
+18. En una escala del 1 al 5, ¿qué tan probable sería que recomiende TextilFlow a otro negocio textil o distribuidor?
 
 
 ##### 8.3.4.2 Registro de Entrevistas
+
+##### 8.3.4.2 Registro de Entrevistas
+
+### Segmento 1: Empresas textiles y operarios de almacén
+
+| Entrevistado 1 | Cristina Sihuas |
+| :---- | :---- |
+| Edad | 25 años |
+| Distrito/Ciudad | Lima |
+| Rol | Trabajadora por pedidos para marcas pequeñas |
+| <img src="assets/tb2/entrevista-tobe-2.png" alt="Entrevista To-Be 3" width="800"> | La entrevistada probó la plataforma desde celular y se enfocó en las funcionalidades de evidencia visual, catálogo de defectos y reportes de calidad. Considera que el catálogo visual facilitaría explicar mejor los defectos a los proveedores, ya que actualmente muchas observaciones se comunican por fotos sueltas o mensajes sin estructura. También destacó que el modo offline sería útil porque en talleres pequeños no siempre hay una conexión estable. Como recomendación, sugirió que los reportes puedan descargarse o compartirse fácilmente por WhatsApp, ya que muchos negocios textiles todavía utilizan ese canal para coordinar pedidos y reclamos. |
+| Timing: 12:21 – 18:05 min | [Entrevista 1 To-Be TextilFlow.mp4](FALTA_LINK) |
+
+<br>
+
+
+| Entrevistado 2 | Juan Carlos Quispe Flores |
+| :---- | :---- |
+| Edad | 68 años |
+| Distrito/Ciudad | Lima |
+| Rol | Encargado de almacén y control de calidad en fábrica textil |
+| <img src="assets/tb2/entrevista-tobe-1.png" alt="Entrevista To-Be 1" width="800"> | El entrevistado probó la plataforma desde una laptop y revisó principalmente las funcionalidades relacionadas con el registro de incidencias, catálogo visual de defectos y modo offline. Considera que el Catálogo Visual de Defectos Textiles ayuda a reducir la subjetividad al momento de reportar fallas, ya que permite elegir una categoría más clara en lugar de describir el problema de forma informal. También valoró positivamente el indicador de red, porque en almacenes suele haber zonas con mala conexión y es importante saber si una evidencia quedó pendiente de sincronización. Como mejora, recomendó que las imágenes de referencia del catálogo sean grandes y visibles desde celular. |
+| Timing: 00:02 – 06:40 min | [Entrevista 2 To-Be TextilFlow.mp4](FALTA_LINK) |
+
+---
+
+### Segmento 2: Distribuidores de telas
+
+| Entrevistado 3 | Cynthia Mendoza Cancho |
+| :---- | :---- |
+| Edad | 31 años |
+| Distrito/Ciudad | Lima |
+| Rol | Distribuidor de telas |
+| <img src="assets/tb2/entrevista-tobe-4.png" alt="Entrevista To-Be 4" width="800"> | La entrevistada revisó principalmente el Certificado de Pre-Despacho Digital, el registro fotográfico del lote y el dashboard gerencial. Considera que el certificado puede ser una herramienta importante para respaldar al distribuidor antes del envío, especialmente cuando existen reclamos por daños ocurridos después del despacho. También valoró que el sistema permita consultar un historial por cliente y lote, ya que esto ayudaría a mantener orden y evitar conflictos repetidos. Sin embargo, mencionó que la plataforma debe cuidar la privacidad de cierta información comercial, como rutas de producción o datos sensibles de proveedores. |
+| Timing: 18:06 – 24:15 min | [Entrevista 3 To-Be TextilFlow.mp4](FALTA_LINK) |
+
+<br>
+
+| Entrevistado 4 | Mathias Mendoza |
+| :---- | :---- |
+| Edad | 22 años |
+| Distrito/Ciudad | Lima |
+| Rol | Distribuidor con tienda física en Gamarra |
+| <img src="assets/tb2/entrevista-tobe-3.png" alt="Entrevista To-Be 4" width="800"> | El entrevistado probó la funcionalidad de pre-despacho, el escaneo de código de barras y la sincronización por WiFi. Señaló que el Certificado de Pre-Despacho Digital le parece útil porque le permitiría demostrar que la tela salió en buen estado de su tienda. También indicó que el uso de código de barras ayuda a evitar confusiones entre lotes parecidos, especialmente cuando se manejan distintos colores o tipos de tela. Sobre la sincronización por WiFi, comentó que sería conveniente para no consumir datos móviles al subir varias fotos. Como mejora, recomendó que el certificado tenga un formato simple y profesional para poder enviarlo al cliente. |
+| Timing: 24:16 – 30:10 min | [Entrevista 4 To-Be TextilFlow.mp4](FALTA_LINK) |
+
+---
 
 
 ### 8.4. Experiment Aftermath & Analysis
