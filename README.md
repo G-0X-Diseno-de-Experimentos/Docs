@@ -128,14 +128,14 @@ En esta sección se presentan los analíticos de colaboración y los commits rea
 ![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
 
 
-**AV2:**
+**TF:**
 
-Para la elaboración de la entrega AV2 de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por puntos de cada capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
+Para la elaboración de la entrega TF de este informe, el equipo se organizó mediante reuniones de coordinación a través de un canal de Discord. En estas reuniones se definió la distribución de actividades, se asignaron responsables por puntos de cada capítulo y se establecieron fechas de revisión periódica para asegurar el avance progresivo de cada integrante.
 
 | Integrante                      | Usuario Github | Detalle de avance                                                                                                                                                                                                                                                                                                            |
 | ------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Fabrizio Alberto Paredes Santos | `psfa29`       |                                                                                                                                                                                                                                                                         |
-| Mathias Eduardo Bueno Perales   | `MathiasBueno` | Desarrollo de los puntos 7.2, 7.2.1 y 7.2.2.                                                                                                                                                                                                                                                                                 |
+| Mathias Eduardo Bueno Perales   | `MathiasBueno` | Desarrollo de los puntos 7.4, 7.4.1, 7.4.2, 7.4.3 y 7.4.4                                                                   |
 | Sebastian Rodriguez Macedo      | `Shiftinnnnn`  |                                                                                                                                                                   |
 | Giorgio Marzouk Awad Vargas     | `GiorgioAwad`  |                                                                                                                                                                   |
 | Hector Javier Rios Pacheco      | `Khafna09`     |  |
@@ -146,7 +146,7 @@ Para la elaboración de la entrega AV2 de este informe, el equipo se organizó m
 En esta sección se presentan los analíticos de colaboración y los commits realizados en GitHub por los miembros del equipo dentro del repositorio del informe durante la fase AV2. Esta evidencia permite visualizar la participación de los integrantes y la evolución del trabajo colaborativo a lo largo del desarrollo del reporte.
 
 - Report Contributors:
-![Report Contributors](./assets/tp1/team-collab-insights-informe-tp.png)
+![Report Contributors](./assets/tf/report_contributors_tf.png)
 
 
 
