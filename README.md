@@ -4883,6 +4883,12 @@ Tras la próxima experimentación, esperamos que los usuarios sigan con los sigu
 
 #### 8.6.1. About-the-Product Intro Video
 
+
+<p align="center">
+  <img src="./assets/tb2/tobe-video.jpg" width="800"/>/p>
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231c540_upc_edu_pe/IQD1YeVzWnVYSpGlY0DTNjWSAdrcX3pZ526fLi_4YeJkgWw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=seqG9t
+
 ## Conclusiones
 
 * En esta etapa del proyecto se logró definir y estructurar la propuesta de solución de **TextilFlow**, incluyendo el análisis del problema, el diseño UX/UI, la arquitectura del sistema, el modelado de datos y la definición de funcionalidades principales para empresarios y distribuidores. Asimismo, se establecieron los componentes base de la aplicación web y móvil, los flujos de usuario, la documentación de la API REST y la organización colaborativa del desarrollo, sentando una base sólida para las siguientes fases de implementación, validación y despliegue del sistema.
